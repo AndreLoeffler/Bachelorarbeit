@@ -1,3 +1,21 @@
+
+\newtheoremstyle{style}
+   {0.5cm}                 %Space above
+   {0cm}                   %Space below
+   {\normalfont}                      %Body font: original {\normalfont}
+   {}                      %Indent amount \left(empty = no indent,
+                           %\parindent = para indent\right)
+   {\normalfont\bfseries}  %Thm head font original {\normalfont\bfseries}
+   {:}                     %Punctuation after thm head original :
+   {\newline}              %Space after thm head: " " = normal interword
+			   %space; \newline = linebreak
+  {\textbf{\thmname{#1}\thmnumber{ #2}}\thmnote{ (#3)}}
+%Hier wird die endgültige Struktur deiner Umgebung festgelegt. Hier funktioniert vspace.                    
+                                        %Thm head spec \left(can be left empty, meaning
+                           %`normal'\right) original {\underline{\thmname{#1}\thmnumber{ #2}\thmnote{ \left(#3\right)}}}
+
+\theoremstyle{style}
+
 \newtheorem{definition}{Definition}
 \newtheorem{satz}{Satz}
 \newtheorem{lemma}[satz]{Lemma} % Lemma numbering together with theorem

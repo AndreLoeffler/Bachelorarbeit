@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  6 NOV 2013 10:52
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  6 NOV 2013 13:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,7 +428,8 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \c@definition=\count121
 \c@satz=\count122
 ) (./main.aux (./title.aux) (./einleitung.aux)
-(./definitionen.aux) (./haken.aux) (./seymour.aux) (./statement.aux))
+(./definitionen.aux) (./haken.aux) (./seymour.aux) (./umformulierungen.aux)
+(./statement.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -445,8 +446,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 *geometry* driver: auto-detecting
@@ -545,7 +545,7 @@ e
 (./title.tex (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<siegel.pdf, id=4, 597.50829pt x 845.0471pt>
+<siegel.pdf, id=24, 597.50829pt x 845.0471pt>
 File: siegel.pdf Graphic file (type pdf)
  <use siegel.pdf>
 Package pdftex.def Info: siegel.pdf used on input line 33.
@@ -571,72 +571,95 @@ c)
 \openout2 = `einleitung.aux'.
 
 
-(./einleitung.tex)
+(./einleitung.tex
+Kapitel 1.
+) [3
+
+
+]
 \openout2 = `definitionen.aux'.
 
- (./definitionen.tex)
-\openout2 = `haken.aux'.
-
- (./haken.tex)
-\openout2 = `seymour.aux'.
-
- (./seymour.tex)
-\openout2 = `umformulierungen.aux'.
-
-
-(./umformulierungen.tex)
-\openout2 = `statement.aux'.
-
- (./statement.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
-
+ (./definitionen.tex
+Kapitel 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)) [3
+)) [4
 
 
 
+]
+\openout2 = `haken.aux'.
+
+ (./haken.tex
+Kapitel 3.
+) [5
 
 
 
+]
+\openout2 = `seymour.aux'.
+
+ (./seymour.tex
+Kapitel 4.
+) [6
 
 
 
+]
+\openout2 = `umformulierungen.aux'.
+
+ (./umformulierungen.tex
+Kapitel 5.
+) [7
+
+
+
+]
+\openout2 = `statement.aux'.
+
+ (./statement.tex) [8
 
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
- (./main.aux
-(./title.aux) (./einleitung.aux) (./definitionen.aux) (./haken.aux)
-(./seymour.aux) (./umformulierungen.aux) (./statement.aux))
+ (./main.aux (./title.aux) (./einleitung.aux)
+(./definitionen.aux) (./haken.aux) (./seymour.aux) (./umformulierungen.aux)
+(./statement.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: CAF70C9682BFA4A237D7BB8B785F4207;296.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 9403 strings out of 493485
- 138639 string characters out of 3143526
- 259478 words of memory out of 3000000
- 12534 multiletter control sequences out of 15000+200000
- 7742 words of font info for 30 fonts, out of 3000000 for 9000
+ 9434 strings out of 493485
+ 138987 string characters out of 3143526
+ 264970 words of memory out of 3000000
+ 12547 multiletter control sequences out of 15000+200000
+ 8396 words of font info for 32 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,47p,329b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on main.pdf (3 pages, 1120570 bytes).
+ 38i,7n,47p,462b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on main.pdf (8 pages, 1186636 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 34 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

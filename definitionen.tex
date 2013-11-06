@@ -1,0 +1,24 @@
+\begin{chapter}{Definitionen}
+  Um über die Färbbarkeit von Graphen reden zu können, müssen zuerst einige gebräuchliche Begrifflichkeiten geklärt werden. 
+  \begin{definition}[Graph, Knoten, Kante]
+   Ein \textit{Graph} $G$ ist ein Tupel $G=(V,E)$, wobei $V$ eine Menge bestehend aus Knoten und $E$ eine Menge bestehend aus Kanten sind. Ein \textit{Knoten} $v \in V$ ist ein Punkt im Raum. Eine \textit{Kante} $e \in E$ ist eine zweielementige Teilmenge von $V$, wobei $E$ die Menge aller dieser Teilmengen ist, also $E = \{\{u,v\}|u,v \in V\}$.
+  \end{definition}
+  
+  Um nun Bedingungen an die Färbbarkeit von Knoten stellen zu können, muss noch definiert werden, wie diese zusammenhängen.
+  
+  \begin{definition}[Inzidenz, Adjazenz, Knotengrad]
+   Ein Knoten $v \in V$ heißt \textit{inzident} zu einer Kante $e \in E$, wenn mindestens einer der Endpunkte von $e$ der Knoten $v$ ist. Zwei Knoten $u,v$ heißen \textit{adjazent}, wenn sie zur gleichen Kante inzident sind. Für einen Knoten $v$ ist der \textit{Grad} von $v$ definiert als die Anzahl der Kanten, die zu $v$ inzident sind. Es gilt $\deg v = \sharp\{\{a,b\} \in E | a=v \wedge b=v \}$.
+  \end{definition}
+  
+  Diese Definition erlaubt sogenannte \textit{Schleifen}, also Kanten bei der beide Enden an den gleichen Knoten anknüpfen. Diese werden wir aber später explizit ausschließen. Denn könnte ein Knoten zu sich selbst benachbart sein, wäre es nicht möglich, für benachbarte Knoten stets unterschiedliche Farben zu wählen.\\
+  Da das Problem der 4-färbbarkeit von Graphen von der Geographie motiviert ist, betrachten wir als Raum für unsere Knoten nur den $\mathbb{R}^2$, also die Ebene.
+  
+  \begin{definition}[Planarität]
+   Ein Graph heißt \textit{planar}, wenn er sich so in die Ebene einbetten lässt, dass sich zwei Kanten höchstens in ihrem gemeinsamen Endpunkt schneiden.
+  \end{definition}
+  
+  \begin{definition}[Färbung]
+   
+  \end{definition}
+
+\end{chapter}
