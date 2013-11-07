@@ -1,0 +1,8 @@
+\begin{chapter}{Einleitung}
+ Die Formulierung des 4-Farben Satzes geht auf eine Beobachtung zurück, die Francis Guthrie 1852 machte. Francis Guthrie war gelernter Jurist, Hobbybotaniker und Mathematiker. Als er versuchte, eine Landkarte der Grafschaften Englands zu illustrieren und kam zu der Vermutung, dass für beliebige Landkarten stets höchstens vier Farben ausreichen. \\
+ Francis' Bruder Frederick Guthrie wand sich damit Problem an seinen Lehrer Augustus de Morgan. Fasziniert von dieser Problematik schrieb de Morgan einen Brief an Sir William Rowan Hamilton. Dieser Notiz ist die erste schriftliche Formulierung des Vierfarbenproblems zu entnehmen:
+ \begin{satz}
+  A student of mine asked me to day to give him reason for a fact which I did not know was a fact, and do not yet. He says, that if a figure be any how divided and the compartments differently coloured so that figures with any portion of common boundary \underline{line} are differently coloured -- four colours may be wanted but not more. The following is his care in which four \underline{are} wanted.
+ \end{satz}
+
+\end{chapter}

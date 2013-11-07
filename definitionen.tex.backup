@@ -17,8 +17,8 @@
    Ein Graph heißt \textit{planar}, wenn er sich so in die Ebene einbetten lässt, dass sich zwei Kanten höchstens in ihrem gemeinsamen Endpunkt schneiden.
   \end{definition}
   
-  \begin{definition}[Färbung, Farben, Gültigkeit]
-   Eine \textit{Färbung} $f: V \rightarrow C \subset \mathbb{N}^0$ ist eine Abbildung, die jedem Knoten eines Graphen ein Element der endlichen Teilmenge $C$ der natürlichen Zahlen zuordnet. Die Elemente von $C$ nennt man \textit{Farben}. Eine Färbung heißt \textit{gültig}, wenn sie keinem  Paar adjazenter Knoten die gleiche Farbe zugeordnet. 
+  \begin{definition}[Färbung]
+   
   \end{definition}
 
 \end{chapter}
