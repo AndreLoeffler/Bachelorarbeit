@@ -23,8 +23,8 @@
   \include{umformulierungen}
   
   \newpage
-  \bibliography{literatur}
   \addcontentsline{toc}{section}{Literatur}
+  \bibliography{literatur}
 
 
   \include{statement}
