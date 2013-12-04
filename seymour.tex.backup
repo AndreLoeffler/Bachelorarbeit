@@ -1,0 +1,4 @@
+\begin{chapter}{Der Beweis von Robertson, Sanders, Seymour und Thomas}
+  Die Grundidee des Beweises besteht darin, eine bestimmte Menge von Konfigurationen aufzustellen und dann zu zeigen, dass kein Element dieser Menge in einem minimalen Gegenbeispiel vorkommen kann, da es sonst von etwas Kleinerem ersetzt werden könnte, um so ein noch kleineres Gegenbeispiel zu finden -- ein Schritt, der \textit{Reduzierbarkeit} genannt wird. Damit folgt der Beweis der Idee seiner Vorgänger, allerdings mit dem Unterschied, dass es sich 
+ 
+\end{chapter}

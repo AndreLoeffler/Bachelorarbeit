@@ -1,24 +1,53 @@
 \begin{chapter}{Definitionen}
-  Um über die Färbbarkeit von Graphen reden zu können, müssen zuerst einige gebräuchliche Begrifflichkeiten geklärt werden. 
-  \begin{definition}[Graph, Knoten, Kante]
-   Ein \textit{Graph} $G$ ist ein Tupel $G=(V,E)$, wobei $V$ eine Menge bestehend aus Knoten und $E$ eine Menge bestehend aus Kanten sind. Ein \textit{Knoten} $v \in V$ ist ein Punkt im Raum. Eine \textit{Kante} $e \in E$ ist eine zweielementige Teilmenge von $V$, wobei $E$ die Menge aller dieser Teilmengen ist, also $E = \{\{u,v\}|u,v \in V\}$.
+  Um über die Färbbarkeit von Graphen reden zu können, müssen zuerst einige gebräuchliche Definitionen gemacht werden. 
+  \begin{definition}[endlicher Graph, Knoten, Kante]
+   Ein \textit{endlicher Graph} $G$ ist ein Tupel $G=(V,E)$, wobei $V$ eine endliche Menge bestehend aus Knoten und $E$ eine endliche Menge bestehend aus Kanten sind. Ein \textit{Knoten} $v \in V$ ist ein Punkt im Raum. Eine \textit{Kante} $e \in E$ ist eine zweielementige Teilmenge von $V$, wobei $E$ die Menge aller dieser Teilmengen ist, also $E = \{\{u,v\}|u,v \in V\}$.
   \end{definition}
   
-  Um nun Bedingungen an die Färbbarkeit von Knoten stellen zu können, muss noch definiert werden, wie diese zusammenhängen.
+  Im weiteren wird jeder Graph endlich sein, außer es wird explizit angegeben. Um nun Bedingungen an die Färbbarkeit von Knoten stellen zu können, muss noch definiert werden, wie diese zusammenhängen.
   
   \begin{definition}[Inzidenz, Adjazenz, Knotengrad]
-   Ein Knoten $v \in V$ heißt \textit{inzident} zu einer Kante $e \in E$, wenn mindestens einer der Endpunkte von $e$ der Knoten $v$ ist. Zwei Knoten $u,v$ heißen \textit{adjazent}, wenn sie zur gleichen Kante inzident sind. Für einen Knoten $v$ ist der \textit{Grad} von $v$ definiert als die Anzahl der Kanten, die zu $v$ inzident sind. Es gilt $\deg v = \sharp\{\{a,b\} \in E | a=v \wedge b=v \}$.
+   Ein Knoten $v \in V$ heißt \textit{inzident} zu einer Kante $e \in E$, wenn mindestens einer der Endpunkte von $e$ der Knoten $v$ ist. Zwei Knoten $u,v$ heißen \textit{adjazent}, wenn sie zur gleichen Kante inzident sind. Für einen Knoten $v$ ist der \textit{Grad} von $v$ definiert als die Anzahl der Kanten, die zu $v$ inzident sind. Es gilt $d_G(v) = \sharp\{\{a,b\} \in E | a=v \wedge b=v \}$.
   \end{definition}
   
-  Diese Definition erlaubt sogenannte \textit{Schleifen}, also Kanten bei der beide Enden an den gleichen Knoten anknüpfen. Diese werden wir aber später explizit ausschließen. Denn könnte ein Knoten zu sich selbst benachbart sein, wäre es nicht möglich, für benachbarte Knoten stets unterschiedliche Farben zu wählen.\\
+  \begin{definition}[Schleife]
+   Eine Schleife ist eine Kante, deren beide Endpunkte der gleiche Knoten sind.
+  \end{definition}
+  Schleifen müssen bei Färbbarkeitsüberlegungen ausgeschlossen werden, denn könnte ein Knoten zu sich selbst benachbart sein, wäre es nicht möglich, für benachbarte Knoten stets unterschiedliche Farben zu wählen.
+  
   Da das Problem der 4-färbbarkeit von Graphen von der Geographie motiviert ist, betrachten wir als Raum für unsere Knoten nur den $\mathbb{R}^2$, also die Ebene.
   
   \begin{definition}[Planarität]
    Ein Graph heißt \textit{planar}, wenn er sich so in die Ebene einbetten lässt, dass sich zwei Kanten höchstens in ihrem gemeinsamen Endpunkt schneiden.
   \end{definition}
+
+  In der Ebene ist es leicht, die durch die Kanten getrennten Flächen zu betrachten. Das führt uns zur folgenden Definitionen.
+  
+  \begin{definition}[Facette, Außenfacette]
+   Eine Fläche in der Ebene heißt \textit{Region} oder \textit{Facette}, falls sie vollständig von Kanten eingeschlossen ist. Die Endknoten der Kanten, die die Region umfassen heißen ebenfalls inzident zu dieser Region. Der unbeschränkte Rest der Ebene, der von keiner Menge von Kanten vollständig umschlossen ist, wird \textit{Außenfacette} genannt.
+  \end{definition}
+  
+  Für unsere Betrachtungen ist eine besondere Formen von Facetten interessant. 
+  
+  \begin{definition}[Dreieck, Triangulation]
+   Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident ist. Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist.
+  \end{definition}
+    
+  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt.
   
   \begin{definition}[Färbung, Farben, Gültigkeit]
-   Eine \textit{Färbung} $f: V \rightarrow C \subset \mathbb{N}^0$ ist eine Abbildung, die jedem Knoten eines Graphen ein Element der endlichen Teilmenge $C$ der natürlichen Zahlen zuordnet. Die Elemente von $C$ nennt man \textit{Farben}. Eine Färbung heißt \textit{gültig}, wenn sie keinem  Paar adjazenter Knoten die gleiche Farbe zugeordnet. 
+   Eine \textit{Färbung} $f: V \rightarrow C \subset \mathbb{N}^0$ ist eine Abbildung, die jedem Knoten eines Graphen ein Element der endlichen Teilmenge $C = \{[0,n] \subset \mathbb{N}| n \in \mathbb{N}\}$ der natürlichen Zahlen zuordnet. Die Elemente von $C$ nennt man \textit{Farben}. Eine Färbung heißt \textit{gültig}, wenn sie keinem Paar adjazenter Knoten $u,v \in V$ die gleiche Farbe zugeordnet, also $c(u) \neq c(v)$. 
   \end{definition}
+  
+  \begin{definition}[$k$-Färbbarkeit]
+   Ein Graph $G$ heißt \textit{$k$-färbbar}, wenn es eine gültige Färbung von $G$ höchstens $k$ Farben nötig sind, insbesondere gilt dann $\forall v \in V: f(v) < k$.
+  \end{definition}
+  
+  Einiges Handwerkszeug ist noch nötig, um Strukturen prägnant und kurz beschreiben zu können.
+  
+  \begin{definition}[Teilgraph $G\setminus X$, $G\setminus Y$]
+   Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Der Graph $G\setminus X = (E\setminus X,V)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.
+  \end{definition}
+
 
 \end{chapter}

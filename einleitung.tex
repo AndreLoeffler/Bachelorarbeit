@@ -1,5 +1,5 @@
 \begin{chapter}{Einleitung}
- Die Formulierung des 4-Farben Satzes geht auf eine Beobachtung zurück, die Francis Guthrie 1852 machte. Francis Guthrie war gelernter Jurist, Hobbybotaniker und Mathematiker. Als er versuchte, eine Landkarte der Grafschaften Englands zu illustrieren und kam zu einer recht anschaulichen Vermutung. \\
+ Die Formulierung des Vier-Farben Satzes geht auf eine Beobachtung zurück, die Francis Guthrie 1852 machte. Francis Guthrie war gelernter Jurist, Hobbybotaniker und Mathematiker. Als er versuchte, eine Landkarte der Grafschaften Englands zu illustrieren und kam zu einer recht anschaulichen Vermutung. \\
  Francis' Bruder Frederick Guthrie wand sich damit Problem an seinen Lehrer Augustus de Morgan. Fasziniert von dieser Problematik schrieb de Morgan einen Brief an Sir William Rowan Hamilton. Dieser Notiz ist die erste schriftliche Formulierung des Vierfarbenproblems zu entnehmen:
  
  \begin{satz}[historische Formulierung]
@@ -9,6 +9,17 @@
  
  Die ursprüngliche Fragestellung lautet also: Kann man eine beliebige Landkarte so einfärben, dass keine zwei benachbarten Länder die gleiche Farbe haben, wenn man die Farbpalette auf vier Farben beschränkt?
  
- Um eine Landkarte als mathematisches Konstrukt auffassen zu können, bedarf es einiger topologischer Hilfsmittel. 
+ Um eine Landkarte als mathematisches Konstrukt auffassen zu können, bedarf es einiger Überlegungen. R. und G. Fritsch definieren eine Landkarte als ``[...] eine endliche Menge von Jordanbögen in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Jordanbögen in $\mathcal{L}$ entweder leer oder ein gemeinsamer Randpunkt dieser Jordanbögen ist.'' \cite{fritsch}\\
+ Um dies korrekt präzisieren zu können, werden topologische Resultate wie der Jordansche Kurvensatz benötigt. Diese wiederum erfordern zahlreiche Vorüberlegungen, die sich sehr umfangreich gestalten und tragen wenig zum eigentlichen Beweis bei. \\
+ Stattdessen werden wir eine andere Formulierung des Vier-Farben-Satzes benutzen, die graphentheoretisch motiviert ist. 
+ 
+ \begin{satz}[Graphentheoretische Formulierung]
+  Jeder planare Graph ohne Schleifen ist 4-färbbar.
+ \end{satz}
+ 
+ Diese Variante wirft einige Fragen nach Begrifflichkeiten auf, welche jedoch bei genauerer Betrachtung leicht verständlich sind. 
+ 
+ Im nächsten Abschnitt werden wir uns zunächst den allgemeinen Definitionen widmen, die nötig sind um diese Problematik graphentheoretisch angehen zu können. Danach werfen wir einen Blick auf den älteren Beweis von Appel und Haken, um den Ausgangspunkt für die Arbeit von Robertson, Sanders, Seymour und Thomas darzulegen. Im Anschluss werden wir diese Arbeit nachvollziehen, indem die wesentlichen Schritte, die ``Reduktion'' und die ``Zwangsläufigkeit'', genauer beleuchtet werden. Abschließend werden noch einige Umformulierungen und Anwendungen des Vier-Farben-Satzes diskutiert.
+
 
 \end{chapter}

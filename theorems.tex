@@ -17,7 +17,8 @@
 \theoremstyle{style}
 
 \newtheorem{definition}{Definition}
-\newtheorem{satz}{Satz}
+\newtheorem{satz}{Satz}[chapter] % restart counter at 1 for each chapter
+\renewcommand{\thesatz}{\arabic{chapter}.\arabic{satz}} % only show chapter.satz
 \newtheorem{lemma}[satz]{Lemma} % Lemma numbering together with theorem
 \newtheorem{corollary}[satz]{Korollar} % Corollary numbering together with theorem
 \newtheorem{proposition}[satz]{Proposition} % Proposition numbering together with theorem

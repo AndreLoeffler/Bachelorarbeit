@@ -1,3 +1,18 @@
 \begin{chapter}{Der Beweis von Robertson, Sanders, Seymour und Thomas}
+  Die Grundidee des Beweises besteht darin, eine bestimmte Menge von 633 Konfigurationen aufzustellen und dann zu zeigen, dass kein Element dieser Menge in einem minimalen Gegenbeispiel vorkommen kann, da es sonst von etwas Kleinerem ersetzt werden könnte, um so ein noch kleineres Gegenbeispiel zu finden -- dieser erste Schritt wird \textit{Reduzierbarkeit} genannt. Damit folgt der Beweis der Idee seiner Vorgänger, allerdings mit dem Unterschied, dass jedes minimale Gegenbeispiel eine \textit{intern sechsfach zusammenhängende Triangulation} ist. \\
+  Im zweiten Schritt wird gezeigt, dass in jeder intern sechsfach zusammenhängenden Triangulation eine der oben genannten Konfigurationen vorkommen muss -- auch \textit{Zwangsläufigkeit} genannt. Zusammen zeigt dies, dass es kein minimales Gegenbeispiel geben kann und der Vierfarbensatz somit wahr ist. \\
+  Der wesentliche Unterschied zum vorher vorgestellten Beweis von Appel \& Haken liegt darin, auf welche Art die Zwangsläufigkeit hergestellt wird.
+  
+  \begin{section}{Die Konfigurationen}
+   Ein minimales Gegenbeispiel ist ein planarer Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planaren Graphen $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
+   
+   Leicht sieht man, dass jedes minimale Gegenbeispiel eine Triangulation ist, die fast sechsfach zusammenhängend ist. Präzieser ist ein Graph $G$ intern sechsfach zusammenhängend, wenn $G$ mindestens sechs Knoten hat und wenn daraus, dass für jede Teilmenge $X \subseteq E(G)$ der Graph $G\setminus X$ nicht zusammenhängend ist, folgt, dass entweder $|X| \geq 6$ oder $|X| = 5$ und $G\setminus X$ aus genau $2$ Komponenten besteht, von denen eine nur einen Knoten beinhaltet. Somit gilt für jeden Knoten $v$ eines solchen Graphen $d_G(v) \geq 5$ gilt.
+  \end{section}
+  
+  \begin{satz}[TETS]
+   test
+  \end{satz}
+
+
  
 \end{chapter}
