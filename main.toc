@@ -4,5 +4,6 @@
 \contentsline {chapter}{\numberline {3}Der Beweis von Appel und Haken}{7}{chapter.3}
 \contentsline {chapter}{\numberline {4}Der Beweis von Robertson, Sanders, Seymour und Thomas}{8}{chapter.4}
 \contentsline {section}{\numberline {4.1}Die Konfigurationen}{8}{section.4.1}
-\contentsline {chapter}{\numberline {5}Umformulierungen}{10}{chapter.5}
-\contentsline {section}{Literatur}{11}{chapter*.2}
+\contentsline {section}{\numberline {4.2}Reduzierbarkeit}{10}{section.4.2}
+\contentsline {chapter}{\numberline {5}Umformulierungen}{11}{chapter.5}
+\contentsline {section}{Literatur}{12}{chapter*.2}

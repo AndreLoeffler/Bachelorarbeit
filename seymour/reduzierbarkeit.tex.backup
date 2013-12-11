@@ -1,0 +1,11 @@
+\begin{section}{Reduzierbarkeit}
+ \begin{definition}[Freie Vervollständigung]
+  Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{Freie Vervollständigung} von $K$ \textit{mit dem Ring $R$}, wenn
+  \begin{enumerate}[i)]
+   \item $R$ ein induzierter Ring von $S$ ist, der die Außenfacette von $S$ begrenzt,
+   \item $G(K)$ ein induzierter Teilgraph
+  \end{enumerate}
+
+ \end{definition}
+
+\end{section}
