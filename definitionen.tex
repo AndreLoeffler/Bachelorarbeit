@@ -29,11 +29,11 @@
   
   Für unsere Betrachtungen ist eine besondere Formen von Facetten interessant. 
   
-  \begin{definition}[Dreieck, Triangulation]
-   Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident ist. Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist.
+  \begin{definition}[Dreieck, Triangulation, Beinahe-Triangulation]
+   Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident ist. Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist. Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, schleifenfreier, planarer Graph $G$, bei dem jede endliche Facette ein Dreieck ist. 
   \end{definition}
-    
-  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt.
+  
+  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt. Der Unterschied zwischen einer Triangulation und einer Beinahe-Triangulation liegt lediglich in der Form der Außenfacette des Graphen. 
   
   \begin{definition}[Färbung, Farben, Gültigkeit]
    Eine \textit{Färbung} $f: V \rightarrow C \subset \mathbb{N}^0$ ist eine Abbildung, die jedem Knoten eines Graphen ein Element der endlichen Teilmenge $C = \{[0,n] \subset \mathbb{N}| n \in \mathbb{N}\}$ der natürlichen Zahlen zuordnet. Die Elemente von $C$ nennt man \textit{Farben}. Eine Färbung heißt \textit{gültig}, wenn sie keinem Paar adjazenter Knoten $u,v \in V$ die gleiche Farbe zugeordnet, also $c(u) \neq c(v)$. 

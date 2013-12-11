@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  4 DEC 2013 17:38
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  5 DEC 2013 15:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -618,26 +618,26 @@ Kapitel 3.
 
  (./seymour.tex
 Kapitel 4.
-) [8
+[8
 
 
 
-]
+]) [9]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 5.
-) [9
+) [10
 
 
 
-] (./main.bbl) [10
+] (./main.bbl) [11
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [11
+ (./statement.tex) [12
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
@@ -652,30 +652,30 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 9500 strings out of 493485
- 139952 string characters out of 3143526
- 267341 words of memory out of 3000000
- 12591 multiletter control sequences out of 15000+200000
+ 9511 strings out of 493485
+ 140067 string characters out of 3143526
+ 267381 words of memory out of 3000000
+ 12596 multiletter control sequences out of 15000+200000
  8991 words of font info for 34 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,7n,47p,648b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,7n,47p,676b,495s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on main.pdf (11 pages, 1234699 bytes).
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 1248378 bytes).
 PDF statistics:
- 198 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
- 33 named destinations out of 1000 (max. 500000)
+ 215 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
  62 words of extra memory for PDF output out of 10000 (max. 10000000)
 
