@@ -13,11 +13,4 @@
     year    = {1913},
     pages   = {115--128},
 }
-@ARTICLE{AmJMath79,
-   author  = {A. B. Kempe},
-    title   = {On the geographical problem of the four colors},
-    journal = {American Journal of Mathematics},
-    volume  = {2},
-    year    = {1879},
-    pages   = {193--200},
-}   
+   
