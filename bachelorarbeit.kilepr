@@ -180,7 +180,7 @@ encoding=UTF-8
 highlight=BibTeX
 line=21
 mode=BibTeX
-open=true
+open=false
 order=2
 
 [item:main.tex]
@@ -210,7 +210,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=7
 mode=LaTeX
-open=true
+open=false
 order=0
 
 [item:seymour/konfigurationen.tex]
@@ -230,7 +230,7 @@ encoding=UTF-8
 highlight=LaTeX
 line=13
 mode=LaTeX
-open=true
+open=false
 order=1
 
 [item:statement.tex]
