@@ -1,0 +1,33 @@
+\begin{section}{Topologische Definitionen}
+ Ohne genauer auf die topologischen Grundlagen einzugehen, wollen wir trotzdem die Äquivalenz zwischen beiden aktuellen Formulierungen zeigen. Dazu bedarf es allerdings eines Mindestmaßes an Begrifflichkeiten, die im folgenden erläutert werden.
+ 
+ Wesentlich für die Frage, ob eine Landkarte färbbar ist, ist die Frage, was eine solche eigentlich ist. Der Vollständigkeit halber ist also hier nochmals die Definition zu nennen, die bereits aus der Einleitung bekannt ist, sowie einige zusätzliche Begriffe.
+ 
+ \begin{definition}{Landkarte, Kante, Ecke, neutrale Punkte, Neutralitätsmenge, Land}
+  \-\ 
+  \begin{itemize}
+    \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Kanten in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Kanten in $\mathcal{L}$ entweder leer oder ein gemeinsamer Randpunkt dieser Kanten ist. 
+    \item Als \textit{Kante} bezeichnen wir einen Jordanbogen in $\mathcal{L}$.
+    \item Ein Punkt in $\mathbb{R}^2$ ist eine \textit{Ecke} von $\mathcal{L}$, wenn er Randpunkt eine Kante von $\mathcal{L}$ ist. 
+    \item Ein \textit{neutraler Punkt} ist ein Punkt der zu keiner Kante von $\mathcal{L}$ gehört.
+    \item Die \textit{Neutralitätsmenge $N$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte. 
+    \item Ein \textit{Land} von $\mathcal{L}$ ist eine Bogenkomponente des Komplements der Neutralitätsmenge von $\mathcal{L}$, das heißt, von $\mathbb{R}^2 \setminus N_{\mathcal{L}}$.
+  \end{itemize}
+ \end{definition}
+ 
+ 
+ 
+ \begin{definitionl}{duale Landkarte}{dualeKarte}
+  Eine Landkarte $\mathcal{L}^*$ heißt \textit{dual} zu der Landkarte $\mathcal{L}$, wenn gilt:
+  \begin{enumerate}
+   \item keine Ecke von $\mathcal{L}^*$ ist ein neutraler Punkt von $\mathcal{L}$,
+   \item jedes Land von $\mathcal{L}$ enthält genau eine Ecke von $\mathcal{L}^*$,
+   \item zwei Ecken von $\mathcal{L}^*$ sind genau dann durch eine Kante in $\mathcal{L}^*$ verbunden, wenn sie in benachbarten Ländern liegen,
+   \item eine Kante von $\mathcal{L}^*$ enthält nur Punkte der beiden Länder von $\mathcal{L}$, denen ihre Ecken angehören, und genau einen inneren Punkt einer gemeinsamen Grenzlinie dieser Länder.
+  \end{enumerate}
+ \end{definitionl}
+ 
+ Das zu jeder Landkarte stets eine duale Landkarte existiert, lässt sich der gängingen Literatur entnehmen (etwa \cite[Seite 121]{fritsch}).
+
+
+\end{section}

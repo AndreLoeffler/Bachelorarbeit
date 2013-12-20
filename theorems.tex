@@ -24,14 +24,14 @@
 
 %define new environments for indentations to the right
 %with labels
-\newenvironment{satzl}[2]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]\label{#2}}{\end{satzcont}\end{adjustwidth}}
-\newenvironment{lemmal}[2]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]\label{#2}}{\end{lemmacont}\end{adjustwidth}}
-\newenvironment{corollarl}[2]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]\label{#2}}{\end{corollarycont}\end{adjustwidth}}
-\newenvironment{propositionl}[2]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]\label{#2}}{\end{propositioncont}\end{adjustwidth}}
-\newenvironment{definitionl}[2]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]\label{#2}}{\end{definitioncont}\end{adjustwidth}}
+\newenvironment{satzl}[2]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[Satz: #1]\label{#2}}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemmal}[2]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[Lemma: #1]\label{#2}}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollarl}[2]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[Korollar: #1]\label{#2}}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{propositionl}[2]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[Proposition: #1]\label{#2}}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definitionl}[2]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[Definition: #1]\label{#2}}{\end{definitioncont}\end{adjustwidth}}
 %without labels
-\newenvironment{satz}[1]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]}{\end{satzcont}\end{adjustwidth}}
-\newenvironment{lemma}[1]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]}{\end{lemmacont}\end{adjustwidth}}
-\newenvironment{corollar}[1]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]}{\end{corollarycont}\end{adjustwidth}}
-\newenvironment{proposition}[1]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]}{\end{propositioncont}\end{adjustwidth}}
-\newenvironment{definition}[1]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]}{\end{definitioncont}\end{adjustwidth}}
+\newenvironment{satz}[1]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[Satz: #1]}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemma}[1]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[Lemma: #1]}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollar}[1]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[Korollar: #1]}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{proposition}[1]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[Proposition: #1]}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definition}[1]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[Definition: #1]}{\end{definitioncont}\end{adjustwidth}}
