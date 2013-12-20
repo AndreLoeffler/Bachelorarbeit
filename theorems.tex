@@ -23,15 +23,15 @@
 \newtheorem{propositioncont}[satzcont]{Proposition} % Proposition numbering together with theorem
 
 %define new environments for indentations to the right
-\newenvironment{satz}[1][ ]
-    {\label{#1}
-     \begin{adjustwidth}{20pt}		{}	%statements before content
-			%margin 	margin
-			%left 		right
-     \begin{satzcont}[#1]}			%statements after content
-    {\end{satzcont}	
-     \end{adjustwidth}}
-\newenvironment{lemma}{\begin{adjustwidth}{20pt}{}\begin{lemmacont}}{\end{lemmacont}\end{adjustwidth}}
-\newenvironment{corollary}{\begin{adjustwidth}{20pt}{}\begin{corollarycont}}{\end{corollarycont}\end{adjustwidth}}
-\newenvironment{proposition}{\begin{adjustwidth}{20pt}{}\begin{propositioncont}}{\end{propositioncont}\end{adjustwidth}}
-\newenvironment{definition}{\begin{adjustwidth}{20pt}{}\begin{definitioncont}}{\end{definitioncont}\end{adjustwidth}}                                      
+%with labels
+\newenvironment{satzl}[2]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]\label{#2}}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemmal}[2]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]\label{#2}}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollarl}[2]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]\label{#2}}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{propositionl}[2]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]\label{#2}}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definitionl}[2]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]\label{#2}}{\end{definitioncont}\end{adjustwidth}}
+%without labels
+\newenvironment{satz}[1]{\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemma}[1]{\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollar}[1]{\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{proposition}[1]{\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definition}[1]{\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]}{\end{definitioncont}\end{adjustwidth}}
