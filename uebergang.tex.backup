@@ -1,7 +1,7 @@
 \begin{chapter}{Übergang zwischen Topologie und Kombinatorik}
- Zunächst müssen wir uns jedoch davon überzeugen, dass diese Aussagen auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz: \nameref{topo} \nameref{test}
+ Zunächst müssen wir uns jedoch davon überzeugen, dass diese Aussagen auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz: \nameref{topo}
  
- \begin{satz}[Übergang]
+ \begin{satz}[]
   Der topologische Vier-Farben-Satz ist genau dann wahr, wenn jeder Graph eine zulässige 4-färbung besitzt.
  \end{satz}
 \end{chapter}

@@ -1,11 +1,10 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Historische Motivation}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Topologisch-kombinatorischer Zusammenhang}{4}{section.1.2}
-\contentsline {chapter}{\numberline {2}Definitionen}{5}{chapter.2}
-\contentsline {chapter}{\numberline {3}Der Beweis von Appel und Haken}{8}{chapter.3}
-\contentsline {chapter}{\numberline {4}Der Beweis von Robertson, Sanders, Seymour und Thomas}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Die Konfigurationen}{9}{section.4.1}
-\contentsline {section}{\numberline {4.2}Reduzierbarkeit}{11}{section.4.2}
-\contentsline {chapter}{\numberline {5}Umformulierungen}{12}{chapter.5}
-\contentsline {section}{Literatur}{13}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Einleitung}{4}{chapter.1}
+\contentsline {chapter}{\numberline {2}Definitionen}{6}{chapter.2}
+\contentsline {chapter}{\numberline {3}\IeC {\"U}bergang zwischen Topologie und Kombinatorik}{9}{chapter.3}
+\contentsline {chapter}{\numberline {4}Der Beweis von Appel und Haken}{10}{chapter.4}
+\contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{11}{chapter.5}
+\contentsline {section}{\numberline {5.1}Die Konfigurationen}{11}{section.5.1}
+\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{13}{section.5.2}
+\contentsline {chapter}{\numberline {6}Umformulierungen}{14}{chapter.6}
+\contentsline {section}{Literatur}{15}{chapter*.2}
