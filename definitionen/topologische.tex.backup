@@ -15,8 +15,14 @@
   \end{itemize}
  \end{definition}
  
+ Das etwa die Neutralitätsmenge endlich ist oder was ein Jordanbogen ist, ist am besten der Literatur zu entnehmen (etwa \cite[Kapitel 2]{fritsch}). Um unser weiteres Vorgehen zu verstehen, sollte die Anschauung des Lesers allerdings ausreichen.
  
+ Eine weitere Eigenschaft werden wir ebenfalls benötigen:
  
+ \begin{definitionl}{Reguläre Landkarten}{regland}
+  
+ \end{definitionl}
+
  \begin{definitionl}{duale Landkarte}{dualeKarte}
   Eine Landkarte $\mathcal{L}^*$ heißt \textit{dual} zu der Landkarte $\mathcal{L}$, wenn gilt:
   \begin{enumerate}
@@ -27,7 +33,5 @@
   \end{enumerate}
  \end{definitionl}
  
- Das zu jeder Landkarte stets eine duale Landkarte existiert, lässt sich der gängingen Literatur entnehmen (etwa \cite[Seite 121]{fritsch}).
-
-
+ Das zu jeder Landkarte mit mindestens zwei Ländern stets eine duale Landkarte existiert, lässt sich ebenfalls \cite{fritsch} entnehmen. Bei der dualen Landkarte handelt es sich um ein Konstrukt, das von einem Graphen im kombinatorischen Sinne nicht mehr weit entfernt ist, wie nach der Lektüre der nächsten Abschnitte ersichtlich wird.
 \end{section}

@@ -1,7 +1,13 @@
 \begin{chapter}{Übergang zwischen Topologie und Kombinatorik}
- Zunächst müssen wir uns jedoch davon überzeugen, dass diese Aussagen auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz: \nameref{topo}
+ Zunächst müssen wir uns jedoch davon überzeugen, dass \nameref{topo} und \nameref{graph} auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz:
  
- \begin{satz}[]
+ \begin{satzl}{Äquivalenz der Formulierungen}{aquiv}
   Der topologische Vier-Farben-Satz ist genau dann wahr, wenn jeder Graph eine zulässige 4-färbung besitzt.
- \end{satz}
+ \end{satzl}
+ \begin{proof}[Beweis nach \cite{fritsch}]
+  Das diese Bedingung hinreichend ist, ergibt sich, wenn man die Definition der dualen Landkarte betrachtet. Betrachte dazu eine Landkarte und einen Graphen, dessen Knotenzahl der Anzahl der Länder entspricht. Ordne nun jedem Land eindeutig einen Knoten zu. Füge nun Kanten zwischen den Knoten hinzu, deren Länder in der dualen Landkarte benachbart sind. Jedes Land der dualen Karte kann auf einen Knoten im Graphen abgebildet werden. Ist der Graph 4-färbbar, ist es somit auch die Landkarte.\\
+  Die Notwendigkeit zeigen wir, indem wir zeigen, dass es kein minimales Gegenbeispiel geben kann.\\
+  Angenommen, der topologische Vier-Farben-Satz sei wahr. Betrachte einen Graphen $G=(V,\mathcal{L})$, der ein Gegenbeispiel für die 4-Färbbarkeit ist, derart dass die Anzahl seiner Knoten minimal ist. Nun zeigen wir, dass die Landkarte $\mathcal{L}$ 
+ \end{proof}
+
 \end{chapter}
