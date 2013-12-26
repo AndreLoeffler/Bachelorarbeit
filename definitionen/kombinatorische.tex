@@ -12,7 +12,7 @@
   
   Oft werden wir auch die Bausteine einer Landkarte $\mathcal{L}$ als Knoten- und Kantenmenge verwenden. Die Ecken von $\mathcal{L}$ werden zu den Knoten des Graphen, die Kanten von $\mathcal{L}$ zu denen des Graphen. Im weiteren betrachten wir vorwiegend endliche Graphen, außer es wird explizit anders angegeben.\\
   Um nun Bedingungen an die Färbbarkeit von Knoten stellen zu können, muss noch definiert werden, wie diese zusammenhängen.
-  
+ 
   \begin{definition}{Inzidenz, Adjazenz, Knotengrad, vollständiger Graph}
     \-\ 
     \begin{itemize}
@@ -20,10 +20,24 @@
     \item Zwei Knoten $u,v$ heißen \textit{adjazent}, wenn sie zur gleichen Kante inzident sind. 
     \item Für einen Knoten $v$ ist der \textit{Grad} von $v$ definiert als die Anzahl der Kanten, die zu $v$ inzident sind. Es gilt $d_G(v) = \sharp\{\{a,b\} \in E | a=v \wedge b=v \}$.
     \item Ein Graph $G$ heißt \textit{vollständig}, wenn keine Kante mehr hinzugenommen werden kann, ohne das die Knotenmenge erweitert werden muss.
-    \item Eine Menge von Kanten heißt \textit{Pfad}, wenn sie in Reihenfolge durchlaufen werden können, ohne dass eine Kante zwei mal durchlaufen werden muss. Genauer:\\
-    Seien mit $1,\cdots,k$ die Kanten bezeichnet und für eine dieser Kanten $i$ die Endpunkte mit $a_i$ bzw. $b_i$. Man hat genau dann einen Pfad, wenn sich die Kanten so reihen lassen: $1,\cdots,k$ mit $b_1 = a_2, b_2 = a_3, \cdots, b_{k-1} = a_k$.
    \end{itemize}
   \end{definition}
+    
+  Für eine interessante Struktur benachbarter Knoten gibt es eine gebräuchliche Bezeichnung, auf die wir später zurückgreifen werden.
+  
+  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, geschlossener Pfad, Ring}
+  \-\ 
+   \begin{itemize}
+    \item Eine Folge $(e_1,\cdots,e_r)$ von mindestens drei Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei aufeinanderfolgenden benachbart sind. Dann ist $r$ die Länge der Kette und die Verbindungskanten heißen Glieder.
+    \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: \\
+    Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Ecken des Pfades $e_{j_1}$ und $e_{j_2}$ nicht benachbart.
+    \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine inneren Knoten gemeinsam haben. 
+    \item Ein Pfad heißt \textit{geschlossen}, wenn $e_1$ und $e_r$ ebenfalls benachbart sind.
+    \item Ein \textit{Ring} ist ein Pfad, der sowohl einfach als auch geschlossen ist.
+   \end{itemize}
+  \end{definition}
+  
+  Ringe werden im Allgemeinen als wesentlicher Beitrag von Birkhoff auf dem Weg zur Lösung des 4-Farben-Problems angesehen, zuerst erwähnt in \cite{AmJMath35}.
   
   Da das Problem der 4-färbbarkeit von Graphen von der Geographie motiviert ist, betrachten wir als Raum für unsere Knoten nur den $\mathbb{R}^2$, also die Ebene.
   
@@ -46,19 +60,19 @@
    \end{itemize}
   \end{definition}
   
-  Für unsere Betrachtungen ist eine besondere Formen von Facetten interessant. 
+  Für unsere Betrachtungen ist eine besondere Form von Facetten interessant. 
   
   \begin{definition}{Dreieck, Triangulation, Beinahe-Triangulation}
    \-\ 
    \begin{itemize}
-   \item Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident ist. 
+   \item Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht.
    \item Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist. 
    \item Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, schleifenfreier, planarer Graph $G$, bei dem jede endliche Facette ein Dreieck ist. 
    \end{itemize}
   \end{definition}
   
-  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt. Der Unterschied zwischen einer Triangulation und einer Beinahe-Triangulation liegt lediglich in der Form der Außenfacette des Graphen. 
-  
+  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt. Das dies auch tatsächlich möglich ist, werden wir am Ende des Kapitels kurz diskutieren. Der Unterschied zwischen einer Triangulation und einer Beinahe-Triangulation liegt lediglich in der Form der Außenfacette des Graphen. 
+ 
   \begin{definition}{Färbung, Farben, Gültigkeit}
    \-\ 
    \begin{itemize}
@@ -78,13 +92,14 @@
    Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Der Graph $G\setminus X = (E\setminus X,V)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.
   \end{definition}
   
-  \begin{definition}{Kreis}
-   Ein Graph $G$ heißt \textit{Kreis}, wenn er nicht leer ist und für jeden Knoten $v\in V(G)$ gilt: $d_G(v) = 2$.
-  \end{definition}
+  Nun haben wir alle nötigen Definitionen zusammen, um unsere ersten Resultate zu zeigen. Das erste dient vorallem der vereinfachten Veranschaulichung, das zweite werden wir später noch benötigen.
   
-  Zu bemerken ist, dass in jedem Kreis alle Kanten zusammen einen Pfad bilden, bei dem zusätzlich $b_k = a_1$ gilt.
+  \begin{satzl}{Der Satz von Wagner und Fáry}{WagFar}
+   Jeder Graph kann durch einen Homöomorphismus der Ebene auf sich in einen Streckengraphen überführt werden.
+  \end{satzl}
+  
+  Für den Beweis dieses Resultats verweisen wir auf \cite[Seite 113]{fritsch}, da er nur der Darstellung von Graphen nutzt und wenig zum eigentlichen Beweis beiträgt. Versucht man, einen Graphen darzustellen, werden die Kanten üblicherweise als Jordanbögen gezeichnet. Dieser Satz liefert uns, dass es sich bei diesen Bögen tatsächlich stets um gerade Verbindungsstrecken handeln kann.
 
-  Nun haben wir alle nötigen Definitionen zusammen, um unser erstes Resultat zu zeigen. Dieses werden wir später noch benötigen.
   
   \begin{satzl}{Vollständiger Graph mit fünf Knoten}{voll5}
    Es existiert kein vollständiger planarer Graph mit fünf Knoten.
@@ -95,4 +110,10 @@
   \end{proof}
   
   Dieser Beweis ist ebenfalls in \cite[Satz 4.1.2]{fritsch} zu finden, allerdings in einer topologischen Variante mittels Jordanbögen. 
+  
+  Eine besondere Klasse von Graphen wollen wir noch hervorheben.
+  
+  \begin{definition}{normaler Graph}
+   Ein Graph heißt \textit{normal}, wenn er ein regulärer, vollständiger Streckengraph ist, bei dem jedes Dreieck Rand eines Gebiets ist.
+  \end{definition}
 \end{section}

@@ -8,27 +8,29 @@
   \begin{itemize}
     \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Kanten in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Kanten in $\mathcal{L}$ entweder leer oder ein gemeinsamer Randpunkt dieser Kanten ist. 
     \item Als \textit{Kante} bezeichnen wir einen Jordanbogen in $\mathcal{L}$.
-    \item Ein Punkt in $\mathbb{R}^2$ ist eine \textit{Ecke} von $\mathcal{L}$, wenn er Randpunkt eine Kante von $\mathcal{L}$ ist. 
-    \item Ein \textit{neutraler Punkt} ist ein Punkt der zu keiner Kante von $\mathcal{L}$ gehört.
-    \item Die \textit{Neutralitätsmenge $N$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte. 
+    \item Ein Punkt in $\mathbb{R}^2$ ist einer \textit{Ecke} von $\mathcal{L}$, wenn er Randpunkt eine Kante von $\mathcal{L}$ ist. 
+    \item Ein \textit{neutraler Punkt} ist ein Punkt der zu einer Kante von $\mathcal{L}$ gehört.
+    \item Die \textit{Neutralitätsmenge $N_{\mathcal{L}}$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte. 
     \item Ein \textit{Land} von $\mathcal{L}$ ist eine Bogenkomponente des Komplements der Neutralitätsmenge von $\mathcal{L}$, das heißt, von $\mathbb{R}^2 \setminus N_{\mathcal{L}}$.
   \end{itemize}
  \end{definition}
  
  Das etwa die Neutralitätsmenge endlich ist oder was ein Jordanbogen ist, ist am besten der Literatur zu entnehmen (etwa \cite[Kapitel 2]{fritsch}). Um unser weiteres Vorgehen zu verstehen, sollte die Anschauung des Lesers allerdings ausreichen.
  
- Eine weitere Eigenschaft werden wir ebenfalls benötigen:
+ Eine besondere Form von Landkarten wird für unsere späteren Betrachtungen besonders relevant sein:
  
- \begin{definitionl}{Reguläre Landkarten}{regland}
+ \begin{definitionl}{Reguläre Landkarte}{regland}
   Eine Landkarte $\mathcal{L}$ ist \textit{regulär}, wenn sie die folgenden Eigenschaften besitzt:
   \begin{itemize}
    \item Sie ist nicht leer,
    \item sie ist zusammenhängend,
    \item sie enthält keine Kante $B$, die zwei Komponenten verbindet, die in der Landkarte $\mathcal{L} \setminus B$ nicht verbunden wären,
-   \item es gibt keinen Knoten, der nur Endpunkt einer Kante ist,
+   \item es gibt keinen Knoten, der Endpunkt von nur einer Kante ist,
    \item je zwei Länder haben höchstens eine gemeinsame Grenzlinie.
   \end{itemize}
  \end{definitionl}
+ 
+ Zusätzlich brauchen wir noch ein weiteres Konstrukt, das sich direkt aus Landkarten ableiten lässt.
 
  \begin{definitionl}{duale Landkarte}{dualeKarte}
   Eine Landkarte $\mathcal{L}^*$ heißt \textit{dual} zu der Landkarte $\mathcal{L}$, wenn gilt:
