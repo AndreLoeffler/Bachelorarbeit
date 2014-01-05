@@ -1,0 +1,30 @@
+\begin{section}{Die Größe minimaler Gegenbeispiele}
+ Um sich den Problem zu nähern brauchen wir eine Vorstellung davon, wie ein minimales Gegenbeispiel aussehen muss. Dazu fangen wir damit an, zu kleine Graphen auszuschließen. Dazu benutzen wir die einleitenden Definitionen und Sätze.
+ 
+ \begin{proposition}{Sechs Knoten}
+  Ein minimales Gegenbeispiel hat mindestens sechs Knoten.
+ \end{proposition}
+ \begin{proof}
+  Betrachte einen Graphen mit fünf Ländern. Nach dem \nameref{voll5} gibt es zwei nicht adjazente Knoten. Diese können dann gleich gefärbt werden. Für die übrigen drei Knoten bleiben drei unterschiedliche Farben übrig.
+ \end{proof}
+ 
+ \begin{propositionl}{Adjazente Nachbarn}{gemgrenz}
+  Wenn ein Knoten eines beliebigen Graphen mehr als drei Nachbarn hat, so hat ein es zwei Nachbarn, die nicht adjazent sind.
+ \end{propositionl}
+ \begin{proof}
+  Sei $G$ ein Graph und $v_0$ ein Knoten mit den Nachbarn $v_1,v_2,v_3,v_4$. Nach dem \nameref{voll5} gibt es in $v_0,v_1,v_2,v_3,v_4$ zwei nicht adjazente Knoten, von denen nach Voraussetzung keiner $v_0$ seien kann.
+ \end{proof}
+ 
+ \begin{satz}{Fünf verschiedene Nachbarn}
+  Bei einem minimalen Gegenbeispiel hat kein Knoten weniger als fünf verschiedene Nachbarn.
+ \end{satz}
+ \begin{proof}
+  Es sei $G$ ein minimales Gegenbeispiel. Dass es kein Land mit weniger als vier Nachbarn geben kann, erkennt man leicht. Bleiben die Länder mit genau vier Nachbarn zu untersuchen. Sei dieses Land $L_0$ und die Nachbarn $L_1,L_2,L_3,L_4$. Nach \nameref{gemgrenz} können wir annehmen, dass $L_1$ und $L_3$ keine Grenze gemeinsam haben. Durch Entfernen der Grenzlinien zwischen $L_0$ und $L_1$ sowie zwischen $L_0$ und $L_3$ erhalten wir ein Land $L'$, dass die drei vereinigt. Die so entstehende Landkarte $\mathcal{L}'$ enthält zwei Länder weniger und besitzt somit eine zulässige 4-Färbung.\\
+  Aus dieser Lässt sich eine zulässige 4-Färbung für $\mathcal{L}$ erzeugen: wir weisen den Ländern $L_1$ und $L_3$ die gleiche Farbe zu wie $L'$. Alle übrigen Länder übernehmen ihre Färbung aus $\mathcal{L}'$. Dann sind für die Nachbarn von $L_0$ nur drei Farben verbraucht worden, es bleibt also eine übrig.
+ \end{proof}
+ 
+ \begin{satz}{Ecken mit Grad 3}
+  In einem minimalen Gegenbeispiel hat jede Ecke Grad 3.
+ \end{satz}
+
+\end{section}

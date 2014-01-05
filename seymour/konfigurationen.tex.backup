@@ -1,34 +1,33 @@
   \begin{section}{Die Konfigurationen}
-   Ein minimales Gegenbeispiel ist ein planarer schleifenfreier Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planaren Graphen $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
+   Eine Klasse von Graphen ist für den Beweis des Vier-Farben-Satzes wesentlich: Die Konfigurationen. Sie treten vor allem als Untergraphen der normalen Graphen auf. Zuerst wollen wir festhalten, was eine Konfiguration eigentlich ist.
    
-   Betrachtet man das Problem genauer, sieht mann, dass jedes minimale Gegenbeispiel eine Triangulation ist, die fast sechsfach zusammenhängend ist. Präzieser ist ein Graph $G$ intern sechsfach zusammenhängend, wenn $G$ mindestens sechs Knoten hat und wenn daraus, dass für jede Teilmenge $X \subseteq E(G)$ der Graph $G\setminus X$ nicht zusammenhängend ist, folgt, dass entweder $|X| \geq 6$ oder $|X| = 5$ und $G\setminus X$ aus genau $2$ Komponenten besteht, von denen eine nur einen Knoten beinhaltet. Somit gilt für jeden Knoten $v$ eines solchen Graphen $d_G(v) \geq 5$ gilt. Das führt zu folgendem Resultat:
+   \begin{definitionl}{Konfiguration}{konfig}
+    Ein Graph $C$ heißt \textit{Konfiguration}, wenn
+    \begin{itemize}
+     \item er regulär ist,
+     \item die Außenknoten einen Ring der \textit{Ringgröße} $k \geq 4$ bilden,
+     \item innere Knoten existieren,
+     \item die beschränkten Gebiete von Dreiecken begrenzt werden,
+     \item jedes Dreieck Grenze eines Gebiets ist.
+    \end{itemize}
+   \end{definitionl}
+   
+  Um eine bessere Vorstellung für diese Graphen zu bekommen, betrachten wir zunächst einige Beispiele. Ein nicht-triviales Beispiel für eine Konfiguration ist der \textit{Birkhoff}-Diamant mit insgesamt 10 Knoten.
+   
+  \[  \input{seymour/birkhoff}   \]
+   
+  Andere Konfigurationen sind \textit{Sterne}. Sie besitzen genau einen inneren Punkt (``\textit{Zentrum}'') und einen Ring von äußeren Punkten, die alle mit dem Zentrum durch eine Kante verbunden sind. Ein Stern heißt $k$-Stern, wenn er genau $k$ äußere Knoten besitzt.
   
-  \begin{satz}{}{4.1}
-   Jedes minimale Gegenbeispiel ist eine intern sechsfach zusammenhängende Triangulation. 
-  \end{satz}
-
-  Um genauer zu verstehen, warum der Graph sechsfach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen reduzierbar und damit vierfärbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringe, die eine Karte in eine innere und eine äußere Region teilen. 
-  
-  \begin{definition}[Konfiguration]
-   Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G(K)$ und einer Zuordnung $\gamma_K : V(G(K)) \mapsto \mathbb{Z}$ mit folgenden Eigenschaften:
-   \begin{enumerate}[i)]
-    \item Für jeden Knoten $v$ hat $G(K) \setminus v$ höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d(v) + 2$.
-    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v) > d(v)$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
-    \item $K$ hat Ringgröße $\geq 2$. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_v (\gamma_K(v) - d(v) - 1)$ für alle Knoten $v$, die zur Außenfacette inzident sind und für die $G(K) \setminus v$ zusammenhängend ist.
-   \end{enumerate}
+  \begin{definition}{Äquivalente Konfigurationen}
+   Zwei Konfigurationen $C'=(V',E')$ und $C''=(V'',E'')$ heißen \textit{äquivalent}, wenn es eine Bijektion $\varphi : V' \rightarrow V''$ gibt, die in beide Richtungen die Adjazenzstruktur erhält.
   \end{definition}
+  
+  Nun können wir davon sprechen, dass ein Graph eine Konfiguration enthält, indem wir folgende Definition bemühen:
+  
+  \begin{definition}{enthaltene Konfiguration}
    
-   Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus existiert, der $G(K)$ auf $G(L)$ und $\gamma_L$ auf $\gamma_L$ abbildet. Später werden wir eine Menge aus 633 Konfigurationen betrachten, die für diesen Beweis essenziell sind. Jede Konfiguration, die zu einer dieser 633 isomorph ist, bezeichnen wir als \textit{gut}. 
-   
-   Um das eigentliche Problem zu beweisen, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
-   
-   \begin{satz}{}{4.2}
-    Wenn $T$ ein minimales Gegenbeispiel ist, enthält $T$ keine gute Konfiguration.
-   \end{satz}
-   
-   \begin{satz}{}{4.3}
-    In jeder intern sechsfach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
-   \end{satz}
-   
-   Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr ist. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
-   \newpage
+  \end{definition}
+
+
+  \end{section}
+\newpage

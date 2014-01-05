@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  26 DEC 2013 13:50
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  5 JAN 2014 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,7 +802,7 @@ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<siegel.pdf, id=51, 597.50829pt x 845.0471pt>
+<siegel.pdf, id=55, 597.50829pt x 845.0471pt>
 File: siegel.pdf Graphic file (type pdf)
  <use siegel.pdf>
 Package pdftex.def Info: siegel.pdf used on input line 33.
@@ -899,23 +899,24 @@ Kapitel 5.
 
 
 
-] [15]) (./seymour/reduzierbarkeit.tex))
-[16]
+] (./seymour/birkhoff.tex) [15])
+(./seymour/kleinsteverbrecher.tex [16]) (./seymour/reduzierbarkeit.tex))
+[17]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 6.
-) [17
+) [18
 
 
 
-] (./main.bbl) [18
+] (./main.bbl) [19
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [19
+ (./statement.tex) [20
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
@@ -926,17 +927,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30F539B5DB715E1A1370AF952B2E5C6C;705.
+(rerunfilecheck)             Checksum: 4AE8ED826CFFB7AA8BB7DE69975016FD;792.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 18234 strings out of 493485
- 312828 string characters out of 3143526
- 424853 words of memory out of 3000000
- 21050 multiletter control sequences out of 15000+200000
+ 18258 strings out of 493485
+ 313271 string characters out of 3143526
+ 424966 words of memory out of 3000000
+ 21059 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,8n,73p,814b,690s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,8n,73p,814b,725s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -955,10 +956,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (19 pages, 1295607 bytes).
+Output written on main.pdf (20 pages, 1302323 bytes).
 PDF statistics:
- 309 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 106 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

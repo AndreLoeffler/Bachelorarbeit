@@ -7,6 +7,7 @@
 \contentsline {chapter}{\numberline {4}Der Beweis von Appel und Haken}{13}{chapter.4}
 \contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{14}{chapter.5}
 \contentsline {section}{\numberline {5.1}Die Konfigurationen}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{16}{section.5.2}
-\contentsline {chapter}{\numberline {6}Umformulierungen}{17}{chapter.6}
-\contentsline {section}{Literatur}{18}{chapter*.2}
+\contentsline {section}{\numberline {5.2}Die Gr\IeC {\"o}\IeC {\ss }e minimaler Gegenbeispiele}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}Reduzierbarkeit}{17}{section.5.3}
+\contentsline {chapter}{\numberline {6}Umformulierungen}{18}{chapter.6}
+\contentsline {section}{Literatur}{19}{chapter*.2}
