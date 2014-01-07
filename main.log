@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  7 JAN 2014 07:05
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  7 JAN 2014 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -870,14 +870,14 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
 
-])
-(./definitionen/kombinatorische.tex [6] [7] [8] [9] [10])) [11]
+] [6])
+(./definitionen/kombinatorische.tex [7] [8] [9] [10] [11])) [12]
 \openout2 = `uebergang.aux'.
 
 
 (./uebergang.tex
 Kapitel 3.
-) [12
+) [13
 
 
 
@@ -886,7 +886,7 @@ Kapitel 3.
 
  (./haken.tex
 Kapitel 4.
-) [13
+) [14
 
 
 
@@ -895,28 +895,28 @@ Kapitel 4.
 
  (./seymour.tex
 Kapitel 5.
-(./seymour/konfigurationen.tex [14
+(./seymour/konfigurationen.tex [15
 
 
 
-] (./seymour/birkhoff.tex) [15])
-(./seymour/kleinsteverbrecher.tex [16]) (./seymour/reduzierbarkeit.tex))
-[17]
+] (./seymour/birkhoff.tex) [16])
+(./seymour/kleinsteverbrecher.tex) (./seymour/reduzierbarkeit.tex [17]))
+[18]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 6.
-) [18
+) [19
 
 
 
-] (./main.bbl) [19
+] (./main.bbl) [20
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [20
+ (./statement.tex) [21
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
@@ -931,35 +931,37 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 18258 strings out of 493485
- 313278 string characters out of 3143526
- 423965 words of memory out of 3000000
- 21058 multiletter control sequences out of 15000+200000
+ 18262 strings out of 493485
+ 313317 string characters out of 3143526
+ 424083 words of memory out of 3000000
+ 21060 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,8n,73p,814b,725s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,9n,73p,814b,725s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (20 pages, 1302848 bytes).
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (21 pages, 1319457 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 268 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 278 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 
