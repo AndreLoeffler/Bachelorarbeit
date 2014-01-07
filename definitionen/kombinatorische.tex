@@ -92,6 +92,12 @@
    Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Der Graph $G\setminus X = (E\setminus X,V)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.
   \end{definition}
   
+  \begin{definition}{Kontraktion}
+   Durch \textit{Kontraktion} erhält man aus einem Graphen einen Teilgraphen, indem man zwei adjazente Knoten $v_1$ und $v_2$ zusammenfasst. Man sagt, man kontrahiert $v_2$ auf $v_1$, wenn man $v_2$ aus dem ursprünglichen Graphen entfernt und alle Kanten, zu denen $v_2$ inzident ist, zu $v_1$ führt. Dabei werden jene Kanten zu Knoten entfernt, wenn diese bereits zu $v_1$ adjazent waren.
+  \end{definition}
+
+  Betrachtet man diesen Vorgang aus topologischer Sicht, entspricht eine Kontraktion einer Vereinigung zweier benachbarter Länder durch Aufheben ihrer gemeinsamen Grenze.
+  
   Nun haben wir alle nötigen Definitionen zusammen, um unsere ersten Resultate zu zeigen. Das erste dient vorallem der vereinfachten Veranschaulichung, das zweite werden wir später noch benötigen.
   
   \begin{satzl}{Der Satz von Wagner und Fáry}{WagFar}

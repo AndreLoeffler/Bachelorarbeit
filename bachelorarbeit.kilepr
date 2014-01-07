@@ -4,7 +4,7 @@ img_extIsRegExp=false
 img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
 kileprversion=2
 kileversion=2.1.3
-lastDocument=definitionen.tex
+lastDocument=seymour/kleinsteverbrecher.tex
 masterDocument=
 name=Bachelorarbeit
 pkg_extIsRegExp=false
@@ -89,6 +89,15 @@ Indentation Mode=normal
 Mode=LaTeX
 
 [document-settings,item:seymour.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:seymour/kleinsteverbrecher.tex]
 Bookmarks=
 Encoding=UTF-8
 FoldedColumns=
@@ -182,13 +191,13 @@ order=2
 
 [item:definitionen/kombinatorische.tex]
 archive=true
-column=0
+column=242
 encoding=UTF-8
 highlight=LaTeX
-line=118
+line=117
 mode=LaTeX
-open=false
-order=-1
+open=true
+order=3
 
 [item:definitionen/topologische.tex]
 archive=true
@@ -252,13 +261,23 @@ order=4
 
 [item:seymour.tex]
 archive=true
-column=0
+column=35
 encoding=UTF-8
 highlight=LaTeX
-line=5
+line=6
 mode=LaTeX
 open=true
 order=0
+
+[item:seymour/kleinsteverbrecher.tex]
+archive=true
+column=12
+encoding=UTF-8
+highlight=LaTeX
+line=23
+mode=LaTeX
+open=true
+order=2
 
 [item:seymour/konfigurationen.tex]
 archive=true
@@ -337,8 +356,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:definitionen/kombinatorische.tex]
-CursorColumn=0
-CursorLine=118
+CursorColumn=242
+CursorLine=117
 JumpList=
 ViMarks=
 
@@ -379,8 +398,14 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour.tex]
-CursorColumn=0
-CursorLine=5
+CursorColumn=35
+CursorLine=6
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:seymour/kleinsteverbrecher.tex]
+CursorColumn=12
+CursorLine=23
 JumpList=
 ViMarks=
 
