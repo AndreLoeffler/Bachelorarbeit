@@ -1,0 +1,25 @@
+\begin{section}{Die Größe minimaler Gegenbeispiele}
+ Um sich den Problem zu nähern brauchen wir eine Vorstellung davon, wie ein minimales Gegenbeispiel aussehen muss. Da wir versuchen, mit möglichst wenig Knoten auszukommen, ist es wenig sinnvoll, eine obere Schranke zu suchen. Daher schließen wir zu kleine oder zu einfache Graphen mit folgenden Resultaten aus.
+ 
+ \begin{proposition}{Sechs Knoten}
+  Ein minimales Gegenbeispiel hat mindestens sechs Knoten.
+ \end{proposition}
+ \begin{proof}
+  Betrachte einen Graphen mit fünf Ländern. Nach dem \nameref{voll5} gibt es zwei nicht adjazente Knoten. Diese können dann gleich gefärbt werden. Für die übrigen drei Knoten bleiben drei unterschiedliche Farben übrig.
+ \end{proof}
+ 
+ \begin{propositionl}{Adjazente Nachbarn}{gemgrenz}
+  Wenn ein Knoten eines beliebigen Graphen mehr als drei Nachbarn hat, so hat ein es zwei Nachbarn, die nicht adjazent sind.
+ \end{propositionl}
+ \begin{proof}
+  Sei $G$ ein Graph und $v_0$ ein Knoten mit den Nachbarn $v_1,v_2,v_3,v_4$. Nach dem \nameref{voll5} gibt es in $v_0,v_1,v_2,v_3,v_4$ zwei nicht adjazente Knoten, von denen nach Voraussetzung keiner $v_0$ seien kann.
+ \end{proof}
+ 
+ \begin{satz}{Fünf verschiedene Nachbarn}
+  Bei einem minimalen Gegenbeispiel hat kein Knoten weniger als fünf verschiedene Nachbarn.
+ \end{satz}
+ \begin{proof}
+  Es sei $G$ ein minimales Gegenbeispiel. Dass es keinen Knoten mit weniger als vier Nachbarn geben kann, erkennt man leicht. Bleiben die Knoten mit genau vier Nachbarn zu untersuchen. Sei $v_0$ einer dieser Knoten und seine Nachbarn $v_1,v_2,v_3,v_4$. Nach \nameref{gemgrenz} können wir annehmen, dass $v_1$ und $v_3$ nicht adjazent sind. Durch Kontraktion von $v_1$ und $v_3$ auf $v_0$ erhalten wir den Knoten $v'$. Der so entstehende Graph $G'$ enthält zwei Knoten weniger und besitzt somit eine zulässige 4-Färbung.\\
+  Aus dieser lässt sich eine zulässige 4-Färbung für $G$ erzeugen: wir weisen den Knoten $v_1$ und $v_3$ die gleiche Farbe wie $v'$ zu. Alle übrigen Knoten übernehmen ihre Färbung aus $G'$. Dann sind für die Nachbarn von $v_0$ nur drei Farben verbraucht worden, es bleibt also eine übrig.
+ \end{proof}
+\end{section}

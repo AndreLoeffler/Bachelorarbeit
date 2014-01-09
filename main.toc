@@ -5,9 +5,10 @@
 \contentsline {section}{\numberline {2.2}Kombinatorische Definitionen}{7}{section.2.2}
 \contentsline {chapter}{\numberline {3}\IeC {\"U}bergang zwischen Topologie und Kombinatorik}{13}{chapter.3}
 \contentsline {chapter}{\numberline {4}Der Beweis von Appel und Haken}{14}{chapter.4}
-\contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Die Konfigurationen}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Die Gr\IeC {\"o}\IeC {\ss }e minimaler Gegenbeispiele}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}Reduzierbarkeit}{17}{section.5.3}
-\contentsline {chapter}{\numberline {6}Umformulierungen}{19}{chapter.6}
-\contentsline {section}{Literatur}{20}{chapter*.2}
+\contentsline {section}{\numberline {4.1}Die Konfigurationen}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}Die Gr\IeC {\"o}\IeC {\ss }e minimaler Gegenbeispiele}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Reduzierbarkeit}{16}{section.4.3}
+\contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Konfigurationen}{18}{section.5.1}
+\contentsline {chapter}{\numberline {6}Umformulierungen}{20}{chapter.6}
+\contentsline {section}{Literatur}{21}{chapter*.2}

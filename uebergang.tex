@@ -1,14 +1,15 @@
 \begin{chapter}{Übergang zwischen Topologie und Kombinatorik}
- Zunächst müssen wir uns noch davon überzeugen, dass \nameref{topo} und \nameref{graph} auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz:
+ Zunächst müssen wir uns noch davon überzeugen, dass die topologische Formulierung (Satz \ref{topo}) und die kombinatorische Formulierung (Satz \ref{graph}) des 4-Farben-Problems auch tatsächlich äquivalent sind. Dazu hilft uns folgender Satz:
  
  \begin{satzl}{Äquivalenz der Formulierungen}{aquiv}
-  Der topologische Vier-Farben-Satz ist genau dann wahr, wenn jeder Graph eine zulässige 4-färbung besitzt.
+  Der topologische Vier-Farben-Satz ist genau dann wahr, wenn jeder planare Graph eine zulässige 4-Färbung besitzt.
  \end{satzl}
+ 
  \begin{proof}[Beweis nach \cite{fritsch}]
   Das diese Bedingung hinreichend ist, ergibt sich, wenn man die Definition der dualen Landkarte betrachtet. Betrachte dazu eine Landkarte und einen Graphen, dessen Knotenzahl der Anzahl der Länder entspricht. Ordne nun jedem Land eindeutig einen Knoten zu. Füge nun Kanten zwischen den Knoten hinzu, deren Länder in der dualen Landkarte benachbart sind. Jedes Land der dualen Karte kann auf einen Knoten im Graphen abgebildet werden. Ist der Graph 4-färbbar, ist es somit auch die Landkarte.\\
   Die Notwendigkeit zeigen wir, indem wir zeigen, dass es kein minimales Gegenbeispiel geben kann.\\
   Angenommen, der topologische Vier-Farben-Satz sei wahr. Betrachte einen Graphen $G=(V,\mathcal{L})$, der ein Gegenbeispiel für die 4-Färbbarkeit ist, derart dass die Anzahl seiner Knoten minimal ist. Nun zeigen wir, dass wir für die Landkarte $\mathcal{L}$ annehmen können, dass sie regulär und vollständig ist. Ist $\mathcal{L}$ nicht vollständig, so können wir endlich viele Kanten hinzunehmen, ohne die Eckenzahl erhöhen zu müssen, und erhalten den vollständigen Graphen $G' = (V,\mathcal{L}')$. Dadurch wird das zu lösende Problem höchstens schwieriger. Wir können also $G$ als vollständig annehmen. \\
-  Ein minimales Gegenbeispiel hat nach \nameref{voll5} mindestens fünf Knoten, ein vollständiger Graph mit höchstens zwei Gebieten hat höchstens drei Ecken. Also hat $G$ mindestens zwei Facetten und ist somit regulär.\\
+  Ein minimales Gegenbeispiel hat nach Satz \ref{voll5} mindestens fünf Knoten, ein vollständiger Graph mit höchstens zwei Gebieten hat höchstens drei Ecken. Also hat $G$ mindestens zwei Facetten und ist somit regulär.\\
   Nun wählen wir eine zu $\mathcal{L}$ duale Landkarte $\mathcal{L}^*$. Sie besitzt nach Voraussetzung eine gültige 4-Färbung der Länder. Da $\mathcal{L}$ regulär ist, ist $\mathcal{L}$ auch dual zu $\mathcal{L}^*$ und somit erhalten wir aus der 4-Färbung von $\mathcal{L}^*$ eine 4-Färbung der Ecken von $G$. Somit ist $G$ kein minimales Gegenbeispiel.
  \end{proof}
 

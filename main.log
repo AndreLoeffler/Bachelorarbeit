@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 15:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 18:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,7 +802,7 @@ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<siegel.pdf, id=55, 597.50829pt x 845.0471pt>
+<siegel.pdf, id=59, 597.50829pt x 845.0471pt>
 File: siegel.pdf Graphic file (type pdf)
  <use siegel.pdf>
 Package pdftex.def Info: siegel.pdf used on input line 33.
@@ -862,6 +862,11 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 ] [6])
 (./definitionen/kombinatorische.tex [7] [8] [9] (./definitionen/kuratowski.tex)
+
+Underfull \hbox (badness 10000) in paragraph at lines 86--87
+
+ []
+
 [10] [11])) [12]
 \openout2 = `uebergang.aux'.
 
@@ -876,37 +881,37 @@ Kapitel 3.
 
  (./haken.tex
 Kapitel 4.
-) [14
+(./haken/konfigurationen.tex (./haken/birkhoff.tex) [14
 
 
 
-]
+] [15])
+(./haken/kleinsteverbrecher.tex) (./haken/reduzierbarkeit.tex [16])) [17]
 \openout2 = `seymour.aux'.
 
- (./seymour.tex
+
+(./seymour.tex
 Kapitel 5.
-(./seymour/konfigurationen.tex [15
+(./seymour/konfigurationen.tex [18
 
 
 
-] (./seymour/birkhoff.tex) [16])
-(./seymour/kleinsteverbrecher.tex) (./seymour/reduzierbarkeit.tex [17]))
-[18]
+])) [19]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 6.
-) [19
+) [20
 
 
 
-] (./main.bbl) [20
+] (./main.bbl) [21
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [21
+ (./statement.tex) [22
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
@@ -917,17 +922,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4AE8ED826CFFB7AA8BB7DE69975016FD;792.
+(rerunfilecheck)             Checksum: D1BE12C5CC541366D96346C6A71E38D9;854.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 18310 strings out of 493485
- 314017 string characters out of 3143526
- 424939 words of memory out of 3000000
- 21104 multiletter control sequences out of 15000+200000
+ 18379 strings out of 493485
+ 314917 string characters out of 3143526
+ 425026 words of memory out of 3000000
+ 21160 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,9n,73p,866b,739s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,9n,73p,866b,731s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -948,10 +953,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 1324038 bytes).
+Output written on main.pdf (22 pages, 1332005 bytes).
 PDF statistics:
- 351 PDF objects out of 1000 (max. 8388607)
- 281 compressed objects within 3 object streams
- 78 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 122 words of extra memory for PDF output out of 10000 (max. 10000000)
 
