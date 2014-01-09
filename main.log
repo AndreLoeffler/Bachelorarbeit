@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  7 JAN 2014 08:36
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 15:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -843,39 +843,29 @@ Kapitel 1.
 [3
 
 
-]
-Overfull \hbox (16.02147pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 wie der Jordan-sche Kur-ven-satz zu Ra-te ge-zo-gen. Die-se wie
--der-um er-for-dern zahl-rei-che Vor[]uberlegungen,
- []
-
-) [4]
+]) [4]
 \openout2 = `definitionen.aux'.
 
  (./definitionen.tex
 Kapitel 2.
 (./definitionen/topologische.tex
-Overfull \hbox (18.30003pt too wide) in paragraph at lines 7--8
-[]\OT1/cmr/bx/n/10 Definition 1 (De-fi-ni-ti-on: Land-kar-te, Kan-te, Ecke, neu
--tra-le Punk-te, Neu-tra-lit[]atsmenge,
- []
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 15.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 9.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
  [5
 
 
 
 ] [6])
-(./definitionen/kombinatorische.tex [7] [8] [9] [10] [11])) [12]
+(./definitionen/kombinatorische.tex [7] [8] [9] (./definitionen/kuratowski.tex)
+[10] [11])) [12]
 \openout2 = `uebergang.aux'.
 
-
-(./uebergang.tex
+ (./uebergang.tex
 Kapitel 3.
 ) [13
 
@@ -931,13 +921,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
  ) 
 Here is how much of TeX's memory you used:
- 18262 strings out of 493485
- 313317 string characters out of 3143526
- 424083 words of memory out of 3000000
- 21060 multiletter control sequences out of 15000+200000
+ 18310 strings out of 493485
+ 314017 string characters out of 3143526
+ 424939 words of memory out of 3000000
+ 21104 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,9n,73p,814b,725s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,9n,73p,866b,739s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -958,10 +948,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (21 pages, 1319457 bytes).
+Output written on main.pdf (21 pages, 1324038 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
+ 351 PDF objects out of 1000 (max. 8388607)
+ 281 compressed objects within 3 object streams
+ 78 named destinations out of 1000 (max. 500000)
  114 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,21 +1,25 @@
 \begin{section}{Topologische Definitionen}
- Ohne genauer auf die topologischen Grundlagen einzugehen, wollen wir trotzdem die Äquivalenz zwischen beiden aktuellen Formulierungen zeigen. Dazu bedarf es allerdings eines Mindestmaßes an Begrifflichkeiten, die im folgenden erläutert werden.
+ Ohne genauer auf die topologischen Grundlagen einzugehen, wollen wir trotzdem die Äquivalenz zwischen \ref{topo} und \ref{graph} zeigen. Dazu bedarf es allerdings eines Mindestmaßes an Begrifflichkeiten, die im folgenden erläutert werden.
  
  Wesentlich für die Frage, ob eine Landkarte färbbar ist, ist die Frage, was eine solche eigentlich ist. Der Vollständigkeit halber ist also hier nochmals die Definition zu nennen, die bereits aus der Einleitung bekannt ist, sowie einige zusätzliche Begriffe.
  
- \begin{definition}{Landkarte, Kante, Ecke, neutrale Punkte, Neutralitätsmenge, Land}
+ \begin{definition}{Jordanbogen, Endpunkt}
+  Eine Teilmenge $C$ der Ebene $\mathbb{R}^2$ ist ein \textit{Jordanbogen}, wenn es eine injektive stetige Abbildung $c:[0,1] \leftarrow \mathbb{R}^2$ mit $C = {c(t)|t\in [0,1]}$ gibt. Für einen Jordanbogen $j$ bezeichnet man die Endpunkte mit $c_j(0)$ und $c_j(1)$.
+ \end{definition}
+ 
+ Damit können wir nun eine Landkarte als mathematisches Konstrukt erklären.
+ 
+ \begin{definition}{Landkarte, Ecke, neutrale Punkte, Neutralitätsmenge, Land}
   \-\ 
   \begin{itemize}
-    \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Kanten in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Kanten in $\mathcal{L}$ entweder leer oder ein gemeinsamer Randpunkt dieser Kanten ist. 
-    \item Als \textit{Kante} bezeichnen wir einen Jordanbogen in $\mathcal{L}$ und $k_\mathcal{L}$ ist die Anzahl der Kanten von $\mathcal{L}$.
-    \item Ein Punkt in $\mathbb{R}^2$ ist eine \textit{Ecke} $v_i$ von $\mathcal{L}$, wenn er Randpunkt eine Kante von $\mathcal{L}$ ist, und $v_\mathcal{L}$ ist die Anzahl der Ecken von $\mathcal{L}$.
+    \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Jordanbögen in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Jordanbögen in $\mathcal{L}$ entweder leer oder ein gemeinsamer Endpunkt dieser Jordanbögen ist.
+    \item Die Anzahl aller Jordanbögen einer Karte $\mathcal{L}$ bezeichnen wir mit $k_\mathcal{L}$.
+    \item Ein Punkt in $\mathbb{R}^2$ ist eine \textit{Ecke} $v_i$ von $\mathcal{L}$, wenn er Endpunkt eine Kante von $\mathcal{L}$ ist. Mit $v_\mathcal{L}$ bezeichnen wir die Anzahl der Ecken von $\mathcal{L}$.
     \item Ein \textit{neutraler Punkt} ist ein Punkt der zu einer Kante von $\mathcal{L}$ gehört.
-    \item Die \textit{Neutralitätsmenge $N_{\mathcal{L}}$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte. 
+    \item Die \textit{Neutralitätsmenge $N_{\mathcal{L}}$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte, also die Vereinigung aller Jordanbögen von $\mathcal{L}$. 
     \item Ein \textit{Land} von $\mathcal{L}$ ist eine Bogenkomponente des Komplements der Neutralitätsmenge von $\mathcal{L}$, das heißt, von $\mathbb{R}^2 \setminus N_{\mathcal{L}}$. Die Anzahl aller Länder ist mit $f_\mathcal{L}$ bezeichnet.
   \end{itemize}
  \end{definition}
- 
- Das etwa die Neutralitätsmenge endlich ist oder was ein Jordanbogen ist, ist am besten der Literatur zu entnehmen (etwa \cite[Kapitel 2]{fritsch}). Um unser weiteres Vorgehen zu verstehen, sollte die Anschauung des Lesers allerdings ausreichen.
  
  Eine besondere Form von Landkarten wird für unsere späteren Betrachtungen besonders relevant sein:
  
@@ -23,10 +27,10 @@
   Eine Landkarte $\mathcal{L}$ ist \textit{regulär}, wenn sie die folgenden Eigenschaften besitzt:
   \begin{itemize}
    \item Sie ist nicht leer,
-   \item sie ist zusammenhängend,
-   \item sie enthält keine Kante $B$, die zwei Komponenten verbindet, die in der Landkarte $\mathcal{L} \setminus B$ nicht verbunden wären,
-   \item es gibt keinen Knoten, der Endpunkt von nur einer Kante ist,
-   \item je zwei Länder haben höchstens eine gemeinsame Grenzlinie.
+   \item $N_{\mathcal{L}}$ ist zusammenhängend,
+   \item sie enthält keinen Jordanbogen $B$, die zwei Komponenten verbindet, die in der Landkarte $\mathcal{L} \setminus \{B\}$ nicht verbunden wären,
+   \item es gibt keine Ecke, die Endpunkt von nur einem Jordanbogen ist,
+   \item je zwei Länder berühren höchstens einen gemeinsamen Jordanbogen.
   \end{itemize}
  \end{definitionl}
  
@@ -42,7 +46,7 @@
   \end{enumerate}
  \end{definitionl}
  
- Das zu jeder Landkarte mit mindestens zwei Ländern stets eine duale Landkarte existiert, lässt sich ebenfalls \cite{fritsch} entnehmen. Bei der dualen Landkarte handelt es sich um ein Konstrukt, das von einem Graphen im kombinatorischen Sinne nicht mehr weit entfernt ist, wie nach der Lektüre der nächsten Abschnitte ersichtlich wird.
+ Das zu jeder Landkarte mit mindestens zwei Ländern stets eine duale Landkarte existiert, lässt sich ebenfalls \cite{fritsch} entnehmen. Bei der dualen Landkarte handelt es sich um ein Konstrukt, das von einem Graphen im kombinatorischen Sinne nicht mehr weit entfernt ist, wie nach der Lektüre der nächsten Abschnitte ersichtlich wird. Anschaulich betrachtet entspricht das Dualisieren einer Karte dem Wählen einer Hauptstadt für jedem Land und dem Verbinden dieser Städte durch Autobahnen, die sich nicht kreuzen.
  
  Eine Besonderheit stellen folgende Landkarten dar.
  
@@ -54,7 +58,7 @@
  \[v_\mathcal{L} - k_\mathcal{L} + f_\mathcal{L} = 2\]
  welche wir hier ohne Beweis angeben. Damit lässt sich die folgende Ungleichung zeigen, welche für den Beweis des Vier-Farben-Satzes von elementarer Bedeutung ist.
  
- \begin{satzl}{Summe der Knotengrade}{4.12}
+ \begin{satzl}{Summe der Eckengrade}{4.12}
   Für reguläre Landkarten gilt: \[\sum_{r=1}^{v_\mathcal{L}} (6-d_\mathcal{L}(v_r)) \geq 12\]
  \end{satzl}
  \begin{proof}
@@ -68,6 +72,6 @@
   \end{align*}
  \end{proof}
 
- Diese Resultate lassen sich ebenfalls leicht auf die Strukturen der Kombinatorik anwenden.
+ Diese Resultate lassen sich ebenfalls leicht auf die Strukturen der Kombinatorik übertragen.
 
 \end{section}
