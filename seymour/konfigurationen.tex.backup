@@ -1,7 +1,7 @@
 \begin{section}{Konfigurationen}
  Ein minimales Gegenbeispiel ist ein planarer schleifenfreier Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planaren Graphen $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
    
- Präzieser ist ein Graph $G$ intern sechsfach zusammenhängend, wenn $G$ mindestens sechs Knoten hat und wenn daraus, dass für jede Teilmenge $X \subseteq E(G)$ der Graph $G\setminus X$ nicht zusammenhängend ist, folgt, dass entweder $|X| \geq 6$ oder $|X| = 5$ und $G\setminus X$ aus genau $2$ Komponenten besteht, von denen eine nur einen Knoten beinhaltet. Somit gilt für jeden Knoten $v$ eines solchen Graphen $d_G(v) \geq 5$ gilt. Das führt zu folgendem Resultat:
+   Bereits in der Vergangenheit wurde gezeigt, dass ein minimales Gegenbeispiel eine Triangulation sein muss. Präzieser ist ein Graph $G$ intern sechsfach zusammenhängend, wenn $G$ mindestens sechs Knoten hat und wenn daraus, dass für jede Teilmenge $X \subseteq E(G)$ der Graph $G\setminus X$ nicht zusammenhängend ist, folgt, dass entweder $|X| \geq 6$ oder $|X| = 5$ und $G\setminus X$ aus genau $2$ Komponenten besteht, von denen eine nur einen Knoten beinhaltet. Somit gilt für jeden Knoten $v$ eines solchen Graphen $d_G(v) \geq 5$ gilt. Das führt zu folgendem Resultat:
   
   \begin{satzl}{}{4.1}
    Jedes minimale Gegenbeispiel ist eine intern sechsfach zusammenhängende Triangulation. 

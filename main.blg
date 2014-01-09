@@ -6,6 +6,7 @@ A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: einleitung.aux
 A level-1 auxiliary file: definitionen.aux
 A level-1 auxiliary file: uebergang.aux
+A level-1 auxiliary file: allgemeines.aux
 A level-1 auxiliary file: haken.aux
 A level-1 auxiliary file: seymour.aux
 A level-1 auxiliary file: umformulierungen.aux
@@ -18,7 +19,7 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur.bib
 You've used 3 entries,
             4793 wiz_defined-function locations,
-            917 strings with 6619 characters,
+            918 strings with 6634 characters,
 and the built_in function-call counts, 1498 in all, are:
 = -- 145
 > -- 24

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 18:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 19:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -692,8 +692,8 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \c@definitioncont=\count143
 \c@satzcont=\count144
 ) (./main.aux (./title.aux) (./einleitung.aux)
-(./definitionen.aux) (./uebergang.aux) (./haken.aux) (./seymour.aux)
-(./umformulierungen.aux) (./statement.aux))
+(./definitionen.aux) (./uebergang.aux) (./allgemeines.aux) (./haken.aux)
+(./seymour.aux) (./umformulierungen.aux) (./statement.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -802,7 +802,7 @@ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2012/04/20 UCS: Unicode data U+0000..U+00FF
 )
-<siegel.pdf, id=59, 597.50829pt x 845.0471pt>
+<siegel.pdf, id=63, 597.50829pt x 845.0471pt>
 File: siegel.pdf Graphic file (type pdf)
  <use siegel.pdf>
 Package pdftex.def Info: siegel.pdf used on input line 33.
@@ -877,62 +877,70 @@ Kapitel 3.
 
 
 ]
+\openout2 = `allgemeines.aux'.
+
+ (./allgemeines.tex
+Kapitel 4.
+(./allgemeines/kleinsteverbrecher.tex [14
+
+
+
+])) [15]
 \openout2 = `haken.aux'.
 
  (./haken.tex
-Kapitel 4.
-(./haken/konfigurationen.tex (./haken/birkhoff.tex) [14
+Kapitel 5.
+(./haken/konfigurationen.tex (./haken/birkhoff.tex) [16
 
 
 
-] [15])
-(./haken/kleinsteverbrecher.tex) (./haken/reduzierbarkeit.tex [16])) [17]
+] [17])
+(./haken/reduzierbarkeit.tex)) [18]
 \openout2 = `seymour.aux'.
 
-
-(./seymour.tex
-Kapitel 5.
-(./seymour/konfigurationen.tex [18
-
+ (./seymour.tex
+Kapitel 6.
+(./seymour/konfigurationen.tex [19
 
 
-])) [19]
+
+])) [20]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
-Kapitel 6.
-) [20
+Kapitel 7.
+) [21
 
 
 
-] (./main.bbl) [21
+] (./main.bbl) [22
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [22
+ (./statement.tex) [23
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
  (./main.aux (./title.aux)
-(./einleitung.aux) (./definitionen.aux) (./uebergang.aux) (./haken.aux)
-(./seymour.aux) (./umformulierungen.aux) (./statement.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
+(./einleitung.aux) (./definitionen.aux) (./uebergang.aux) (./allgemeines.aux)
+(./haken.aux) (./seymour.aux) (./umformulierungen.aux) (./statement.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D1BE12C5CC541366D96346C6A71E38D9;854.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 33.
+(rerunfilecheck)             Checksum: 03386975720658ECA42CF3210FD4A607;917.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 18379 strings out of 493485
- 314917 string characters out of 3143526
- 425026 words of memory out of 3000000
- 21160 multiletter control sequences out of 15000+200000
+ 18397 strings out of 493485
+ 315203 string characters out of 3143526
+ 425531 words of memory out of 3000000
+ 21167 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,9n,73p,866b,731s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,9n,73p,866b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -953,10 +961,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (22 pages, 1332005 bytes).
+Output written on main.pdf (23 pages, 1333524 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 305 compressed objects within 4 object streams
- 88 named destinations out of 1000 (max. 500000)
- 122 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 317 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 500000)
+ 130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
