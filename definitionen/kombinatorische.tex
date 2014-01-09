@@ -24,14 +24,14 @@
     
   Für eine interessante Struktur benachbarter Knoten gibt es eine gebräuchliche Bezeichnung, auf die wir später zurückgreifen werden.
   
-  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, geschlossener Pfad, Ring}
+  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, Kreis, Ring}
   Sei $G=(V,E)$ ein Graph.
    \begin{itemize}
     \item Eine Folge $(v_1,\cdots,v_r)$ von mindestens drei Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei aufeinanderfolgenden benachbart sind. Dann ist $r$ die Länge der Kette und die Verbindungskanten heißen Glieder.
     \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
     \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine Knoten, die nicht erstes oder letztes Element der jeweiligen Folge sind, gemeinsam haben. 
-    \item Ein Pfad heißt \textit{geschlossen}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
-    \item Ein \textit{Ring} ist ein Pfad, der sowohl einfach als auch geschlossen ist.
+    \item Ein Pfad heißt \textit{Kreis}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
+    \item Ein \textit{Ring} ist ein Kreis, der zusätzlich einfach ist.
    \end{itemize}
   \end{definition}
   
