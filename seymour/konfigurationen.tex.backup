@@ -1,34 +1,40 @@
 \begin{section}{Konfigurationen}
  Ein minimales Gegenbeispiel ist ein planarer schleifenfreier Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planaren Graphen $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
    
-   Bereits in der Vergangenheit wurde gezeigt, dass ein minimales Gegenbeispiel eine Triangulation sein muss. Präzieser ist ein Graph $G$ intern sechsfach zusammenhängend, wenn $G$ mindestens sechs Knoten hat und wenn daraus, dass für jede Teilmenge $X \subseteq E(G)$ der Graph $G\setminus X$ nicht zusammenhängend ist, folgt, dass entweder $|X| \geq 6$ oder $|X| = 5$ und $G\setminus X$ aus genau $2$ Komponenten besteht, von denen eine nur einen Knoten beinhaltet. Somit gilt für jeden Knoten $v$ eines solchen Graphen $d_G(v) \geq 5$ gilt. Das führt zu folgendem Resultat:
+ Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend und bis auf die Knoten mit Grad genau fünf sogar 6-fach. Wir nennen einen Kreis $C$ in einer Triangulation mit fünf oder weniger Knoten einen \textit{Kurzkreis} (engl.: short circuit), wenn sowohl Knoten im inneren als auch im äußeren Bereich von $C$ liegenund wenn für genau fünf Knoten in jedem Bereich mindestens zwei Knoten liegen. Wir nennen eine Triangulation intern 6-fach zusammenhängend, wenn sie keine Kurzkreise beinhaltet. Das führt zu folgendem Resultat:
   
-  \begin{satzl}{}{4.1}
-   Jedes minimale Gegenbeispiel ist eine intern sechsfach zusammenhängende Triangulation. 
-  \end{satzl}
+ \begin{satzl}{}{4.1}
+  Jedes minimale Gegenbeispiel ist eine intern 6-fach zusammenhängende Triangulation. 
+ \end{satzl}
 
-  Um genauer zu verstehen, warum der Graph sechsfach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen reduzierbar und damit vierfärbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. 
+ Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen reduzierbar und damit vierfärbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. 
+ 
+ Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{4.1} ableiten.
+ 
+ Als nächstes folgt eine Definition, die elementar für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzen sie dort andere Eigenschaften.
   
-  \begin{definition}[Konfiguration]
-   Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G(K)$ und einer Zuordnung $\gamma_K : V(G(K)) \mapsto \mathbb{Z}$ mit folgenden Eigenschaften:
-   \begin{enumerate}[i)]
-    \item Für jeden Knoten $v$ hat $G(K) \setminus v$ höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d(v) + 2$.
-    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v) > d(v)$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
-    \item $K$ hat Ringgröße $\geq 2$. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_v (\gamma_K(v) - d(v) - 1)$ für alle Knoten $v$, die zur Außenfacette inzident sind und für die $G(K) \setminus v$ zusammenhängend ist.
-   \end{enumerate}
-  \end{definition}
+ \begin{definition}{Konfiguration}
+  Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G$ und einer Zuordnung $\gamma_K : V(G) \mapsto \mathbb{Z}_+$ mit folgenden Eigenschaften:
+  \begin{enumerate}[i)]
+   \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
+   \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d_G(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v') > d_G(v')$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
+   \item $K$ hat Ringgröße $\geq 2$. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_v (\gamma_K(v) - d_G(v) - 1)$ für alle Knoten $v$, die zur Außenfacette inzident sind und für die $G(K) \setminus \{v\}$ zusammenhängend ist.
+  \end{enumerate}
+ \end{definition}
+ 
+ Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben.
    
-   Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus existiert, der $G(K)$ auf $G(L)$ und $\gamma_L$ auf $\gamma_L$ abbildet. Später werden wir eine Menge aus 633 Konfigurationen betrachten, die für diesen Beweis essenziell sind. Jede Konfiguration, die zu einer dieser 633 isomorph ist, bezeichnen wir als \textit{gut}. 
+ Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus existiert, der $G(K)$ auf $G(L)$ und $\gamma_L$ auf $\gamma_L$ abbildet. Später werden wir eine Menge aus 633 Konfigurationen betrachten, die für diesen Beweis essenziell sind. Jede Konfiguration, die zu einer dieser 633 isomorph ist, bezeichnen wir als \textit{gut}. 
    
-   Um das eigentliche Problem zu beweisen, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
+ Um das eigentliche Problem zu beweisen, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
    
-   \begin{satzl}{}{4.2}
-    Wenn $T$ ein minimales Gegenbeispiel ist, enthält $T$ keine gute Konfiguration.
-   \end{satzl}
+ \begin{satzl}{}{4.2}
+  Wenn $T$ ein minimales Gegenbeispiel ist, enthält $T$ keine gute Konfiguration.
+ \end{satzl}
    
-   \begin{satzl}{}{4.3}
-    In jeder intern sechsfach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
-   \end{satzl}
+ \begin{satzl}{}{4.3}
+  In jeder intern 6-fach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
+ \end{satzl}
    
-   Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr ist. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
+ Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr ist. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
 \end{section}

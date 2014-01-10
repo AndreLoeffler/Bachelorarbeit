@@ -1,13 +1,13 @@
-\begin{tikzpicture}[every node/.style={draw,inner sep=2pt,fill=black}]
+\begin{tikzpicture}
       \path[shape=circle]
-	(0,1) node(a1){} 
-	(1,0) node(b1){} (1,1) node(b2){} (1,2) node(b3){}
-	(2,0.5) node(c1){} (2,1.5) node(c2){}
-	(3,0) node(d1){} (3,1) node(d2){} (3,2) node(d3){}
-	(4,1) node(e1){}
-	(7.5,0.5) node(z1){} (9,0) node(z2){} (10.5,0.5) node(z3){} 
-	(7.5,1.5) node(z4){} (9,2) node(z5){} (10.5,1.5) node(z6){} 
-	(9,1) node(y){};
+	(0,1) \blacknode(a1){} 
+	(1,0) \blacknode(b1){} (1,1) \blacknode(b2){} (1,2) \blacknode(b3){}
+	(2,0.5) \blacknode(c1){} (2,1.5) \blacknode(c2){}
+	(3,0) \blacknode(d1){} (3,1) \blacknode(d2){} (3,2) \blacknode(d3){}
+	(4,1) \blacknode(e1){}
+	(7.5,0.5) \blacknode(z1){} (9,0) \blacknode(z2){} (10.5,0.5) \blacknode(z3){} 
+	(7.5,1.5) \blacknode(z4){} (9,2) \blacknode(z5){} (10.5,1.5) \blacknode(z6){} 
+	(9,1) \blacknode(y){};
 	\filldraw (a1) -- (b1) -- (d1) -- (e1) -- (d3) -- (b3) -- (a1) -- (b2);
 	\filldraw (b1) -- (b2) -- (b3) -- (c2) -- (d3) -- (d2) -- (d1) -- (c1) -- (b1);
 	\filldraw (c1) -- (b2) -- (c2) -- (c1);
@@ -16,4 +16,4 @@
 	\filldraw (z1) -- (y) -- (z4);
 	\filldraw (z2) -- (y) -- (z5);
 	\filldraw (z3) -- (y) -- (z6);
-    \end{tikzpicture}
+    \end{tikzpicture} 

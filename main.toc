@@ -11,5 +11,5 @@
 \contentsline {section}{\numberline {5.2}Reduzierbarkeit}{18}{section.5.2}
 \contentsline {chapter}{\numberline {6}Der Beweis von Robertson, Sanders, Seymour und Thomas}{19}{chapter.6}
 \contentsline {section}{\numberline {6.1}Konfigurationen}{19}{section.6.1}
-\contentsline {chapter}{\numberline {7}Umformulierungen}{21}{chapter.7}
-\contentsline {section}{Literatur}{22}{chapter*.2}
+\contentsline {chapter}{\numberline {7}Umformulierungen}{22}{chapter.7}
+\contentsline {section}{Literatur}{23}{chapter*.2}

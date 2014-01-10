@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  9 JAN 2014 20:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  10 JAN 2014 12:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -681,7 +681,75 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
 (/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarymatri
 x.code.tex
 File: tikzlibrarymatrix.code.tex 2008/06/18 v2.10 (rcs-revision 1.2)
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.code.tex
+File: tikzlibraryshapes.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.c
+ode.tex
+File: pgflibraryshapes.geometric.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.t
+ex
+File: pgflibraryshapes.misc.code.tex 2008/10/07 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.cod
+e.tex
+File: pgflibraryshapes.symbols.code.tex 2009/10/27 v2.10 (rcs-revision 1.3)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code
+.tex
+File: pgflibraryshapes.arrows.code.tex 2008/06/26 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.callouts.code.tex
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.co
+de.tex))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
+ode.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box38
+\pgfnodeparttwobox=\box39
+\pgfnodepartthreebox=\box40
+\pgfnodepartfourbox=\box41
+\pgfnodeparttwentybox=\box42
+\pgfnodepartnineteenbox=\box43
+\pgfnodeparteighteenbox=\box44
+\pgfnodepartseventeenbox=\box45
+\pgfnodepartsixteenbox=\box46
+\pgfnodepartfifteenbox=\box47
+\pgfnodepartfourteenbox=\box48
+\pgfnodepartthirteenbox=\box49
+\pgfnodeparttwelvebox=\box50
+\pgfnodepartelevenbox=\box51
+\pgfnodeparttenbox=\box52
+\pgfnodepartninebox=\box53
+\pgfnodeparteightbox=\box54
+\pgfnodepartsevenbox=\box55
+\pgfnodepartsixbox=\box56
+\pgfnodepartfivebox=\box57
+))) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks42
 ))
@@ -748,7 +816,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box38
+\AtBeginShipoutBox=\box58
 Package hyperref Info: Link coloring ON on input line 13.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -771,7 +839,7 @@ LaTeX Info: Redefining \nameref on input line 13.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count146
 \scratchdimen=\dimen180
-\scratchbox=\box39
+\scratchbox=\box59
 \nofMPsegments=\count147
 \nofMParguments=\count148
 \everyMPshowfont=\toks43
@@ -862,11 +930,6 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 ] [6])
 (./definitionen/kombinatorische.tex [7] [8] [9] (./definitionen/kuratowski.tex)
-
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
-
- []
-
 [10] [11])) [12]
 \openout2 = `uebergang.aux'.
 
@@ -904,22 +967,29 @@ Kapitel 6.
 
 
 
-])) [20]
+]
+Overfull \hbox (17.29333pt too wide) in paragraph at lines 25--26
+[]\OT1/cmr/m/n/10 Um $\OML/cmm/m/it/10 ^^M[]$ \OT1/cmr/m/n/10 f[]ur je-den Kno-
+ten in ei-ner pla-na-ren Zeich-nung von $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 da
+r-zu-stel-len, gibt es meh-re-re M[]oglichkeiten.
+ []
+
+(./seymour/nodes.tex) [20])) [21]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 7.
-) [21
+) [22
 
 
 
-] (./main.bbl) [22
+] (./main.bbl) [23
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [23
+ (./statement.tex) [24
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
@@ -934,13 +1004,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 18397 strings out of 493485
- 315203 string characters out of 3143526
- 425531 words of memory out of 3000000
- 21167 multiletter control sequences out of 15000+200000
+ 20208 strings out of 493485
+ 366788 string characters out of 3143526
+ 509154 words of memory out of 3000000
+ 22934 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,9n,73p,866b,726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,15n,73p,866b,955s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -961,10 +1031,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (23 pages, 1333692 bytes).
+Output written on main.pdf (24 pages, 1335610 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
+ 395 PDF objects out of 1000 (max. 8388607)
+ 321 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 
