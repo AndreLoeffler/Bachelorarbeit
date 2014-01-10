@@ -14,7 +14,7 @@
  Als nächstes folgt eine Definition, die elementar für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzen sie dort andere Eigenschaften.
   
  \begin{definition}{Konfiguration}
-  Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G$ und einer Zuordnung $\gamma_K : V(G) \mapsto \mathbb{Z}_+$ mit folgenden Eigenschaften:
+  Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G(K)$ und einer Zuordnung $\gamma_K : V(G(K)) \mapsto \mathbb{Z}_+$ mit folgenden Eigenschaften:
   \begin{enumerate}[i)]
    \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d_G(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v') > d_G(v')$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
@@ -22,11 +22,24 @@
   \end{enumerate}
  \end{definition}
  
- Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben.
+ Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie der folgenden Übersicht zu entnehmen ist.
+ 
+ \[ \input{seymour/nodes}\]
+ 
+ Später werden wir eine Menge aus 633 Konfigurationen betrachten, die für diesen Beweis essenziell sind. Eine vollständige Abbildungsliste findet sich in \cite[Seite 35]{FourRSST}. 
+ 
+ \begin{definition}{Isomorphe Konfigurationen, gute Konfigurationen, auftretende Konfigurationen}
+ \-\ 
+  \begin{itemize}
+   \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus in der Ebene existiert, der $G(K)$ auf $G(L)$ und $\gamma_K$ auf $\gamma_L$ abbildet. 
+   \item Jede Konfiguration, die zu einer der 633 Konfigurationen aus \cite{FourRSST} isomorph ist, bezeichnen wir als \textit{gut}. 
+   \item Sei $T$ eine Triangulation. Eine Konfiguration $K$ \textit{tritt in $T$ auf}, wenn $G(K)$ ein Teilgraph von $T$ ist, jede Innenfacette von $G(K)$ eine Innenfacette von $T$ ist und $\gamma_K(v) = d_T(v)$ für alle Knoten von $G(K)$ gilt.
+  \end{itemize}
+
+ \end{definition}
+
    
- Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus existiert, der $G(K)$ auf $G(L)$ und $\gamma_L$ auf $\gamma_L$ abbildet. Später werden wir eine Menge aus 633 Konfigurationen betrachten, die für diesen Beweis essenziell sind. Jede Konfiguration, die zu einer dieser 633 isomorph ist, bezeichnen wir als \textit{gut}. 
-   
- Um das eigentliche Problem zu beweisen, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
+ Um zu zeigen, dass das eigentliche Problem stets lösbar ist, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
    
  \begin{satzl}{}{4.2}
   Wenn $T$ ein minimales Gegenbeispiel ist, enthält $T$ keine gute Konfiguration.
@@ -36,5 +49,12 @@
   In jeder intern 6-fach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
  \end{satzl}
    
- Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr ist. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
+ Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr seien muss. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
+ 
+ Ein anderer Ansatz, sich der 4-Färbung von Graphen zu nähern, liegt darin, die Facetten zu untersuchen. Dies führt zu folgender Definiton:
+ 
+ \begin{definition}{Trifärbung}
+  Sei $G$ eine Triangulation oder Beinahe-Triangulation und sei $\kappa:E(G) \mapsto \{-1,0,1\}$ eine Funktion.
+ \end{definition}
+
 \end{section}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  10 JAN 2014 12:56
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  10 JAN 2014 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,7 +974,13 @@ ten in ei-ner pla-na-ren Zeich-nung von $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 da
 r-zu-stel-len, gibt es meh-re-re M[]oglichkeiten.
  []
 
-(./seymour/nodes.tex) [20])) [21]
+(./seymour/nodes.tex)
+Overfull \hbox (3.66878pt too wide) in paragraph at lines 32--33
+[]\OT1/cmr/bx/n/10 Definition 24 (Iso-mor-phe Kon-fi-gu-ra-tio-nen, gu-te Kon-f
+i-gu-ra-tio-nen, auf-tre-ten-de Kon-
+ []
+
+[20])) [21]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
@@ -1004,10 +1010,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 20209 strings out of 493485
- 366805 string characters out of 3143526
- 509165 words of memory out of 3000000
- 22935 multiletter control sequences out of 15000+200000
+ 20214 strings out of 493485
+ 366879 string characters out of 3143526
+ 509201 words of memory out of 3000000
+ 22936 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,15n,73p,866b,962s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1031,10 +1037,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (24 pages, 1335658 bytes).
+Output written on main.pdf (24 pages, 1341165 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 321 compressed objects within 4 object streams
- 92 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 327 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 500000)
  130 words of extra memory for PDF output out of 10000 (max. 10000000)
 

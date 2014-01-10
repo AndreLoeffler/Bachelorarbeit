@@ -6,6 +6,7 @@
     \begin{itemize}
     \item Ein \textit{Graph} $G$ ist ein Paar $G=(V,E)$, wobei $V$ eine endliche Menge ist, deren Elemente \textit{Knoten} genannt werden, und $E$ eine endliche Menge bestehend aus Kanten sind.
     \item Eine \textit{Kante} $e \in E$ ist eine zweielementige Teilmenge von $V$, wobei $E$ die Menge aller dieser Teilmengen ist, also $E \subseteq \{\{u,v\}|u,v \in V, u \neq v\}$.
+    \item Die Menge der Knoten eines Graphen $G$ wird auch mit $V(G)$ bezeichnet, die Menge der Kanten mit $E(G)$.
     \end{itemize}
   \end{definition}
   
@@ -24,14 +25,14 @@
     
   Für eine interessante Struktur benachbarter Knoten gibt es eine gebräuchliche Bezeichnung, auf die wir später zurückgreifen werden.
   
-  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, geschlossener Pfad, Ring}
+  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, Kreis, Ring}
   Sei $G=(V,E)$ ein Graph.
    \begin{itemize}
     \item Eine Folge $(v_1,\cdots,v_r)$ von mindestens drei Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei aufeinanderfolgenden benachbart sind. Dann ist $r$ die Länge der Kette und die Verbindungskanten heißen Glieder.
     \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
     \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine Knoten, die nicht erstes oder letztes Element der jeweiligen Folge sind, gemeinsam haben. 
-    \item Ein Pfad heißt \textit{geschlossen}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
-    \item Ein \textit{Ring} ist ein Pfad, der sowohl einfach als auch geschlossen ist.
+    \item Ein Pfad heißt \textit{Kreis}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
+    \item Ein \textit{Ring} ist ein Kreis, der zusätzlich einfach ist.
    \end{itemize}
   \end{definition}
   
@@ -40,7 +41,8 @@
   Einiges Handwerkszeug ist noch nötig, um Strukturen prägnant und kurz beschreiben zu können.
   
   \begin{definition}{Teilgraph $G\setminus X$, $G\setminus Y$}
-   Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Der Graph $G\setminus X = (V\setminus X,E)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.
+   Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Weiter sei $F$ die Menge der Kanten $f$ aus $V$ mit $f \cap X \neq \emptyset$. Der Graph $G\setminus X = (V\setminus X,E\setminus F)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.\\
+   Man sagt auch, ein Graph $K$ ist Teilgraph von $G$, falls Mengen $X$ und $Y$ von Knoten und Kanten derart existieren, dass $K = (G \setminus X) \setminus Y$.
   \end{definition}
   
   \begin{definition}{Kontraktion}
@@ -75,21 +77,39 @@
 
   Wir werden die Jordanbögen der Darstellung eines Graphen ebenfalls als \textit{Kanten} bezeichnen. In der Ebene ist es leicht, die durch diese Kanten getrennten Flächen zu betrachten. Das führt uns zur folgenden Definitionen.
   
+  \begin{definition}{Zeichnung}
+    Sei $K=(V,E)$ ein Graph. Wir bezeichnen eine Zeichnung des Graphen $K$ mit $G(K)$ und meinen damit seine Darstellung durch Jordanbögen in der Ebene.
+  \end{definition}
+  
+  Hier benennen wir den eigentlichen Graphen mit $K$, weil wir uns später hauptsächlich für die Darstellung von sogenannten Konfigurationen interessieren.
+
   \begin{definition}{Facette, Außenfacette}
    Sei $G$ ein in der Ebene $\mathbb{R}^2$ gezeichneter Graph. Sei $J_G$ die Menge der Jordanbögen dieser Darstellung.
    \begin{itemize}
-   \item Eine \textit{Facette} ist eine Zusammenhangskomponente von $\mathbb{R}^2 \setminus J_G$. Die Endpunkte der Kanten, die die Region umfassen heißen ebenfalls inzident zu dieser Region. 
+   \item Eine \textit{Facette} ist eine Zusammenhangskomponente von $\mathbb{R}^2 \setminus J_G$. Die Endpunkte der Kanten, die die Facette umfassen heißen ebenfalls inzident zu dieser Facette. 
    \item Der unbeschränkte Rest der Ebene, der von keiner Menge von Kanten vollständig umschlossen ist, wird \textit{Außenfacette} genannt.
    \end{itemize}
   \end{definition}
   
-  Um die Außenfacette vollständig charakterisieren zu können, bedarf es eigentlich des Jordanschen Kurvensatzes. Dieser kann bei \cite[Seite 53]{fritsch} nachgelesen werden. \\
+  Um die Außenfacette vollständig charakterisieren zu können, bedarf es eigentlich des Jordanschen Kurvensatzes. Dieser kann bei \cite[Seite 53]{fritsch} nachgelesen werden.
+  
+  Weiter gibt es einige gebräuchliche Namenskonventionen für Knoten, um deren Lange im Graphen genauer zu charakterisieren.
+  
+  \begin{definition}{Außenknoten, Innenknoten}
+   Sei $G$ ein in der Ebene gezeichneter Graph.
+   \begin{itemize}
+    \item Jeder Knoten, der inzident zur Außenfacette von $G$ ist, wird \textit{Außenknoten} genannt.
+    \item Jeder Knoten von $G$, der kein Außenknoten ist, ist automatisch ein \textit{Innenknoten}.
+   \end{itemize}
+
+  \end{definition}
+
   Für unsere Betrachtungen ist eine besondere Form von Facetten interessant. 
   
   \begin{definition}{Dreieck, Triangulation, Beinahe-Triangulation}
    Sei $G$ ein in der Ebene gezeichneter Graph.
    \begin{itemize}
-   \item Eine Region ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht.
+   \item Eine Facette ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht.
    \item Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist. 
    \item Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, schleifenfreier, planarer Graph $G$, bei dem jede beschränkte Facette ein Dreieck ist. 
    \end{itemize}
@@ -116,23 +136,16 @@
    Es existiert kein vollständiger planarer Graph mit fünf Knoten.
   \end{satzl}
   \begin{proof}
-    Es seien $v_1,\cdots,v_5$ fünf Ecken in der Ebene. Für jedes Paar $i,j \in \{1,2,3,4,5\}$ mit $i < j$ sei eine Kante $k_{i,j}$ zwischen $v_i$ und $v_j$ gegeben. Dieser Graph hat $10$ Kanten, von denen insgesamt $7$ entweder $v_1$ oder $v_5$ als Endpunkt haben (oder beide). Wir zeigen nun, dass mindestens eine der $3$ übrigen Kanten eine der anderen Kanten schneiden muss.\\
-    Durch Zusammensetzen erhält man drei Pfade $P_i = k_{1,i} \cup k_{i,5}$ für $i = 2,3,4$, die die Knoten $v_1$ und $v_5$ verbinden, die sich aber weder untereinander noch mit $k_{1,5}$ schneiden. O.B.d.A. sei $P_3$ der Pfad derart, dass von den beiden anderen einer in der Facette $F$ und der andere außerhalb der Facette $F$ begrenzt von $k_{1,5} \cup P_3$ liegt. Damit muss die Kante $k_{2,4}$ zwischen $e_2$ und $e_4$ mindestens einen inneren Punkt $y$ mit den Grenzen von $F$ gemeinsam haben, also mit einer der Kanten $k_{1,5},k_{1,3},k_{3,5}$. Da $k_{2,4}$ keine der drei beteiligten Ecken trifft, muss $y$ ein innerer Punkt einer dieser Kanten sein.
+    Es seien $v_1,\cdots,v_5$ fünf Ecken in der Ebene. Für jedes Paar $i,j \in \{1,2,3,4,5\}$ mit $i < j$ sei eine Kante $k_{i,j}$ zwischen $v_i$ und $v_j$ gegeben. Dieser Graph hat $10$ Kanten, von denen insgesamt $7$ entweder $v_1$ oder $v_5$ oder beide als Endpunkt haben. Wir zeigen nun, dass sich mindestens eine der $3$ übrigen Kanten eine der anderen Kanten überkreuzen muss.\\
+    Durch Zusammensetzen erhält man drei Pfade $P_i = k_{1,i} \cup k_{i,5}$ für $i = 2,3,4$, die die Knoten $v_1$ und $v_5$ verbinden, die sich aber weder untereinander noch mit $k_{1,5}$ schneiden. O.B.d.A. sei $P_3$ der Pfad derart, dass von den beiden anderen einer in der Facette $F$ und der andere außerhalb der Facette $F$ begrenzt von $k_{1,5} \cup P_3$ liegt. Damit muss die Kante $k_{2,4}$ zwischen $v_2$ und $v_4$ mindestens einen inneren Punkt $y$ mit dem Rand von $F$ gemeinsam haben, also mit einer der Kanten $k_{1,5},k_{1,3},k_{3,5}$. Da $k_{2,4}$ keine der drei beteiligten Ecken trifft, muss $y$ ein innerer Punkt einer dieser Kanten sein.
   \end{proof}
   
   Dieser Beweis ist ebenfalls in \cite[Satz 4.1.2]{fritsch} zu finden, allerdings in einer topologischen Variante mittels Jordanbögen. 
   
- \begin{satzl}{Satz von Weiske}{weiske}
+ \begin{satzl}{Weiske}{weiske}
   Es gibt keine Landkarte $\mathcal{L}$ mit fünf paarweise benachbarten Ländern.
  \end{satzl}
  \begin{proof}
   Angenommen, es gäbe eine solche Landkarte. Betrachte dazu die zu $\mathcal{L}$ duale Landkarte. Diese ist ein Graph mit 5 Ecken, die paarweise verbunden sind. Einen solchen Graphen kann es aber nach \nameref{voll5} nicht geben. Widerspruch.
  \end{proof}
-
-  
-  Eine besondere Klasse von Graphen wollen wir noch hervorheben.
-  
-  \begin{definition}{normaler Graph}
-   Ein Graph heißt \textit{normal}, wenn er ein regulärer, vollständiger Streckengraph ist, bei dem jedes Dreieck Rand eines Gebiets ist.
-  \end{definition}
 \end{section}

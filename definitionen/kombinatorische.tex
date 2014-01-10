@@ -41,7 +41,8 @@
   Einiges Handwerkszeug ist noch nötig, um Strukturen prägnant und kurz beschreiben zu können.
   
   \begin{definition}{Teilgraph $G\setminus X$, $G\setminus Y$}
-   Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Weiter sei $F$ die Menge der Kanten $f$ aus $V$ mit $f \cap X \neq \emptyset$. Der Graph $G\setminus X = (V\setminus X,E\setminus F)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.
+   Sei $G=(V,E)$ ein Graph, $X \subseteq V$ eine Teilmenge der Knoten und $Y \subseteq E$ eine Teilmenge der Kanten. Weiter sei $F$ die Menge der Kanten $f$ aus $V$ mit $f \cap X \neq \emptyset$. Der Graph $G\setminus X = (V\setminus X,E\setminus F)$ unterscheidet sich von $G$ derart, dass alle Knoten der Menge $X$ und alle zu diesen Knoten adjazenten Kanten gelöscht werden. Ebenso ist $G\setminus Y = (V,E\setminus Y)$ der Graph, bei dem alle Kanten aus $Y$ entfernt wurden.\\
+   Man sagt auch, ein Graph $K$ ist Teilgraph von $G$, falls Mengen $X$ und $Y$ von Knoten und Kanten derart existieren, dass $K = (G \setminus X) \setminus Y$.
   \end{definition}
   
   \begin{definition}{Kontraktion}
@@ -76,6 +77,12 @@
 
   Wir werden die Jordanbögen der Darstellung eines Graphen ebenfalls als \textit{Kanten} bezeichnen. In der Ebene ist es leicht, die durch diese Kanten getrennten Flächen zu betrachten. Das führt uns zur folgenden Definitionen.
   
+  \begin{definition}{Zeichnung}
+    Sei $K=(V,E)$ ein Graph. Wir bezeichnen eine Zeichnung des Graphen $K$ mit $G(K)$ und meinen damit seine Darstellung durch Jordanbögen in der Ebene.
+  \end{definition}
+  
+  Hier benennen wir den eigentlichen Graphen mit $K$, weil wir uns später hauptsächlich für die Darstellung von sogenannten Konfigurationen interessieren.
+
   \begin{definition}{Facette, Außenfacette}
    Sei $G$ ein in der Ebene $\mathbb{R}^2$ gezeichneter Graph. Sei $J_G$ die Menge der Jordanbögen dieser Darstellung.
    \begin{itemize}
@@ -102,7 +109,7 @@
   \begin{definition}{Dreieck, Triangulation, Beinahe-Triangulation}
    Sei $G$ ein in der Ebene gezeichneter Graph.
    \begin{itemize}
-   \item Eine Facette ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht.
+   \item Eine Facette ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht. Auch als Dreieck bezeichnen wir die drei Kanten zwischen je zwei der drei Knoten.
    \item Ein planarer Graph ist eine \textit{Triangulation}, wenn er schleifenfrei und jede seiner Facetten ein Dreieck ist. 
    \item Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, schleifenfreier, planarer Graph $G$, bei dem jede beschränkte Facette ein Dreieck ist. 
    \end{itemize}
