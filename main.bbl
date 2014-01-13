@@ -28,4 +28,9 @@
 \newblock The Four-Colour Theorem.
 \newblock {In: }\emph{Journal of Combinatorial Theory} 70 (1997), S. 2--44
 
+\bibitem[Tai80]{TaitTri}
+\textsc{Tait}, P.~G.:
+\newblock Note on a theorem in geometry of position.
+\newblock {In: }\emph{Trans. Roy. Soc. Edinburgh} 29 (1880), S. 657--660
+
 \end{thebibliography}

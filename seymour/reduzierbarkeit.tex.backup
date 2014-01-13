@@ -1,0 +1,23 @@
+\begin{section}{Reduzierbarkeit}
+ Wir wollen konsistente Kantenfärbungen definieren. Dazu beginnen diesen Abschnitt mit den dazu nötigen, hinführenden Definitionen:
+ \begin{definition}{Kantenfärbung, Match, signiertes Match, signiertes Matching, $\rho$-Passend}
+  Sei $R$ ein Kreis und $\rho \in \{-1,0,1\}$.
+  \begin{itemize}
+   \item Eine \textit{Kantenfärbung} von $R$ ist eine Abbildung $\kappa: E(R) \mapsto \{-1,0,1\}$.
+   \item Ein \textit{Match} $m$ ist eine Menge von verschiedenen Kanten $\{e,f\}$ aus $R$. 
+   \item Ein \textit{signiertes Match} (engl.: signed match) $(m,\mu)$ ist ein Paar aus einem Match $m$ und $\mu = \pm 1$.
+   \item Ein \textit{signiertes Matching} ist eine Menge $M$ von signierten Matches, sodass für unterschiedliche $(\{e,f\},\mu),(\{e',f'\},\mu') \in M$ gilt:
+   \begin{enumerate}[(i)]
+    \item $\{e,f\}\cap\{e',f'\} = \emptyset$ und
+    \item nach dem Löschen von $e'$ und $f'$ liegen $e$ und $f$ in der gleichen Zusammenhangskomponente von $R$.
+   \end{enumerate}
+   Ist $M$ ein signiertes Matching, so ist $E(M) := \{e\in E(R) | e\in m $ für ein $(m,\mu) \in M\}$.
+   \item Eine Kantenfärbung $\kappa$ von $R$ heißt \textit{$\rho$-passend} für ein signiertes Matching $M$ in $R$, wenn gilt:
+   \begin{enumerate}[(i)]
+    \item $E(M) = \{e \in E(R) | \kappa(e) \neq \rho\}$ und
+    \item für alle $(\{e,f\},\mu) \in M$ gilt: $\kappa(e) = \kappa(f) \Leftrightarrow \mu = 1$.
+   \end{enumerate}
+  \end{itemize}
+ \end{definition}
+ 
+\end{section}
