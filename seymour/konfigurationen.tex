@@ -1,22 +1,22 @@
 \begin{section}{Konfigurationen}
- Ein minimales Gegenbeispiel ist ein planarer schleifenfreier Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planaren Graphen $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
+ Ein minimales Gegenbeispiel ist ein planarer Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planare Graph $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
    
- Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend und bis auf die Knoten mit Grad genau fünf sogar 6-fach. Wir nennen einen Kreis $C$ in einer Triangulation mit fünf oder weniger Knoten einen \textit{Kurzkreis} (engl.: short circuit), wenn sowohl Knoten im inneren als auch im äußeren Bereich von $C$ liegenund wenn für genau fünf Knoten in jedem Bereich mindestens zwei Knoten liegen. Wir nennen eine Triangulation intern 6-fach zusammenhängend, wenn sie keine Kurzkreise beinhaltet. Das führt zu folgendem Resultat:
+ Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend ist. Wir nennen einen Kreis $C$ in einer Triangulation mit fünf oder weniger Knoten einen \textit{Kurzkreis} (engl.: short circuit), wenn sowohl Knoten im inneren Bereich $I$ als auch im äußeren Bereich $O$ von $C$ liegen und wenn für genau fünf Knoten sowohl $I$ als auch in $O$ mindestens zwei Knoten liegen. Wir nennen eine 6-fach knotenzusammenhängende Triangulation \textit{intern 6-fach zusammenhängend}, wenn sie keine Kurzkreise beinhaltet. Das führt zu folgendem Resultat:
   
  \begin{satzl}{}{4.1}
   Jedes minimale Gegenbeispiel ist eine intern 6-fach zusammenhängende Triangulation. 
  \end{satzl}
 
- Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen reduzierbar und damit vierfärbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. 
+ Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen 4-färbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. 
  
  Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{4.1} ableiten.
  
- Als nächstes folgt eine Definition, die elementar für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzen sie dort andere Eigenschaften.
+ Als nächstes folgt eine Definition, die fundamental für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzt eine Konfiguration dort andere Eigenschaften.
   
  \begin{definition}{Konfiguration}
   Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G(K)$ und einer Zuordnung $\gamma_K : V(G(K)) \mapsto \mathbb{Z}_+$ mit folgenden Eigenschaften:
   \begin{enumerate}[i)]
-   \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
+   \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ aus höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d_G(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v') > d_G(v')$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
    \item $K$ hat Ringgröße $\geq 2$. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_v (\gamma_K(v) - d_G(v) - 1)$ für alle Knoten $v$, die zur Außenfacette inzident sind und für die $G(K) \setminus \{v\}$ zusammenhängend ist.
   \end{enumerate}
@@ -31,7 +31,7 @@
  \begin{definition}{Isomorphe Konfigurationen, gute Konfigurationen, auftretende Konfigurationen}
  \-\ 
   \begin{itemize}
-   \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus in der Ebene existiert, der $G(K)$ auf $G(L)$ und $\gamma_K$ auf $\gamma_L$ abbildet. 
+   \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus der Ebene existiert, der $G(K)$ auf $G(L)$ und $\gamma_K$ auf $\gamma_L$ abbildet. 
    \item Jede Konfiguration, die zu einer der 633 Konfigurationen aus \cite{FourRSST} isomorph ist, bezeichnen wir als \textit{gut}. 
    \item Sei $T$ eine Triangulation. Eine Konfiguration $K$ \textit{tritt in $T$ auf}, wenn $G(K)$ ein Teilgraph von $T$ ist, jede Innenfacette von $G(K)$ eine Innenfacette von $T$ ist und $\gamma_K(v) = d_T(v)$ für alle Knoten von $G(K)$ gilt.
   \end{itemize}
@@ -60,18 +60,18 @@
  Statt wie Üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{4.1} zu bleiben.
  
  \begin{satzl}{Trifärbung $\Leftrightarrow$ 4-Färbung}{tait}
-  Eine Triangulation $T$ ist genau dann 4-Färbbar, wenn eine Trifärbung ihrer Facetten existiert.
+  Eine Triangulation $T$ ist genau dann 4-färbbar, wenn eine Trifärbung ihrer Facetten existiert.
  \end{satzl}
  
- Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass dieser unter dem Gesichtspunkt des Algorithmus leichter zu implementieren war. \cite[Seite 7]{FourRSST} 
+ Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war. \cite[Seite 7]{FourRSST} 
  
- Um \ref{4.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel seien soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-Färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immernoch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme um umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
+ Um \ref{4.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immernoch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme um umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
  
  \begin{definition}{Zerstreute Menge, Trifärbung modulo $X$}
  Sei $G$ ein Triangulation oder Beinahe-Triangulation. 
  \begin{itemize}
   \item Eine Teilmenge $X \subseteq E(G)$ heißt \textit{zerstreut} (engl.: sparse), wenn jede Innenfacette von $G$ zu höchstens einer Kante aus $X$ inzident und im Falle einer Beinahe-Triangulation die Außenfacette zu keiner Kante inzident ist.
-  \item Wenn $X \subseteq E(G)$ zerstreut ist, ist eine \textit{trifärbbar von $G$ modulo $X$} eine Abbildung $\kappa: E(G) \setminus X \mapsto \{-1,0,1\}$ derart, dass für jede Facette von $G$ (außer der Außenfacette bei Beinahe-Triangulationen), die zu den Kanten $e,f,g$ inzident ist, gilt:
+  \item Wenn $X \subseteq E(G)$ zerstreut ist, ist eine \textit{Trifärbung von $G$ modulo $X$} eine Abbildung $\kappa: E(G) \setminus X \mapsto \{-1,0,1\}$ derart, dass für jede Facette von $G$ (außer der Außenfacette bei Beinahe-Triangulationen), die zu den Kanten $e,f,g$ inzident ist, gilt:
   \begin{enumerate}[(i)]
    \item $\{\kappa(e),\kappa(f),\kappa(g)\} = \{-1,0,1\}$, falls $e,f,g \not\in X$
    \item $\kappa(e) = \kappa(f)$, falls $g\in X$.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  13 JAN 2014 13:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  16 JAN 2014 13:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -929,8 +929,19 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 
 
 ] [6])
-(./definitionen/kombinatorische.tex [7] [8] [9] (./definitionen/kuratowski.tex)
-[10] [11])) [12]
+(./definitionen/kombinatorische.tex [7]
+Overfull \hbox (14.31413pt too wide) in paragraph at lines 30--31
+[]\OT1/cmr/bx/n/10 Definition 8 (Pfad, ein-fa-cher Pfad, dis-junk-te Pfa-de, Kr
+eis, Ring, zu-sam-menh[]angender
+ []
+
+[8] [9]
+Overfull \hbox (7.44656pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/10 Ein Graph ist ge-nau dann pla-nar, wenn er zu-sam-menh[]angen
+d ist und sich durch (m[]oglicherweise)
+ []
+
+(./definitionen/kuratowski.tex) [10] [11])) [12]
 \openout2 = `uebergang.aux'.
 
  (./uebergang.tex
@@ -976,7 +987,7 @@ r-zu-stel-len, gibt es meh-re-re M[]oglichkeiten.
 
 (./seymour/nodes.tex)
 Overfull \hbox (3.66878pt too wide) in paragraph at lines 32--33
-[]\OT1/cmr/bx/n/10 Definition 24 (Iso-mor-phe Kon-fi-gu-ra-tio-nen, gu-te Kon-f
+[]\OT1/cmr/bx/n/10 Definition 25 (Iso-mor-phe Kon-fi-gu-ra-tio-nen, gu-te Kon-f
 i-gu-ra-tio-nen, auf-tre-ten-de Kon-
  []
 
@@ -1002,7 +1013,7 @@ m/n/10 =
 
 ) (./seymour/reduzierbarkeit.tex
 Overfull \hbox (31.07385pt too wide) in paragraph at lines 4--5
-[]\OT1/cmr/bx/n/10 Definition 27 (Kan-tenf[]arbung, Match, si-gnier-tes Match, 
+[]\OT1/cmr/bx/n/10 Definition 28 (Kan-tenf[]arbung, Match, si-gnier-tes Match, 
 si-gnier-tes Mat-ching, $\OML/cmm/m/it/10 ^^R$\OT1/cmr/bx/n/10 -Passend): 
  []
 
@@ -1036,13 +1047,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 20243 strings out of 493485
- 367269 string characters out of 3143526
- 509367 words of memory out of 3000000
- 22943 multiletter control sequences out of 15000+200000
+ 20245 strings out of 493485
+ 367293 string characters out of 3143526
+ 509411 words of memory out of 3000000
+ 22944 multiletter control sequences out of 15000+200000
  12091 words of font info for 46 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,15n,73p,911b,962s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,15n,73p,911b,964s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1063,10 +1074,10 @@ exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (27 pages, 1356190 bytes).
+Output written on main.pdf (27 pages, 1357241 bytes).
 PDF statistics:
  445 PDF objects out of 1000 (max. 8388607)
  368 compressed objects within 4 object streams
- 116 named destinations out of 1000 (max. 500000)
+ 117 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
