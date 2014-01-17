@@ -1,0 +1,11 @@
+\begin{tikzpicture}
+ \path
+    (0,0.5) \blacknode(a1){}
+    (0.75,0) \blacknode(b1){} (0.75,1) \blacknode(b2){}
+    (1.5,0.5) \smallnode(c1){}
+    (2.25,0) \smallnode(d1){} (2.25,1) \smallnode(d2){}
+    (3,0.5) \smallnode(e1){} (3,1.5) \blacknode(e2){};
+    \filldraw (a1) -- (b1) -- (c1) -- (d1) -- (e1) -- (e2) -- (d2) -- (c1) -- (b2) -- (a1);
+    \filldraw (b1) -- (b2); 
+    \filldraw (d1) -- (d2) -- (e1);
+\end{tikzpicture}

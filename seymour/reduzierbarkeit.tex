@@ -23,7 +23,7 @@
  Nun können wir die eigentlich gesuchte Definition aufstellen.
  
  \begin{definition}{konsistente Kantenfärbung}
-  Sei $K$ ein Kreis und $\theta \in \{-1,0,1\}$. Eine Menge $\mathcal{C}$ von Kantenfärbungen von $K$ heißt \textit{konsistent}, wenn für jedes $\kappa \in \mathcal{C}$ und jedes mögliche $\theta$ ein signiertes Matching $M$ existiert, so dass $\kappa$ $\theta$-passend für $M$ ist, und $\mathcal{C}$ jede Kantenfärbung, die für $M$ $\theta$-passend ist, enthält.
+  Sei $K$ ein Kreis und $\theta \in \{-1,0,1\}$. Eine Menge $\mathscr{C}$ von Kantenfärbungen von $K$ heißt \textit{konsistent}, wenn für jedes $\kappa \in \mathscr{C}$ und jedes mögliche $\theta$ ein signiertes Matching $M$ existiert, so dass $\kappa$ $\theta$-passend für $M$ ist, und $\mathscr{C}$ jede Kantenfärbung, die für $M$ $\theta$-passend ist, enthält.
  \end{definition}
 
  Für das nächste Teilresultat benötigen wir noch diese Definitionen.
@@ -37,7 +37,58 @@
  \end{definition}
  
  \begin{satzl}{Konsistente Aufzüge}{constLift}
-  Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathcal{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathcal{C}$ konsistent.
+  Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathscr{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathscr{C}$ konsistent.
  \end{satzl}
+ \begin{proof}
+  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\rho \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\rho$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\rho$-passend ist. O.B.d.A. sei $\rho = 0$.\\
+  Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine \textit{Rippe} ist eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$, wobei
+  \begin{enumerate}[(i)]
+   \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
+   \item $r_1,\cdots,r_t$ verschiede Facetten von $H$ sind,
+   \item falls $t >0$ gilt, $g_0$ und $g_t$ beide inzident zur Außenfacette von $H$ sind, oder falls $t=0$ gilt, $g_0$ zu keiner Innenfacette von $H$ inzident ist,
+   \item für $1\leq i\leq t$ gilt, dass $r_i$ inzident zu den Facetten $g_{i-1}$ und $g_i$ ist und
+   \item für $0\leq i\leq t$ gilt, dass $\kappa(g_i) \neq 0$ gilt.
+  \end{enumerate}
+  Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, $\kappa(e) = 0$ gilt. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
+  Weiter sind alle Rippen disjunkt, sie teilen sich also weder Kanten noch Facetten. Für $1 \leq i \leq k$ lässt sich jede Kante $f_i$ entweder eindeutig einer Rippe zuordnen, wenn $\kappa(f_i) = \pm 1$, oder keiner Rippe zuordnen, wenn $\kappa(f_i)=0$.\\
+  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\rho$-passend für $M$.\\
+  Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\rho$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
+ \end{proof}
+
+ \begin{definition}{Freie Vervollständigung}
+  Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{freie Vervollständigung von $K$ mit Ring $R$}, wenn
+  \begin{enumerate}[(i)]
+   \item $R$ ein induzierter Ring von $S$ ist, der die Außenfacette von $S$ begrenzt,
+   \item $G(K)$ ein induzierter Teilgraph von $S$ ist, $G(K) = S \setminus V(R)$ gilt, jede Facette von $G(K)$ auch eine Facette von $S$ ist, die Außenfacette von $G(K)$ den Ring $R$ und die Außenfacette von $S$ beinhaltet,
+   \item jeder Knoten $v$ von $S$, der nicht in $V(R)$ liegt, in $S$ Knotengrad $\gamma_K(v)$ hat.
+  \end{enumerate}
+ \end{definition}
+ 
+ Man kann leicht überprüfen, dass jede Konfiguration eine freie Vervollständigung besitzt. (Hier wird der Umstand benutzt, dass in der Definition von Konfiguration eine Ringgröße $\geq 2$ gefordert ist -- die Ringgröße ist dann genau die Länge des Rings in der Freien Vervollständigung. Gibt es zwei freie Vervollständigungen $S_1$ und $S_2$ von $K$, so existiert ein Homeomorphismus, der $G(K)$ punktweise fixiert und $S_1$ auf $S_2$ abbildet. Dazu verwendet man Eigenschaft (i) aus der Definition der Konfiguration. Es gibt also -- bis auf Isomorphie -- nur eine freie Vervollständigung, weswegen wir von \textit{der} freien Konfiguration sprechen können.
+ 
+ Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie im vorherigen Kapitel dargestellt wurden.
+ 
+ \[ \input{seymour/132} \overset{\overset{\text{freie}}{\text{Vervollständigung}}}{\Longrightarrow} \input{seymour/freievervoll}\]
+ 
+ \begin{definitionl}{$D$-Reduzibilität}{dred}
+  Sei also $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$. Sei $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C} \subseteq \mathscr{C}^*$ die Menge aller Beschränkungen von $E(R)$ von Trifärbungen von $S$. Sei weiter $\mathscr{C}'$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}$. Die Konfiguration $K$ heißt \textit{$D$-reduzibel}, wenn gilt: $\mathscr{C}' = \emptyset$.
+ \end{definitionl}
+ 
+ Wir werden später zeigen, dass keine $D$-reduzible Konfiguration in einem minimalen Gegenbeispiel vorkommen kann. In der gängigen Literatur gibt es noch andere Varianten, zu zeigen dass in einem minimalen Gegenbeispiel keine Konfiguration vorkommen kann -- etwa allgemeine $C$-Reduzibilität oder \textit{block count}-Reduzibilität. Für unsere Zwecke benötigen wir zusätzlich lediglich einen Spezialfall der $C$-Reduzibilität.
+
+ \begin{definition}{Zusammenzug}
+  Sei $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$ und sei $\mathscr{C}'$ wie für die $D$-Reduzibilität gewählt. Sei $X \subseteq E(S) - E(R)$. Man sagt, $X$ ist ein \textit{Zusammenzug} von $K$, wenn $X$ nicht leer ist, $X$ zerstreut in $S$ ist und keine Kantenfärbung aus $\mathscr{C}'$ die Beschränkung von $E(R)$ einer Trifärbung von $S$ modulo $X$ ist.
+ \end{definition}
+ 
+ Eine weitere Bedingung für unsere minimalen Gegenbeispiele ist, dass kein Zusammenzug einer Konfiguration $K$ vorkommen kann. Dies werden wir später weiter ausführen.
+ 
+ Mit Hilfe eines Computers wurde folgendes Resultat von Robertson, Sanders, Seymour und Thomas gezeigt:
+ 
+ \begin{satzl}{Reduzibilität der Konfigurationen}{3.2}
+  Für jede der 633 Konfigurationen $K$, die im Anhang (der Originalveröffentlichung) abgebildet sind, sei $X$ die Menge der Kanten, der freien Vervollständigung von $K$, die fett gedruckt sind. Gilt $X \neq \emptyset$, so ist $K$ $D$-reduzibel. Andernfalls gilt $1\leq \sharp X \leq 4$ und $X$ ist ein Zusammenzug für $K$.
+ \end{satzl}
+ 
+ Aus diesem Ergebnis werden wir später Satz \ref{4.2} herleiten.
+
 
 \end{section}

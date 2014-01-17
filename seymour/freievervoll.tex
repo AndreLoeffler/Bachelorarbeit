@@ -1,0 +1,18 @@
+\begin{tikzpicture}
+ \path
+    (0,1) \blacknode(a1){} (0,2) \blacknode(a2){}
+    (0.6,0) \blacknode(x){}
+    (0.75,0.5) \blacknode(b1){} (0.75,1.5) \blacknode(b2){} (0.75,2.5) \blacknode(b3){}
+    (1.5,0) \blacknode(c1){} (1.5,1) \blacknode(c2){} (1.5,2) \blacknode(c3){} (1.5,3) \blacknode(c4){}
+    (2.25,0.5) \blacknode(d1){} (2.25,1.5) \blacknode(d2){} (2.25,2.5) \blacknode(d3){}
+    (3,1) \blacknode(e1){} (3,2) \blacknode(e2){}
+    (3.75,0.5) \blacknode(f1){} (3.75,1.5) \blacknode(f2){} (3.75,2.5) \blacknode(f3){}
+    (4.5,1.5) \blacknode(g1){};
+    \filldraw (a1) -- (x) -- (c1) -- (d1) -- (f1) -- (g1) -- (f3) -- (e2) -- (d3) -- (c4) -- (b3) -- (a2) -- (a1) -- (b2) -- (a2);
+    \filldraw (x) -- (b1) -- (b2) -- (b3) -- (c3) -- (d2);
+    \filldraw (g1) -- (f2);
+    \filldraw (e1) -- (e2) -- (f2) -- (e1) -- (d2) -- (e2);
+    \filldraw (d3) -- (d2) -- (d1) -- (c2) -- (d2);
+    \filldraw (a1) -- (b1) -- (c1) -- (c2) -- (c3) -- (c4);
+    \filldraw (d1) -- (e1) -- (f1) -- (f2) -- (f3) -- (d3) -- (c3) -- (b2) -- (c2) -- (b1);
+\end{tikzpicture}
