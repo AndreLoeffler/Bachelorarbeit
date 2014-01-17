@@ -3,13 +3,13 @@
    
  Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend ist. Wir nennen einen Kreis $C$ in einer Triangulation mit fünf oder weniger Knoten einen \textit{Kurzkreis} (engl.: short circuit), wenn sowohl Knoten im inneren Bereich $I$ als auch im äußeren Bereich $O$ von $C$ liegen und wenn für genau fünf Knoten sowohl $I$ als auch in $O$ mindestens zwei Knoten liegen. Wir nennen eine 6-fach knotenzusammenhängende Triangulation \textit{intern 6-fach zusammenhängend}, wenn sie keine Kurzkreise beinhaltet. Das führt zu folgendem Resultat:
   
- \begin{satzl}{}{4.1}
+ \begin{satzl}{}{2.1}
   Jedes minimale Gegenbeispiel ist eine intern 6-fach zusammenhängende Triangulation. 
  \end{satzl}
 
  Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen 4-färbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. 
  
- Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{4.1} ableiten.
+ Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{2.1} ableiten.
  
  Als nächstes folgt eine Definition, die fundamental für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzt eine Konfiguration dort andere Eigenschaften.
   
@@ -41,15 +41,15 @@
    
  Um zu zeigen, dass das eigentliche Problem stets lösbar ist, teilen wir die Suche nach einem minimalen Gegenbeispiel weiter auf. Somit ergeben sich diese beiden Aussagen:
    
- \begin{satzl}{Reduktion}{4.2}
+ \begin{satzl}{Reduktion}{2.2}
   Wenn eine Triangulation $T$ ein minimales Gegenbeispiel ist, enthält $T$ keine gute Konfiguration.
  \end{satzl}
    
- \begin{satzl}{Zwangsläufigkeit}{4.3}
+ \begin{satzl}{Zwangsläufigkeit}{2.3}
   In jeder intern 6-fach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
  \end{satzl}
    
- Kombiniert man die Aussagen der Sätze \ref{4.1}, \ref{4.2} und \ref{4.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr seien muss. Auf \ref{4.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{4.3}. 
+ Kombiniert man die Aussagen der Sätze \ref{2.1}, \ref{2.2} und \ref{2.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr seien muss. Auf \ref{2.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{2.3}. 
  
  Ein anderer Ansatz, sich der 4-Färbung von Graphen zu nähern, liegt darin, die Facetten auf Färbbarkeit zu untersuchen. Da in einem minimalen Gegenbeispiel jede Innenfacette ein Dreieck ist, benötigen wir eine neue Definiton:
  
@@ -57,7 +57,7 @@
   Sei $G$ eine Triangulation oder Beinahe-Triangulation, $\kappa:E(G) \mapsto \{-1,0,1\}$ eine Funktion und $r=\{r,f,g\} \subset E(G)$ ein Dreieck. Man sagt, $r$ wird von $\kappa$ \textit{trigefärbt} (engl.: tri-coloured), wenn $\{\kappa(e),\kappa(f),\kappa(g)\} = \{-1,0,1\}$ gilt. Wir sagen, $\kappa$ ist eine \textit{Trifärbung} von $G$, wenn jede Facette von $G$ trifärbbar ist -- oder nur jede Innenfacette, falls $G$ nur eine Beinahe-Triangulation ist.
  \end{definition}
 
- Statt wie Üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{4.1} zu bleiben.
+ Statt wie Üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{2.1} zu bleiben.
  
  \begin{satzl}{Trifärbung $\Leftrightarrow$ 4-Färbung}{tait}
   Eine Triangulation $T$ ist genau dann 4-färbbar, wenn eine Trifärbung ihrer Facetten existiert.
@@ -65,7 +65,7 @@
  
  Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war. \cite[Seite 7]{FourRSST} 
  
- Um \ref{4.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immernoch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme um umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
+ Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immernoch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme um umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
  
  \begin{definition}{Zerstreute Menge, Trifärbung modulo $X$}
  Sei $G$ ein Triangulation oder Beinahe-Triangulation. 
