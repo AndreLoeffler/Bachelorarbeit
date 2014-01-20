@@ -12,5 +12,6 @@
 \contentsline {chapter}{\numberline {6}Der Beweis von Robertson, Sanders, Seymour und Thomas}{19}{chapter.6}
 \contentsline {section}{\numberline {6.1}Konfigurationen}{19}{section.6.1}
 \contentsline {section}{\numberline {6.2}Reduzierbarkeit}{23}{section.6.2}
+\contentsline {section}{\numberline {6.3}Zwangsl\IeC {\"a}ufigkeit}{29}{section.6.3}
 \contentsline {chapter}{\numberline {7}Umformulierungen}{30}{chapter.7}
 \contentsline {section}{Literatur}{31}{chapter*.2}
