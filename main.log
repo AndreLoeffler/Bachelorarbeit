@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  20 JAN 2014 08:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  20 JAN 2014 08:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -756,14 +756,11 @@ File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \@enLab=\toks42
-))
-\@input{theorems.aux}
-\openout2 = `theorems.aux'.
-
+)
 (./theorems.tex
 \c@definitioncont=\count143
 \c@satzcont=\count144
-) (./main.aux (./title.aux) (./einleitung.aux)
+)) (./main.aux (./title.aux) (./einleitung.aux)
 (./definitionen.aux) (./uebergang.aux) (./allgemeines.aux) (./haken.aux)
 (./seymour.aux) (./umformulierungen.aux) (./statement.aux))
 \openout1 = `main.aux'.
@@ -880,8 +877,6 @@ File: siegel.pdf Graphic file (type pdf)
 Package pdftex.def Info: siegel.pdf used on input line 33.
 (pdftex.def)             Requested size: 160.94646pt x 227.62204pt.
  [1
-
-
 
 
 
@@ -1087,7 +1082,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
  20400 strings out of 493485
- 369553 string characters out of 3143526
+ 369541 string characters out of 3143526
  519602 words of memory out of 3000000
  23048 multiletter control sequences out of 15000+200000
  13083 words of font info for 52 fonts, out of 3000000 for 9000
