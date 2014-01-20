@@ -59,7 +59,7 @@
 
  Statt wie Üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{2.1} zu bleiben.
  
- \begin{satzl}{Trifärbung $\Leftrightarrow$ 4-Färbung}{tait}
+ \begin{satzl}{Trifärbung $\Leftrightarrow$ 4-Färbung}{2.4}
   Eine Triangulation $T$ ist genau dann 4-färbbar, wenn eine Trifärbung ihrer Facetten existiert.
  \end{satzl}
  
@@ -81,9 +81,9 @@
  
  Dieser Definition folgend ist eine Trifärbung gleichbedeutend mit einer Trifärbung modulo $\emptyset$. 
  
- \begin{satz}{Existenz einer Trifärbung}
+ \begin{satzl}{Existenz einer Trifärbung}{2.5}
   Sei $T$ ein minimales Gegenbeispiel und sei $X\subseteq E(T)$ zerstreut und nicht leer. Gibt es in $T$ keinen Kreis $C$ mit $|E(C) \setminus X| = 1$, so besitzt $T$ eine Trifärbung modulo $X$.
- \end{satz}
+ \end{satzl}
  \begin{proof}
   Sei $F$ die Zeichnung der Knoten $V(T)$ und der Kanten aus $X$. Seien $Z_1,\cdots,Z_k$ die Mengen der Knoten, die zu den $k$ Facetten von $F$ inzident sind. Sei nun $S$ ein Graph mit $V(S) =\{Z_1,\cdots,Z_k\}$ und $E(S) = E(T) \setminus X$. Eine Kante $e \in E(S)$ ist inzident zu  $Z_i$, wenn $e \cap Z_i \neq \emptyset$. Da in $T$ kein Kreis mit $|E(C) \setminus X| = 1$ gibt, ist hat $S$ keine Schleifen. Da $S$ durch Kontraktion aus $T$ entsteht, ist $S$ auch planar. Da $X$ nicht leer ist, gilt weiter $|E(S)| + |V(S)| < |V(T)| + |E(T)|$ und da $T$ ein minimales Gegenbeispiel war, besitzt $S$ deshalb eine 4-Färbung. Somt existiert eine Abbildung $\phi: V(T) \mapsto \{1,2,3,4\}$ mit folgenden Eigenschaften:
   \begin{enumerate}[(i)]

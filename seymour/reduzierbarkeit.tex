@@ -37,7 +37,7 @@
   \end{itemize}
  \end{definition}
  
- \begin{satzl}{Konsistente Aufzüge}{constLift}
+ \begin{satzl}{Konsistente Aufzüge}{3.1}
   Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathscr{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathscr{C}$ konsistent.
  \end{satzl}
  \begin{proof}
@@ -78,7 +78,7 @@
  Wir werden später zeigen, dass keine $D$-reduzible Konfiguration in einem minimalen Gegenbeispiel vorkommen kann. In der gängigen Literatur gibt es noch andere Varianten, zu zeigen dass in einem minimalen Gegenbeispiel keine Konfiguration vorkommen kann -- etwa allgemeine $C$-Reduzibilität oder \textit{block count}-Reduzibilität. Für unsere Zwecke benötigen wir zusätzlich lediglich einen Spezialfall der $C$-Reduzibilität.
 
  \begin{definition}{Zusammenzug}
-  Sei $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$ und sei $\mathscr{C}'$ wie für die $D$-Reduzibilität gewählt. Sei $X \subseteq E(S) - E(R)$. Man sagt, $X$ ist ein \textit{Zusammenzug} von $K$, wenn $X$ nicht leer ist, $X$ zerstreut in $S$ ist und keine Kantenfärbung aus $\mathscr{C}'$ die Beschränkung von $E(R)$ einer Trifärbung von $S$ modulo $X$ ist.
+  Sei $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$ und sei $\mathscr{C}'$ wie für die $D$-Reduzibilität gewählt. Sei $X \subseteq E(S) - E(R)$. Man sagt, $X$ ist ein \textit{Zusammenzug} (engl.: contract) von $K$, wenn $X$ nicht leer ist, $X$ zerstreut in $S$ ist und keine Kantenfärbung aus $\mathscr{C}'$ die Beschränkung von $E(R)$ einer Trifärbung von $S$ modulo $X$ ist.
  \end{definition}
  
  Eine weitere Bedingung für unsere minimalen Gegenbeispiele ist, dass kein Zusammenzug einer Konfiguration $K$ vorkommen kann. Dies werden wir später weiter ausführen.
@@ -141,11 +141,16 @@
   Sei $K$ eine der 633 Konfiguration der Originalveröffentlichung, sei $S$ deren freie Vervollständigung und sei $X$ die Menge der Kanten der Zeichnung, die dick gedruckt sind. Wenn $\sharp X = 4$ gilt, so gibt es ein Dreibein für $X$.
  \end{satzl}
  
- Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich Der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt.
+ Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich Der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden di Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
  
  Nun können wir uns daran machen Satz \ref{2.2} zu beweisen.
  \begin{proof}[Beweis zu Satz \ref{2.2}]
-  
+  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$ und sei $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der der Kanten aus $K$, die im Anhang im fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
+  Nach Satz \ref{3.4} ist $H$ somit eine Beinahe-Triangulation und $\psi$ verpackt $H$ in $R$. Sei weiter $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C}_1 \subseteq \mathscr{C}^*$ die Menge aller Aufzüge von Trifärbungen von $H$ durch $\psi$.\\
+  Nach Satz \ref{3.1} ist $\mathscr{C}_1$ konsistent. Weiter sei $\mathscr{C}_2 \subseteq \mathscr{C}^*$ die Menge aller Einschränkungen von $E(R)$ von Trifärbungen von $S$. Nach Satz \ref{2.4} besitzt $T$ keine Trifärbung, somit folgt $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$. Sei nun $\mathscr{C}_3$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}_2$. Da $\mathscr{C}_1$ konsistent ist und $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$ gilt, folgt $\mathscr{C}_1 \subseteq \mathscr{C}_3$.\\
+  Man kann $H$ so durch Kanten erweitern, dass sich eine Triangulation $T'$ ergibt. Da $T$ ein minimales Gegenbeispiel ist, besitzt $T'$ -- und somit auch $H$ -- eine Trifärbung. Also gilt dass $\mathscr{C}_1$ nicht leer sein kann und somit ist auch $\mathscr{C}_3$ nicht leer. Weiterhin ist $K$ auch nicht $D$-reduzibel.\\
+  Nach Satz \ref{3.2} gilt für $X$ sowohl $1 \leq \sharp X \leq 4$ als auch, dass $X$ ein Zusammenzug von $K$ ist. Somit ist $X$ zerstreut in $S$. \\
+  Nach Satz \ref{2.1} besitzt $T$ keinen Kurzkreis. Kombiniert man \ref{3.6} und \ref{3.5}, so sieht man, dass es in $T$ keinen Kreis $C$ mit $|E(C) - \phi(X)| = 1$ geben kann. Aber nach Satz \ref{2.5} besitzt $T$ eine Trifärbung modulo $\phi(X)$, die wir $\kappa$ nenen. Die Einschränkung von $K$ auf $E(H)$ ist eine Trifärbung von $H$, da nach Wahl von $H$ gilt: $\phi(X) \cap E(H) = \emptyset$. Sei $\lambda$ der Aufzug von $\kappa$ durch $\psi$. Es gilt $\lambda \in \mathscr{C}_1$ und somit auch  $\lambda \in \mathscr{C}_3$. Sei nun $e \in E(S)$ eine Kante und definiere $\kappa'(e) = \kappa(\phi(e))$. Dann ist $\kappa'$ eine Trifärbung von $S$ modulo $X$ und $\lambda$ ist ihre Einschränkung auf $R$. Dies Liefert einen Widerspruch dazu, das $X$ ein Zusammenzug von $S$ ist. Dies zeigt das gesuchte Resultat.
  \end{proof}
 
 \end{section}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  17 JAN 2014 14:51
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  20 JAN 2014 07:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1049,22 +1049,29 @@ Overfull \hbox (8.62712pt too wide) in paragraph at lines 141--142
 mr/m/n/10 de-ren freie Ver-vollst[]andigung
  []
 
-)) [28]
+[28]
+Overfull \hbox (5.70462pt too wide) in paragraph at lines 148--154
+[]\OT1/cmr/m/n/10 Sei $\OML/cmm/m/it/10 K$ \OT1/cmr/m/n/10 ei-ne gu-te Kon-fi-g
+u-ra-ti-on, die in $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 auf-tritt. Sei $\OML/cm
+m/m/it/10 S$ \OT1/cmr/m/n/10 die freie Ver-vollst[]andigung
+ []
+
+)) [29]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 7.
-) [29
+) [30
 
 
 
-] (./main.bbl) [30
+] (./main.bbl) [31
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [31
+ (./statement.tex) [32
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
@@ -1079,15 +1086,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 20386 strings out of 493485
- 369322 string characters out of 3143526
- 519474 words of memory out of 3000000
- 23041 multiletter control sequences out of 15000+200000
- 12915 words of font info for 51 fonts, out of 3000000 for 9000
+ 20392 strings out of 493485
+ 369361 string characters out of 3143526
+ 519601 words of memory out of 3000000
+ 23044 multiletter control sequences out of 15000+200000
+ 13083 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,15n,73p,910b,964s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
+ 70i,15n,73p,1146b,964s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exi
 st, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
 
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
@@ -1105,12 +1115,13 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (31 pages, 1381513 bytes).
+nts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/rsfs/rsfs10.pfb>
+Output written on main.pdf (32 pages, 1393325 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 419 compressed objects within 5 object streams
- 145 named destinations out of 1000 (max. 500000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 438 compressed objects within 5 object streams
+ 147 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 
