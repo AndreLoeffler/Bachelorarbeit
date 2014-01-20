@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  20 JAN 2014 08:11
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  20 JAN 2014 09:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1051,22 +1051,23 @@ u-ra-ti-on, die in $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 auf-tritt. Sei $\OML/cm
 m/m/it/10 S$ \OT1/cmr/m/n/10 die freie Ver-vollst[]andigung
  []
 
-) (./seymour/zwangslaufigkeit.tex)) [29]
+) (./seymour/zwangslaufigkeit.tex [29] (./seymour/wheel.tex))) [30]
 \openout2 = `umformulierungen.aux'.
 
- (./umformulierungen.tex
+
+(./umformulierungen.tex
 Kapitel 7.
-) [30
+) [31
 
 
 
-] (./main.bbl) [31
+] (./main.bbl) [32
 
 
 ]
 \openout2 = `statement.aux'.
 
- (./statement.tex) [32
+ (./statement.tex) [33
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
@@ -1081,10 +1082,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 20400 strings out of 493485
- 369541 string characters out of 3143526
- 519602 words of memory out of 3000000
- 23048 multiletter control sequences out of 15000+200000
+ 20465 strings out of 493485
+ 370343 string characters out of 3143526
+ 519619 words of memory out of 3000000
+ 23105 multiletter control sequences out of 15000+200000
  13083 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,15n,73p,1146b,964s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1113,10 +1114,10 @@ ist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/public/rsfs/rsfs10.pfb>
-Output written on main.pdf (32 pages, 1393869 bytes).
+Output written on main.pdf (33 pages, 1398344 bytes).
 PDF statistics:
- 529 PDF objects out of 1000 (max. 8388607)
- 444 compressed objects within 5 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 452 compressed objects within 5 object streams
+ 153 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

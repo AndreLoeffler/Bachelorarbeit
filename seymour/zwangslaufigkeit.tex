@@ -1,3 +1,16 @@
 \begin{section}{Zwangsläufigkeit}
  Dieser Abschnitt widmet sich dem Beweis von Satz \ref{2.3}.
+ 
+ \begin{definition}{Wagenrad, Radnabe}
+  Eine Konfiguration $W$ heißt \textit{Wagenrad} (engl.: cartwheel), wenn es einen Knoten $w$, genannt \textit{Radnabe} (engl.: hub), und zwei Kreise $C_1, C_2$ mit folgenden Eigenschaften gibt:
+  \begin{enumerate}[(i)]
+   \item es gilt $\{w\} \cap C_1 = \emptyset,\{w\} \cap C_2 = \emptyset$ und $C_2 \cap C_1 = \emptyset$, aber $\{w\} \cup C_1 \cup C_2 = V(G(W))$,
+   \item $C_1$ und $C_2$ sind Teilgraphen von $G(W)$ und die Außenfacette von $C_2$ ist die Außenfacette von $G(W)$,
+   \item $w$ ist adjazent zu allen Knoten von $C_1$ aber keinem Knoten von $C_2$.
+  \end{enumerate}
+ \end{definition}
+
+ Es gibt folglich also vier Sorten von Kanten in einem Wagenrad: Kanten von $C_1$, Kanten von $C_2$, Kanten zwischen $w$ und und $C_1$ sowie Kanten zwischen $C_1$ und $C_2$. Zur Veranschaulichung noch eine Darstellung eines Wagenrades.
+ 
+ \[ \input{seymour/wheel} \]
 \end{section}

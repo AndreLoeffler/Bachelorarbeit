@@ -24,14 +24,25 @@
 
 %define new environments for indentations to the right
 %with labels
-\newenvironment{satzl}[2]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]\label{#2}}{\end{satzcont}\end{adjustwidth}}
-\newenvironment{lemmal}[2]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]\label{#2}}{\end{lemmacont}\end{adjustwidth}}
-\newenvironment{corollarl}[2]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]\label{#2}}{\end{corollarycont}\end{adjustwidth}}
-\newenvironment{propositionl}[2]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]\label{#2}}{\end{propositioncont}\end{adjustwidth}}
-\newenvironment{definitionl}[2]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]\label{#2}}{\end{definitioncont}\end{adjustwidth}}
+\newenvironment{satzl}[2]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]\label{#2}}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemmal}[2]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]\label{#2}}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollarl}[2]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]\label{#2}}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{propositionl}[2]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]\label{#2}}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definitionl}[2]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]\label{#2}}{\end{definitioncont}\end{adjustwidth}}
 %without labels
-\newenvironment{satz}[1]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]}{\end{satzcont}\end{adjustwidth}}
-\newenvironment{lemma}[1]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]}{\end{lemmacont}\end{adjustwidth}}
-\newenvironment{corollar}[1]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]}{\end{corollarycont}\end{adjustwidth}}
-\newenvironment{proposition}[1]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]}{\end{propositioncont}\end{adjustwidth}}
-\newenvironment{definition}[1]{\vspace{-10pt}\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]}{\end{definitioncont}\end{adjustwidth}}
+\newenvironment{satz}[1]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{satzcont}[#1]}{\end{satzcont}\end{adjustwidth}}
+\newenvironment{lemma}[1]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{lemmacont}[#1]}{\end{lemmacont}\end{adjustwidth}}
+\newenvironment{corollar}[1]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{corollarycont}[#1]}{\end{corollarycont}\end{adjustwidth}}
+\newenvironment{proposition}[1]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{propositioncont}[#1]}{\end{propositioncont}\end{adjustwidth}}
+\newenvironment{definition}[1]{\vspace{-20pt}\begin{adjustwidth}{20pt}{}\begin{definitioncont}[#1]}{\end{definitioncont}\end{adjustwidth}}
+
+
+%define node commands for tikz path environment
+\newcommand{\blacknode}{node[circle,fill=black,inner sep=2pt]} 						%gamma 5
+\newcommand{\smallnode}{node[circle,fill=black,inner sep=0.1pt]} 					%gamma 6
+\newcommand{\whitenode}{node[circle,inner sep=2pt,draw]} 							%gamma 7
+\newcommand{\rectanglenode}{node[shape=rectangle,draw,inner sep=2.5pt]} 				%gamma 8
+\newcommand{\threenode}{node[regular polygon,regular polygon sides=3,inner sep=1.5pt,rotate=180]}	%gamma 9
+\newcommand{\fivenode}{node[regular polygon,regular polygon sides=5,inner sep=2pt]}			%gamma 10
+
+\newcommand{\rsst}{Robertson, Sanders, Seymour und Thomas}
