@@ -1,3 +1,94 @@
 \begin{section}{Zwangsläufigkeit}
  Dieser Abschnitt widmet sich dem Beweis von Satz \ref{2.3}.
+ 
+ \begin{definition}{Wagenrad, Radnabe}
+  Eine Konfiguration $W$ heißt \textit{Wagenrad} (engl.: cartwheel), wenn es einen Knoten $w$, genannt \textit{Radnabe} (engl.: hub), und zwei Kreise $C_1, C_2$ mit folgenden Eigenschaften gibt:
+  \begin{enumerate}[(i)]
+   \item es gilt $\{w\} \cap C_1 = \emptyset,\{w\} \cap C_2 = \emptyset$ und $C_2 \cap C_1 = \emptyset$, aber $\{w\} \cup C_1 \cup C_2 = V(G(W))$,
+   \item $C_1$ und $C_2$ sind Teilgraphen von $G(W)$ und die Außenfacette von $C_2$ ist die Außenfacette von $G(W)$,
+   \item $w$ ist adjazent zu allen Knoten von $C_1$ aber keinem Knoten von $C_2$.
+  \end{enumerate}
+ \end{definition}
+
+ Es gibt folglich also vier Sorten von Kanten in einem Wagenrad: Kanten von $C_1$, Kanten von $C_2$, Kanten zwischen $w$ und und $C_1$ sowie Kanten zwischen $C_1$ und $C_2$. Zur Veranschaulichung noch eine Darstellung eines Wagenrades.
+ 
+ \[ \input{seymour/wheel} \]
+ 
+ Die folgende Proposition geht zurück auf Birkhoff, genauer nachzulesen in \cite{AmJMath35}.
+ 
+ \begin{propositionl}{Eindeutiges Wagenrad}{4.1}
+  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $w$ ein Knoten von $T$. Dann gibt es in $T$ genau ein Wagenrad mit Radnabe $w$.
+ \end{propositionl}
+ 
+ \begin{definition}{Auftretendes Wagenrad}
+  Sei $W$ ein Wagenrad. Eine Konfiguration $K$ \textit{tritt in $W$ auf}, wenn $G(K)$ eine Teilzeichnung von $G(W)$ ist, jede Innenfacette von $K$ eine Innenfacette von $W$ ist und $\gamma_K(v) = \gamma_W(v)$ für alle $v\in V(G(K))$ gilt. 
+ \end{definition}
+ 
+ \begin{definition}{Fluß, Wert, Quelle, Senke, $N_\itP(W)$, $\mathscr{W}_T$}
+  Ein \textit{Fluß} $P$ (engl.: pass) ist ein 4-Tupel $(K,r,s,t)$ mit
+  \begin{itemize}
+   \item einer Konfiguration $K$,
+   \item einer Zahl $r \in \mathbb{N}$,
+   \item zwei verschiedenen benachbarten Knoten $s$ und $t$ aus $G(K)$ und
+   \item für alle $v \in V(G(K))$ gibt es einen $s,v$-Pfad und einen $t,v$-Pfad in $G(K)$, beide mit Länge kleiner-gleich 2.
+  \end{itemize}
+  Wir setzen $r(P) = s$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüßen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluß aus $\itP$ isomorph ist. \\
+  Sei $W$ ein Wagenrad mit Radnabe $w$. Dann definieren wir
+  \[  \begin{align*}
+     N_\itP(W) = 10(6-\gamma_W(w)) &+ \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, t(P)=w)\\
+					  &- \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, s(P)=w)\text{.}
+      \end{align*} \]
+  Wir bezeichnen mit $\mathscr{W}_T$ die Menge aller Wagenräder, die in $T$ auftreten. 
+ \end{definition}
+ 
+ Ein Fluß $P$ tritt in einer Triangulation $T$ auf, wenn $K(P)$ in $T$ auftritt. Weiter tritt ein Fluß $P$ in einem Wagenrad $W$ auf, wenn $K(P)$ in $W$ auftritt.
+ 
+ Dies führt uns zu folgendem Resultat:
+ 
+ \begin{satzl}{Summe aller $N_\itP(W)$}{4.2}
+  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüßen. Dann gilt:
+  \[\sum_{W\in \mathscr{W}_T} N_\itP(W) = 120\text{.}\]
+ \end{satzl}
+ \begin{proof}
+  Nach Satz \ref{4.2} tritt für jeden Konten $v \in V(T)$ eindeutig ein Wagenrad $W_v \in \mathscr{W}_T$ in $T$ auf. Sei nun $P$ ein Fluß mit Quelle $s$, der in $T$ auftritt. Zu zeigen ist zunächst, dass $P$ in $W_s$ auftritt.\\
+  Seien dazu $H=G(K(P))$ und $G=G(W_s)$. Nach Definition von Wagenrädern gilt $V(H) \subseteq V(G)$, da $V(G)$ jeden Knoten $v \in T$ enthält, für den es einen $s,v$-Pfad   der Länge kleiner-gleich 2 in $T$ gibt. Auch gilt $E(H) \subseteq E(G)$, denn es gilt $E(H) \subseteq E(T)$, sowie das $G$ eine Teilzeichnung von $T$ ist. Sei weiter $f$ eine Innenfacette von $H$. Dann ist $f$ auch eine Facette von $T$, da $P$ in $P$ auftritt.\\
+  Zu zeigen bleibt, dass $f$ eine Innenfacette von $G$ ist. Angenommen, $f$ wäre die Außenfacette. Dann ist $f$ ein Teil der Außenfacette von $G$. Jede Kante aus $T$, die zu $f$ inzident ist, ist eine Kante aus $G$, also ist $f$ die Außenfacette von $G$. Da also jede Facette von $G$ eine Facette von $T$ ist, gilt $G=T$, was nicht möglich ist, da $W_s$ Ringgröße größer-gleich 2 hat. Also Widerspruch. Somit muss $f$ eine Innenfacette von $G$ sein, also muss $P$ in $W_s$ auftreten, wie gefordert.\\
+  Da also jeder Fluß, der in einem der Wagenrad von $T$ auftritt, auch in $T$ selbst auftritt gilt:
+  \[\sum (r(P):P\sim \itP, P \text{ tritt auf in } T) = \sum_{v\in V(T)} \Sigma (r(P):P\sim \itP, P \text{ tritt auf in } W_v,s(P)=v)\]
+  Diese Gleichheit gilt auch, wenn man $s(P)$ durch $t(P)$ ersetzt. Somit ergibt sich
+  \[\sum_{v\in V(T)} N_\itP(W_v) = \sum_{v\in V(T)} 10(6-\gamma_W(v))\text{.}\]
+  Für jeden Knoten $v \in V(T)$ gilt: $\gamma_W(v) = d_T(v)$. Somit ergibt sich nach der eulerschen Polyederformel:
+  \[\sum_{v\in V(T)} N_\itP(W_v) = 120\text{,}\]
+  was zu zeigen war.
+ \end{proof}
+
+ Aus Satz \ref{4.2} folgt direkt das folgende Lemma.
+ 
+ \begin{lemmal}{positives $N_\itP (W)$}{4.3}
+  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüßen. Dann tritt in $T$ ein Wagenrad $W$ auf mit $N_\itP (W) > 0$.
+ \end{lemmal}
+ 
+ Unser Ziel dieses Abschnitts ist also dies zu zeigen:
+ 
+ \begin{satzl}{ }{4.4}
+  In jedem Wagenrad $W$ mit $N_\itP (W) > 0$ tritt eine gute Konfiguration auf.
+ \end{satzl}
+ 
+ Satz \ref{2.3} folgt also direkt aus \ref{4.3} und \ref{4.4}. Nun müssen wir also $\itP$ weiter klassifizieren und die Korrektheit von Satz \ref{4.4} zeigen. Die Menge $\itP$ enthält überabzählbar viele Flüße, welche sich aber glücklicherweise leicht anhand von sogenannten Regeln in 32 Klassen einteilen lassen.
+ 
+ \begin{definition}{Regel}
+  Eine \textit{Regel} ist ein 6-Tupel $(G,\beta,\delta,r,s,t)$, wobei
+  \begin{itemize}
+   \item $G$ eine Beinahe-Triangulation ist und für jeden Knoten $v\in V(G)$ der Graph $G\setminus \{v\}$ zusammenhängend ist,
+   \item $\beta$ eine Abbildung von $V(G)$ auf $\mathbb{Z}_+$ ist,
+   \item $\delta$ eine Abbildnug von $V(G)$ auf $\mathbb{Z}_+ \cup \{\infty\}$ derart ist, dass $\beta(v) \leq \delta(v)$ gilt, 
+   \item $r \in \mathbb{N}$ und 
+   \item $s$ und $t$ sind unterschliedliche adjazent Knoten in $G$ sind und für jeden Knoten $v\in V(G)$ ein $v,s$-Pfad $Q_s$ und ein $v,t$-Pfad $Q_t$ jeweils mit Länge kleiner-gleich 2 existieren, sodass für jeden Knoten $w \in (Q_s \cup Q_t)\setminus \{s,t,v\}$ gilt: $\delta(w) \leq 8$.
+  \end{itemize}
+ \end{definition}
+ 
+ \begin{definition}{Gehorchen}
+  Sei $P$ ein Fluß und $R=(G,\beta,\delta,r,s,t)$ eine Regel. Man sagt, $P$ \textit{gehorcht} $R$, wenn $P$ isomorph zu einem Fluß $(K,r,s,t)$ ist, mit $G(K) = G$ und $\beta(v) \leq \gamma_K(v) \leq \delta(v)$ für jeden Knoten $v \in V(G)$.
+ \end{definition}
+
 \end{section}

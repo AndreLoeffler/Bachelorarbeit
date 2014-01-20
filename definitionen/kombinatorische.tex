@@ -26,11 +26,12 @@
     
   Für eine interessante Struktur benachbarter Knoten gibt es eine gebräuchliche Bezeichnung, auf die wir später zurückgreifen werden.
   
-  \begin{definition}{Pfad, einfacher Pfad, disjunkte Pfade, Kreis, Ring, zusammenhängender Graph, $k$-facher Knotenzusammenhang}
+  \begin{definition}{Pfad, einfacher Pfad, $u,v$-Pfad, disjunkte Pfade, Kreis, Ring, zusammenhängender Graph, $k$-facher Knotenzusammenhang}
   Sei $G=(V,E)$ ein Graph.
    \begin{itemize}
-    \item Eine Folge $(v_1,\cdots,v_r)$ von mindestens drei Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei Aufeinanderfolgende benachbart sind. Dann ist $r$ die Länge des Pfades und die Verbindungskanten heißen Glieder.
+    \item Eine Folge $Q = (v_1,\cdots,v_r)$ von Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei Aufeinanderfolgende benachbart sind. Dann ist $\sharp Q$ die Länge des Pfades und die Verbindungskanten heißen Glieder.
     \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
+    \item Ein Pfad $Q$ heißt \textit{$u,v$-Pfad}, wenn $u,v \in Q$ und sowohl $u$ als auch $v$ beide Grad kleiner 2 besitzen.
     \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine Knoten, die nicht erstes oder letztes Element der jeweiligen Folge sind, gemeinsam haben. 
     \item Ein Pfad heißt \textit{Kreis}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
     \item Ein \textit{Ring} ist ein Kreis, der zusätzlich einfach ist.

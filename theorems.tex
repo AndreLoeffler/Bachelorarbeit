@@ -7,10 +7,10 @@
    {\normalfont\bfseries}  %Thm head font original {\normalfont\bfseries}
    {:}                     %Punctuation after thm head original :
    {\newline}              %Space after thm head: " " = normal interword
-			   %space; \newline = linebreak
+                           %space; \newline = linebreak
   {\textbf{\thmname{#1}\thmnumber{ #2}}\thmnote{ (#3)}}
-			   %Hier wird die endgültige Struktur deiner Umgebung festgelegt. Hier funktioniert vspace.                    
-			   %Thm head spec \left(can be left empty, meaning
+                           %Hier wird die endgültige Struktur deiner Umgebung festgelegt. Hier funktioniert vspace.                    
+                           %Thm head spec \left(can be left empty, meaning
                            %`normal'\right) original {\underline{\thmname{#1}\thmnumber{ #2}\thmnote{ \left(#3\right)}}}
 
 \theoremstyle{style}
@@ -38,11 +38,12 @@
 
 
 %define node commands for tikz path environment
-\newcommand{\blacknode}{node[circle,fill=black,inner sep=2pt]} 						%gamma 5
-\newcommand{\smallnode}{node[circle,fill=black,inner sep=0.1pt]} 					%gamma 6
-\newcommand{\whitenode}{node[circle,inner sep=2pt,draw]} 						%gamma 7
-\newcommand{\rectanglenode}{node[shape=rectangle,draw,inner sep=2.5pt]} 				%gamma 8
-\newcommand{\threenode}{node[regular polygon,regular polygon sides=3,inner sep=1.5pt,rotate=180]}	%gamma 9
-\newcommand{\fivenode}{node[regular polygon,regular polygon sides=5,inner sep=2pt]}			%gamma 10
+\newcommand{\blacknode}{node[circle,fill=black,inner sep=2pt]}                                                 %gamma 5
+\newcommand{\smallnode}{node[circle,fill=black,inner sep=0.1pt]}                                         %gamma 6
+\newcommand{\whitenode}{node[circle,inner sep=2pt,draw]}                                                 %gamma 7
+\newcommand{\rectanglenode}{node[shape=rectangle,draw,inner sep=2.5pt]}                                 %gamma 8
+\newcommand{\threenode}{node[regular polygon,regular polygon sides=3,inner sep=1.5pt,rotate=180]}        %gamma 9
+\newcommand{\fivenode}{node[regular polygon,regular polygon sides=5,inner sep=2pt]}                        %gamma 10
 
 \newcommand{\rsst}{Robertson, Sanders, Seymour und Thomas}
+\newcommand{\itP}{\mathscr{P}}

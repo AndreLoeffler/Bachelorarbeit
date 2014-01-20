@@ -3,15 +3,15 @@
 \contentsline {chapter}{\numberline {2}Definitionen}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Topologische Definitionen}{5}{section.2.1}
 \contentsline {section}{\numberline {2.2}Kombinatorische Definitionen}{7}{section.2.2}
-\contentsline {chapter}{\numberline {3}\IeC {\"U}bergang zwischen Topologie und Kombinatorik}{13}{chapter.3}
-\contentsline {chapter}{\numberline {4}Vor\IeC {\"u}berlegungen}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}Einschr\IeC {\"a}nkungen f\IeC {\"u}r minimale Gegenbeispiele}{14}{section.4.1}
-\contentsline {chapter}{\numberline {5}Der Beweis von Appel und Haken}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Die Konfigurationen}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{18}{section.5.2}
-\contentsline {chapter}{\numberline {6}Der Beweis von Robertson, Sanders, Seymour und Thomas}{19}{chapter.6}
-\contentsline {section}{\numberline {6.1}Konfigurationen}{19}{section.6.1}
-\contentsline {section}{\numberline {6.2}Reduzierbarkeit}{23}{section.6.2}
-\contentsline {section}{\numberline {6.3}Zwangsl\IeC {\"a}ufigkeit}{29}{section.6.3}
-\contentsline {chapter}{\numberline {7}Umformulierungen}{31}{chapter.7}
-\contentsline {section}{Literatur}{32}{chapter*.2}
+\contentsline {chapter}{\numberline {3}\IeC {\"U}bergang zwischen Topologie und Kombinatorik}{14}{chapter.3}
+\contentsline {chapter}{\numberline {4}Vor\IeC {\"u}berlegungen}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Einschr\IeC {\"a}nkungen f\IeC {\"u}r minimale Gegenbeispiele}{15}{section.4.1}
+\contentsline {chapter}{\numberline {5}Der Beweis von Appel und Haken}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Die Konfigurationen}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{19}{section.5.2}
+\contentsline {chapter}{\numberline {6}Der Beweis von Robertson, Sanders, Seymour und Thomas}{20}{chapter.6}
+\contentsline {section}{\numberline {6.1}Konfigurationen}{20}{section.6.1}
+\contentsline {section}{\numberline {6.2}Reduzierbarkeit}{24}{section.6.2}
+\contentsline {section}{\numberline {6.3}Zwangsl\IeC {\"a}ufigkeit}{30}{section.6.3}
+\contentsline {chapter}{\numberline {7}Umformulierungen}{34}{chapter.7}
+\contentsline {section}{Literatur}{35}{chapter*.2}
