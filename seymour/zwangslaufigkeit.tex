@@ -29,15 +29,15 @@
   Sei $W$ ein Wagenrad. Eine Konfiguration $K$ \textit{tritt in $W$ auf}, wenn $G(K)$ eine Teilzeichnung von $G(W)$ ist, jede Innenfacette von $K$ eine Innenfacette von $W$ ist und $\gamma_K(v) = \gamma_W(v)$ für alle $v\in V(G(K))$ gilt. 
  \end{definition}
  
- \begin{definition}{Fluß, Wert, Quelle, Senke, $N_\itP(W)$, $\mathscr{W}_T$}
-  Ein \textit{Fluß} $P$ (engl.: pass) ist ein 4-Tupel $(K,r,s,t)$ mit
+ \begin{definition}{Fluss, Wert, Quelle, Senke, $N_\itP(W)$, $\mathscr{W}_T$}
+  Ein \textit{Fluss} $P$ (engl.: pass) ist ein 4-Tupel $(K,r,s,t)$ mit
   \begin{itemize}
    \item einer Konfiguration $K$,
    \item einer Zahl $r \in \mathbb{N}$,
    \item zwei verschiedenen benachbarten Knoten $s$ und $t$ aus $G(K)$ und
    \item für alle $v \in V(G(K))$ gibt es einen $s,v$-Pfad und einen $t,v$-Pfad in $G(K)$, beide mit Länge kleiner-gleich 2.
   \end{itemize}
-  Wir setzen $r(P) = s$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüßen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluß aus $\itP$ isomorph ist. \\
+  Wir setzen $r(P) = s$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüssen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluss aus $\itP$ isomorph ist. \\
   Sei $W$ ein Wagenrad mit Radnabe $w$. Dann definieren wir\\
   \begin{align*}
      N_\itP(W) = 10(6-\gamma_W(w)) &+ \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, t(P)=w)\\
@@ -47,19 +47,19 @@
  \end{definition}
  
   
- Ein Fluß $P$ tritt in einer Triangulation $T$ auf, wenn $K(P)$ in $T$ auftritt. Weiter tritt ein Fluß $P$ in einem Wagenrad $W$ auf, wenn $K(P)$ in $W$ auftritt.
+ Ein Fluss $P$ tritt in einer Triangulation $T$ auf, wenn $K(P)$ in $T$ auftritt. Weiter tritt ein Fluss $P$ in einem Wagenrad $W$ auf, wenn $K(P)$ in $W$ auftritt.
  
  Dies führt uns zu folgendem Resultat:
  
  \begin{satzl}{Summe aller $N_\itP(W)$}{4.2}
-  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüßen. Dann gilt:
+  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüssen. Dann gilt:
   \[\sum_{W\in \mathscr{W}_T} N_\itP(W) = 120\text{.}\]
  \end{satzl}
  \begin{proof}
-  Nach Satz \ref{4.2} tritt für jeden Konten $v \in V(T)$ eindeutig ein Wagenrad $W_v \in \mathscr{W}_T$ in $T$ auf. Sei nun $P$ ein Fluß mit Quelle $s$, der in $T$ auftritt. Zu zeigen ist zunächst, dass $P$ in $W_s$ auftritt.\\
+  Nach Satz \ref{4.2} tritt für jeden Konten $v \in V(T)$ eindeutig ein Wagenrad $W_v \in \mathscr{W}_T$ in $T$ auf. Sei nun $P$ ein Fluss mit Quelle $s$, der in $T$ auftritt. Zu zeigen ist zunächst, dass $P$ in $W_s$ auftritt.\\
   Seien dazu $H=G(K(P))$ und $G=G(W_s)$. Nach Definition von Wagenrädern gilt $V(H) \subseteq V(G)$, da $V(G)$ jeden Knoten $v \in T$ enthält, für den es einen $s,v$-Pfad   der Länge kleiner-gleich 2 in $T$ gibt. Auch gilt $E(H) \subseteq E(G)$, denn es gilt $E(H) \subseteq E(T)$, sowie das $G$ eine Teilzeichnung von $T$ ist. Sei weiter $f$ eine Innenfacette von $H$. Dann ist $f$ auch eine Facette von $T$, da $P$ in $P$ auftritt.\\
   Zu zeigen bleibt, dass $f$ eine Innenfacette von $G$ ist. Angenommen, $f$ wäre die Außenfacette. Dann ist $f$ ein Teil der Außenfacette von $G$. Jede Kante aus $T$, die zu $f$ inzident ist, ist eine Kante aus $G$, also ist $f$ die Außenfacette von $G$. Da also jede Facette von $G$ eine Facette von $T$ ist, gilt $G=T$, was nicht möglich ist, da $W_s$ Ringgröße größer-gleich 2 hat. Also Widerspruch. Somit muss $f$ eine Innenfacette von $G$ sein, also muss $P$ in $W_s$ auftreten, wie gefordert.\\
-  Da also jeder Fluß, der in einem der Wagenrad von $T$ auftritt, auch in $T$ selbst auftritt gilt:
+  Da also jeder Fluss, der in einem der Wagenrad von $T$ auftritt, auch in $T$ selbst auftritt gilt:
   \[\sum (r(P):P\sim \itP, P \text{ tritt auf in } T) = \sum_{v\in V(T)} \Sigma (r(P):P\sim \itP, P \text{ tritt auf in } W_v,s(P)=v)\]
   Diese Gleichheit gilt auch, wenn man $s(P)$ durch $t(P)$ ersetzt. Somit ergibt sich
   \[\sum_{v\in V(T)} N_\itP(W_v) = \sum_{v\in V(T)} 10(6-\gamma_W(v))\text{.}\]
@@ -71,7 +71,7 @@
  Aus Satz \ref{4.2} folgt direkt das folgende Lemma.
  
  \begin{lemmal}{positives $N_\itP (W)$}{4.3}
-  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüßen. Dann tritt in $T$ ein Wagenrad $W$ auf mit $N_\itP (W) > 0$.
+  Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $\itP$ eine Menge von Flüssen. Dann tritt in $T$ ein Wagenrad $W$ auf mit $N_\itP (W) > 0$.
  \end{lemmal}
  
  Unser Ziel dieses Abschnitts ist also dies zu zeigen:
@@ -80,7 +80,7 @@
   In jedem Wagenrad $W$ mit $N_\itP (W) > 0$ tritt eine gute Konfiguration auf.
  \end{satzl}
  
- Satz \ref{2.3} folgt also direkt aus \ref{4.3} und \ref{4.4}. Nun müssen wir also $\itP$ weiter klassifizieren und die Korrektheit von Satz \ref{4.4} zeigen. Die Menge $\itP$ enthält überabzählbar viele Flüße, welche sich aber glücklicherweise leicht anhand von sogenannten Regeln in 32 Klassen einteilen lassen.
+ Satz \ref{2.3} folgt also direkt aus \ref{4.3} und \ref{4.4}. Nun müssen wir also $\itP$ weiter klassifizieren und die Korrektheit von Satz \ref{4.4} zeigen. Die Menge $\itP$ enthält überabzählbar viele Flüsse, welche sich aber glücklicherweise leicht anhand von sogenannten Regeln in 32 Klassen einteilen lassen.
  
  \begin{definition}{Regel}
   Eine \textit{Regel} ist ein 6-Tupel $(G,\beta,\delta,r,s,t)$, wobei
@@ -94,10 +94,81 @@
  \end{definition}
  
  \begin{definition}{Gehorchen}
-  Sei $P$ ein Fluß und $R=(G,\beta,\delta,r,s,t)$ eine Regel. Man sagt, $P$ \textit{gehorcht} $R$, wenn $P$ isomorph zu einem Fluß $(K,r,s,t)$ ist, mit $G(K) = G$ und $\beta(v) \leq \gamma_K(v) \leq \delta(v)$ für jeden Knoten $v \in V(G)$.
+  Sei $P$ ein Fluss und $R=(G,\beta,\delta,r,s,t)$ eine Regel. Man sagt, $P$ \textit{gehorcht} $R$, wenn $P$ isomorph zu einem Fluss $(K,r,s,t)$ ist, mit $G(K) = G$ und $\beta(v) \leq \gamma_K(v) \leq \delta(v)$ für jeden Knoten $v \in V(G)$.
  \end{definition}
  
- Nun erweitern wir die Knotendefinitionen aus Abbildung \ref{fig1}
+ Nun erweitern wir die Knotendefinitionen aus Abbildung \ref{fig1}, um Regeln in den Darstellungen unserer Konfigurationen abbilden zu können. Betrachtet man das Paar $(\beta(v),\delta(v))$, so stellt man fest, dass drei Fälle eintreten können:
+ 
+ \begin{enumerate}[(a)]
+  \item $5 \leq \beta(v) = \delta(v) \leq 8$ oder
+  \item $\beta(v) = 5$ und $6 \leq \delta(v) \leq 8$ oder
+  \item $5 \leq \beta(v) \leq 8$ und $\delta(v) = \infty$.
+ \end{enumerate}
+ 
+ Der Fall (a) tritt am häufigsten ein, weswegen wir in diesem Fall nichts ändern oder hinzufügen. Für (b) erkennt man, dass $\gamma(v) = \delta(v)$ gilt. In diesem Fall notieren wir ein ``$-$'' neben dem betreffenden Knoten. Im Fall (c) gilt $\gamma(v) = \beta(v)$ und wir setzen ein ``$+$'' neben den Knoten.\\
+ Zusätzlich markieren wir noch die Knoten $s$ und $t$ sowie die Zahl $r$, indem wir die sie verbindende Kante entweder mit einer einfachen Pfeilspitze ($r=1$) oder einer doppelten Pfeilspitze ($r=2$) versehen, die auf $t$ zeigt. Für alle Regeln, die wir zum Einteilen aufstellen, benutzen wir entweder $r=1$ oder $2$. 
+ 
+ \begin{figure}[hb]
+  \label{fig4}
+  \centering
+  \includegraphics{seymour/regeln.eps}%
+  \caption[Darstellung der 32 Regeln]{Darstellung der 32 Regeln}
+ \end{figure}
+
+ Im weiteren Verlauf dieses Abschnitts benutzen wir $\itP$ nurnoch, um eine Menge von Flüssen zu beschreiben, die einer Regel gehorcht. Dazu ist zu bemerken, dass jeder Fluss genau einer Regel gehorcht, jedoch gibt es für einen Fluss $P$ einige wenige Darstellungen, die einer Regel folgen, deren Isomorphismus von $P$ auf $(K,r,s,t)$ aber nicht eindeutig ist -- zum Beispiel bei den Regeln 10 oder 31. In solchen Fällen zählen wir den Fluss $P$ nur ein mal zu $\itP$, da es sich bei $\itP$ nicht um eine Multimenge handelt.
+ 
+ Flüsse, die der Regel 1 gehorchen, haben den Wert $r=2$, für alle anderen gilt $r=1$. Weiter unterscheiden sich die ersten sieben Regeln von den anderen. Folgt ein Fluss $P$ einer dieser Regeln, so gilt für die Quelle $s$ $\gamma_P(s) \in \{5,6\}$, während in allen anderen Regel für Quelle $s$ und Senke $t$ folgendes gilt: $\gamma_P(s) \in \{7,8\}$ und $\gamma_P(t) \geq 7$. Später werden wir sehen, dass die ersten sieben Regeln einer gewissen Systematik folgen. Alle anderen Regeln wurden jedoch durch stupides Durchprobieren aufgestellt und folgen beim Aufstellen keinem besonderen Muster.
+ 
+ Nun müssen wir noch zeigen, dass unsere Wahl von $\itP$ für Satz \ref{4.4} geeignet ist. Um dies zu erreichen, zerlegen wir Satz \ref{4.4} in drei Fälle, die wir Anhand des Grads der Radnabe $v$ des Wagenrads $W$ unterscheiden:
+ \begin{itemize}
+  \item $d_W(v) \leq 6$,
+  \item $7 \leq d_W(v) \leq 11$ und 
+  \item $d_W(v) \geq 12$.
+ \end{itemize}
+ 
+ Für den ersten dieser Fälle benötigen wir das folgende Lemma.
+ 
+ \begin{lemmal}{}{4.5}
+  Sei $W$ ein Wagenrad mit Radnabe $w$ mit $d_W(w) \in \{5,6\}$. Für $k = 1,\cdots,32$ seien $p_k$ und $q_k$ die Summen über die Werte $r(P)$ aller Flüsse $P$, die der Regel $k$ gehorchen und in $W$ auftreten, bei denen $w$ die Quelle bzw. Senke von $P$ ist. Angenommen, es tritt keine gute Konfiguration in $W$ auf, dann gilt:
+  \begin{enumerate}[(i)]
+   \item $p_1 = q_2 + q_3$
+   \item $p_3 = q_4$
+   \item $p_4 = q_5 + q_6$
+   \item $p_5 = q_7$
+  \end{enumerate}
+ \end{lemmal}
+ 
+ \begin{proof}
+  Sei $X$ die Menge aller Tripel $(x,y,z)$ von Knoten, die mit $w$ benachbart sind, derart, dass sie alle unterschliedlich sind und $y$ sowohl zu $x$ als auch zu $z$ adjazent ist und $\gamma_W(x) = 5$ gilt. Setze $p_1 = \sharp X$. Sei weiter $q_2$ die Anzahl aller Tripel $(x,y,z) \in X$, für die $\gamma_W(y) \geq 7$ gilt, und $q_3$ die Menge der Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) \geq 6$. Da in $W$ nach Voraussetzung keine guten Konfigurationen auftreten, gibt es kein Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) = 5$. Somit gilt $q_2 + q_3 = \sharp X = p_1$.\\
+  Für den Fall, dass $\gamma_W(w) = 5$ gilt, sind $p_3,p_4,p_5,q_4,q_5,q_6,q_7$ alle 0 und somit (ii), (iii) und (iv) wahr. Im weiteren sei also $\gamma_W(w) = 6$.\\
+  Sei nun $X$ die Menge der Tripel $(x,y,z)$ von Knoten, die mit $w$ benachbart sind, derart, dass sie alle unterschliedlich sind, $y$ adjazent zu sowohl $x$ als auch $z$ ist, $\gamma_W(x) \leq 6$, $\gamma_W(y) \leq 6$ und $\gamma_W(u) = 5$ gilt, wobei $u$ der andere Knoten -- nicht $w$ -- ist, der sowohl zu $x$ als auch $y$ adjazent ist. Setze $p_3 = \sharp X$. Da nach Annahme keine gute Konfiguration in $W$ auftritt, gilt für jedes dieser Tripel $\gamma_W(z) \geq 6$. Somit gilt $q_4 = \sharp X = p_3$, was (ii) zeigt.\\
+  Die Beweise für (iii) und (iv) verlaufen sehr ähnlich, weswegen hier nicht weiter darauf eingegangen wird.
+ \end{proof}
+
+  Aus \ref{4.5} leiten wir Folgendes her.
+
+ \begin{satzl}{gute Konfiguration im Wagenrad}{4.6}
+  Sei $W$ ein Wagenrad mit $N_\itP(W) > 0$ und Radnabe $w$ mit $d_W(w) \in \{5,6\}$. Dann tritt eine gute Konfiguration in $W$ auf.
+ \end{satzl}
+ 
+ \begin{proof}
+  Seien für die Radnabe $w$ die Werte $p_k$ und $q_k$ definiert für $k = 1,\cdots,32$, genau wie in \ref{4.5}.\\
+  Angenommen, es trete keine gute Konfiguration in $W$ auf. Wir werden $N_\itP(W) = 0$ zeigen, was einen Widerspruch darstellt. Sei zuerst $\gamma_W(w) = 5$. Dann sind die $p_k = 0$ für $k = 2,\cdots,32$ und ebenfalls die $q_k = 0$ für $k = 4,\cdots,32$. Somit ergibt sich wegen \ref{4.5}
+  \[ N_\itP(W) = 10 + p_1 - q_1 - q_2 - q_3 = 0 \]
+  Sei nun $\gamma_W(w) = 6$. Dann folgt wieder aus \ref{4.5}
+  \[ N_\itP(W) = p_1 + p_3 + p_4 + p_5 - q_2 - q_3 - q_4 - q_5 - q_6 - q_7 = 0\]
+  In beiden Fällen erhalten wir unseren gesuchten Widerspruch durch einfaches Einsetzen.
+ \end{proof}
+ 
+ Nun wenden wir uns dem dritten Fall zu, also für Radnaben  mit Grad größer-gleich $12$. Dafür benötigen wir ein anderes Zwischenresultat.
+ 
+ \begin{lemmal}{}{4.7}
+  Sei $W$ ein Wagenrad mit Radnabe $w$ und sei $v$ ein zu $w$ adjazenter Knoten. Wenn keine gute Konfiguration in $W$ auftritt, ist die Summe über die $r(P)$ aller Flüsse $P \in \itP$, die in $W$ auftreten und die Quelle $v$ und Senke $w$ haben, höchstens 5.
+ \end{lemmal}
+
+
+
+
 
 
 
