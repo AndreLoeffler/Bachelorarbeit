@@ -69,7 +69,12 @@
  
  Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie im vorherigen Kapitel dargestellt wurden.
  
- \[ \input{seymour/konfig} \overset{\overset{\text{freie}}{\text{Vervollständigung}}}{\Longrightarrow} \input{seymour/freievervoll} \]
+ \begin{figure}[hb]
+  \label{fig2}
+  \[ \input{seymour/konfig} \overset{\overset{\text{freie}}{\text{Vervollständigung}}}{\Longrightarrow} \input{seymour/freievervoll} \]
+  \caption[Eine Konfiguration und ihre freie Vervollständigung]{Eine Konfiguration und ihre freie Vervollständigung}
+ \end{figure}
+
  
  \begin{definitionl}{$D$-Reduzibilität}{dred}
   Sei also $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$. Sei $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C} \subseteq \mathscr{C}^*$ die Menge aller Beschränkungen von $E(R)$ von Trifärbungen von $S$. Sei weiter $\mathscr{C}'$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}$. Die Konfiguration $K$ heißt \textit{$D$-reduzibel}, wenn gilt: $\mathscr{C}' = \emptyset$.

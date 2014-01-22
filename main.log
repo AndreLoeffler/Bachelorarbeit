@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  22 JAN 2014 09:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  22 JAN 2014 09:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,7 +940,7 @@ d ist und sich durch (m[]oglicherweise)
  []
 
 (./definitionen/kuratowski.tex) [10]
-Overfull \hbox (7.2139pt too wide) in paragraph at lines 114--115
+Overfull \hbox (7.2139pt too wide) in paragraph at lines 119--120
 []\OT1/cmr/bx/n/10 Definition 15 (Drei-eck, Tri-an-gu-la-ti-on, Bei-na-he-Tri-a
 n-gu-la-ti-on, Fa-cet-ten-men-ge $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m
 /it/10 T\OT1/cmr/m/n/10 )$\OT1/cmr/bx/n/10 ): 
@@ -1032,21 +1032,21 @@ ge $\OML/cmm/m/it/10 g[]; r[]; g[]; r[]; []  ; r[]; g[]$\OT1/cmr/m/n/10 ,
  []
 
 [25] (./seymour/konfig.tex) (./seymour/freievervoll.tex) [26] [27] [28]
-Overfull \hbox (8.62712pt too wide) in paragraph at lines 141--142
+Overfull \hbox (8.62712pt too wide) in paragraph at lines 146--147
 []\OT1/cmr/m/n/10 Sei $\OML/cmm/m/it/10 K$ \OT1/cmr/m/n/10 ei-ne der 633 Kon-fi
 -gu-ra-ti-on der Ori-gi-nal-ver[]offentlichung, sei $\OML/cmm/m/it/10 S$ \OT1/c
 mr/m/n/10 de-ren freie Ver-vollst[]andigung
  []
 
 [29]
-Overfull \hbox (5.70462pt too wide) in paragraph at lines 148--154
+Overfull \hbox (5.70462pt too wide) in paragraph at lines 153--159
 []\OT1/cmr/m/n/10 Sei $\OML/cmm/m/it/10 K$ \OT1/cmr/m/n/10 ei-ne gu-te Kon-fi-g
 u-ra-ti-on, die in $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 auf-tritt. Sei $\OML/cm
 m/m/it/10 S$ \OT1/cmr/m/n/10 die freie Ver-vollst[]andigung
  []
 
 ) (./seymour/zwangslaufigkeit.tex [30] (./seymour/wheel.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 35--37
+Underfull \hbox (badness 10000) in paragraph at lines 40--42
 
  []
 
@@ -1087,10 +1087,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 20498 strings out of 493485
- 370767 string characters out of 3143526
- 519850 words of memory out of 3000000
- 23121 multiletter control sequences out of 15000+200000
+ 20506 strings out of 493485
+ 370841 string characters out of 3143526
+ 521090 words of memory out of 3000000
+ 23125 multiletter control sequences out of 15000+200000
  13083 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,17n,73p,1146b,1072s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1121,10 +1121,10 @@ e1/public/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/rsfs/rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs7.
 pfb>
-Output written on main.pdf (37 pages, 1422284 bytes).
+Output written on main.pdf (37 pages, 1423355 bytes).
 PDF statistics:
- 585 PDF objects out of 1000 (max. 8388607)
- 493 compressed objects within 5 object streams
- 167 named destinations out of 1000 (max. 500000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 503 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

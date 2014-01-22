@@ -12,7 +12,12 @@
 
  Es gibt folglich also vier Sorten von Kanten in einem Wagenrad: Kanten von $C_1$, Kanten von $C_2$, Kanten zwischen $w$ und und $C_1$ sowie Kanten zwischen $C_1$ und $C_2$. Zur Veranschaulichung noch eine Darstellung eines Wagenrades.
  
- \[ \input{seymour/wheel} \]
+ \begin{figure}[hb]
+  \label{fig3}
+  \[ \input{seymour/wheel} \]
+  \caption[Darstellung eines Wagenrads]{Darstellung eines Wagenrads}
+ \end{figure}
+
  
  Die folgende Proposition geht zurück auf Birkhoff, genauer nachzulesen in \cite{AmJMath35}.
  
@@ -82,7 +87,7 @@
   \begin{itemize}
    \item $G$ eine Beinahe-Triangulation ist und für jeden Knoten $v\in V(G)$ der Graph $G\setminus \{v\}$ zusammenhängend ist,
    \item $\beta$ eine Abbildung von $V(G)$ auf $\mathbb{Z}_+$ ist,
-   \item $\delta$ eine Abbildnug von $V(G)$ auf $\mathbb{Z}_+ \cup \{\infty\}$ derart ist, dass $\beta(v) \leq \delta(v)$ gilt, 
+   \item $\delta$ eine Abbildung von $V(G)$ auf $\mathbb{Z}_+ \cup \{\infty\}$ derart ist, dass $\beta(v) \leq \delta(v)$ gilt, 
    \item $r \in \mathbb{N}$ und 
    \item $s$ und $t$ sind unterschliedliche adjazent Knoten in $G$ sind und für jeden Knoten $v\in V(G)$ ein $v,s$-Pfad $Q_s$ und ein $v,t$-Pfad $Q_t$ jeweils mit Länge kleiner-gleich 2 existieren, sodass für jeden Knoten $w \in (Q_s \cup Q_t)\setminus \{s,t,v\}$ gilt: $\delta(w) \leq 8$.
   \end{itemize}
@@ -92,7 +97,7 @@
   Sei $P$ ein Fluß und $R=(G,\beta,\delta,r,s,t)$ eine Regel. Man sagt, $P$ \textit{gehorcht} $R$, wenn $P$ isomorph zu einem Fluß $(K,r,s,t)$ ist, mit $G(K) = G$ und $\beta(v) \leq \gamma_K(v) \leq \delta(v)$ für jeden Knoten $v \in V(G)$.
  \end{definition}
  
- Nun erweitern wir die Knotendefinitionen 
+ Nun erweitern wir die Knotendefinitionen aus Abbildung \ref{fig1}
 
 
 
