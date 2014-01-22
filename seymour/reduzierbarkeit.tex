@@ -41,7 +41,7 @@
   Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathscr{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathscr{C}$ konsistent.
  \end{satzl}
  \begin{proof}
-  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\rho \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\rho$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\rho$-passend ist. O.B.d.A. sei $\rho = 0$.\\
+  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\theta \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\theta$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\theta$-passend ist. O.B.d.A. sei $\theta = 0$.\\
   Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine \textit{Rippe} ist eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$, wobei
   \begin{enumerate}[(i)]
    \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
@@ -52,8 +52,8 @@
   \end{enumerate}
   Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, $\kappa(e) = 0$ gilt. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
   Weiter sind alle Rippen disjunkt, sie teilen sich also weder Kanten noch Facetten. Für $1 \leq i \leq k$ lässt sich jede Kante $f_i$ entweder eindeutig einer Rippe zuordnen, wenn $\kappa(f_i) = \pm 1$, oder keiner Rippe zuordnen, wenn $\kappa(f_i)=0$.\\
-  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\rho$-passend für $M$.\\
-  Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\rho$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
+  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\theta$-passend für $M$.\\
+  Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\theta$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
  \end{proof}
 
 \begin{definition}{Freie Vervollständigung}

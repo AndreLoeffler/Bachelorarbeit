@@ -139,9 +139,44 @@
  \end{lemmal}
  
  \begin{proof}
-  Sei $X$ die Menge aller Tripel $(x,y,z)$ von Knoten, die in $W$ benachbart sind, derart, dass sie alle unterschliedlich sind und $y$ sowohl zu $x$ als auch zu $z$ adjazent ist und $\gamma_W(x) = 5$ gilt. Setze $p_1 = \sharp X$. Sei weiter $q_2$ die Anzahl aller Tripel $(x,y,z) \in X$, für die $\gamma_W(y) \geq 7$ gilt, und $q_3$ die Menge der Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) \geq 6$. Da in $W$ nach Voraussetzung keine guten Konfigurationen auftreten, gibt es kein Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) = 5$. Somit gilt $q_2 + q_3 = \sharp X = p_1$.\\
+  Sei $X$ die Menge aller Tripel $(x,y,z)$ von Knoten, die mit $w$ benachbart sind, derart, dass sie alle unterschliedlich sind und $y$ sowohl zu $x$ als auch zu $z$ adjazent ist und $\gamma_W(x) = 5$ gilt. Setze $p_1 = \sharp X$. Sei weiter $q_2$ die Anzahl aller Tripel $(x,y,z) \in X$, für die $\gamma_W(y) \geq 7$ gilt, und $q_3$ die Menge der Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) \geq 6$. Da in $W$ nach Voraussetzung keine guten Konfigurationen auftreten, gibt es kein Tripel $(x,y,z) \in X$ mit $\gamma_W(y) \leq 6$ und $\gamma_W(z) = 5$. Somit gilt $q_2 + q_3 = \sharp X = p_1$.\\
   Für den Fall, dass $\gamma_W(w) = 5$ gilt, sind $p_3,p_4,p_5,q_4,q_5,q_6,q_7$ alle 0 und somit (ii), (iii) und (iv) wahr. Im weiteren sei also $\gamma_W(w) = 6$.\\
-  
+  Sei nun $X$ die Menge der Tripel $(x,y,z)$ von Knoten, die mit $w$ benachbart sind, derart, dass sie alle unterschliedlich sind, $y$ adjazent zu sowohl $x$ als auch $z$ ist, $\gamma_W(x) \leq 6$, $\gamma_W(y) \leq 6$ und $\gamma_W(u) = 5$ gilt, wobei $u$ der andere Knoten -- nicht $w$ -- ist, der sowohl zu $x$ als auch $y$ adjazent ist. Setze $p_3 = \sharp X$. Da nach Annahme keine gute Konfiguration in $W$ auftritt, gilt für jedes dieser Tripel $\gamma_W(z) \geq 6$. Somit gilt $q_4 = \sharp X = p_3$, was (ii) zeigt.\\
+  Die Beweise für (iii) und (iv) verlaufen sehr ähnlich, weswegen hier nicht weiter darauf eingegangen wird.
+ \end{proof}
+
+  Aus \ref{4.5} leiten wir Folgendes her.
+
+ \begin{satzl}{gute Konfiguration im Wagenrad I}{4.6}
+  Sei $W$ ein Wagenrad mit $N_\itP(W) > 0$ und Radnabe $w$ mit $d_W(w) \in \{5,6\}$. Dann tritt eine gute Konfiguration in $W$ auf.
+ \end{satzl}
+ 
+ \begin{proof}
+  Seien für die Radnabe $w$ die Werte $p_k$ und $q_k$ definiert für $k = 1,\cdots,32$, genau wie in \ref{4.5}.\\
+  Angenommen, es trete keine gute Konfiguration in $W$ auf. Wir werden $N_\itP(W) = 0$ zeigen, was einen Widerspruch darstellt. Sei zuerst $\gamma_W(w) = 5$. Dann sind die $p_k = 0$ für $k = 2,\cdots,32$ und ebenfalls die $q_k = 0$ für $k = 4,\cdots,32$. Somit ergibt sich wegen \ref{4.5}
+  \[ N_\itP(W) = 10 + p_1 - q_1 - q_2 - q_3 = 0 \]
+  Sei nun $\gamma_W(w) = 6$. Dann folgt wieder aus \ref{4.5}
+  \[ N_\itP(W) = p_1 + p_3 + p_4 + p_5 - q_2 - q_3 - q_4 - q_5 - q_6 - q_7 = 0\]
+  In beiden Fällen erhalten wir unseren gesuchten Widerspruch durch einfaches Einsetzen.
+ \end{proof}
+ 
+ Nun wenden wir uns dem dritten Fall zu, also für Radnaben  mit Grad größer-gleich $12$. Dafür benötigen wir ein anderes Zwischenresultat.
+ 
+ \begin{lemmal}{}{4.7}
+  Sei $W$ ein Wagenrad mit Radnabe $w$ und sei $v$ ein zu $w$ adjazenter Knoten. Wenn keine gute Konfiguration in $W$ auftritt, ist die Summe über die $r(P)$ aller Flüsse $P \in \itP$, die in $W$ auftreten und die Quelle $v$ und Senke $w$ haben, höchstens 5.
+ \end{lemmal}
+
+ Der Beweis hierzu verwendet im wesentlichen die Annahme, dass keine gute Konfiguration auftreten darf und betrachtet für jeder der 32 Regeln die Anzahl $R_k$ der Flüsse, die in $W$ auftreten und der $k$-ten Regel folgen, sowie die Summe $R$ aller $R_k$ und zeigt, dass $R \leq 5$ gilt. Dazu unterscheidet er zwischen verschiedenen Zusammensetzungen von $R$ aus den $R_k$ für die fünf verschiedenen Fälle von Werten, di $\gamma_K(v)$ annehmen kann. Dies gestaltet sich sehr lang und trägt wenig zum Verständnis des eigentlichen Problems bei. Deshalb wird für den vollständigen Beweis auf \cite[Seite 21, Lemma 4.7]{FourRSST} verwiesen.
+ 
+ Daraus leiten wir unser nächstes Teilresultat ab.
+ 
+ \begin{satzl}{gute Konfiguration im Wagenrad II}{4.8}
+  Sei $W$ ein Wagenrad mit $N_\itP(W) > 0$ und mit Radnabe $w$ mit $d_W(w) \geq 12$. Dann tritt in $W$ eine gute Konfiguration auf.
+ \end{satzl}
+ 
+ \begin{proof}
+  Angenommen, es würde keine gute Konfiguration in $W$ auftreten. Setze $d = \gamma_W(w)$ und sei $D$ die Menge aller zu $w$ adjazenter Knoten. Für alle $v \in D$ sei $R(v)$ die Summe aller $r(P)$, wobei $P \in \itP$ ein Fluss mit Quelle $v$ und Senke $w$ ist, der in $W$ auftritt. Dann gilt nach \ref{4.7}, dass $\sum_{v \in D} R(v) \leq 5\cdot d$. Somit gilt
+  \[ N_\itP(W) = 10(6-d) + \sum_{v \in V} R(v) \leq 10(6-d) + 5d = 60 - 5d \leq 0\]
  \end{proof}
 
 

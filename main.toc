@@ -13,5 +13,5 @@
 \contentsline {section}{\numberline {6.1}Konfigurationen}{20}{section.6.1}
 \contentsline {section}{\numberline {6.2}Reduzierbarkeit}{24}{section.6.2}
 \contentsline {section}{\numberline {6.3}Zwangsl\IeC {\"a}ufigkeit}{30}{section.6.3}
-\contentsline {chapter}{\numberline {7}Umformulierungen}{37}{chapter.7}
-\contentsline {section}{Literatur}{38}{chapter*.2}
+\contentsline {chapter}{\numberline {7}Umformulierungen}{38}{chapter.7}
+\contentsline {section}{Literatur}{39}{chapter*.2}
