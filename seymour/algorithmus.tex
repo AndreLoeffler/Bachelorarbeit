@@ -1,5 +1,5 @@
 \begin{section}{Der Algorithmus}
- In diesem Abschnitt gehen wir soweit auf den von \rsst angegebenen Algorithmus ein, wie wir ihn für den Beweis von Satz \ref{2.1} benötigen.
+ In diesem Abschnitt gehen wir soweit auf den von \rsst\-\  angegebenen Algorithmus ein, wie wir ihn für den Beweis von Satz \ref{2.1} benötigen.
  
  Dazu gehen wir weiter auf die bereits von Birkhoff gezeigten Resultate aus \cite{AmJMath35} ein. Zunächst brauchen wir jedoch noch eine Definition.
  
@@ -7,7 +7,7 @@
   Sei $R$ ein Kreis und $\kappa,\kappa'$ zwei Kantenfärbungen von $R$. Sei $\lambda$ eine Permutation von $\{-1,0,1\}$. $\kappa$ und $\kappa'$ heißen \textit{äquivalent}, wenn für jede Kante $e\in E(R)$ gilt: $\kappa'(e) = \lambda(\kappa(e))$.
  \end{definition}
 
- Zur Vereinfachung führen wir eine neue Schreibweise für Kantenfärbungen ein. Dazu $R$ ein Kreis der Länge $n$, $k_i \in \{-1,0,1\}$ für alle $i = 1,\cdots,n$ und sei $\kappa = (k_1,k_2,\cdots,K_n)$, derart dass $\kappa(e_i) = k_i$ für jede Kante $e_i$ des Kreises $R$.
+ Zur Vereinfachung führen wir eine neue Schreibweise für Kantenfärbungen ein. Dazu $R$ ein Kreis der Länge $n$, $k_i \in \{-1,0,1\}$ für alle $i = 1,\cdots,n$ und sei $\kappa = (k_1,k_2,\cdots,k_n)$, derart dass $\kappa(e_i) = k_i$ für jede Kante $e_i$ des Kreises $R$.
  
  \begin{lemmal}{ }{6.3}
   Sei $R$ ein Kreis der Länge 4 mit den Kanten $e_1,e_2,e_3,e_4$, in dieser Reihenfolge. Sei $\itC_0$ die Menge aller Kantenfärbungen, die zu $(0,0,0,0)$ äquivalent sind. In gleicher Weiße seien $\itC_1,\itC_2,\itC_3$ die Mengen der Kantenfärbungen, die zu $(0,1,1,0),(0,1,0,1),(0,0,1,1)$ äquivalent sind. Dann beinhaltet jede nichtleere konsistente Menge von Kantenfärbungen von $R$ eine der Mengen $\itC_0 \cup \itC_1$, $\itC_1 \cup \itC_2$, $\itC_2 \cup \itC_3$ oder $\itC_3 \cup \itC_0$.
@@ -36,4 +36,8 @@
   \end{enumerate}
   Sei nun $\itC$ eine konsistente Menge, die $\itE$ genügt. Wir können annehmen, dass eine der Mengen $\itA_{12},\itA_{23},\itA_{34},\itA_{45},\itA_{15}$. Weiter gehen wir davon aus, dass nicht alle dieser Mengen in $\itC$ sind, da sonst $\itE\subseteq\itC$ gelten würde, wie gefordert. Aus Gründen der Symmetrie nehmen wir an, dass $\itA_{12}\subseteq\itC$ und $\itA_{12}\not\subseteq\itC$. Aus (i) können wir nun annehmen, dass $\itA_{25}\subseteq\itC$ gilt. Wenn auch $\itA_{15}\subseteq\itC$ gilt, so ist $\itC_1\subseteq\itC$, wie gefordert. Also nehmen wir weiter an, dass $\itA_{15}\not\subseteq\itC$. Ebenfalls nach (i) ist dann $\itA_{13}\subseteq\itC$. Wegen (ii) gilt dann $\itA_{35}\subseteq\itC$ und somit auch $\itD_4\subseteq\itC$.
  \end{proof}
+ 
+ Der von \rsst\-\ angegebene Algorithmus durchsucht die zu färbende Triangulation $T$ nach Kurzkreisen. Tritt ein Kurzkreis in $T$ auf, so verwendet er den Algorithmus, dem \ref{3.1} zu Grunde liegt, teilt $T$ anhand des Kreises in einen inneren und einen äußeren Teil und bestimmt für den inneren alle möglichen Färbungen. Das unter diesen Färbungen tatsächlich eine ist, die zusammen mit der Färbung des äußeren Teils eine gültige Färbung von ganz $T$ ergibt, zeigen die obigen Resultate.
+ 
+ Damit muss darf also eine Triangulation, die ein Gegenbeispiel sein soll, keine Kurzkreise enthalten und ist somit intern 6-fach zusammenhängend.
 \end{section}

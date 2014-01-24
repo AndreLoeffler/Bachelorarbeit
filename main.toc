@@ -6,13 +6,14 @@
 \contentsline {chapter}{\numberline {3}\IeC {\"U}bergang zwischen Topologie und Kombinatorik}{14}{chapter.3}
 \contentsline {chapter}{\numberline {4}Vor\IeC {\"u}berlegungen}{15}{chapter.4}
 \contentsline {section}{\numberline {4.1}Einschr\IeC {\"a}nkungen f\IeC {\"u}r minimale Gegenbeispiele}{15}{section.4.1}
-\contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Konfigurationen}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{21}{section.5.2}
-\contentsline {section}{\numberline {5.3}Zwangsl\IeC {\"a}ufigkeit}{28}{section.5.3}
-\contentsline {section}{\numberline {5.4}Der Algorithmus}{34}{section.5.4}
-\contentsline {chapter}{\numberline {6}Der Beweis von Appel und Haken}{38}{chapter.6}
-\contentsline {section}{\numberline {6.1}Die Konfigurationen}{38}{section.6.1}
-\contentsline {section}{\numberline {6.2}Reduzierbarkeit}{40}{section.6.2}
-\contentsline {chapter}{\numberline {7}Umformulierungen}{41}{chapter.7}
-\contentsline {section}{Literatur}{42}{chapter*.2}
+\contentsline {section}{\numberline {4.2}Die Birkhoff-Zahl}{16}{section.4.2}
+\contentsline {chapter}{\numberline {5}Der Beweis von Robertson, Sanders, Seymour und Thomas}{18}{chapter.5}
+\contentsline {section}{\numberline {5.1}Konfigurationen}{18}{section.5.1}
+\contentsline {section}{\numberline {5.2}Reduzierbarkeit}{22}{section.5.2}
+\contentsline {section}{\numberline {5.3}Zwangsl\IeC {\"a}ufigkeit}{29}{section.5.3}
+\contentsline {section}{\numberline {5.4}Der Algorithmus}{35}{section.5.4}
+\contentsline {chapter}{\numberline {6}Der Beweis von Appel und Haken}{39}{chapter.6}
+\contentsline {section}{\numberline {6.1}Die Konfigurationen}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Reduzierbarkeit}{41}{section.6.2}
+\contentsline {chapter}{\numberline {7}Umformulierungen}{42}{chapter.7}
+\contentsline {section}{Literatur}{43}{chapter*.2}

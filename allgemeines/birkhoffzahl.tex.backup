@@ -1,0 +1,21 @@
+\begin{section}{Die Birkhoff-Zahl}
+ Die Birkhoff-Zahl wurde 1972 von Thomas Saaty in \cite{Saaty} eingeführt.
+ 
+ \begin{definition}{Birkhoff-Zahl}
+  Die \textit{Birkhoff-Zahl} ist die Anzahl der Länder, die eine Landkarte mindestens haben muss, um nicht mit vier Farben färbbar zu sein.
+ \end{definition}
+ 
+ Heute müsste die Birkhoff-Zahl also wohl auf $\infty$ gesetzt werden, da Guthries Vermutung als bewiesen angesehen werden kann. Stattdessen versteht man darunter eine vom Kalenderdatum abhängige Größe. Die Birkhoff-Zahl am Tag $t$ war $b$, wenn zum Zeitpunkt $t$ bewiesen war, dass ein Gegenbeispiel mindestens $b$ Länder haben muss. So lautet für die Jahre 1852 -- 1879 die Birkhoff-Zahl 6.
+ 
+ \begin{figure}[hb]
+  \label{birkhoffzahl}
+  \centering
+  \begin{tabular}{l | c | r}
+   & t & b \\ \hline
+   B.G. Weiske & vor 1852 & 6 \\
+  \end{tabular}
+  \caption[Die Birkhoff-Zahl im Laufe der Zeit]{Die Birkhoff-Zahl im Laufe der Zeit}
+ \end{figure}
+
+
+\end{section}
