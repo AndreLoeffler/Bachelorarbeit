@@ -35,13 +35,13 @@
    \item einer Konfiguration $K$,
    \item einer Zahl $r \in \mathbb{N}$,
    \item zwei verschiedenen benachbarten Knoten $s$ und $t$ aus $G(K)$ und
-   \item für alle $v \in V(G(K))$ gibt es einen $s,v$-Pfad und einen $t,v$-Pfad in $G(K)$, beide mit Länge kleiner-gleich 2.
+   \item für alle $v \in V(G(K))$ gibt es einen $s,v$-Pfad und einen $t,v$-Pfad in $G(K)$, beide mit Länge höchstens 2.
   \end{itemize}
   Wir setzen $r(P) = s$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüssen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluss aus $\itP$ isomorph ist. \\
   Sei $W$ ein Wagenrad mit Radnabe $w$. Dann definieren wir\\
   \begin{align*}
      N_\itP(W) = 10(6-\gamma_W(w)) &+ \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, t(P)=w)\\
-					  &- \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, s(P)=w)\text{.}
+				   &- \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, s(P)=w)\text{.}
   \end{align*}
   Wir bezeichnen mit $\mathscr{W}_T$ die Menge aller Wagenräder, die in $T$ auftreten. 
  \end{definition}
@@ -56,15 +56,17 @@
   \[\sum_{W\in \mathscr{W}_T} N_\itP(W) = 120\text{.}\]
  \end{satzl}
  \begin{proof}
-  Nach Satz \ref{4.2} tritt für jeden Konten $v \in V(T)$ eindeutig ein Wagenrad $W_v \in \mathscr{W}_T$ in $T$ auf. Sei nun $P$ ein Fluss mit Quelle $s$, der in $T$ auftritt. Zu zeigen ist zunächst, dass $P$ in $W_s$ auftritt.\\
-  Seien dazu $H=G(K(P))$ und $G=G(W_s)$. Nach Definition von Wagenrädern gilt $V(H) \subseteq V(G)$, da $V(G)$ jeden Knoten $v \in T$ enthält, für den es einen $s,v$-Pfad   der Länge kleiner-gleich 2 in $T$ gibt. Auch gilt $E(H) \subseteq E(G)$, denn es gilt $E(H) \subseteq E(T)$, sowie das $G$ eine Teilzeichnung von $T$ ist. Sei weiter $f$ eine Innenfacette von $H$. Dann ist $f$ auch eine Facette von $T$, da $P$ in $P$ auftritt.\\
-  Zu zeigen bleibt, dass $f$ eine Innenfacette von $G$ ist. Angenommen, $f$ wäre die Außenfacette. Dann ist $f$ ein Teil der Außenfacette von $G$. Jede Kante aus $T$, die zu $f$ inzident ist, ist eine Kante aus $G$, also ist $f$ die Außenfacette von $G$. Da also jede Facette von $G$ eine Facette von $T$ ist, gilt $G=T$, was nicht möglich ist, da $W_s$ Ringgröße größer-gleich 2 hat. Also Widerspruch. Somit muss $f$ eine Innenfacette von $G$ sein, also muss $P$ in $W_s$ auftreten, wie gefordert.\\
+  Nach Satz \ref{4.2} tritt für jeden Knoten $v \in V(T)$ eindeutig ein Wagenrad $W_v \in \mathscr{W}_T$ in $T$ auf. Sei nun $P$ ein Fluss mit Quelle $s$, der in $T$ auftritt. Zu zeigen ist zunächst, dass $P$ in $W_s$ auftritt.\\
+  Seien dazu $H=G(K(P))$ und $G=G(W_s)$. Nach Definition von Wagenrädern gilt $V(H) \subseteq V(G)$, da $V(G)$ jeden Knoten $v \in T$ enthält, für den es einen $s,v$-Pfad   der Länge höchstens 2 in $T$ gibt. Auch gilt $E(H) \subseteq E(G)$, denn es gilt $E(H) \subseteq E(T)$, sowie dass $G$ eine Teilzeichnung von $T$ ist. Sei weiter $f$ eine Innenfacette von $H$. Dann ist $f$ auch eine Facette von $T$, da $P$ in $P$ auftritt.\\
+  Zu zeigen bleibt, dass $f$ eine Innenfacette von $G$ ist. Angenommen, $f$ wäre die Außenfacette. Dann ist $f$ ein Teil der Außenfacette von $G$. Jede Kante aus $T$, die zu $f$ inzident ist, ist eine Kante aus $G$, also ist $f$ die Außenfacette von $G$. Da also jede Facette von $G$ eine Facette von $T$ ist, gilt $G=T$, was nicht möglich ist, da $W_s$ Ringgröße mindestens 2 hat. Also ergibt sich ein Widerspruch. Somit muss $f$ eine Innenfacette von $G$ sein, also muss $P$ in $W_s$ auftreten, wie gefordert.\\
   Da also jeder Fluss, der in einem der Wagenrad von $T$ auftritt, auch in $T$ selbst auftritt gilt:
   \[\sum (r(P):P\sim \itP, P \text{ tritt auf in } T) = \sum_{v\in V(T)} \Sigma (r(P):P\sim \itP, P \text{ tritt auf in } W_v,s(P)=v)\]
   Diese Gleichheit gilt auch, wenn man $s(P)$ durch $t(P)$ ersetzt. Somit ergibt sich
   \[\sum_{v\in V(T)} N_\itP(W_v) = \sum_{v\in V(T)} 10(6-\gamma_W(v))\text{.}\]
-  Für jeden Knoten $v \in V(T)$ gilt: $\gamma_W(v) = d_T(v)$. Somit ergibt sich nach der eulerschen Polyederformel:
-  \[\sum_{v\in V(T)} N_\itP(W_v) = 120\text{,}\]
+  Für jeden Knoten $v \in V(T)$ gilt: $\gamma_W(v) = d_T(v)$. Setzte außerdem $\sharp V(T) = n$. Somit ergibt sich nach der eulerschen Polyederformel:
+  \[\sum_{v\in V(T)} \gamma_W(v) = \sum_{v\in V(T)} d_T(v) = 2\cdot \sharp E(T) = 6n -12\]
+  und durch Einsetzen erhält man
+  \[\sum_{v\in V(T)} N_\itP(W_v) = 60n - 10(6n - 12) = 120\text{,}\]
   was zu zeigen war.
  \end{proof}
 
@@ -76,11 +78,11 @@
  
  Unser Ziel dieses Abschnitts ist also dies zu zeigen:
  
- \begin{satzl}{ }{4.4}
+ \begin{satzl}{gute Konfiguration im Wagenrad}{4.4}
   In jedem Wagenrad $W$ mit $N_\itP (W) > 0$ tritt eine gute Konfiguration auf.
  \end{satzl}
  
- Satz \ref{2.3} folgt also direkt aus \ref{4.3} und \ref{4.4}. Nun müssen wir also $\itP$ weiter klassifizieren und die Korrektheit von Satz \ref{4.4} zeigen. Die Menge $\itP$ enthält überabzählbar viele Flüsse, welche sich aber glücklicherweise leicht anhand von sogenannten Regeln in 32 Klassen einteilen lassen.
+ Satz \ref{2.3} folgt also direkt aus \ref{4.3} und \ref{4.4}. Nun müssen wir also die Menge von Flüssen $\itP$ einer Triangulation weiter untersuchen und die Korrektheit von Satz \ref{4.4} zeigen. Für eine Triangulation enthält die Menge $\itP$ unendlich viele Flüsse, welche sich aber glücklicherweise leicht anhand von sogenannten Regeln in 32 Klassen einteilen lassen.
  
  \begin{definition}{Regel}
   Eine \textit{Regel} ist ein 6-Tupel $(G,\beta,\delta,r,s,t)$, wobei
@@ -89,7 +91,7 @@
    \item $\beta$ eine Abbildung von $V(G)$ auf $\mathbb{Z}_+$ ist,
    \item $\delta$ eine Abbildung von $V(G)$ auf $\mathbb{Z}_+ \cup \{\infty\}$ derart ist, dass $\beta(v) \leq \delta(v)$ gilt, 
    \item $r \in \mathbb{N}$ und 
-   \item $s$ und $t$ sind unterschliedliche adjazent Knoten in $G$ sind und für jeden Knoten $v\in V(G)$ ein $v,s$-Pfad $Q_s$ und ein $v,t$-Pfad $Q_t$ jeweils mit Länge kleiner-gleich 2 existieren, sodass für jeden Knoten $w \in (Q_s \cup Q_t)\setminus \{s,t,v\}$ gilt: $\delta(w) \leq 8$.
+   \item $s$ und $t$ unterschliedliche adjazent Knoten in $G$ sind und für jeden Knoten $v\in V(G)$ ein $v,s$-Pfad $Q_s$ und ein $v,t$-Pfad $Q_t$ jeweils mit Länge höchstens 2 existieren, sodass für jeden Knoten $w \in (Q_s \cup Q_t)\setminus \{s,t,v\}$ gilt: $\delta(w) \leq 8$.
   \end{itemize}
  \end{definition}
  
@@ -112,7 +114,7 @@
   \label{fig4}
   \centering
   \includegraphics{seymour/regeln.eps}%
-  \caption[Darstellung der 32 Regeln]{Darstellung der 32 Regeln}
+  \caption[Darstellung der 32 Regeln]{Darstellung der 32 Regeln, übernommen aus \cite{FourRSST}}
  \end{figure}
 
  Im weiteren Verlauf dieses Abschnitts benutzen wir $\itP$ nurnoch, um eine Menge von Flüssen zu beschreiben, die einer Regel gehorcht. Dazu ist zu bemerken, dass jeder Fluss genau einer Regel gehorcht, jedoch gibt es für einen Fluss $P$ einige wenige Darstellungen, die einer Regel folgen, deren Isomorphismus von $P$ auf $(K,r,s,t)$ aber nicht eindeutig ist -- zum Beispiel bei den Regeln 10 oder 31. In solchen Fällen zählen wir den Fluss $P$ nur ein mal zu $\itP$, da es sich bei $\itP$ nicht um eine Multimenge handelt.
@@ -160,7 +162,7 @@
   In beiden Fällen erhalten wir unseren gesuchten Widerspruch durch einfaches Einsetzen.
  \end{proof}
  
- Nun wenden wir uns dem dritten Fall zu, also für Radnaben  mit Grad größer-gleich $12$. Dafür benötigen wir ein anderes Zwischenresultat.
+ Nun wenden wir uns dem dritten Fall zu, also für Radnaben  mit Grad mindestens $12$. Dafür benötigen wir ein anderes Zwischenresultat.
  
  \begin{lemmal}{}{4.7}
   Sei $W$ ein Wagenrad mit Radnabe $w$ und sei $v$ ein zu $w$ adjazenter Knoten. Wenn keine gute Konfiguration in $W$ auftritt, ist die Summe über die $r(P)$ aller Flüsse $P \in \itP$, die in $W$ auftreten und die Quelle $v$ und Senke $w$ haben, höchstens 5.

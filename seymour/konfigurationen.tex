@@ -1,7 +1,16 @@
 \begin{section}{Konfigurationen}
  Ein minimales Gegenbeispiel ist ein planarer Graph $G$, der nicht 4-färbbar ist, derart dass aber jeder planare Graph $G'$ mit $|V(G')| + |E(G')| < |V(G)| + |E(G)|$ eine gültige 4-Färbung besitzt. Unser Ziel ist also, zu zeigen, dass es keinen solchen Graphen $G$ geben kann. 
    
- Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend ist. Wir nennen einen Kreis $C$ in einer Triangulation mit fünf oder weniger Knoten einen \textit{Kurzkreis} (engl.: short circuit), wenn sowohl Knoten im inneren Bereich $I$ als auch im äußeren Bereich $O$ von $C$ liegen und wenn für genau fünf Knoten sowohl $I$ als auch in $O$ mindestens zwei Knoten liegen. Wir nennen eine 6-fach knotenzusammenhängende Triangulation \textit{intern 6-fach zusammenhängend}, wenn sie keine Kurzkreise beinhaltet. Das führt zu folgendem Resultat:
+ Aus den allgemeinen Vorüberlegungen wissen wir, dass jedes minimale Gegenbeispiel nur Knoten mit Grad mindestens fünf hat. So sieht man leicht, dass jedes minimale Gegenbeispiel 5-fach knotenzusammenhängend ist. Zusätzlich stellen wir noch eine weitere Anforderung an ein mögliches minimales Gegenbeispiel.
+ \begin{definition}{Kurzkreis, intern 6-fach zusammenhängende Triangulation}
+  Sei $T$ eine Triangulation.
+  \begin{itemize}
+   \item Ein Kreis $C$ in einer Triangulation heißt \textit{Kurzkreis} (engl.: short circuit), wenn $\sharp V(C) \leq 5$ gilt. Die Kanten von $C$ teilen dann $T$ in einen inneren Bereich $I$ und einen äußeren Bereich $O$ mit $I,O \subset V(T)$.\footnote{Anschaulich gesprochen: Betrachtet man eine planare Darstellung von $T$ und durchläuft die Kanten von $C$ im Uhrzeigersinn, so liegen genau die Punkte in $I$, die sich für jede Kante rechts von dieser befinden. In $O$ liegen alle Knoten, die weder zu $C$ noch zu $I$ gehören.} Sollte $\sharp V(C) = 5$ gelten, so liegen sowohl in $I$ als auch in $O$ mindestens zwei Knoten. 
+   \item Wir nennen eine 6-fach knotenzusammenhängende Triangulation \textit{intern 6-fach zusammenhängend}, wenn sie keine Kurzkreise beinhaltet.
+  \end{itemize}
+ \end{definition}
+
+  Das führt zu folgendem Resultat:
   
  \begin{satzl}{}{2.1}
   Jedes minimale Gegenbeispiel ist eine intern 6-fach zusammenhängende Triangulation. 
@@ -18,13 +27,13 @@
   \begin{enumerate}[i)]
    \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ aus höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d_G(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v') > d_G(v')$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
-   \item $K$ hat Ringgröße $\geq 2$. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_v (\gamma_K(v) - d_G(v) - 1)$ für alle Knoten $v$, die zur Außenfacette inzident sind und für die $G(K) \setminus \{v\}$ zusammenhängend ist.
+   \item Sei $A$ die Menge aller Knoten $v \in V(G(K))$, die zur Außenfacette inzident sind und für die $G(K) \setminus \{v\}$ zusammenhängend ist. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_{v\in A} (\gamma_K(v) - d_G(v) - 1)$. Jede Konfiguration besitzt Ringgröße mindestens 2.
   \end{enumerate}
  \end{definition}
  
- Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie der folgenden Übersicht zu entnehmen ist.
+ Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
  
- \begin{figure}[hb]
+ \begin{figure}[h]
   \label{fig1}
  \[ \input{seymour/nodes} \]
   \caption[Darstellung von Knoten in Konfigurationen]{Darstellung von Knoten in Konfigurationen}
@@ -38,7 +47,7 @@
   \begin{itemize}
    \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus der Ebene existiert, der $G(K)$ auf $G(L)$ und $\gamma_K$ auf $\gamma_L$ abbildet. 
    \item Jede Konfiguration, die zu einer der 633 Konfigurationen aus \cite{FourRSST} isomorph ist, bezeichnen wir als \textit{gut}. 
-   \item Sei $T$ eine Triangulation. Eine Konfiguration $K$ \textit{tritt in $T$ auf}, wenn $G(K)$ ein Teilgraph von $T$ ist, jede Innenfacette von $G(K)$ eine Innenfacette von $T$ ist und $\gamma_K(v) = d_T(v)$ für alle Knoten von $G(K)$ gilt.
+   \item Sei $T$ eine Triangulation. Eine Konfiguration $K$ \textit{tritt in $T$ auf}, wenn $G(K)$ ein Teilgraph von $T$ ist, jede Innenfacette von $G(K)$ eine Innenfacette von $T$ ist und $\gamma_K(v) = d_T(v)$ für alle Knoten $v$ von $G(K)$ gilt.
   \end{itemize}
 
  \end{definition}
@@ -54,15 +63,15 @@
   In jeder intern 6-fach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
  \end{satzl}
    
- Kombiniert man die Aussagen der Sätze \ref{2.1}, \ref{2.2} und \ref{2.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr seien muss. Auf \ref{2.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{2.3}. 
+ Kombiniert man die Aussagen der Sätze \ref{2.1}, \ref{2.2} und \ref{2.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr sein muss. Auf \ref{2.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{2.3}. 
  
  Ein anderer Ansatz, sich der 4-Färbung von Graphen zu nähern, liegt darin, die Facetten auf Färbbarkeit zu untersuchen. Da in einem minimalen Gegenbeispiel jede Innenfacette ein Dreieck ist, benötigen wir eine neue Definiton:
  
  \begin{definition}{Trifärbung}
-  Sei $G$ eine Triangulation oder Beinahe-Triangulation, $\kappa:E(G) \mapsto \{-1,0,1\}$ eine Funktion und $r=\{r,f,g\} \subset E(G)$ ein Dreieck. Man sagt, $r$ wird von $\kappa$ \textit{trigefärbt} (engl.: tri-coloured), wenn $\{\kappa(e),\kappa(f),\kappa(g)\} = \{-1,0,1\}$ gilt. Wir sagen, $\kappa$ ist eine \textit{Trifärbung} von $G$, wenn jede Facette von $G$ trifärbbar ist -- oder nur jede Innenfacette, falls $G$ nur eine Beinahe-Triangulation ist.
+  Sei $G$ eine Triangulation oder Beinahe-Triangulation, $\kappa:E(G) \mapsto \{-1,0,1\}$ eine Funktion und $r=\{e,f,g\} \subset E(G)$ ein Dreieck. Man sagt, $r$ wird von $\kappa$ \textit{trigefärbt} (engl.: tri-coloured), wenn $\{\kappa(e),\kappa(f),\kappa(g)\} = \{-1,0,1\}$ gilt. Wir sagen, $\kappa$ ist eine \textit{Trifärbung} von $G$, wenn jede Facette von $G$ trifärbbar ist -- oder nur jede Innenfacette, falls $G$ nur eine Beinahe-Triangulation ist.
  \end{definition}
 
- Statt wie Üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{2.1} zu bleiben.
+ Statt wie üblich für die Farben der Facetten $1,2,3$ zu wählen, benutzen wir hier $-1,0,1$, um möglichst nahe am Algorithmus für \ref{2.1} zu bleiben.
  
  \begin{satzl}{Trifärbung $\Leftrightarrow$ 4-Färbung}{2.4}
   Eine Triangulation $T$ ist genau dann 4-färbbar, wenn eine Trifärbung ihrer Facetten existiert.
@@ -70,7 +79,7 @@
  
  Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war. \cite[Seite 7]{FourRSST} 
  
- Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immernoch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme um umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
+ Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immer noch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme zu umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
  
  \begin{definition}{Zerstreute Menge, Trifärbung modulo $X$}
  Sei $G$ ein Triangulation oder Beinahe-Triangulation. 
@@ -90,7 +99,7 @@
   Sei $T$ ein minimales Gegenbeispiel und sei $X\subseteq E(T)$ zerstreut und nicht leer. Gibt es in $T$ keinen Kreis $C$ mit $|E(C) \setminus X| = 1$, so besitzt $T$ eine Trifärbung modulo $X$.
  \end{satzl}
  \begin{proof}
-  Sei $F$ die Zeichnung der Knoten $V(T)$ und der Kanten aus $X$. Seien $Z_1,\cdots,Z_k$ die Mengen der Knoten, die zu den $k$ Facetten von $F$ inzident sind. Sei nun $S$ ein Graph mit $V(S) =\{Z_1,\cdots,Z_k\}$ und $E(S) = E(T) \setminus X$. Eine Kante $e \in E(S)$ ist inzident zu  $Z_i$, wenn $e \cap Z_i \neq \emptyset$. Da in $T$ kein Kreis mit $|E(C) \setminus X| = 1$ gibt, ist hat $S$ keine Schleifen. Da $S$ durch Kontraktion aus $T$ entsteht, ist $S$ auch planar. Da $X$ nicht leer ist, gilt weiter $|E(S)| + |V(S)| < |V(T)| + |E(T)|$ und da $T$ ein minimales Gegenbeispiel war, besitzt $S$ deshalb eine 4-Färbung. Somt existiert eine Abbildung $\phi: V(T) \mapsto \{1,2,3,4\}$ mit folgenden Eigenschaften:
+  Sei $F$ die Zeichnung der Knoten $V(T)$ und der Kanten aus $X$. Seien $Z_1,\cdots,Z_k$ die Mengen der Knoten, die zu den $k$ Facetten von $F$ inzident sind. Sei nun $S$ ein Graph mit $V(S) =\{Z_1,\cdots,Z_k\}$ und $E(S) = E(T) \setminus X$. Eine Kante $e \in E(S)$ ist inzident zu  $Z_i$, wenn $e \cap Z_i \neq \emptyset$. Da in $T$ kein Kreis mit $|E(C) \setminus X| = 1$ existiert, ist hat $S$ keine Schleifen. Da $S$ durch Kontraktion aus $T$ entsteht, ist $S$ auch planar. Da $X$ nicht leer ist, gilt weiter $|E(S)| + |V(S)| < |V(T)| + |E(T)|$ und da $T$ ein minimales Gegenbeispiel war, besitzt $S$ deshalb eine 4-Färbung. Somt existiert eine Abbildung $\phi: V(T) \mapsto \{1,2,3,4\}$ mit folgenden Eigenschaften:
   \begin{enumerate}[(i)]
    \item Für $1 \leq i \leq k$ ist $\phi(v)$ konstant für $v \in Z_i$ und
    \item für jede Kante $e=\{u,v\}$ von $T$, $e\not\in X$, gilt $\phi(u) \neq \phi(v)$.

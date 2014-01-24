@@ -5,12 +5,13 @@
 \BOOKMARK [0][-]{chapter.3}{\334bergang zwischen Topologie und Kombinatorik}{}% 5
 \BOOKMARK [0][-]{chapter.4}{Vor\374berlegungen}{}% 6
 \BOOKMARK [1][-]{section.4.1}{Einschr\344nkungen f\374r minimale Gegenbeispiele}{chapter.4}% 7
-\BOOKMARK [0][-]{chapter.5}{Der Beweis von Appel und Haken}{}% 8
-\BOOKMARK [1][-]{section.5.1}{Die Konfigurationen}{chapter.5}% 9
+\BOOKMARK [0][-]{chapter.5}{Der Beweis von Robertson, Sanders, Seymour und Thomas}{}% 8
+\BOOKMARK [1][-]{section.5.1}{Konfigurationen}{chapter.5}% 9
 \BOOKMARK [1][-]{section.5.2}{Reduzierbarkeit}{chapter.5}% 10
-\BOOKMARK [0][-]{chapter.6}{Der Beweis von Robertson, Sanders, Seymour und Thomas}{}% 11
-\BOOKMARK [1][-]{section.6.1}{Konfigurationen}{chapter.6}% 12
-\BOOKMARK [1][-]{section.6.2}{Reduzierbarkeit}{chapter.6}% 13
-\BOOKMARK [1][-]{section.6.3}{Zwangsl\344ufigkeit}{chapter.6}% 14
-\BOOKMARK [0][-]{chapter.7}{Umformulierungen}{}% 15
-\BOOKMARK [1][-]{chapter*.2}{Literatur}{chapter.7}% 16
+\BOOKMARK [1][-]{section.5.3}{Zwangsl\344ufigkeit}{chapter.5}% 11
+\BOOKMARK [1][-]{section.5.4}{Der Algorithmus}{chapter.5}% 12
+\BOOKMARK [0][-]{chapter.6}{Der Beweis von Appel und Haken}{}% 13
+\BOOKMARK [1][-]{section.6.1}{Die Konfigurationen}{chapter.6}% 14
+\BOOKMARK [1][-]{section.6.2}{Reduzierbarkeit}{chapter.6}% 15
+\BOOKMARK [0][-]{chapter.7}{Umformulierungen}{}% 16
+\BOOKMARK [1][-]{chapter*.2}{Literatur}{chapter.7}% 17

@@ -1,11 +1,11 @@
 \begin{section}{Reduzierbarkeit}
- Wir wollen konsistente Kantenfärbungen definieren. Dazu beginnen diesen Abschnitt mit den dazu nötigen, hinführenden Definitionen:
+ Wir wollen konsistente Kantenfärbungen definieren. Dazu beginnen wir diesen Abschnitt mit den dazu nötigen, hinführenden Definitionen:
 
  \begin{definition}{Kantenfärbung, Match, signiertes Match, signiertes Matching, $\theta$-Passend}
   Sei $R$ ein Kreis und $\theta \in \{-1,0,1\}$.
   \begin{itemize}
    \item Eine \textit{Kantenfärbung} von $R$ ist eine Abbildung $\kappa: E(R) \mapsto \{-1,0,1\}$.
-   \item Ein \textit{Match} $m$ ist eine Menge von verschiedenen Kanten $\{e,f\}$ aus $R$. 
+   \item Ein \textit{Match} $m$ ist eine Menge $\{e,f\}$ von verschiedenen Kanten aus $R$. 
    \item Ein \textit{signiertes Match} (engl.: signed match) $(m,\mu)$ ist ein Paar aus einem Match $m$ und $\mu = \pm 1$.
    \item Ein \textit{signiertes Matching} ist eine Menge $M$ von signierten Matches, sodass für unterschiedliche $(\{e,f\},\mu),(\{e',f'\},\mu') \in M$ gilt:
    \begin{enumerate}[(i)]
@@ -27,12 +27,12 @@
   Sei $K$ ein Kreis und $\theta \in \{-1,0,1\}$. Eine Menge $\mathscr{C}$ von Kantenfärbungen von $K$ heißt \textit{konsistent}, wenn für jedes $\kappa \in \mathscr{C}$ und jedes mögliche $\theta$ ein signiertes Matching $M$ existiert, so dass $\kappa$ $\theta$-passend für $M$ ist, und $\mathscr{C}$ jede Kantenfärbung, die für $M$ $\theta$-passend ist, enthält.
  \end{definition}
 
- Für das nächste Teilresultat benötigen wir noch diese Definitionen.
+ Die nächsten beiden Definitionen sowie Satz \ref{3.1} dienen dazu, die Korrektheit eines Teilalgorithmus des Färbungsverfahrens zu zeigen. Mehr dazu findet sich im Anschluss.
  
  \begin{definition}{Verpackung, Aufzug}
   Sei $H$ eine Beinahe-Triangulation. 
   \begin{itemize}
-   \item Dann gibt es einen geschlossenen Pfad $(v_0,v_1,\cdots,v_k)$ durch die zur Außenfacette inzidenten Knoten. Dann existiert ein Kreis $R$ der Länge $k$ mit Kanten $e_1,\cdots e_k$, nicht notwendigerweise ein Kreis in $H$. Für $i \leq i \leq k$ definieren wir einen Zeiger $\phi(e_i) := f_i$, wobei $f_i$ die Kante zwischen $v_{i-1}$ und $v_i$ aus $H$ ist. Wir sagen dann, $\phi$ \textit{verpackt $H$ in $R$}. 
+   \item Dann gibt es einen geschlossenen Pfad $(v_0,v_1,\cdots,v_k)$ durch die zur Außenfacette inzidenten Knoten. Dann existiert ein Kreis $R$ der Länge $k$ mit Kanten $e_1,\cdots e_k$, nicht notwendigerweise ein Kreis in $H$.Für $i \leq i \leq k$ definieren wir einen Zeiger $\phi(e_i) := f_i$, wobei $f_i$ die Kante zwischen $v_{i-1}$ und $v_i$ aus $H$ ist. Wir sagen dann, $\phi$ \textit{verpackt $H$ in $R$}. 
    \item Ist $\kappa$ eine Trifärbung von $H$, so setzen wir für alle $e \in E(R): \lambda(e) = \kappa(\phi(e))$. Dann ist $\lambda$ eine Kantenfärbung von $R$ und wir nennen $\lambda$ einen \textit{Aufzug} von $\kappa$ (durch $\phi$).
   \end{itemize}
  \end{definition}
@@ -41,7 +41,7 @@
   Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathscr{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathscr{C}$ konsistent.
  \end{satzl}
  \begin{proof}
-  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\rho \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\rho$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\rho$-passend ist. O.B.d.A. sei $\rho = 0$.\\
+  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\theta \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\theta$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\theta$-passend ist. O.B.d.A. sei $\theta = 0$.\\
   Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine \textit{Rippe} ist eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$, wobei
   \begin{enumerate}[(i)]
    \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
@@ -52,9 +52,11 @@
   \end{enumerate}
   Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, $\kappa(e) = 0$ gilt. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
   Weiter sind alle Rippen disjunkt, sie teilen sich also weder Kanten noch Facetten. Für $1 \leq i \leq k$ lässt sich jede Kante $f_i$ entweder eindeutig einer Rippe zuordnen, wenn $\kappa(f_i) = \pm 1$, oder keiner Rippe zuordnen, wenn $\kappa(f_i)=0$.\\
-  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\rho$-passend für $M$.\\
-  Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\rho$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
+  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\theta$-passend für $M$.\\
+  Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\theta$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
  \end{proof}
+ 
+ Aus \ref{3.1} wird ein Algorithmus abgeleitet, der in zwei Fällen verwendet wird:
 
 \begin{definition}{Freie Vervollständigung}
   Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{freie Vervollständigung von $K$ mit Ring $R$}, wenn
@@ -69,7 +71,12 @@
  
  Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie im vorherigen Kapitel dargestellt wurden.
  
- \[ \input{seymour/konfig} \overset{\overset{\text{freie}}{\text{Vervollständigung}}}{\Longrightarrow} \input{seymour/freievervoll} \]
+ \begin{figure}[hb]
+  \label{fig2}
+  \[ \input{seymour/konfig} \overset{\overset{\text{freie}}{\text{Vervollständigung}}}{\Longrightarrow} \input{seymour/freievervoll} \]
+  \caption[Eine Konfiguration und ihre freie Vervollständigung]{Eine Konfiguration und ihre freie Vervollständigung}
+ \end{figure}
+
  
  \begin{definitionl}{$D$-Reduzibilität}{dred}
   Sei also $S$ die freie Vervollständigung einer Konfiguration $K$ mit Ring $R$. Sei $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C} \subseteq \mathscr{C}^*$ die Menge aller Beschränkungen von $E(R)$ von Trifärbungen von $S$. Sei weiter $\mathscr{C}'$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}$. Die Konfiguration $K$ heißt \textit{$D$-reduzibel}, wenn gilt: $\mathscr{C}' = \emptyset$.
@@ -141,7 +148,7 @@
   Sei $K$ eine der 633 Konfiguration der Originalveröffentlichung, sei $S$ deren freie Vervollständigung und sei $X$ die Menge der Kanten der Zeichnung, die dick gedruckt sind. Wenn $\sharp X = 4$ gilt, so gibt es ein Dreibein für $X$.
  \end{satzl}
  
- Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich Der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten.
+ Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich Der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden di Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
  
  Nun können wir uns daran machen Satz \ref{2.2} zu beweisen.
  \begin{proof}[Beweis zu Satz \ref{2.2}]
