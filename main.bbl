@@ -7,6 +7,16 @@
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
+\bibitem[AH77a]{AH1}
+\textsc{Appel}, K. ; \textsc{Haken}, W.:
+\newblock Every planar map is Four Colorable. Part I Discharging.
+\newblock {In: }\emph{Illinois Journal of Mathematics} 21 (1977), S. 429--490
+
+\bibitem[AH77b]{AH2}
+\textsc{Appel}, K. ; \textsc{Haken}, W.:
+\newblock Every planar map is Four Colorable. Part II Reducibility.
+\newblock {In: }\emph{Illinois Journal of Mathematics} 21 (1977), S. 491--567
+
 \bibitem[Bir13]{AmJMath35}
 \textsc{Birkhoff}, George~D.:
 \newblock The Reducibility of Maps.
@@ -17,10 +27,11 @@
 \newblock \emph{Der Vierfarbensatz}.
 \newblock Mannheim : BI Wissenschaftsverlag, 1994
 
-\bibitem[Kem79]{AmJMath79}
-\textsc{Kempe}, A.~B.:
-\newblock On the geographical problem of the four colors.
-\newblock {In: }\emph{American Journal of Mathematics} 2 (1879), S. 193--200
+\bibitem[Hee69]{heesch}
+\emph{Kapitel\/}  Untersuchungen zum Vierfarbenproblem.
+\newblock \,{In:\,}\textsc{Heesch}, H.:
+\newblock \emph{Hochschulskriptum 810/a/b}.
+\newblock Mannheim : Bibliographisches Institut, 1969
 
 \bibitem[RSST97]{FourRSST}
 \textsc{Robertson}, N. ; \textsc{Sanders}, D. ; \textsc{Seymour}, P.  ;

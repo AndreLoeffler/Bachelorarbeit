@@ -29,19 +29,19 @@
 
  Die nächsten beiden Definitionen sowie Satz \ref{3.1} dienen dazu, die Korrektheit eines Teilalgorithmus des Färbungsverfahrens zu zeigen. Mehr dazu findet sich im Anschluss.
  
- \begin{definition}{Verpackung, Aufzug}
+ \begin{definitionl}{Verpackung, Aufzug}{lift}
   Sei $H$ eine Beinahe-Triangulation. 
   \begin{itemize}
    \item Dann gibt es einen geschlossenen Pfad $(v_0,v_1,\cdots,v_k)$ durch die zur Außenfacette inzidenten Knoten. Dann existiert ein Kreis $R$ der Länge $k$ mit Kanten $e_1,\cdots e_k$, nicht notwendigerweise ein Kreis in $H$.Für $i \leq i \leq k$ definieren wir einen Zeiger $\phi(e_i) := f_i$, wobei $f_i$ die Kante zwischen $v_{i-1}$ und $v_i$ aus $H$ ist. Wir sagen dann, $\phi$ \textit{verpackt $H$ in $R$}. 
    \item Ist $\kappa$ eine Trifärbung von $H$, so setzen wir für alle $e \in E(R): \lambda(e) = \kappa(\phi(e))$. Dann ist $\lambda$ eine Kantenfärbung von $R$ und wir nennen $\lambda$ einen \textit{Aufzug} von $\kappa$ (durch $\phi$).
   \end{itemize}
- \end{definition}
+ \end{definitionl}
  
  \begin{satzl}{Konsistente Aufzüge}{3.1}
   Sei $H$ eine Beinahe-Triangulation und $R$ ein Kreis, in den $H$ durch $\phi$ verpackt ist. Sei $\mathscr{C}$ die Menge aller Aufzüge von $\phi$ von Trifärbungen von $H$. Dann ist $\mathscr{C}$ konsistent.
  \end{satzl}
  \begin{proof}
-  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ nud sei $\theta \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\theta$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\theta$-passend ist. O.B.d.A. sei $\theta = 0$.\\
+  Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ und sei $\theta \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\theta$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\theta$-passend ist. O.B.d.A. sei $\theta = 0$.\\
   Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine \textit{Rippe} ist eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$, wobei
   \begin{enumerate}[(i)]
    \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
@@ -50,13 +50,13 @@
    \item für $1\leq i\leq t$ gilt, dass $r_i$ inzident zu den Facetten $g_{i-1}$ und $g_i$ ist und
    \item für $0\leq i\leq t$ gilt, dass $\kappa(g_i) \neq 0$ gilt.
   \end{enumerate}
-  Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, $\kappa(e) = 0$ gilt. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
+  Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, gilt $\kappa(e) = 0$. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
   Weiter sind alle Rippen disjunkt, sie teilen sich also weder Kanten noch Facetten. Für $1 \leq i \leq k$ lässt sich jede Kante $f_i$ entweder eindeutig einer Rippe zuordnen, wenn $\kappa(f_i) = \pm 1$, oder keiner Rippe zuordnen, wenn $\kappa(f_i)=0$.\\
-  Jetzt verknüpfen wir jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\theta$-passend für $M$.\\
+  Wir verknüpfen jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\theta$-passend für $M$.\\
   Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\theta$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
  \end{proof}
  
- Aus \ref{3.1} wird ein Algorithmus abgeleitet, der in zwei Fällen verwendet wird:
+ Unser Ziel ist es, einen Algorithmus angeben zu können, der jede Triangulation $T$ korrekt färbt. Aus \ref{3.1} wird ein Teilalgorithmus abgeleitet, der in den folgenen beiden Fällen verwendet wird: wenn ein Kurzkreis in $T$ gefunden wurde und im Fall, das nicht. Wird ein Kurzkreis $C$ gefunden, so verpacken wir sein Inneres $I$ in $C$, finden dann einen Aufzug für $C$ und verbinden eine passende Kantenfärbung des Aufzugs mit der Kantenfärbung des restlichen Graphen. Wird dagegen kein Kurzkreis gefunden, so verpacken wir jede auftretende Konfiguration $K$ im Ring $R$ ihrer freien Vervollständigung -- als nächstes definiert -- und gehen analog zum anderen Fall vor. 
 
 \begin{definition}{Freie Vervollständigung}
   Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{freie Vervollständigung von $K$ mit Ring $R$}, wenn
@@ -67,9 +67,9 @@
   \end{enumerate}
  \end{definition}
  
- Man kann leicht überprüfen, dass jede Konfiguration eine freie Vervollständigung besitzt. (Hier wird der Umstand benutzt, dass in der Definition von Konfiguration eine Ringgröße $\geq 2$ gefordert ist -- die Ringgröße ist dann genau die Länge des Rings in der Freien Vervollständigung. Gibt es zwei freie Vervollständigungen $S_1$ und $S_2$ von $K$, so existiert ein Homeomorphismus, der $G(K)$ punktweise fixiert und $S_1$ auf $S_2$ abbildet. Dazu verwendet man Eigenschaft (i) aus der Definition der Konfiguration. Es gibt also -- bis auf Isomorphie -- nur eine freie Vervollständigung, weswegen wir von \textit{der} freien Konfiguration sprechen können.
+ Man kann leicht überprüfen, dass jede Konfiguration eine freie Vervollständigung besitzt. (Hier wird der Umstand benutzt, dass in der Definition von Konfiguration eine Ringgröße mindestens $2$ gefordert ist -- die Ringgröße ist dann genau die Länge des Rings in der freien Vervollständigung.) Gibt es zwei freie Vervollständigungen $S_1$ und $S_2$ von $K$, so existiert ein Homeomorphismus er Ebene, der $G(K)$ punktweise fixiert und $S_1$ auf $S_2$ abbildet. Dazu verwendet man Eigenschaft (i) aus der Definition der Konfiguration. Es gibt also -- bis auf Isomorphie -- nur eine freie Vervollständigung, weswegen wir von \textit{der} freien Konfiguration sprechen können.
  
- Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie im vorherigen Kapitel dargestellt wurden.
+ Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie im vorherigen Kapitel dargestellt wurde.
  
  \begin{figure}[hb]
   \label{fig2}
@@ -93,7 +93,7 @@
  Mit Hilfe eines Computers wurde folgendes Resultat von Robertson, Sanders, Seymour und Thomas gezeigt:
  
  \begin{satzl}{Reduzibilität der Konfigurationen}{3.2}
-  Für jede der 633 Konfigurationen $K$, die im Anhang (der Originalveröffentlichung) abgebildet sind, sei $X$ die Menge der Kanten, der freien Vervollständigung von $K$, die fett gedruckt sind. Gilt $X \neq \emptyset$, so ist $K$ $D$-reduzibel. Andernfalls gilt $1\leq \sharp X \leq 4$ und $X$ ist ein Zusammenzug für $K$.
+  Für jede der 633 Konfigurationen $K$, die im Anhang (der Originalveröffentlichung) abgebildet sind, sei $X$ die Menge der Kanten der freien Vervollständigung von $K$, die fett gedruckt sind. Gilt $X \neq \emptyset$, so ist $K$ $D$-reduzibel. Andernfalls gilt $1\leq \sharp X \leq 4$ und $X$ ist ein Zusammenzug für $K$.
  \end{satzl}
  
  Aus diesem Ergebnis werden wir später Satz \ref{2.2} herleiten.
@@ -101,28 +101,28 @@
  Selbst wenn $K$ eine Konfiguration ist, die in der Triangulation $T$ auftritt, heißt das noch nicht, dass es eine Teildarstellung von $T$ geben muss, die die freie Vervollständigung von $K$ ist. Dies kann zu Schwierigkeiten führen, wenn wir versuchen, Erkenntnisse über $T$ auf die freie Vervollständigung zu übertragen. 
  
  \begin{definition}{Projektion}
-  Sei $T$ eine Triangulation und $S$ eine Beinahe-Triangulation. Eine \textit{Projektion} von $S$ auf $T$ ist eine Abbildung $\phi$ mit Definitionsmenge $D(\phi) = V(S)\cup E(S)\cup F(S)$ derart, dass
+  Sei $T$ eine Triangulation und $S$ eine Beinahe-Triangulation. Eine \textit{Projektion} von $S$ auf $T$ ist eine Abbildung $\phi$ mit Definitionsmenge $D(\phi) = V(S)\cup E(S)\cup F(S)$ mit folgenden Eigenschaften:
   \begin{enumerate}[(i)]
-   \item $\phi$ $V(S)$ auf $V(T)$, $E(S)$ auf $E(T)$ und $F(S)$ auf $F(T)$ abbildet,
-   \item für verschiedene $u,v \in V(S)$ $\phi(u) = \phi(v) \Leftrightarrow u,v$ beide inzident zur Außenfacette von $S$,
-   \item für verschiedene $e,f \in E(S)$ $\phi(e) = \phi(f) \Leftrightarrow e,f$ beide inzident zur Außenfacette von $S$,
-   \item für verschiedene $r,s \in F(S)$ $\phi(r) \neq \phi(s)$,
-   \item wenn $x,y \in D(\phi)$ inzident in $S$ sind, $\phi(x),\phi(y)$ auch inzident in $T$ sind.
+   \item $\phi$ bildet $V(S)$ auf $V(T)$, $E(S)$ auf $E(T)$ und $F(S)$ auf $F(T)$ ab.
+   \item Für verschiedene $u,v \in V(S)$ gilt genau dann $\phi(u) = \phi(v)$, wenn $u,v$ beide inzident zur Außenfacette von $S$ sind.
+   \item Für verschiedene $e,f \in E(S)$ gilt genau dann $\phi(e) = \phi(f)$, wenn $e,f$ beide inzident zur Außenfacette von $S$ sind.
+   \item Für verschiedene $r,s \in F(S)$ gilt: $\phi(r) \neq \phi(s)$.
+   \item Wenn $x,y \in D(\phi)$ inzident in $S$ sind, so sind $\phi(x),\phi(y)$ auch inzident in $T$.
   \end{enumerate}
  \end{definition}
  
  Die folgenden Resultate wollen wir ohne Beweis benutzen, da die Beweise beide langwierig sind und wenig zum Verständnis des eigentlichen Problems beitragen.
 
  \begin{satzl}{Existenz einer Projektion}{3.3}
-  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei weiter $S$ die freie Vervollständigung von $K$. Dann existiert eine Projektion $\phi$ von $S$ auf $T$ derart, dass $\phi(x) = x$ für alle $x\in V(G(K)) \cup E(G(K)) \cup F(G(K))$. Die Projektion $\phi$ heißt dann auch korrespondierende Projekt.
+  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei weiter $S$ die freie Vervollständigung von $K$. Dann existiert eine Projektion $\phi$ von $S$ auf $T$ derart, dass $\phi(x) = x$ für alle $x\in V(G(K)) \cup E(G(K)) \cup F(G(K))$. Eine solche Projektion $\phi$ heißt dann auch korrespondierende Projektion.
  \end{satzl}
  
  \begin{satzl}{Darstellung als Beinahe-Triangulation}{3.4}
-  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$. Sei weiter $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $H$ die planare Darstellung $T$, die man erhält, wenn man die Knoten aus $V(G(K))$ entfernt, und bezeichne als Außenfacette die Facette von $H$, die $V(G(K))$ enthält. Dann ist $H$ eine Beinahe-Triangulation, und die Einschränkung von $\phi$ auf $E(R)$ verpackt $H$ in $R$.  
+  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$. Sei weiter $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $H$ die planare Darstellung $T$, die man erhält, wenn man die Knoten aus $V(G(K))$ entfernt, und bezeichne als Außenfacette die Facette von $H$, die $V(G(K))$ enthält. Dann ist $H$ eine Beinahe-Triangulation, und die Einschränkung von $\phi$ auf $E(R)$ verpackt $H$ in $R$.  
  \end{satzl}
 
  \begin{definition}{Sehen}
-  Sei $G$ eine planare Zeichnung eines Graphen. Sei $v \in V(G)$ und $e \in E(G)$. Man sagt $v$ \textit{sieht} $e$, wenn sowohl $v$ als auch $e$ inzident zur gleichen Innenfacette sind, aber $v$ nicht inzident zu $e$ ist.
+  Sei $G$ eine planare Zeichnung eines Graphen. Sei $v \in V(G)$ und $e \in E(G)$. Man sagt: $v$ \textit{sieht} $e$, wenn sowohl $v$ als auch $e$ inzident zur gleichen Innenfacette sind, aber $v$ nicht inzident zu $e$ ist.
  \end{definition}
 
  \begin{definition}{Dreibein}
@@ -135,29 +135,28 @@
  \end{definition}
  
  \begin{satzl}{Existenz eines Kurzkreises}{3.5}
-  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ und sei $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $X \subseteq E(S)$ zerstreut in $S$ und $\sharp X \leq 4$ und wenn $\sharp X = 4$ gilt, so gibt es ein Dreibein für $X$. Gibt es einen Kreis $C$ in $T$ mit $|E(C) - \phi(X)| \leq 1$, so gibt es einen Kurzkreis in $T$.
+  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ und sei $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $X \subseteq E(S)$ zerstreut in $S$ und $\sharp X \leq 4$ und wenn $\sharp X = 4$ gilt, so gebe es ein Dreibein für $X$. Gibt es einen Kreis $C$ in $T$ mit $|E(C) - \phi(X)| \leq 1$, so gibt es einen Kurzkreis in $T$.
  \end{satzl}
  \begin{proof}
   Sei $X' = \phi(X) \cap E(C)$. Da $X$ in $S$ zerstreut ist, ist keine Kante aus $X$ inzident zur Außenfacette von $S$. Also ist jede Kante aus $X$ inzident zu zwei verschiedenen Innenfacetten von $S$. Nach Satz \ref{3.3} gilt für jede Facette $t$ von $T$, die zu einer Kante aus $X'$ inzident ist, $t=\phi(r)$, wobei $r$ eine Innenfacette von $S$ ist. Also ist $X'$ auch zerstreut in $T$.\\
-  Angenommen, $C$ sei kein Kurzkreis in $T$. Es gilt: $\sharp E(C) \leq \sharp X +1 \leq 5$. $C$ teilt also den Graphen in ein Äußeres $O$ und ein Inneres $I$ mit $C \subseteq I$, sodass $|I \cap V(T)| \leq 1$ bzw. $I \cap V(T) = \emptyset$, falls $\sharp E(C) \leq 4$. Es ist aber jede Kante aus $X'$ inzident zu einem Dreieck aus $T$, das in $I$ liegt, und alle diese Dreiecke sind verschieden, da $X'$ zerstreut in $T$ ist. Somit beinhaltet $I$ mindestens $\sharp X' \geq \sharp E(C) -1$ Dreiecke von $T$. Falls $\sharp E(C) \leq 4$ gilt, so ist dies jedoch nicht möglich da $E(C) \cap I = \emptyset$ gilt. Also gilt $\sharp E(C) = 5$, $\sharp X = 4$, es existiert eindeutig ein Knoten $t$ aus $T$ in $I$, $d_T(t) = 5$, und $t$ sieht jede Kante aus $C$.\\
+  Angenommen, $C$ sei kein Kurzkreis in $T$. Es gilt: $\sharp E(C) \leq \sharp X +1 \leq 5$. Also teilt $C$ den Graphen in ein Äußeres $O$ und ein Inneres $I$ mit $C \subseteq I$, sodass $|I \cap V(T)| \leq 1$ bzw. $I \cap V(T) = \emptyset$, falls $\sharp E(C) \leq 4$. Es ist aber jede Kante aus $X'$ inzident zu einem Dreieck aus $T$, das in $I$ liegt, und alle diese Dreiecke sind verschieden, da $X'$ zerstreut in $T$ ist. Somit beinhaltet $I$ mindestens $\sharp X' \geq \sharp E(C) -1$ Dreiecke von $T$. Falls $\sharp E(C) \leq 4$ gilt, so ist dies jedoch nicht möglich, da $E(C) \cap I = \emptyset$ gilt. Also gilt $\sharp E(C) = 5$, $\sharp X = 4$, es existiert eindeutig ein Knoten $t$ aus $T$ in $I$, $d_T(t) = 5$, und $t$ sieht jede Kante aus $C$.\\
   Da $\sharp X = 4$, gibt es wegen unserer Annahme ein Dreibein $v\in V(S)$ für $X$. Entweder gilt also $d_K(v) \geq 6$ oder es gibt eine Kante in $X$, die $v$ in $S$ nicht sieht, da $v$ ein Dreibein ist. In beiden Fällen folgt dann $v=\phi(v)\neq t$. Da aber $v=\phi(v)$ mindestens drei unterschiedliche Nachbarn in $C$ hat, und jeder Knoten aus $C$ adjazent zu $t$ ist, folgt daraus, dass $T$ einen Kurzkreis haben muss. \\
-  Entweder gibt es also einen weiteren Kreis, der ein Kurzkreis ist, oder $C$ selbst ist der gesuchte Kurzkreis.
+  Entweder gibt es also einen weiteren Kreis, der ein Kurzkreis ist, oder $C$ selbst ist ein Kurzkreis.
  \end{proof}
  
  \begin{satzl}{Dreibeine in den Konfigurationen}{3.6}
   Sei $K$ eine der 633 Konfiguration der Originalveröffentlichung, sei $S$ deren freie Vervollständigung und sei $X$ die Menge der Kanten der Zeichnung, die dick gedruckt sind. Wenn $\sharp X = 4$ gilt, so gibt es ein Dreibein für $X$.
  \end{satzl}
  
- Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich Der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden di Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
+ Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nicht viele Konfigurationen übrig, bei denen sich der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst \-\ benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden die Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
  
  Nun können wir uns daran machen Satz \ref{2.2} zu beweisen.
  \begin{proof}[Beweis zu Satz \ref{2.2}]
-  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$ und sei $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der der Kanten aus $K$, die im Anhang im fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
+  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der Kanten aus $K$, die im Anhang im Fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
   Nach Satz \ref{3.4} ist $H$ somit eine Beinahe-Triangulation und $\psi$ verpackt $H$ in $R$. Sei weiter $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C}_1 \subseteq \mathscr{C}^*$ die Menge aller Aufzüge von Trifärbungen von $H$ durch $\psi$.\\
   Nach Satz \ref{3.1} ist $\mathscr{C}_1$ konsistent. Weiter sei $\mathscr{C}_2 \subseteq \mathscr{C}^*$ die Menge aller Einschränkungen von $E(R)$ von Trifärbungen von $S$. Nach Satz \ref{2.4} besitzt $T$ keine Trifärbung, somit folgt $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$. Sei nun $\mathscr{C}_3$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}_2$. Da $\mathscr{C}_1$ konsistent ist und $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$ gilt, folgt $\mathscr{C}_1 \subseteq \mathscr{C}_3$.\\
-  Man kann $H$ so durch Kanten erweitern, dass sich eine Triangulation $T'$ ergibt. Da $T$ ein minimales Gegenbeispiel ist, besitzt $T'$ -- und somit auch $H$ -- eine Trifärbung. Also gilt dass $\mathscr{C}_1$ nicht leer sein kann und somit ist auch $\mathscr{C}_3$ nicht leer. Weiterhin ist $K$ auch nicht $D$-reduzibel.\\
+  Man kann $H$ so durch Kanten erweitern, dass sich eine Triangulation $T'$ ergibt. Da $T$ ein minimales Gegenbeispiel ist, besitzt $T'$ -- und somit auch $H$ -- eine Trifärbung. Also ist $\mathscr{C}_1$ nicht leer und somit ist auch $\mathscr{C}_3$ nicht leer. Weiterhin ist $K$ auch nicht $D$-reduzibel.\\
   Nach Satz \ref{3.2} gilt für $X$ sowohl $1 \leq \sharp X \leq 4$ als auch, dass $X$ ein Zusammenzug von $K$ ist. Somit ist $X$ zerstreut in $S$. \\
-  Nach Satz \ref{2.1} besitzt $T$ keinen Kurzkreis. Kombiniert man \ref{3.6} und \ref{3.5}, so sieht man, dass es in $T$ keinen Kreis $C$ mit $|E(C) - \phi(X)| = 1$ geben kann. Aber nach Satz \ref{2.5} besitzt $T$ eine Trifärbung modulo $\phi(X)$, die wir $\kappa$ nenen. Die Einschränkung von $K$ auf $E(H)$ ist eine Trifärbung von $H$, da nach Wahl von $H$ gilt: $\phi(X) \cap E(H) = \emptyset$. Sei $\lambda$ der Aufzug von $\kappa$ durch $\psi$. Es gilt $\lambda \in \mathscr{C}_1$ und somit auch  $\lambda \in \mathscr{C}_3$. Sei nun $e \in E(S)$ eine Kante und definiere $\kappa'(e) = \kappa(\phi(e))$. Dann ist $\kappa'$ eine Trifärbung von $S$ modulo $X$ und $\lambda$ ist ihre Einschränkung auf $R$. Dies Liefert einen Widerspruch dazu, das $X$ ein Zusammenzug von $S$ ist. Dies zeigt das gesuchte Resultat.
+  Nach Satz \ref{2.1} besitzt $T$ keinen Kurzkreis. Kombiniert man \ref{3.6} und \ref{3.5}, so sieht man, dass es in $T$ keinen Kreis $C$ mit $|E(C) - \phi(X)| = 1$ geben kann. Aber nach Satz \ref{2.5} besitzt $T$ eine Trifärbung modulo $\phi(X)$, die wir $\kappa$ nenen. Die Einschränkung von $K$ auf $E(H)$ ist eine Trifärbung von $H$, da nach Wahl von $H$ gilt: $\phi(X) \cap E(H) = \emptyset$. Sei $\lambda$ der Aufzug von $\kappa$ durch $\psi$. Es gilt $\lambda \in \mathscr{C}_1$ und somit auch  $\lambda \in \mathscr{C}_3$. Sei nun $e \in E(S)$ eine Kante und definiere $\kappa'(e) = \kappa(\phi(e))$. Dann ist $\kappa'$ eine Trifärbung von $S$ modulo $X$ und $\lambda$ ist ihre Einschränkung auf $R$. Dies liefert einen Widerspruch dazu, das $X$ ein Zusammenzug von $S$ ist. Dies zeigt das gesuchte Resultat.
  \end{proof}
-
 \end{section}

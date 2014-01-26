@@ -1,11 +1,42 @@
 \begin{section}{Reduzierbarkeit}
- \begin{definition}[Freie Vervollständigung]
-  Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{Freie Vervollständigung} von $K$ \textit{mit dem Ring $R$}, wenn
-  \begin{enumerate}[i)]
-   \item $R$ ein induzierter Ring von $S$ ist, der die Außenfacette von $S$ begrenzt,
-   \item $G(K)$ ein induzierter Teilgraph
-  \end{enumerate}
+ \label{sec:AHRed}
+ Der wichtigste Unterschied zwischen den beiden Beweisen besteht in der Wahl der angewendeten Reduzierbarkeitstheorien. 
+ 
+ Um die folgenden Theorien verstehen zu können, geben wir in aller Kürze noch weitere Definitionen.
+ 
+ \begin{definition}{Reduzent}
+  Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$ in zyklischer Anordnung. Ein Paar $(S,\sigma)$, bestehend aus einem Graphen $S$ und einer surjektiven Abbildung $\sigma$ von der Menge der Außenecken von $K$ auf die Außenecken von $S$ heißt \textit{Reduzent} von $K$, wenn $S$ weniger Ecken hat als $C$ und zusätzlich folgendes gilt:
+  \begin{itemize}
+   \item $\sigma$ erhält die Nachbarschaftsrelation, d.h. für alle $i = 1,\cdots,k$ sind $\sigma(v_i)$ und $\sigma(v_{i+1})$ ebenfalls benachbart.
+   \item Urbilder verschiedener Außenecken von $S$ bezüglich $\sigma$ trennen sich nicht gegenseitig, d.h. für $i,j,k,l \in \{1,\cdots,k\}$ mit
+   \[ \sigma(v_i) = \sigma(v_j) \neq \sigma(v_k) = \sigma(v_l)\]
+   ist die Annordnung der Indizes $i < k < j < l$ nicht möglich.
+  \end{itemize}
+ \end{definition}
+ 
+ \begin{definition}{$\sigma$-richtig, $\sigma$-verträglich}
+  Sei $K$ eine Konfiguration, $G$ ein minimales Gegenbeispiel $(S,\sigma)$ ein Reduzent von $K$ und $\Psi$ die Menge aller zulässigen Eckenfärbungen von $S$.
+  
+  Eine Konfiguration $K$ ist nur dann \textit{$\sigma$-richtig} in eine minimales Gegenbeispiel $G$ eingebettet, wenn zwei Außenecken von $K$, die von $\sigma$ gleich abgebildet werden, in $G$ nicht benachbart sind. 
+ \end{definition}
 
+ 
+ Diese Definition war vorher nicht nötig, da \rsst\-\ ohne Reduktionen auskommen, die einen Reduzenten benötigen. Es gibt im wesentlichen vier Wege, zu zeigen, dass in einem minimalen Gegenbeispiel keine Konfigurationen auftreten:
+ 
+ \begin{definition}{A-,B- und C-Reduzibilität}
+  \begin{itemize}
+   \item \textbf{A-Reduzibilität}, benannt nach A. Errera\\
+   Eine Konfiguration $K$ heißt \textit{A-reduzibel}, wenn sie einen Reduzenten besitzt, der die folgenden Eigenschaften besitzt:
+   \begin{itemize}
+    \item $K$ kann in eine Minimaltriangulation nur $\sigma$-richtig eingebettet werden und
+    \item jede $\sigma$-verträgliche Randfärbung ist direkt durchfärbbar, das heißt, es gilt: $\Phi(r,\sigma) \subset \Phi_0(K)$
+   \end{itemize}
+
+   \item \textbf{B-Reduzibilität}, benannt nach Birkhoff\\
+   \item \textbf{C-Reduzibilität}, benannt nach C.E. Winn\\
+   \item \textbf{D-Reduzibilität}\\
+   Von Heesch selbst entwickelt in \cite{heesch} veröffentlicht, nur um die zufällige alphabetische Reihenfolge einzuhalten D-Reduzibilität genannt. Sie bildet den Kern  des Reduktionsschritts von \rsst\-\ und wurde deshalb schon in Definition \ref{dred} erläutert. In diesem Zusammenhang ist allerdings noch der Dürre-Heesch-Algorithmus zu nennen, der eine D-Reduktion durchführt. Eine Beschreibung des Algorithmus mit Teilen des Quellcodes findet sich etwa in \cite[Kapitel 6.4]{fritsch}.
+  \end{itemize}
  \end{definition}
 
 \end{section}
