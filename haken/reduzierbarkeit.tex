@@ -2,7 +2,7 @@
  \label{sec:AHRed}
  Der wichtigste Unterschied zwischen den beiden Beweisen besteht in der Wahl der angewendeten Reduzierbarkeitstheorien. 
  
- Um die folgenden Theorien verstehen zu können, geben wir in aller Kürze noch weitere Definitionen.
+ Um die folgenden Theorien verstehen zu können, geben wir in aller Kürze noch weitere Definitionen. Die bisher noch nicht genannten Reduktionen gehen auf Kempe zurück, die wichtigsten von ihm eingeführten Begriffe wollen wir ebenfalls klären.
  
  \begin{definition}{Reduzent}
   Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$ in zyklischer Anordnung. Ein Paar $(S,\sigma)$, bestehend aus einem Graphen $S$ und einer surjektiven Abbildung $\sigma$ von der Menge der Außenecken von $K$ auf die Außenecken von $S$ heißt \textit{Reduzent} von $K$, wenn $S$ weniger Ecken hat als $C$ und zusätzlich folgendes gilt:
@@ -14,20 +14,41 @@
   \end{itemize}
  \end{definition}
  
- \begin{definition}{Menge aller Randfärbungen, $\sigma$-richtig, $\sigma$-verträglich}
+ \begin{definition}{Kempe-Kette, Kempe-Netz, Kempe-Austausch}
+  Sei $G = (V,E)$ ein Graph und $\chi$ eine Färbung von $G$.
+  \begin{itemize}
+   \item Eine \textit{Kempe-Kette} ist ein Pfad in $G$, dessen Knoten abwechselnd mit den beiden Farben $b,g \in \{1,2,3,4\}$ gefärbt sind. Genauer spricht man auch von einer $(b,g)$-Kette.
+   \item Ein \textit{Kempe-Netz} von $G$ ist ein Untergraph von $G$, bestehend aus allen Knoten und dazugehörigen Kanten, die mit den beiden Farben $b,g \in \{1,2,3,4\}$ gefärbt sind. Ein $(b,g)$-Netz von $G$ besteht also aus allen $(b,g)$-Pfaden von $G$. Die Knotenmenge eines Kempe-Netzes bezeichnet man mit $V_K\subseteq V$.
+   \item Eine Färbung $\tilde{\chi}$ entsteht durch \textit{Kempe-Austausch} aus $\chi$, wenn in einem Kempe-Netz die Farben vertauscht werden. Die Färbung $\tilde{\chi}$ ist also von der Form:
+   \[ \tilde{\chi}(v) = \begin{cases}
+                        g &\text{ falls } v\in V_K \text{ und } \chi(v) = b\\
+                        b &\text{ falls } v\in V_K \text{ und } \chi(v) = g\\
+                        \chi(v) &\text{ falls } v\in V\setminus V_K\text{.} \\
+                       \end{cases} \]
+  \end{itemize}
+
+ \end{definition}
+
+ 
+ \begin{definition}{Menge aller Randfärbungen, $\sigma$-richtig, $\sigma$-verträglich, gut, Stufe-1-gut, $\Phi$-gut, Stufe-$n$-gut}
   Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$, $G$ ein minimales Gegenbeispiel $(S,\sigma)$ ein Reduzent von $K$ und $\Psi(S)$ die Menge aller zulässigen Eckenfärbungen von $S$. Die \textit{Menge aller Randfärbungen} für einen Graphen mit $r$ Randknoten nennen wir $\Psi(r)$
   \begin{itemize}
    \item $K$ ist nur dann \textit{$\sigma$-richtig} in $G$ eingebettet, wenn zwei Außenecken von $K$, die von $\sigma$ gleich abgebildet werden, in $G$ nicht benachbart sind. 
    \item Eine Färbung $\vartheta$ der Außenecken von $K$ heißt \textit{$\sigma$-verträglich}, wenn sie als Abbildung von der Form $\vartheta = \chi \circ \sigma$ für ein $\chi \in \Psi(S)$ ist.
    \item Die Menge der $\sigma$-verträglichen Randfärbung bezeichnen wir mit $\Phi(r,\rho)$.
+   \item Eine Randfärbung ist \textit{gut}, wenn sie sich in natürlicher Weise vom Rand auf den Rest des Graphen fortsetzen lässt.
    \item Mit $\Psi_0(K)$ bezeichnen wir die Menge aller von Anfang an guten Randfärbungen.
+   \item Für $K$ ist eine Randfärbung \textit{gut von Stufe 1}, wenn sie nicht von Anfang an gut ist, aber nach jeder Wahl eines Farbpaares jede Blockzerlegung einen Kempe-Austausch erlaubt, der sie in eine von Anfang an gute Randfärbung überführt. Die Menge aller dieser Randfärbungen heißt $\Phi_1(K)$.
+   \item Eine Randfärbung heißt \textit{$\Phi$-gut}, wenn sie nicht zu $\Phi$ gehört, aber es ein Farbpaar gibt, dass man so wählen kann, dass für jede zugehörige Blockzerlegung ein Kempe-Austausch existiert, dass sie sich in ein Element aus $\Phi$ transformieren lässt.
+   \item Eine Randfärbung heißt \textit{gut von Stufe $n$}, wenn sie $\Phi_n(K)$-gut ist.
   \end{itemize}
+  Für eine Konfiguration $K$ ergibt sich also eine Folge von $\Phi_{n-1}(K)$. Da die Menge aller Randfärbungen $\Phi(r)$ für jede Konfiguration endlich ist, wird diese Folge irgendwann stationär. Es gibt also einen Index $n_0$, sodass keine $(n_0+1)$-gute Randfärbung existiert. Nach Heesch setzen wir $\Phi_{n_0}(K) = \overline{\Phi}(K)$.
  \end{definition}
 
- 
  Diese Definition war vorher nicht nötig, da \rsst\-\ ohne Reduktionen auskommen, die einen Reduzenten benötigen. Es gibt im wesentlichen vier Wege, zu zeigen, dass in einem minimalen Gegenbeispiel keine Konfigurationen auftreten:
  
- \begin{definition}{A-,B- und C-Reduzibilität}
+ \begin{definition}{A-,B-, C- und D-Reduzibilität}
+ \-\ 
   \begin{itemize}
    \item \textbf{A-Reduzibilität}, benannt nach A. Errera\\
    Eine Konfiguration $K$ heißt \textit{A-reduzibel}, wenn sie einen Reduzenten besitzt, der die folgenden Eigenschaften besitzt:
@@ -35,9 +56,10 @@
     \item $K$ kann in eine Minimaltriangulation nur $\sigma$-richtig eingebettet werden und
     \item jede $\sigma$-verträgliche Randfärbung ist direkt durchfärbbar, das heißt, es gilt: $\Phi(r,\sigma) \subset \Phi_0(K)$
    \end{itemize}
-
    \item \textbf{B-Reduzibilität}, benannt nach Birkhoff\\
-   \item \textbf{C-Reduzibilität}, benannt nach C.E. Winn\\
+   Es sei $K$ eine Konfiguration und $(S,\sigma)$ ein Reduzent für $K$, derart dass $K$ in ein minimales Gegenbeispiel nur $\sigma$-richtig eingebettet werden kann. $K$ heißt \textit{B-reduzibel}, wenn jede $\sigma$-verträgliche Randfärbung entweder von Anfang an gut oder gut von Stufe 1 ist, also wenn gilt: $\Phi(r,\sigma)\subset\Phi_1(K)$.
+   \item \textbf{C-Reduzibilität}, benannt nach C. E. Winn\\
+   Es sei $K$ eine Konfiguration und $(S,\sigma)$ ein Reduzent für $K$, derart dass $K$ in ein minimales Gegenbeispiel nur $\sigma$-richtig eingebettet werden kann. $K$ heißt \textit{C-reduzibel}, wenn jede $\sigma$-verträgliche Randfärbung gut von irgendeiner Stufe ist, also: $\Phi(r,\sigma) \subset \overline{\Phi}(K)$.
    \item \textbf{D-Reduzibilität}\\
    Von Heesch selbst entwickelt in \cite{heesch} veröffentlicht, nur um die zufällige alphabetische Reihenfolge einzuhalten D-Reduzibilität genannt. Sie bildet den Kern  des Reduktionsschritts von \rsst\-\ und wurde deshalb schon in Definition \ref{dred} erläutert. In diesem Zusammenhang ist allerdings noch der Dürre-Heesch-Algorithmus zu nennen, der eine D-Reduktion durchführt. Eine Beschreibung des Algorithmus mit Teilen des Quellcodes findet sich etwa in \cite[Kapitel 6.4]{fritsch}.
   \end{itemize}
