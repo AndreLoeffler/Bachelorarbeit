@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  27 JAN 2014 10:23
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  27 JAN 2014 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1087,8 +1087,8 @@ Overfull \hbox (7.0311pt too wide) in paragraph at lines 32--33
 r[]aglich, gut, Stu-fe-1-gut,
  []
 
-[40] [41]) (./haken/konfigurationen.tex [42] (./haken/birkhoff.tex) [43]
-[44]))
+[40] [41]) (./haken/konfigurationen.tex [42] (./haken/birkhoff.tex) [43]))
+[44]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
@@ -2912,14 +2912,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D8E4D62660A384D33E9CE12CA1373A1;1319.
+(rerunfilecheck)             Checksum: EE353B9CD8B69FEDB3D9C892DA5E21FF;1352.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
  ) 
 Here is how much of TeX's memory you used:
- 21069 strings out of 493485
- 389782 string characters out of 3143526
- 520451 words of memory out of 3000000
- 23531 multiletter control sequences out of 15000+200000
+ 21068 strings out of 493485
+ 389772 string characters out of 3143526
+ 520481 words of memory out of 3000000
+ 23530 multiletter control sequences out of 15000+200000
  13083 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  70i,17n,73p,1151b,1066s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2953,7 +2953,7 @@ ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/
 rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (55 pages, 2286729 bytes).
+Output written on main.pdf (55 pages, 2287463 bytes).
 PDF statistics:
  1140 PDF objects out of 1200 (max. 8388607)
  840 compressed objects within 9 object streams

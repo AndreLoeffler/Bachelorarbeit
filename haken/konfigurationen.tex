@@ -1,4 +1,4 @@
-  \begin{section}{Die Konfigurationen}
+  \begin{section}{Die Konfigurationen nach Appel \& Haken}
   Beide aktuellen Beweise der Vier-Farben-Vermutung folgen der Idee von Birkhoff. Er schilderte, dass es im wesentlichen drei Möglichkeiten gäbe: (1) die Vier-Farben-Vermutung ist falsch, (2) es könnte möglich sein, eine Menge von reduzierbaren Konfigurationen aufzustellen, sodass jeder planare Graph eine dieser Konfigurationen enthalten muss, oder (3) es gibt noch einen anderen, möglicherweise komplizierteren Ansatz, das Vier-Farben-Problem zu beweisen. \cite{AH1}
    
    Da Appel \& Haken ihre Reduzibilität auf andere Art und Weise prüfen, stellen sie auch andere Anforderungen an ihre Konfigurationen. Dazu kann man die folgende und Definition \ref{rsstKonf} direkt mit einander vergleichen. Gemäß Birkhoff benutzen beide Teams den gleichen Begriff, jedoch fällt dieser bei Appel \& Haken deutlich allgemeiner aus. Um Verwechslungen zu vermeiden, meinen wir ab jetzt eine Konfiguration im Sinne von Appel \& Haken, wenn wir diese mit $C$ bezeichnen -- im Gegensatz zu einer Konfiguration nach \rsst, welche stets mit $K$ bezeichnet wurde.
@@ -30,10 +30,9 @@
   
   Nun können wir davon sprechen, dass ein Graph eine Konfiguration enthält, indem wir folgende Definition bemühen:
   
-  \begin{definition}{enthaltene Konfiguration}
-   Man sagt, ein Graph $G$ \textit{enthält} eine Konfiguration $C$, wenn es einen geschlossenen Pfad $K$ gibt, sodass der von den Knoten von $K$ und den im Innengebiet liegenden Knoten von $K$ Untergraph $C_K$ von $G$ eine zu $C$ äquivalente Konfiguration ist.
+  \begin{definition}{Enthaltene Konfiguration}
+   Man sagt, ein Graph $G$ \textit{enthält} eine Konfiguration $C$, wenn es einen geschlossenen Pfad $K$ gibt, sodass der von den Knoten von $K$ und den im Innengebiet liegenden Knoten von $K$ gebildete Teilgraph $C_K$ von $G$ eine zu $C$ äquivalente Konfiguration ist.
   \end{definition}
 
-
-  \end{section}
-\newpage
+  Die Verallgemeinerung der Definition von Appel \& Haken benötigt eine ausgefeiltere Theorie, wann eine Konfiguration enthalten ist, was sowohl das Finden als auch das bereits beschriebene Reduzieren verkompliziert. Das macht es schwerer, den Beweisschritten von Appel \& Haken zu folgen, als es bei \rsst\-\ der Fall war. 
+\end{section}

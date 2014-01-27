@@ -13,8 +13,8 @@
 \contentsline {section}{\numberline {5.3}Zwangsl\IeC {\"a}ufigkeit}{29}{section.5.3}
 \contentsline {section}{\numberline {5.4}Der Algorithmus}{36}{section.5.4}
 \contentsline {chapter}{\numberline {6}Der Beweis von Appel und Haken}{39}{chapter.6}
-\contentsline {section}{\numberline {6.1}Reduzierbarkeit}{39}{section.6.1}
-\contentsline {section}{\numberline {6.2}Die Konfigurationen}{42}{section.6.2}
+\contentsline {section}{\numberline {6.1}Allgemeine Reduzierbarkeit}{39}{section.6.1}
+\contentsline {section}{\numberline {6.2}Die Konfigurationen nach Appel \& Haken}{42}{section.6.2}
 \contentsline {chapter}{\numberline {7}Umformulierungen}{45}{chapter.7}
 \contentsline {section}{Literatur}{46}{chapter*.2}
 \contentsline {chapter}{\numberline {8}Anhang}{49}{chapter.8}
