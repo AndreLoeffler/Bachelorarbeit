@@ -15,15 +15,18 @@
  \end{definition}
  
  \begin{definition}{Kempe-Kette, Kempe-Netz, Kempe-Austausch}
-  Sei $G$ ein Graph und $\chi$ eine Färbung von $G$.
+  Sei $G = (V,E)$ ein Graph und $\chi$ eine Färbung von $G$.
   \begin{itemize}
    \item Eine \textit{Kempe-Kette} ist ein Pfad in $G$, dessen Knoten abwechselnd mit den beiden Farben $b,g \in \{1,2,3,4\}$ gefärbt sind. Genauer spricht man auch von einer $(b,g)$-Kette.
-   \item Ein Kempe-Netz
-   \item Ein \textit{Kempe-Austausch}
+   \item Ein \textit{Kempe-Netz} von $G$ ist ein Untergraph von $G$, bestehend aus allen Knoten und dazugehörigen Kanten, die mit den beiden Farben $b,g \in \{1,2,3,4\}$ gefärbt sind. Ein $(b,g)$-Netz von $G$ besteht also aus allen $(b,g)$-Pfaden von $G$. Die Knotenmenge eines Kempe-Netzes bezeichnet man mit $V_K\subseteq V$.
+   \item Eine Färbung $\tilde{\chi}$ entsteht durch \textit{Kempe-Austausch} aus $\chi$, wenn in einem Kempe-Netz die Farben vertauscht werden. Die Färbung $\tilde{\chi}$ ist also von der Form:
+   \[ \tilde{\chi}(v) = \begin{cases}
+                        g &\text{ falls } v\in V_K \text{ und } \chi(v) = b\\
+                        b &\text{ falls } v\in V_K \text{ und } \chi(v) = g\\
+                        \chi(v) &\text{ falls } v\in V\setminus V_K\text{.} \\
+                       \end{cases} \]
   \end{itemize}
-
  \end{definition}
-
  
  \begin{definition}{Menge aller Randfärbungen, $\sigma$-richtig, $\sigma$-verträglich, gut, Stufe-1-gut, $\Phi$-gut, Stufe-$n$-gut}
   Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$, $G$ ein minimales Gegenbeispiel $(S,\sigma)$ ein Reduzent von $K$ und $\Psi(S)$ die Menge aller zulässigen Eckenfärbungen von $S$. Die \textit{Menge aller Randfärbungen} für einen Graphen mit $r$ Randknoten nennen wir $\Psi(r)$
@@ -60,4 +63,5 @@
   \end{itemize}
  \end{definition}
 
+ Appel \& Haken verwendeten in ihrem Beweisversuch sowohl die D-Reduzibilität als auch den allgemeinen Fall der C-Reduzibilität. Auch verwendeten sie einen Computer, um für jede ihrer Konfigurationen den kürzest möglichen Reduktionsbeweis zu finden. Jedoch sind diese Beweise immernoch recht lang und die Menge ihrer Konfigurationen mächtiger als die von \rsst. Es erscheint also wenig wünschenswert, alle diese Beweise per Hand zu überprüfen. 
 \end{section}

@@ -1,5 +1,5 @@
   \begin{section}{Die Konfigurationen}
-   Eine Klasse von Graphen ist für den Beweis des Vier-Farben-Satzes wesentlich: Die Konfigurationen. Sie treten vor allem als Untergraphen der normalen Graphen auf. Zuerst wollen wir festhalten, was eine Konfiguration eigentlich ist.
+  Beide aktuellen Beweise der Vier-Farben-Vermutung folgen der Idee von Birkhoff. Er schilderte, dass es im wesentlichen drei Möglichkeiten gäbe: (1) die Vier-Farben-Vermutung ist falsch, (2) es könnte möglich sein, eine Menge von reduzierbaren Konfigurationen aufzustellen, sodass jeder planare Graph eine dieser Konfigurationen enthalten muss, oder (3) es gibt noch einen anderen, möglicherweise komplizierteren Ansatz, das Vier-Farben-Problem zu beweisen. \cite{AH1}
    
    \begin{definitionl}{Konfiguration}{konfig}
     Ein planarer Graph $C$ heißt \textit{Konfiguration}, wenn

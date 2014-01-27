@@ -1,8 +1,10 @@
   \begin{section}{Die Konfigurationen}
-   Eine Klasse von Graphen ist für den Beweis des Vier-Farben-Satzes wesentlich: Die Konfigurationen. 
+  Beide aktuellen Beweise der Vier-Farben-Vermutung folgen der Idee von Birkhoff. Er schilderte, dass es im wesentlichen drei Möglichkeiten gäbe: (1) die Vier-Farben-Vermutung ist falsch, (2) es könnte möglich sein, eine Menge von reduzierbaren Konfigurationen aufzustellen, sodass jeder planare Graph eine dieser Konfigurationen enthalten muss, oder (3) es gibt noch einen anderen, möglicherweise komplizierteren Ansatz, das Vier-Farben-Problem zu beweisen. \cite{AH1}
+   
+   Da Appel \& Haken ihre Reduzibilität auf andere Art und Weise prüfen, stellen sie auch andere Anforderungen an ihre Konfigurationen. Dazu kann man die folgende und Definition \ref{rsstKonf} direkt mit einander vergleichen. Gemäß Birkhoff benutzen beide Teams den gleichen Begriff, jedoch fällt dieser bei Appel \& Haken deutlich allgemeiner aus. Um Verwechslungen zu vermeiden, meinen wir ab jetzt eine Konfiguration im Sinne von Appel \& Haken, wenn wir diese mit $C$ bezeichnen -- im Gegensatz zu einer Konfiguration nach \rsst, welche stets mit $K$ bezeichnet wurde.
    
    \begin{definitionl}{Konfiguration}{konfig}
-    Ein planarer Graph $C$ heißt \textit{Konfiguration}, wenn
+    Ein planarer Graph $C$ heißt \textit{Konfiguration} im Sinne von Appel \& Haken, wenn
     \begin{itemize}
      \item er regulär ist,
      \item die Außenknoten einen Ring der \textit{Ringgröße} $k \geq 4$ bilden,
@@ -12,14 +14,13 @@
     \end{itemize}
    \end{definitionl}
    
-  Um eine bessere Vorstellung für diese Graphen zu bekommen, betrachten wir zunächst einige Beispiele. Ein nicht-triviales Beispiel für eine Konfiguration ist der \textit{Birkhoff}-Diamant mit insgesamt 10 Knoten (linkes Bild).
+   Bei \rsst\-\ betrachten wir eine Menge von 633 Konfiguration. Wegen der allgemeineren Definiton bei Appel \& Haken handelt es sich bei ihnen um 1482 einzelne Konfigurationen. Um eine bessere Vorstellung für diese Graphen zu bekommen, betrachten wir zunächst einige Beispiele. Ein nicht-triviales Beispiel für eine Konfiguration ist der \textit{Birkhoff}-Diamant mit insgesamt 10 Knoten (linkes Bild).
    
   \begin{figure}[hb]
    \label{AHkonfig}
     \[ \input{haken/birkhoff} \]
     \caption[Zwei Konfigurationen nach Appel \& Haken: der Birkhoff-Diamant und ein $6$-Stern]{Zwei Konfigurationen nach Appel \& Haken: der Birkhoff-Diamant und ein $6$-Stern}
   \end{figure}
- 
    
   Andere Beispiele für Konfigurationen sind \textit{Sterne}. Sie besitzen genau einen inneren Punkt (``\textit{Zentrum}'') und einen Ring von äußeren Punkten, die alle mit dem Zentrum durch eine Kante verbunden sind. Ein Stern heißt $k$-Stern, wenn er genau $k$ äußere Knoten besitzt. Einen $6$-Stern findet man im rechten Bild.
   

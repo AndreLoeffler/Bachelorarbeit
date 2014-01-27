@@ -22,14 +22,14 @@
  
  Als nächstes folgt eine Definition, die fundamental für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzt eine Konfiguration dort andere Eigenschaften.
   
- \begin{definition}{Konfiguration}
+ \begin{definitionl}{Konfiguration}{rsstKonf}
   Eine Konfiguration $K$ besteht aus einer Beinahe-Triangulation $G(K)$ und einer Zuordnung $\gamma_K : V(G(K)) \mapsto \mathbb{Z}_+$ mit folgenden Eigenschaften:
   \begin{enumerate}[i)]
    \item Für jeden Knoten $v$ besteht $G(K) \setminus \{v\}$ aus höchstens zwei Zusammenhangskomponenten. Gibt es genau zwei, so ist $\gamma_K(v) = d_G(v) + 2$.
    \item Für jeden Knoten $v$, der nicht zur Außenfacette inzident ist, gilt $\gamma_K(v) = d_G(v)$. Für die anderen Knoten $v'$ gilt $\gamma_K(v') > d_G(v')$. In beiden Fällen gilt zusätzlich $\gamma_K(v) \geq 5$.
    \item Sei $A$ die Menge aller Knoten $v \in V(G(K))$, die zur Außenfacette inzident sind und für die $G(K) \setminus \{v\}$ zusammenhängend ist. Die \textit{Ringgröße} von $K$ ist definiert als $\sum_{v\in A} (\gamma_K(v) - d_G(v) - 1)$. Jede Konfiguration besitzt Ringgröße mindestens 2.
   \end{enumerate}
- \end{definition}
+ \end{definitionl}
  
  Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
  

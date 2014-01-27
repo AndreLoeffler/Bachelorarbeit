@@ -15,7 +15,7 @@
 \contentsline {chapter}{\numberline {6}Der Beweis von Appel und Haken}{39}{chapter.6}
 \contentsline {section}{\numberline {6.1}Reduzierbarkeit}{39}{section.6.1}
 \contentsline {section}{\numberline {6.2}Die Konfigurationen}{42}{section.6.2}
-\contentsline {chapter}{\numberline {7}Umformulierungen}{44}{chapter.7}
-\contentsline {section}{Literatur}{45}{chapter*.2}
-\contentsline {chapter}{\numberline {8}Anhang}{48}{chapter.8}
-\contentsline {section}{\numberline {8.1}Konfigurationen nach Robertson, Sanders, Seymour und Thomas}{48}{section.8.1}
+\contentsline {chapter}{\numberline {7}Umformulierungen}{45}{chapter.7}
+\contentsline {section}{Literatur}{46}{chapter*.2}
+\contentsline {chapter}{\numberline {8}Anhang}{49}{chapter.8}
+\contentsline {section}{\numberline {8.1}Konfigurationen nach Robertson, Sanders, Seymour und Thomas}{49}{section.8.1}
