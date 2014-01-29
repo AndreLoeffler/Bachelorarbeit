@@ -40,7 +40,7 @@
    \end{itemize}
   \end{definition}
   
-  Ringe werden im Allgemeinen als wesentlicher Beitrag von Birkhoff auf dem Weg zur Lösung des 4-Farben-Problems angesehen, zuerst erwähnt in \cite{AmJMath35}.
+  Ringe werden im Allgemeinen als wesentlicher Beitrag von Birkhoff auf dem Weg zur Lösung des 4-Farben-Problems angesehen, zuerst erwähnt wurden sie in \cite{AmJMath35}.
 
   Einiges Handwerkszeug ist noch nötig, um Strukturen prägnant und kurz beschreiben zu können.
   
@@ -50,7 +50,7 @@
   \end{definition}
   
   \begin{definition}{Kontraktion}
-   Durch \textit{Kontraktion} erhält man aus einem Graphen einen anderen Graphen, indem man zwei adjazente Knoten $v_1$ und $v_2$ zusammenfasst. Man sagt, man kontrahiert $v_2$ auf $v_1$, wenn man $v_2$ aus dem ursprünglichen Graphen entfernt und alle Kanten, zu denen $v_2$ inzident ist, zu $v_1$ führt. Dabei werden jene Kanten zu Knoten entfernt, wenn diese bereits zu $v_1$ adjazent waren.
+   Durch \textit{Kontraktion} erhält man aus einem Graphen einen anderen Graphen, indem man zwei adjazente Knoten $v_1$ und $v_2$ zusammenfasst. Man sagt, man kontrahiert $v_2$ auf $v_1$, wenn man $v_2$ aus dem ursprünglichen Graphen entfernt und alle Kanten, zu denen $v_2$ inzident ist, zu $v_1$ führt. Dabei werden die Kanten zu Knoten entfernt, wenn der entsprechende Knoten bereits zu $v_1$ adjazent war, um Mehrfachkanten zu verhindern.
   \end{definition}
 
   Betrachtet man diesen Vorgang aus topologischer Sicht, entspricht eine Kontraktion einer Vereinigung zweier benachbarter Länder in der dualen Landkarte durch Aufheben ihrer gemeinsamen Grenze.
@@ -69,7 +69,7 @@
   
   Dieser Satz liefert uns, dass es sich bei diesen Jordanbögen tatsächlich stets um gerade Verbindungsstrecken handeln kann. Für den Beweis dieses Resultats verweisen wir auf \cite[Seite 113]{fritsch}, da er nur der Darstellung von Graphen nutzt und wenig zum eigentlichen Beweis beiträgt. 
   
-  Planarität von Graphen wirkt auf den ersten Blick wie ein rein topologischer Begriff, jedoch gelang es Kuratowski, eine rein kombinatorische Charakterisierung von Planarität zu liefern.
+  Planarität von Graphen wirkt auf den ersten Blick wie ein topologischer Begriff, jedoch gelang es Kuratowski, eine rein kombinatorische Charakterisierung von Planarität zu liefern.
   
   \begin{satz}{Kuratowski}
    Ein Graph ist genau dann planar, wenn er zusammenhängend ist und sich durch (möglicherweise) mehrfache Kontraktion nicht in einen der beiden Graphen $K_{3,3}$ oder $K_5$ überführen lässt.
@@ -92,11 +92,12 @@
   
   Hier benennen wir den eigentlichen Graphen mit $K$, weil wir uns später hauptsächlich für die Darstellung von sogenannten Konfigurationen interessieren.
 
-  \begin{definition}{Facette, Außenfacette}
+  \begin{definition}{Facette, Außenfacette, Innenfacetten}
    Sei $G$ ein in der Ebene $\mathbb{R}^2$ gezeichneter Graph. Sei $J_G$ die Vereinigung aller Jordanbögen dieser Darstellung.
    \begin{itemize}
    \item Eine \textit{Facette} ist eine Zusammenhangskomponente von $\mathbb{R}^2 \setminus J_G$. Alle Punkte der Kanten, die die Facette umfassen heißen ebenfalls inzident zu dieser Facette. 
    \item Die unbeschränkte Facette, die von keiner Menge von Kanten vollständig umschlossen ist, wird \textit{Außenfacette} genannt.
+   \item Jede Facette, die nicht die Außenfacette ist, heißt \textit{Innenfacette}.
    \end{itemize}
   \end{definition}
   
@@ -104,11 +105,13 @@
   
   Weiter gibt es einige gebräuchliche Namenskonventionen für Knoten, um deren Lange im Graphen genauer zu charakterisieren.
   
-  \begin{definition}{Außenknoten, Innenknoten}
+  \begin{definition}{Außenknoten, Innenknoten, Außenkreis, Außenring}
    Sei $G$ ein in der Ebene gezeichneter Graph.
    \begin{itemize}
     \item Jeder Knoten, der inzident zur Außenfacette von $G$ ist, wird \textit{Außenknoten} genannt.
     \item Jeder Knoten von $G$, der kein Außenknoten ist, ist ein \textit{Innenknoten}.
+    \item Der \textit{Außenkreis} von $G$ ist der Kreis, der alle Außenknoten von $G$ durchläuft.
+    \item Ein \textit{Außebring} ist ein Außenkreis, der zusätzlich einfach ist.
    \end{itemize}
 
   \end{definition}
@@ -119,13 +122,13 @@
    Sei $G$ ein in der Ebene gezeichneter Graph.
    \begin{itemize}
    \item Eine Facette ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht. Auch als Dreieck bezeichnen wir die drei Kanten zwischen je zwei der drei Knoten.
-   \item Ein planarer Graph ist eine \textit{Triangulation}, wenn jede seiner Facetten ein Dreieck ist. 
-   \item Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, planarer Graph $G$, bei dem jede beschränkte Facette ein Dreieck ist. 
+   \item Eine \textit{Beinahe-Triangulation} ist ein nichtleerer, planarer Graph $G$, bei dem jede Innenfacette ein Dreieck ist. 
+   \item Ein Beinahe-Triangulation ist eine \textit{Triangulation}, wenn zusätzlich auch die  Außenfacette ein Dreieck ist. 
    \item Ist $T$ eine Triangulation, so bezeichnet $F(T)$ die Menge aller Facetten (innen und außen). Ist hingegen $T$ eine Beinahe-Triangulation, so ist $F(T)$ nur die Menge aller Innenfacetten.
    \end{itemize}
   \end{definition}
   
-  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt. Das dies auch tatsächlich möglich ist, werden wir am Ende des Kapitels kurz diskutieren. Der Unterschied zwischen einer Triangulation und einer Beinahe-Triangulation liegt lediglich in der Form der Außenfacette des Graphen. 
+  Zeichnet man die Kanten eines planaren Graphen als gerade Linien, so entspricht diese Definition genau dem, was man sich unter einem Dreieck vorstellt. Das dies auch tatsächlich möglich ist, ergibt sich aus Satz \ref{WagFar}. 
  
   \begin{definition}{Färbung, Farben, Gültigkeit}
    Sei $G=(V,E)$ ein Graph.

@@ -5,7 +5,7 @@
   Ein planarer Graph heißt \textit{normal}, wenn er ein regulärer, vollständiger Graph mit geraden Jordanbögen ist, bei dem jede Facette außer der Außenfacette ein Dreieck ist.
  \end{definition}
  
- Ein normaler Graph ist also insbesondere eine Triangulation. Ohne wesentliche Einschränkung kann man sich bei der Untersuchung dieses Problems auf Triangulationen beschränkten, da sich jeder Graph durch Kontraktion und das Entfernen von Kanten aus einer Triangulation bilden lässt, wenn diese nur ausreichend -- aber immernoch endlich -- viele Knoten besitzt. Durch das Verringern der Knoten- und Kantenanzahl wird dabei das zu lösende Problem nur leichter. 
+ Ein normaler Graph ist also insbesondere eine Beinahe-Triangulation. Ohne wesentliche Einschränkung kann man sich bei der Untersuchung dieses Problems auf Triangulationen beschränkten, da sich jeder Graph durch Kontraktion und das Entfernen von Kanten aus einer Triangulation bilden lässt, wenn diese nur ausreichend -- aber immernoch endlich -- viele Knoten besitzt. Durch das Verringern der Knoten- und Kantenanzahl wird dabei das zu lösende Problem nur leichter. 
  
  Da wir versuchen, mit möglichst wenig Knoten auszukommen, ist es wenig sinnvoll, eine obere Schranke zu suchen. Daher schließen wir zu kleine oder zu einfache Graphen mit den folgenden Resultaten aus.
  
@@ -13,7 +13,7 @@
   Ein minimales Gegenbeispiel hat mindestens sechs Knoten.
  \end{proposition}
  \begin{proof}
-  Betrachte einen Graphen mit fünf Ländern. Nach dem \nameref{voll5} gibt es zwei nicht adjazente Knoten. Diese können dann gleich gefärbt werden. Für die übrigen drei Knoten bleiben drei unterschiedliche Farben übrig.
+  Betrachte einen Graphen mit fünf Ländern. Nach Satz \ref{voll5} gibt es zwei nicht adjazente Knoten. Diese können dann gleich gefärbt werden. Für die übrigen drei Knoten bleiben drei unterschiedliche Farben übrig.
  \end{proof}
  
  \begin{propositionl}{Adjazente Nachbarn}{gemgrenz}
@@ -38,7 +38,7 @@
  \end{definitionl}
  
  \begin{satzl}{Anzahl der 5-Sterne}{5sterne}
-  Ein minimales Gegenbeispiel enthält 4-Sterne aber mindestens zwölf 5-Sterne.
+  Ein minimales Gegenbeispiel enthält keine 4-Sterne aber mindestens zwölf 5-Sterne.
  \end{satzl}
  \begin{proof}
   Enthält ein Graph einen 4-Stern, so besitzt die duale Landkarte ein Land mit vier Nachbarn, kann also nach Satz \ref{keine4} kein minimales Gegenbeispiel sein. Die Anzahl der 5-Sterne ergibt sich aus der Ungleichung in Satz \ref{4.12}.
