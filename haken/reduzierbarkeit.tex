@@ -2,7 +2,7 @@
  \label{sec:AHRed}
  Der wichtigste Unterschied zwischen den beiden Beweisen besteht in der Wahl der angewendeten Reduzierbarkeitstheorien. 
  
- Um die folgenden Theorien verstehen zu können, geben wir in aller Kürze noch weitere Definitionen. Die bisher noch nicht genannten Reduktionen gehen auf Kempe zurück, die wichtigsten von ihm eingeführten Begriffe wollen wir ebenfalls klären.
+ Um die folgenden Theorien verstehen zu können, geben wir in aller Kürze noch weitere Definitionen. Die bisher noch nicht genannten Reduktionen gehen auf Kempe zurück, die wichtigsten von ihm eingeführten und verwendeten Begriffe wollen wir ebenfalls klären.
  
  \begin{definition}{Reduzent}
   Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$ in zyklischer Anordnung. Ein Paar $(S,\sigma)$, bestehend aus einem Graphen $S$ und einer surjektiven Abbildung $\sigma$ von der Menge der Außenecken von $K$ auf die Außenecken von $S$ heißt \textit{Reduzent} von $K$, wenn $S$ weniger Ecken hat als $C$ und zusätzlich folgendes gilt:
@@ -29,11 +29,11 @@
  \end{definition}
  
  \begin{definition}{Menge aller Randfärbungen, $\sigma$-richtig, $\sigma$-verträglich, gut, Stufe-1-gut, $\Phi$-gut, Stufe-$n$-gut}
-  Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$, $G$ ein minimales Gegenbeispiel $(S,\sigma)$ ein Reduzent von $K$ und $\Psi(S)$ die Menge aller zulässigen Eckenfärbungen von $S$. Die \textit{Menge aller Randfärbungen} für einen Graphen mit $r$ Randknoten nennen wir $\Psi(r)$
+  Sei $K$ eine Konfiguration mit den Außenecken $v_1,\cdots,v_r$, $G$ ein minimales Gegenbeispiel, $(S,\sigma)$ ein Reduzent von $K$ und $\Psi(S)$ die Menge aller zulässigen Eckenfärbungen von $S$. Die \textit{Menge aller Randfärbungen} für einen Graphen mit $r$ Randknoten nennen wir $\Psi(r)$.
   \begin{itemize}
    \item $K$ ist nur dann \textit{$\sigma$-richtig} in $G$ eingebettet, wenn zwei Außenecken von $K$, die von $\sigma$ gleich abgebildet werden, in $G$ nicht benachbart sind. 
    \item Eine Färbung $\vartheta$ der Außenecken von $K$ heißt \textit{$\sigma$-verträglich}, wenn sie als Abbildung von der Form $\vartheta = \chi \circ \sigma$ für ein $\chi \in \Psi(S)$ ist.
-   \item Die Menge der $\sigma$-verträglichen Randfärbung bezeichnen wir mit $\Phi(r,\rho)$.
+   \item Die Menge der $\sigma$-verträglichen Randfärbung bezeichnen wir mit $\Phi(r,\sigma)$.
    \item Eine Randfärbung ist \textit{gut}, wenn sie sich in natürlicher Weise vom Rand auf den Rest des Graphen fortsetzen lässt.
    \item Mit $\Psi_0(K)$ bezeichnen wir die Menge aller von Anfang an guten Randfärbungen.
    \item Für $K$ ist eine Randfärbung \textit{gut von Stufe 1}, wenn sie nicht von Anfang an gut ist, aber nach jeder Wahl eines Farbpaares jede Blockzerlegung einen Kempe-Austausch erlaubt, der sie in eine von Anfang an gute Randfärbung überführt. Die Menge aller dieser Randfärbungen heißt $\Phi_1(K)$.
@@ -63,8 +63,8 @@
   \end{itemize}
  \end{definition}
 
- Appel \& Haken verwendeten in ihrem Beweisversuch sowohl die D-Reduzibilität als auch den allgemeinen Fall der C-Reduzibilität. Auch verwendeten sie einen Computer, um für jede ihrer Konfigurationen den kürzest möglichen Reduktionsbeweis zu finden. Jedoch sind diese Beweise immernoch recht lang und die Menge ihrer Konfigurationen mächtiger als die von \rsst. Es erscheint also wenig wünschenswert, alle diese Beweise per Hand zu überprüfen. \\
+ Appel \& Haken verwendeten in ihrem Beweisversuch sowohl die D-Reduzibilität als auch den allgemeinen Fall der C-Reduzibilität. Auch verwendeten sie einen Computer, um für jede ihrer Konfigurationen den kürzest möglichen Reduktionsbeweis zu finden. Jedoch sind diese Reduktions-Beweise immernoch recht lang und die Menge ihrer Konfigurationen mächtiger als die von \rsst. Es erscheint also wenig wünschenswert, alle diese Beweise per Hand zu überprüfen. \\
  Auch \rsst\-\ nutzen die Hilfe von Computern, um ihre Resultate leichter überprüfen zu lassen. Allerdings sind in den 20 Jahren, die zwischen beiden Beweisen liegen, die Möglichkeiten, einen Computer zu nutzen und auch formell sicherzustellen, dass alles korrekt berechnet wurde, deutlich gewachsen. So existieren unabhängige Alternativumsetzungen der Algorithmen von \rsst, was bei Appel \& Haken nicht der Fall ist. 
  
- Offensichtlich beeinflusst die Wahl der Reduzierbarkeitstheorien auch deutlich die Menge an zu suchenden Konfigurationen.
+ Offensichtlich beeinflusst die Wahl der Reduzierbarkeitstheorien auch deutlich die Menge an zu untersuchenden Konfigurationen.
 \end{section}
