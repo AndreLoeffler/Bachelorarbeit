@@ -1,0 +1,9 @@
+\begin{tikzpicture}
+  \path
+    (3,6)\blacknode(a1){}
+    (1,5)\blacknode(b1){} (5,5)\blacknode(b2){}
+    (0,4)\blacknode(c1){} (2,4)\blacknode(c2){} (4,4)\blacknode(c3){} (6,4)\blacknode(c4){}
+    (0,3.5)node(d1){$v_1$} (2,3.5)node(d2){$v_2$} (4,3.5)node(d3){$v_3$} (6,3.5)node(d4){$v_4$}
+    (0,3)\blacknode(e1){} (2,3)\blacknode(e2){} (4,3)\blacknode(e3){} (6,3)\blacknode(e4){}
+    (1,2)\blacknode(f1){} (2,1)\blacknode(g1){} (3,0)\blacknode(h1){};
+\end{tikzpicture}

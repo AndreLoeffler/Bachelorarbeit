@@ -33,6 +33,17 @@
 \newblock \emph{Hochschulskriptum 810/a/b}.
 \newblock Mannheim : Bibliographisches Institut, 1969
 
+\bibitem[Kau90]{kaufmann}
+\textsc{Kaufmann}, L.~H.:
+\newblock Map coloring and the vector cross product.
+\newblock {In: }\emph{Journal of Combinatorial Theory} 48 (1990), S. 145--154
+
+\bibitem[Mat]{matiyasevich}
+\textsc{Matiyasevich}, Y.:
+\newblock The Four Colour Theorem as a possible corollary of binomial
+  summation. --
+\newblock Manuscript
+
 \bibitem[RSST97]{FourRSST}
 \textsc{Robertson}, N. ; \textsc{Sanders}, D. ; \textsc{Seymour}, P.  ;
   \textsc{Thomas}, R.:

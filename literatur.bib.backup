@@ -6,11 +6,75 @@
    ADDRESS={Mannheim}
 }
 @ARTICLE{AmJMath35,
-   author  = {George D. Birkhoff},
+    author  = {George D. Birkhoff},
     title   = {The Reducibility of Maps},
     journal = {American Journal of Mathematics},
     volume  = {35},
     year    = {1913},
     pages   = {115--128},
 }
-   
+@ARTICLE{AmJMath79,
+    author  = {A. B. Kempe},
+    title   = {On the geographical problem of the four colors},
+    journal = {American Journal of Mathematics},
+    volume  = {2},
+    year    = {1879},
+    pages   = {193--200},
+}   
+@ARTICLE{FourRSST,
+    author  = {N. Robertson and D. Sanders and P. Seymour and R. Thomas},
+    title   = {The Four-Colour Theorem},
+    journal = {Journal of Combinatorial Theory},
+    volume  = {70},
+    year    = {1997},
+    pages   = {2--44},
+}
+@ARTICLE{kaufmann,
+    author  = {L. H. Kaufmann},
+    title   = {Map coloring and the vector cross product},
+    journal = {Journal of Combinatorial Theory},
+    volume  = {48},
+    year    = {1990},
+    pages   = {145--154},
+}
+@ARTICLE{TaitTri,
+   author  = {P. G. Tait},
+    title   = {Note on a theorem in geometry of position},
+    journal = {Trans. Roy. Soc. Edinburgh},
+    volume  = {29},
+    year    = {1880},
+    pages   = {657--660},
+}
+@ARTICLE{Saaty,
+   author  = {T. L. Saaty},
+   title   = {Thirteen colorful variations on Guthrie's Four-colo Conjecture},
+   journal = {Amer. Math. Monthly},
+   volume  = {79},
+   year    = {1977},
+   pages   = {2--43},
+}
+@ARTICLE{AH1,
+   author  = {K. Appel and W. Haken},
+   title   = {Every planar map is Four Colorable. Part I Discharging},
+   journal = {Illinois Journal of Mathematics},
+   volume  = {21},
+   year    = {1977},
+   pages   = {429--490},
+}
+
+@ARTICLE{AH2,
+   author  = {K. Appel and W. Haken},
+   title   = {Every planar map is Four Colorable. Part II Reducibility},
+   journal = {Illinois Journal of Mathematics},
+   volume  = {21},
+   year    = {1977},
+   pages   = {491--567},
+}
+@INBOOK{heesch,
+   author  = {H. Heesch},
+   chapter = {Untersuchungen zum Vierfarbenproblem},
+   title   = {Hochschulskriptum 810/a/b},
+   publisher = {Bibliographisches Institut},
+   year    = {1969},
+   address = {Mannheim}
+}

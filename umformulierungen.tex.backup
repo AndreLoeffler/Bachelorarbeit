@@ -37,7 +37,5 @@
   nicht durch 7 teilbar ist.
  \end{satz}
 
- Es ist noch offen, welche anderen Probleme sich durch Übertragen auf das Vier-Farben-Problem lösen lassen.
- 
- Der eigentliche Beweis des Vier-Farben-Satzes wurde hier erbracht, soweit dies mit kombinatorischen Mitteln durchzuführen ist. Allerdings wurde auf die genaue Analyse des eigentlichen Algorithmus sowie der Computerprogramme für \ref{4.9} und \ref{2.1} verzichtet. Dabei handelt es sich jedoch um Korrektheitsbeweise für Algorithmen, welche eher für eine Arbeit im Bereich der Informatik geeignet sind.
-\end{chapter}
+
+ \end{chapter}

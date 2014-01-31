@@ -1,0 +1,14 @@
+\begin{tikzpicture}
+   \path
+     (3,6)\blacknode(a1){}
+     (1,5)\blacknode(b1){} (5,5)\blacknode(b2){}
+     (4,1.5)\smallnode(d4){} (6.5,3.5)\smallnode(d5){}
+     (1,2)\blacknode(f1){} (2,1)\blacknode(g1){} (3,0)\blacknode(h1){};
+     \filldraw (b1) -- (a1) -- (b2);
+     \filldraw (g1) -- (b2);
+     \filldraw (h1) -- (g1) -- (f1);
+     \draw (f1) to [bend left=45] (b1);
+     \draw (f1) to [bend right=45] (b1);
+     \draw (h1) to [bend right=45] (d5) to [bend right=45] (a1);
+     \draw (h1) to (d4) to [bend right=15] (b2);
+\end{tikzpicture}

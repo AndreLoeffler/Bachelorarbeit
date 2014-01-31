@@ -16,6 +16,6 @@
 \contentsline {section}{\numberline {6.1}Allgemeine Reduzierbarkeit}{39}{section.6.1}
 \contentsline {section}{\numberline {6.2}Die Konfigurationen nach Appel \& Haken}{42}{section.6.2}
 \contentsline {chapter}{\numberline {7}Umformulierungen}{45}{chapter.7}
-\contentsline {section}{Literatur}{46}{chapter*.2}
-\contentsline {chapter}{\numberline {8}Anhang}{49}{chapter.8}
-\contentsline {section}{\numberline {8.1}Konfigurationen nach Robertson, Sanders, Seymour und Thomas}{49}{section.8.1}
+\contentsline {section}{Literatur}{47}{chapter*.2}
+\contentsline {chapter}{\numberline {8}Anhang}{50}{chapter.8}
+\contentsline {section}{\numberline {8.1}Konfigurationen nach Robertson, Sanders, Seymour und Thomas}{50}{section.8.1}
