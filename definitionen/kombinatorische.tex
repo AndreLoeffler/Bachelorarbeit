@@ -29,14 +29,14 @@
   \begin{definition}{Pfad, einfacher Pfad, $u,v$-Pfad, disjunkte Pfade, Kreis, Ring, zusammenhängender Graph, $k$-facher Knotenzusammenhang}
   Sei $G=(V,E)$ ein Graph.
    \begin{itemize}
-    \item Eine Folge $Q = (v_1,\cdots,v_r)$ von Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei Aufeinanderfolgende benachbart sind. Dann ist $\sharp Q$ die Länge des Pfades und die Verbindungskanten heißen Glieder.
+    \item Eine Folge $Q = (v_1,\cdots,v_r)$ von Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei aufeinanderfolgende benachbart sind. Dann ist $r$ die Länge des Pfades und die Verbindungskanten heißen Glieder.
     \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
     \item Ein Pfad $Q$ heißt \textit{$u,v$-Pfad}, wenn $u,v \in Q$ und sowohl $u$ als auch $v$ beide Grad kleiner 2 besitzen.
     \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine Knoten, die nicht erstes oder letztes Element der jeweiligen Folge sind, gemeinsam haben. 
     \item Ein Pfad heißt \textit{Kreis}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
     \item Ein \textit{Ring} ist ein Kreis, der zusätzlich einfach ist.
     \item Ein Graph $G$ heißt \textit{zusammenhängend}, wenn für jedes Paar von Knoten $u,v \in V$ ein Pfad $(u,\cdots,v)$ existiert.
-    \item Ein Graph $G$ heißt \textit{$k$-fach knotenzusammenhängend}, wenn mindestens $k$ Knoten gelöscht werden müssen, damit der $G$ nicht mehr zusammenhängend ist.
+    \item Ein Graph $G$ heißt \textit{$k$-fach knotenzusammenhängend}, wenn in $G$ mindestens $k$ Knoten gelöscht werden müssen, damit ein Graph entsteht, der nicht mehr zusammenhängend ist.
    \end{itemize}
   \end{definition}
   
@@ -72,7 +72,7 @@
   Planarität von Graphen wirkt auf den ersten Blick wie ein topologischer Begriff, jedoch gelang es Kuratowski, eine rein kombinatorische Charakterisierung von Planarität zu liefern.
   
   \begin{satz}{Kuratowski}
-   Ein Graph ist genau dann planar, wenn er zusammenhängend ist und sich durch (möglicherweise) mehrfache Kontraktion nicht in einen der beiden Graphen $K_{3,3}$ oder $K_5$ überführen lässt.
+   Ein zusammenhängender Graph ist genau dann planar, wenn er sich durch (möglicherweise) mehrfache Kontraktion nicht in einen der beiden Graphen $K_{3,3}$ oder $K_5$ überführen lässt.
   \end{satz}
   
   Auch dieser Beweis findet sich in der gängigen Literatur und wird daher an dieser Stelle nicht geführt. Jedoch wollen wir die beiden genannten Graphen kurz aufzeigen. Auf der linken Seite ist die übliche Darstellung des $K_5$ zu finden, auf der rechten Seite die des $K_{3,3}$.
@@ -87,7 +87,7 @@
   Wir werden die Jordanbögen der Darstellung eines Graphen ebenfalls als \textit{Kanten} bezeichnen. In der Ebene ist es leicht, die durch diese Kanten getrennten Flächen zu betrachten. Das führt uns zur folgenden Definitionen.
   
   \begin{definition}{Zeichnung}
-    Sei $K=(V,E)$ ein Graph. Wir bezeichnen eine Zeichnung des Graphen $K$ mit $G(K)$ und meinen damit seine Darstellung durch Jordanbögen in der Ebene.
+    Sei $K=(V,E)$ ein planarer Graph. Wir bezeichnen eine Zeichnung des Graphen $K$ mit $G(K)$ und meinen damit eine Darstellung durch Jordanbögen in der Ebene.
   \end{definition}
   
   Hier benennen wir den eigentlichen Graphen mit $K$, weil wir uns später hauptsächlich für die Darstellung von sogenannten Konfigurationen interessieren.
@@ -101,9 +101,9 @@
    \end{itemize}
   \end{definition}
   
-  Um die Eindeutigkeit der Außenfacette zu beweisen, bedarf es eigentlich des Jordanschen Kurvensatzes. Dieser kann bei \cite[Seite 53]{fritsch} nachgelesen werden.
+  Um die Eindeutigkeit der Außenfacette zu beweisen, bedarf es des Jordanschen Kurvensatzes. Dieser kann bei \cite[Seite 53]{fritsch} nachgelesen werden.
   
-  Weiter gibt es einige gebräuchliche Namenskonventionen für Knoten, um deren Lange im Graphen genauer zu charakterisieren.
+  Weiter gibt es einige gebräuchliche Namenskonventionen für Knoten, um deren Lage im Graphen genauer zu charakterisieren.
   
   \begin{definition}{Außenknoten, Innenknoten, Außenkreis, Außenring}
    Sei $G$ ein in der Ebene gezeichneter Graph.
@@ -111,7 +111,7 @@
     \item Jeder Knoten, der inzident zur Außenfacette von $G$ ist, wird \textit{Außenknoten} genannt.
     \item Jeder Knoten von $G$, der kein Außenknoten ist, ist ein \textit{Innenknoten}.
     \item Der \textit{Außenkreis} von $G$ ist der Kreis, der alle Außenknoten von $G$ durchläuft.
-    \item Ein \textit{Außebring} ist ein Außenkreis, der zusätzlich einfach ist.
+    \item Ein \textit{Außenring} ist ein Außenkreis, der zusätzlich einfach ist.
    \end{itemize}
 
   \end{definition}
@@ -149,7 +149,7 @@
    Es existiert kein vollständiger planarer Graph mit fünf Knoten.
   \end{satzl}
   \begin{proof}
-    Es seien $v_1,\cdots,v_5$ fünf Ecken in der Ebene. Für jedes Paar $i,j \in \{1,2,3,4,5\}$ mit $i < j$ sei eine Kante $k_{i,j}$ zwischen $v_i$ und $v_j$ gegeben. Dieser Graph hat $10$ Kanten, von denen insgesamt $7$ entweder $v_1$ oder $v_5$ oder beide als Endpunkt haben. Wir zeigen nun, dass sich mindestens eine der $3$ übrigen Kanten eine der anderen Kanten überkreuzen muss.\\
+    Es seien $v_1,\cdots,v_5$ fünf Ecken in der Ebene. Für jedes Paar $i,j \in \{1,2,3,4,5\}$ mit $i < j$ sei eine Kante $k_{i,j}$ zwischen $v_i$ und $v_j$ gegeben. Dieser Graph hat $10$ Kanten, von denen insgesamt $7$ entweder $v_1$ oder $v_5$ oder beide als Endpunkt haben. Wir zeigen nun, dass mindestens eine der $3$ übrigen Kanten eine der anderen Kanten überkreuzen muss.\\
     Durch Zusammensetzen erhält man drei Pfade $P_i = k_{1,i} \cup k_{i,5}$ für $i = 2,3,4$, die die Knoten $v_1$ und $v_5$ verbinden, die sich aber weder untereinander noch mit $k_{1,5}$ schneiden. O.B.d.A. sei $P_3$ der Pfad derart, dass von den beiden anderen einer in der Facette $F$ und der andere außerhalb der Facette $F$ begrenzt von $k_{1,5} \cup P_3$ liegt. Damit muss die Kante $k_{2,4}$ zwischen $v_2$ und $v_4$ mindestens einen inneren Punkt $y$ mit dem Rand von $F$ gemeinsam haben, also mit einer der Kanten $k_{1,5},k_{1,3},k_{3,5}$. Da $k_{2,4}$ keine der drei beteiligten Ecken trifft, muss $y$ ein innerer Punkt einer dieser Kanten sein.
   \end{proof}
   

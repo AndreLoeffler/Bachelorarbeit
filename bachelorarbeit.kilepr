@@ -25,7 +25,25 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[document-settings,item:allgemeines/birkhoffzahl.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [document-settings,item:allgemeines/kleinsteverbrecher.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:anhang.tex]
 Bookmarks=
 Encoding=UTF-8
 FoldedColumns=
@@ -151,6 +169,15 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[document-settings,item:seymour/algorithmus.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [document-settings,item:seymour/freievervoll.tex]
 Bookmarks=
 Encoding=UTF-8
@@ -259,6 +286,24 @@ Highlighting=LaTeX
 Indentation Mode=normal
 Mode=LaTeX
 
+[document-settings,item:umformulierungen/graph.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
+[document-settings,item:umformulierungen/tree.tex]
+Bookmarks=
+Encoding=UTF-8
+FoldedColumns=
+FoldedLines=
+Highlighting=LaTeX
+Indentation Mode=normal
+Mode=LaTeX
+
 [item:allgemeines.tex]
 archive=true
 column=40
@@ -269,12 +314,32 @@ mode=LaTeX
 open=false
 order=-1
 
-[item:allgemeines/kleinsteverbrecher.tex]
+[item:allgemeines/birkhoffzahl.tex]
 archive=true
-column=44
+column=120
 encoding=UTF-8
 highlight=LaTeX
-line=39
+line=9
+mode=LaTeX
+open=false
+order=-1
+
+[item:allgemeines/kleinsteverbrecher.tex]
+archive=true
+column=43
+encoding=UTF-8
+highlight=LaTeX
+line=19
+mode=LaTeX
+open=false
+order=-1
+
+[item:anhang.tex]
+archive=true
+column=0
+encoding=UTF-8
+highlight=LaTeX
+line=0
 mode=LaTeX
 open=false
 order=-1
@@ -301,10 +366,10 @@ order=2
 
 [item:definitionen/kombinatorische.tex]
 archive=true
-column=20
+column=379
 encoding=UTF-8
 highlight=LaTeX
-line=79
+line=151
 mode=LaTeX
 open=false
 order=3
@@ -321,17 +386,17 @@ order=-1
 
 [item:definitionen/topologische.tex]
 archive=true
-column=13
+column=107
 encoding=UTF-8
 highlight=LaTeX
-line=76
+line=14
 mode=LaTeX
 open=false
 order=-1
 
 [item:einleitung.tex]
 archive=true
-column=453
+column=746
 encoding=UTF-8
 highlight=LaTeX
 line=23
@@ -341,10 +406,10 @@ order=0
 
 [item:haken.tex]
 archive=true
-column=31
+column=197
 encoding=UTF-8
 highlight=LaTeX
-line=1
+line=3
 mode=LaTeX
 open=false
 order=-1
@@ -361,63 +426,73 @@ order=4
 
 [item:haken/konfigurationen.tex]
 archive=true
-column=175
+column=544
 encoding=UTF-8
 highlight=LaTeX
-line=19
+line=38
 mode=LaTeX
 open=false
 order=-1
 
 [item:haken/reduzierbarkeit.tex]
 archive=true
-column=0
+column=101
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=68
 mode=LaTeX
 open=false
 order=-1
 
 [item:literatur.bib]
 archive=true
-column=23
+column=15
 encoding=UTF-8
 highlight=BibTeX
-line=21
+line=83
 mode=BibTeX
 open=false
-order=2
+order=1
 
 [item:main.tex]
 archive=true
-column=0
+column=12
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=16
 mode=LaTeX
 open=false
 order=1
 
 [item:packages.tex]
 archive=true
-column=10
+column=16
 encoding=UTF-8
 highlight=LaTeX
-line=13
+line=25
 mode=LaTeX
 open=false
 order=3
 
 [item:seymour.tex]
 archive=true
-column=58
+column=33
 encoding=UTF-8
 highlight=LaTeX
-line=2
+line=6
 mode=LaTeX
 open=false
 order=0
+
+[item:seymour/algorithmus.tex]
+archive=true
+column=371
+encoding=UTF-8
+highlight=LaTeX
+line=36
+mode=LaTeX
+open=false
+order=-1
 
 [item:seymour/freievervoll.tex]
 archive=true
@@ -441,10 +516,10 @@ order=-1
 
 [item:seymour/konfigurationen.tex]
 archive=true
-column=19
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=26
+line=112
 mode=LaTeX
 open=false
 order=0
@@ -461,30 +536,30 @@ order=1
 
 [item:seymour/reduzierbarkeit.tex]
 archive=true
-column=13
+column=89
 encoding=UTF-8
 highlight=LaTeX
-line=160
+line=157
 mode=LaTeX
 open=false
 order=-1
 
 [item:seymour/wheel.tex]
 archive=true
-column=20
+column=0
 encoding=UTF-8
 highlight=LaTeX
-line=18
+line=0
 mode=LaTeX
 open=false
 order=-1
 
 [item:seymour/zwangslaufigkeit.tex]
 archive=true
-column=94
+column=410
 encoding=UTF-8
 highlight=LaTeX
-line=114
+line=188
 mode=LaTeX
 open=true
 order=0
@@ -501,10 +576,10 @@ order=-1
 
 [item:theorems.tex]
 archive=true
-column=0
+column=2
 encoding=UTF-8
 highlight=LaTeX
-line=38
+line=59
 mode=LaTeX
 open=false
 order=2
@@ -521,7 +596,17 @@ order=-1
 
 [item:uebergang.tex]
 archive=true
-column=60
+column=6
+encoding=UTF-8
+highlight=LaTeX
+line=8
+mode=LaTeX
+open=false
+order=0
+
+[item:umformulierungen.tex]
+archive=true
+column=34
 encoding=UTF-8
 highlight=LaTeX
 line=0
@@ -529,12 +614,22 @@ mode=LaTeX
 open=false
 order=0
 
-[item:umformulierungen.tex]
+[item:umformulierungen/graph.tex]
 archive=true
-column=32
+column=28
 encoding=UTF-8
 highlight=LaTeX
-line=0
+line=5
+mode=LaTeX
+open=false
+order=-1
+
+[item:umformulierungen/tree.tex]
+archive=true
+column=28
+encoding=UTF-8
+highlight=LaTeX
+line=9
 mode=LaTeX
 open=false
 order=-1
@@ -545,9 +640,21 @@ CursorLine=1
 JumpList=
 ViMarks=
 
+[view-settings,view=0,item:allgemeines/birkhoffzahl.tex]
+CursorColumn=120
+CursorLine=9
+JumpList=
+ViMarks=
+
 [view-settings,view=0,item:allgemeines/kleinsteverbrecher.tex]
-CursorColumn=44
-CursorLine=39
+CursorColumn=43
+CursorLine=19
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:anhang.tex]
+CursorColumn=0
+CursorLine=0
 JumpList=
 ViMarks=
 
@@ -558,8 +665,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:definitionen/kombinatorische.tex]
-CursorColumn=20
-CursorLine=79
+CursorColumn=379
+CursorLine=151
 JumpList=
 ViMarks=
 
@@ -570,20 +677,20 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:definitionen/topologische.tex]
-CursorColumn=13
-CursorLine=76
+CursorColumn=107
+CursorLine=14
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:einleitung.tex]
-CursorColumn=453
+CursorColumn=746
 CursorLine=23
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:haken.tex]
-CursorColumn=31
-CursorLine=1
+CursorColumn=197
+CursorLine=3
 JumpList=
 ViMarks=
 
@@ -594,38 +701,44 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:haken/konfigurationen.tex]
-CursorColumn=175
-CursorLine=19
+CursorColumn=544
+CursorLine=38
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:haken/reduzierbarkeit.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=101
+CursorLine=68
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:literatur.bib]
-CursorColumn=23
-CursorLine=21
+CursorColumn=15
+CursorLine=83
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:main.tex]
-CursorColumn=0
-CursorLine=0
+CursorColumn=12
+CursorLine=16
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:packages.tex]
-CursorColumn=10
-CursorLine=13
+CursorColumn=16
+CursorLine=25
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour.tex]
-CursorColumn=58
-CursorLine=2
+CursorColumn=33
+CursorLine=6
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:seymour/algorithmus.tex]
+CursorColumn=371
+CursorLine=36
 JumpList=
 ViMarks=
 
@@ -642,8 +755,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour/konfigurationen.tex]
-CursorColumn=19
-CursorLine=26
+CursorColumn=2
+CursorLine=112
 JumpList=
 ViMarks=
 
@@ -654,20 +767,20 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour/reduzierbarkeit.tex]
-CursorColumn=13
-CursorLine=160
+CursorColumn=89
+CursorLine=157
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour/wheel.tex]
-CursorColumn=20
-CursorLine=18
+CursorColumn=0
+CursorLine=0
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:seymour/zwangslaufigkeit.tex]
-CursorColumn=94
-CursorLine=114
+CursorColumn=410
+CursorLine=188
 JumpList=
 ViMarks=
 
@@ -678,8 +791,8 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:theorems.tex]
-CursorColumn=0
-CursorLine=38
+CursorColumn=2
+CursorLine=59
 JumpList=
 ViMarks=
 
@@ -690,13 +803,25 @@ JumpList=
 ViMarks=
 
 [view-settings,view=0,item:uebergang.tex]
-CursorColumn=60
-CursorLine=0
+CursorColumn=6
+CursorLine=8
 JumpList=
 ViMarks=
 
 [view-settings,view=0,item:umformulierungen.tex]
-CursorColumn=32
+CursorColumn=34
 CursorLine=0
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:umformulierungen/graph.tex]
+CursorColumn=28
+CursorLine=5
+JumpList=
+ViMarks=
+
+[view-settings,view=0,item:umformulierungen/tree.tex]
+CursorColumn=28
+CursorLine=9
 JumpList=
 ViMarks=

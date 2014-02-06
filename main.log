@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  31 JAN 2014 15:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2013.11.6)  6 FEB 2014 13:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -883,8 +883,9 @@ Package pdftex.def Info: siegel.pdf used on input line 33.
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./siegel.pdf>]) (./main.to
-c
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./siegel.pdf>]) [2
+
+] (./main.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 4.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -903,8 +904,7 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [2
-
+ [3
 
 ]
 \openout2 = `einleitung.aux'.
@@ -912,10 +912,10 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 
 (./einleitung.tex
 Kapitel 1.
-[3
+[4
 
 
-]) [4]
+]) [5]
 \openout2 = `definitionen.aux'.
 
  (./definitionen.tex
@@ -928,30 +928,25 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
- [5
+ [6
 
 
 
-] [6])
-(./definitionen/kombinatorische.tex [7] [8] [9]
-Overfull \hbox (7.44656pt too wide) in paragraph at lines 75--76
-[]\OT1/cmr/m/n/10 Ein Graph ist ge-nau dann pla-nar, wenn er zu-sam-menh[]angen
-d ist und sich durch (m[]oglicherweise)
- []
-
-(./definitionen/kuratowski.tex) [10]
+] [7])
+(./definitionen/kombinatorische.tex [8] [9] [10] (./definitionen/kuratowski.tex
+) [11]
 Overfull \hbox (7.2139pt too wide) in paragraph at lines 122--123
 []\OT1/cmr/bx/n/10 Definition 15 (Drei-eck, Tri-an-gu-la-ti-on, Bei-na-he-Tri-a
 n-gu-la-ti-on, Fa-cet-ten-men-ge $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m
 /it/10 T\OT1/cmr/m/n/10 )$\OT1/cmr/bx/n/10 ): 
  []
 
-[11] [12])) [13]
+[12] [13])) [14]
 \openout2 = `uebergang.aux'.
 
  (./uebergang.tex
 Kapitel 3.
-) [14
+) [15
 
 
 
@@ -960,81 +955,53 @@ Kapitel 3.
 
  (./allgemeines.tex
 Kapitel 4.
-(./allgemeines/kleinsteverbrecher.tex [15
+(./allgemeines/kleinsteverbrecher.tex [16
 
 
 
 ]) (./allgemeines/birkhoffzahl.tex
-[16])) [17]
+[17])) [18]
 \openout2 = `seymour.aux'.
 
  (./seymour.tex
 Kapitel 5.
-(./seymour/konfigurationen.tex [18
+(./seymour/konfigurationen.tex [19
 
 
 
-]
-Overfull \hbox (17.29333pt too wide) in paragraph at lines 36--37
-[]\OT1/cmr/m/n/10 Um $\OML/cmm/m/it/10 ^^M[]$ \OT1/cmr/m/n/10 f[]ur je-den Kno-
-ten in ei-ner pla-na-ren Zeich-nung von $\OML/cmm/m/it/10 G$ \OT1/cmr/m/n/10 da
-r-zu-stel-len, gibt es meh-re-re M[]oglichkeiten.
- []
-
-(./seymour/nodes.tex) [19]
-Overfull \hbox (3.66878pt too wide) in paragraph at lines 48--49
+] (./seymour/nodes.tex) [20]
+Overfull \hbox (3.66878pt too wide) in paragraph at lines 46--47
 []\OT1/cmr/bx/n/10 Definition 23 (Iso-mor-phe Kon-fi-gu-ra-tio-nen, gu-te Kon-f
 i-gu-ra-tio-nen, auf-tre-ten-de Kon-
  []
 
-[20] [21]
-Underfull \hbox (badness 10000) in paragraph at lines 108--109
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 
  []
 
 
-Overfull \hbox (29.04054pt too wide) in paragraph at lines 113--115
-\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v; w\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; g \
-OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 w; u\OMS/cmsy/m/n/10 g$\OT1
-/cmr/m/n/10 . Sind $\OML/cmm/m/it/10 e; f; g \OMS/cmsy/m/n/10 62 \OML/cmm/m/it/
-10 X$\OT1/cmr/m/n/10 , so sind $\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 (\OML/cmm/m
-/it/10 u\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^^\OT1/cmr/m/n/10 (\OML/cmm/m/it/1
-0 v\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^^\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 w\O
-T1/cmr/m/n/10 )$ al-le ver-schie-den, al-so auch $\OMS/cmsy/m/n/10 f\OML/cmm/m/
-it/10 ^^T\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ;
- ^^T\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^T\
-OT1/cmr/m/n/10 (\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g \OT1/cmr/
-m/n/10 =
+Overfull \hbox (0.13521pt too wide) in paragraph at lines 111--114
+\OT1/cmr/m/n/10 Sei $\OML/cmm/m/it/10 r$ \OT1/cmr/m/n/10 ei-ne Fa-cet-te von $\
+OML/cmm/m/it/10 T$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 e \OT1/cmr/m/n/10 = \OMS/
+cmsy/m/n/10 f\OML/cmm/m/it/10 u; v\OMS/cmsy/m/n/10 g\OML/cmm/m/it/10 ; f \OT1/c
+mr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 v; w\OMS/cmsy/m/n/10 g\OML/cmm/m
+/it/10 ; g \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 w; u\OMS/cmsy/m
+/n/10 g$\OT1/cmr/m/n/10 . Sind $\OML/cmm/m/it/10 e; f; g \OMS/cmsy/m/n/10 62 \O
+ML/cmm/m/it/10 X$\OT1/cmr/m/n/10 , so sind $\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10
+ (\OML/cmm/m/it/10 u\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^^\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 v\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^^\OT1/cmr/m/n/10 (\OML/cmm
+/m/it/10 w\OT1/cmr/m/n/10 )$
  []
 
-) (./seymour/reduzierbarkeit.tex
-Overfull \hbox (31.07385pt too wide) in paragraph at lines 5--6
-[]\OT1/cmr/bx/n/10 Definition 26 (Kan-tenf[]arbung, Match, si-gnier-tes Match, 
-si-gnier-tes Mat-ching, $\OML/cmm/m/it/10 ^^R$\OT1/cmr/bx/n/10 -Passend): 
- []
-
-[22] [23]
-Overfull \hbox (22.59064pt too wide) in paragraph at lines 44--46
-\OT1/cmr/m/n/10 Da $\OML/cmm/m/it/10 ^^U \OMS/cmsy/m/n/10 2 \U/rsfs/m/n/10 C$ \
-OT1/cmr/m/n/10 gilt, ist $\OML/cmm/m/it/10 ^^U$ \OT1/cmr/m/n/10 der Auf-zug ei-
-ner Trif[]arbung $\OML/cmm/m/it/10 ^^T$ \OT1/cmr/m/n/10 von $\OML/cmm/m/it/10 H
-$\OT1/cmr/m/n/10 . Ei-ne \OT1/cmr/m/it/10 Rip-pe \OT1/cmr/m/n/10 ist ei-ne Fol-
-ge $\OML/cmm/m/it/10 g[]; r[]; g[]; r[]; []  ; r[]; g[]$\OT1/cmr/m/n/10 ,
- []
-
-[24] (./seymour/konfig.tex) (./seymour/freievervoll.tex) [25] [26] [27]
-Overfull \hbox (5.70462pt too wide) in paragraph at lines 157--163
-[]\OT1/cmr/m/n/10 Sei $\OML/cmm/m/it/10 K$ \OT1/cmr/m/n/10 ei-ne gu-te Kon-fi-g
-u-ra-ti-on, die in $\OML/cmm/m/it/10 T$ \OT1/cmr/m/n/10 auf-tritt. Sei $\OML/cm
-m/m/it/10 S$ \OT1/cmr/m/n/10 die freie Ver-vollst[]andigung
- []
-
-[28]) (./seymour/zwangslaufigkeit.tex (./seymour/wheel.tex) [29]
+) (./seymour/reduzierbarkeit.tex [23] [24] [25] (./seymour/konfig.tex)
+(./seymour/freievervoll.tex) [26] [27] [28] [29])
+(./seymour/zwangslaufigkeit.tex (./seymour/wheel.tex) [30]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
-[30] [31] [32]
+[31] [32] [33]
 Package epstopdf Info: Source file: <seymour/regeln.eps>
 (epstopdf)                    date: 2014-01-22 10:55:11
 (epstopdf)                    size: 168577 bytes
@@ -1046,20 +1013,20 @@ ed-to.pdf seymour/regeln.eps>
 (epstopdf)             \includegraphics on input line 114.
 Package epstopdf Info: Output file is already uptodate.
 
-<seymour/regeln-eps-converted-to.pdf, id=489, 315.1775pt x 420.57124pt>
+<seymour/regeln-eps-converted-to.pdf, id=495, 315.1775pt x 420.57124pt>
 File: seymour/regeln-eps-converted-to.pdf Graphic file (type pdf)
 
 <use seymour/regeln-eps-converted-to.pdf>
 Package pdftex.def Info: seymour/regeln-eps-converted-to.pdf used on input line
  114.
 (pdftex.def)             Requested size: 315.17673pt x 420.57022pt.
- [33 <./seymour/regeln-eps-converted-to.pdf>] [34] [35]) (./seymour/algorithmus
-.tex [36] [37])) [38]
+ [34 <./seymour/regeln-eps-converted-to.pdf>] [35] [36]) (./seymour/algorithmus
+.tex [37] [38])) [39]
 \openout2 = `haken.aux'.
 
  (./haken.tex
 Kapitel 6.
-(./haken/reduzierbarkeit.tex [39
+(./haken/reduzierbarkeit.tex [40
 
 
 
@@ -1070,25 +1037,23 @@ Overfull \hbox (7.0311pt too wide) in paragraph at lines 32--33
 r[]aglich, gut, Stu-fe-1-gut,
  []
 
-[40] [41]) (./haken/konfigurationen.tex [42] (./haken/birkhoff.tex) [43]))
-[44]
+[41] [42]) (./haken/konfigurationen.tex [43] (./haken/birkhoff.tex) [44]))
+[45]
 \openout2 = `umformulierungen.aux'.
 
  (./umformulierungen.tex
 Kapitel 7.
-(./umformulierungen/tree.tex) (./umformulierungen/graph.tex) [45
+(./umformulierungen/tree.tex) (./umformulierungen/graph.tex) [46
 
 
 
-] [46])
-[47] (./main.bbl) [48
-
-
-] (./main.lof)
+] [47])
+[48] (./main.lof)
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
  [49
+
 
 ]
 \openout2 = `statement.aux'.
@@ -1111,7 +1076,7 @@ Package epstopdf Info: Source file: <anhang/rsstconfig/s1.eps>
 onverted-to.pdf anhang/rsstconfig/s1.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
-<anhang/rsstconfig/s1-eps-converted-to.pdf, id=652, 292.09125pt x 24.09pt>
+<anhang/rsstconfig/s1-eps-converted-to.pdf, id=651, 292.09125pt x 24.09pt>
 File: anhang/rsstconfig/s1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s1-eps-converted-to.pdf>
@@ -1130,7 +1095,7 @@ onverted-to.pdf anhang/rsstconfig/s2.eps>
 (epstopdf)             \includegraphics on input line 4.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s2-eps-converted-to.pdf, id=653, 289.08pt x 25.09375pt>
+<anhang/rsstconfig/s2-eps-converted-to.pdf, id=652, 289.08pt x 25.09375pt>
 File: anhang/rsstconfig/s2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s2-eps-converted-to.pdf>
@@ -1149,7 +1114,7 @@ onverted-to.pdf anhang/rsstconfig/s3.eps>
 (epstopdf)             \includegraphics on input line 5.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s3-eps-converted-to.pdf, id=654, 293.095pt x 28.105pt>
+<anhang/rsstconfig/s3-eps-converted-to.pdf, id=653, 293.095pt x 28.105pt>
 File: anhang/rsstconfig/s3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s3-eps-converted-to.pdf>
@@ -1168,7 +1133,7 @@ onverted-to.pdf anhang/rsstconfig/s4.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s4-eps-converted-to.pdf, id=655, 300.12125pt x 28.105pt>
+<anhang/rsstconfig/s4-eps-converted-to.pdf, id=654, 300.12125pt x 28.105pt>
 File: anhang/rsstconfig/s4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s4-eps-converted-to.pdf>
@@ -1187,7 +1152,7 @@ onverted-to.pdf anhang/rsstconfig/s5.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s5-eps-converted-to.pdf, id=656, 300.12125pt x 25.09375pt>
+<anhang/rsstconfig/s5-eps-converted-to.pdf, id=655, 300.12125pt x 25.09375pt>
 File: anhang/rsstconfig/s5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s5-eps-converted-to.pdf>
@@ -1206,7 +1171,7 @@ onverted-to.pdf anhang/rsstconfig/s6.eps>
 (epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s6-eps-converted-to.pdf, id=657, 295.1025pt x 33.12375pt>
+<anhang/rsstconfig/s6-eps-converted-to.pdf, id=656, 295.1025pt x 33.12375pt>
 File: anhang/rsstconfig/s6-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s6-eps-converted-to.pdf>
@@ -1225,7 +1190,7 @@ onverted-to.pdf anhang/rsstconfig/s7.eps>
 (epstopdf)             \includegraphics on input line 9.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s7-eps-converted-to.pdf, id=658, 300.12125pt x 34.1275pt>
+<anhang/rsstconfig/s7-eps-converted-to.pdf, id=657, 300.12125pt x 34.1275pt>
 File: anhang/rsstconfig/s7-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s7-eps-converted-to.pdf>
@@ -1244,7 +1209,7 @@ onverted-to.pdf anhang/rsstconfig/s8.eps>
 (epstopdf)             \includegraphics on input line 10.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s8-eps-converted-to.pdf, id=659, 299.1175pt x 25.09375pt>
+<anhang/rsstconfig/s8-eps-converted-to.pdf, id=658, 299.1175pt x 25.09375pt>
 File: anhang/rsstconfig/s8-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s8-eps-converted-to.pdf>
@@ -1263,7 +1228,7 @@ onverted-to.pdf anhang/rsstconfig/s9.eps>
 (epstopdf)             \includegraphics on input line 11.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s9-eps-converted-to.pdf, id=660, 299.1175pt x 29.10875pt>
+<anhang/rsstconfig/s9-eps-converted-to.pdf, id=659, 299.1175pt x 29.10875pt>
 File: anhang/rsstconfig/s9-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s9-eps-converted-to.pdf>
@@ -1282,7 +1247,7 @@ converted-to.pdf anhang/rsstconfig/s10.eps>
 (epstopdf)             \includegraphics on input line 12.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s10-eps-converted-to.pdf, id=661, 306.14375pt x 33.12375pt>
+<anhang/rsstconfig/s10-eps-converted-to.pdf, id=660, 306.14375pt x 33.12375pt>
 File: anhang/rsstconfig/s10-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s10-eps-converted-to.pdf>
@@ -1301,7 +1266,7 @@ converted-to.pdf anhang/rsstconfig/s11.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s11-eps-converted-to.pdf, id=662, 301.125pt x 29.10875pt>
+<anhang/rsstconfig/s11-eps-converted-to.pdf, id=661, 301.125pt x 29.10875pt>
 File: anhang/rsstconfig/s11-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s11-eps-converted-to.pdf>
@@ -1320,7 +1285,7 @@ converted-to.pdf anhang/rsstconfig/s12.eps>
 (epstopdf)             \includegraphics on input line 14.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s12-eps-converted-to.pdf, id=663, 303.1325pt x 36.135pt>
+<anhang/rsstconfig/s12-eps-converted-to.pdf, id=662, 303.1325pt x 36.135pt>
 File: anhang/rsstconfig/s12-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s12-eps-converted-to.pdf>
@@ -1339,7 +1304,7 @@ converted-to.pdf anhang/rsstconfig/s13.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s13-eps-converted-to.pdf, id=664, 297.11pt x 26.0975pt>
+<anhang/rsstconfig/s13-eps-converted-to.pdf, id=663, 297.11pt x 26.0975pt>
 File: anhang/rsstconfig/s13-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s13-eps-converted-to.pdf>
@@ -1978,7 +1943,7 @@ converted-to.pdf anhang/rsstconfig/s45.eps>
 (epstopdf)             \includegraphics on input line 47.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s45-eps-converted-to.pdf, id=838, 294.09875pt x 40.15pt>
+<anhang/rsstconfig/s45-eps-converted-to.pdf, id=837, 294.09875pt x 40.15pt>
 File: anhang/rsstconfig/s45-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s45-eps-converted-to.pdf>
@@ -1997,7 +1962,7 @@ converted-to.pdf anhang/rsstconfig/s46.eps>
 (epstopdf)             \includegraphics on input line 48.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s46-eps-converted-to.pdf, id=839, 294.09875pt x 37.13875pt>
+<anhang/rsstconfig/s46-eps-converted-to.pdf, id=838, 294.09875pt x 37.13875pt>
 File: anhang/rsstconfig/s46-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s46-eps-converted-to.pdf>
@@ -2016,7 +1981,7 @@ converted-to.pdf anhang/rsstconfig/s47.eps>
 (epstopdf)             \includegraphics on input line 49.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s47-eps-converted-to.pdf, id=840, 297.11pt x 39.14626pt>
+<anhang/rsstconfig/s47-eps-converted-to.pdf, id=839, 297.11pt x 39.14626pt>
 File: anhang/rsstconfig/s47-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s47-eps-converted-to.pdf>
@@ -2035,7 +2000,7 @@ converted-to.pdf anhang/rsstconfig/s48.eps>
 (epstopdf)             \includegraphics on input line 50.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s48-eps-converted-to.pdf, id=841, 300.12125pt x 35.13126pt>
+<anhang/rsstconfig/s48-eps-converted-to.pdf, id=840, 300.12125pt x 35.13126pt>
 File: anhang/rsstconfig/s48-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s48-eps-converted-to.pdf>
@@ -2054,7 +2019,7 @@ converted-to.pdf anhang/rsstconfig/s49.eps>
 (epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s49-eps-converted-to.pdf, id=842, 292.09125pt x 29.10875pt>
+<anhang/rsstconfig/s49-eps-converted-to.pdf, id=841, 292.09125pt x 29.10875pt>
 File: anhang/rsstconfig/s49-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s49-eps-converted-to.pdf>
@@ -2073,7 +2038,7 @@ converted-to.pdf anhang/rsstconfig/s50.eps>
 (epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s50-eps-converted-to.pdf, id=843, 297.11pt x 30.1125pt>
+<anhang/rsstconfig/s50-eps-converted-to.pdf, id=842, 297.11pt x 30.1125pt>
 File: anhang/rsstconfig/s50-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s50-eps-converted-to.pdf>
@@ -2092,7 +2057,7 @@ converted-to.pdf anhang/rsstconfig/s51.eps>
 (epstopdf)             \includegraphics on input line 53.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s51-eps-converted-to.pdf, id=844, 303.1325pt x 35.13126pt>
+<anhang/rsstconfig/s51-eps-converted-to.pdf, id=843, 303.1325pt x 35.13126pt>
 File: anhang/rsstconfig/s51-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s51-eps-converted-to.pdf>
@@ -2111,7 +2076,7 @@ converted-to.pdf anhang/rsstconfig/s52.eps>
 (epstopdf)             \includegraphics on input line 54.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s52-eps-converted-to.pdf, id=845, 296.10625pt x 33.12375pt>
+<anhang/rsstconfig/s52-eps-converted-to.pdf, id=844, 296.10625pt x 33.12375pt>
 File: anhang/rsstconfig/s52-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s52-eps-converted-to.pdf>
@@ -2130,7 +2095,7 @@ converted-to.pdf anhang/rsstconfig/s53.eps>
 (epstopdf)             \includegraphics on input line 55.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s53-eps-converted-to.pdf, id=846, 301.125pt x 33.12375pt>
+<anhang/rsstconfig/s53-eps-converted-to.pdf, id=845, 301.125pt x 33.12375pt>
 File: anhang/rsstconfig/s53-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s53-eps-converted-to.pdf>
@@ -2149,7 +2114,7 @@ converted-to.pdf anhang/rsstconfig/s54.eps>
 (epstopdf)             \includegraphics on input line 56.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s54-eps-converted-to.pdf, id=847, 304.13625pt x 35.13126pt>
+<anhang/rsstconfig/s54-eps-converted-to.pdf, id=846, 304.13625pt x 35.13126pt>
 File: anhang/rsstconfig/s54-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s54-eps-converted-to.pdf>
@@ -2168,7 +2133,7 @@ converted-to.pdf anhang/rsstconfig/s55.eps>
 (epstopdf)             \includegraphics on input line 57.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s55-eps-converted-to.pdf, id=848, 301.125pt x 36.135pt>
+<anhang/rsstconfig/s55-eps-converted-to.pdf, id=847, 301.125pt x 36.135pt>
 File: anhang/rsstconfig/s55-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s55-eps-converted-to.pdf>
@@ -2187,7 +2152,7 @@ converted-to.pdf anhang/rsstconfig/s56.eps>
 (epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s56-eps-converted-to.pdf, id=849, 307.1475pt x 40.15pt>
+<anhang/rsstconfig/s56-eps-converted-to.pdf, id=848, 307.1475pt x 40.15pt>
 File: anhang/rsstconfig/s56-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s56-eps-converted-to.pdf>
@@ -2206,7 +2171,7 @@ converted-to.pdf anhang/rsstconfig/s57.eps>
 (epstopdf)             \includegraphics on input line 59.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s57-eps-converted-to.pdf, id=850, 303.1325pt x 36.135pt>
+<anhang/rsstconfig/s57-eps-converted-to.pdf, id=849, 303.1325pt x 36.135pt>
 File: anhang/rsstconfig/s57-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s57-eps-converted-to.pdf>
@@ -2225,7 +2190,7 @@ converted-to.pdf anhang/rsstconfig/s58.eps>
 (epstopdf)             \includegraphics on input line 60.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s58-eps-converted-to.pdf, id=851, 304.13625pt x 41.15375pt>
+<anhang/rsstconfig/s58-eps-converted-to.pdf, id=850, 304.13625pt x 41.15375pt>
 File: anhang/rsstconfig/s58-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s58-eps-converted-to.pdf>
@@ -2244,7 +2209,7 @@ converted-to.pdf anhang/rsstconfig/s59.eps>
 (epstopdf)             \includegraphics on input line 61.
 Package epstopdf Info: Output file is already uptodate.
 
-<anhang/rsstconfig/s59-eps-converted-to.pdf, id=852, 296.10625pt x 38.1425pt>
+<anhang/rsstconfig/s59-eps-converted-to.pdf, id=851, 296.10625pt x 38.1425pt>
 File: anhang/rsstconfig/s59-eps-converted-to.pdf Graphic file (type pdf)
 
 <use anhang/rsstconfig/s59-eps-converted-to.pdf>
@@ -2887,26 +2852,30 @@ ut line 93.
 (pdftex.def)             Requested size: 125.46843pt x 32.1199pt.
 ) [57 <./anhang/rsstconfig/s88-eps-converted-to.pdf> <./anhang/rsstconfig/s89-e
 ps-converted-to.pdf> <./anhang/rsstconfig/s90-eps-converted-to.pdf> <./anhang/r
-sstconfig/s91-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 35.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 35.
- (./main.aux (./title.aux) (./einleitung.aux) (./definitionen.aux)
-(./uebergang.aux) (./allgemeines.aux) (./seymour.aux) (./haken.aux)
-(./umformulierungen.aux) (./statement.aux) (./anhang.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 35.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 35.
+sstconfig/s91-eps-converted-to.pdf>] (./main.bbl)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 37.
+ [58
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 37.
+ (./main.aux (./title.aux) (./einleitung.aux)
+(./definitionen.aux) (./uebergang.aux) (./allgemeines.aux) (./seymour.aux)
+(./haken.aux) (./umformulierungen.aux) (./statement.aux) (./anhang.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 37.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 37.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 11032F3B1FCBC22D3F476DC04566E2D0;1341.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 35.
+(rerunfilecheck)             Checksum: CD76C78F9D5C9C23B6E118E0B6992589;1354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 37.
  ) 
 Here is how much of TeX's memory you used:
- 21124 strings out of 493485
- 390754 string characters out of 3143526
- 520359 words of memory out of 3000000
+ 21125 strings out of 493485
+ 390760 string characters out of 3143526
+ 521819 words of memory out of 3000000
  23572 multiletter control sequences out of 15000+200000
  13083 words of font info for 52 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 70i,17n,73p,1150b,1066s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,17n,73p,1145b,1066s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -2937,10 +2906,10 @@ ts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type
 ic/amsfonts/cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/
 rsfs10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs7.pfb>
-Output written on main.pdf (57 pages, 2300580 bytes).
+Output written on main.pdf (58 pages, 2300712 bytes).
 PDF statistics:
- 1173 PDF objects out of 1200 (max. 8388607)
- 869 compressed objects within 9 object streams
- 229 named destinations out of 1000 (max. 500000)
+ 1178 PDF objects out of 1200 (max. 8388607)
+ 873 compressed objects within 9 object streams
+ 230 named destinations out of 1000 (max. 500000)
  638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

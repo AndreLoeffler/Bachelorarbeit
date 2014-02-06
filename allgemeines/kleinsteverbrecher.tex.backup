@@ -1,5 +1,5 @@
 \begin{section}{Einschränkungen für minimale Gegenbeispiele}
- Um uns dem Problem zu nähern brauchen wir eine Vorstellung davon, wie ein minimales Gegenbeispiel aussehen muss. Dazu schränken wir zunächst unsere Bemühungen auf eine  besondere Klasse von Graphen ein.
+ Um sich dem Problem zu nähern brauchen wir eine Vorstellung davon, wie ein minimales Gegenbeispiel aussehen muss. Dazu schränken wir zunächst unsere Bemühungen auf eine  besondere Klasse von Graphen ein.
  
  \begin{definition}{normaler Graph}
   Ein planarer Graph heißt \textit{normal}, wenn er ein regulärer, vollständiger Graph mit geraden Jordanbögen ist, bei dem jede Facette außer der Außenfacette ein Dreieck ist.
@@ -17,7 +17,7 @@
  \end{proof}
  
  \begin{propositionl}{Adjazente Nachbarn}{gemgrenz}
-  Wenn ein Knoten eines beliebigen planaren Graphen mehr als drei Nachbarn hat, so hat dieser Knoten zwei Nachbarn, die nicht adjazent sind.
+  Wenn ein Knoten eines beliebigen Graphen mehr als drei Nachbarn hat, so hat dieser Knoten zwei Nachbarn, die nicht adjazent sind.
  \end{propositionl}
  \begin{proof}
   Sei $G$ ein Graph und $v_0$ ein Knoten mit den Nachbarn $v_1,v_2,v_3,v_4$. Nach Satz \ref{voll5} gibt es in $v_0,v_1,v_2,v_3,v_4$ zwei nicht adjazente Knoten, von denen nach Voraussetzung keiner $v_0$ seien kann.

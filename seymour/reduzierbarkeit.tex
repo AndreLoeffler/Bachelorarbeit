@@ -1,7 +1,7 @@
 \begin{section}{Reduzierbarkeit}
  Wir wollen konsistente Kantenfärbungen definieren. Dazu beginnen wir diesen Abschnitt mit den dazu nötigen, hinführenden Definitionen:
 
- \begin{definition}{Kantenfärbung, Match, signiertes Match, signiertes Matching, $\theta$-Passend}
+ \begin{definition}{Kantenfärbung, Match, signiertes Match, signiertes Matching, \\$\theta$-Passend}
   Sei $R$ ein Kreis und $\theta \in \{-1,0,1\}$.
   \begin{itemize}
    \item Eine \textit{Kantenfärbung} von $R$ ist eine Abbildung $\kappa: E(R) \mapsto \{-1,0,1\}$.
@@ -32,7 +32,7 @@
  \begin{definitionl}{Verpackung, Aufzug}{lift}
   Sei $H$ eine Beinahe-Triangulation. 
   \begin{itemize}
-   \item Dann gibt es einen geschlossenen Pfad $(v_0,v_1,\cdots,v_k)$ durch die zur Außenfacette inzidenten Knoten. Dann existiert ein Kreis $R$ der Länge $k$ mit Kanten $e_1,\cdots e_k$, nicht notwendigerweise ein Kreis in $H$. Für $i \leq i \leq k$ definieren wir einen Zeiger $\phi(e_i) := f_i$, wobei $f_i$ die Kante zwischen $v_{i-1}$ und $v_i$ aus $H$ ist. Wir sagen dann, $\phi$ \textit{verpackt $H$ in $R$}. 
+   \item Dann gibt es einen geschlossenen Pfad $(v_0,v_1,\cdots,v_k)$ durch die zur Außenfacette inzidenten Knoten. Weiter existiert ein Kreis $R$ der Länge $k$ mit Kanten $e_1,\cdots e_k$, nicht notwendigerweise ein Kreis in $H$. Für $i \leq i \leq k$ definieren wir einen Zeiger $\phi(e_i) := f_i$, wobei $f_i$ die Kante zwischen $v_{i-1}$ und $v_i$ aus $H$ ist. Wir sagen dann, $\phi$ \textit{verpackt $H$ in $R$}. 
    \item Ist $\kappa$ eine Trifärbung von $H$, so setzen wir für alle $e \in E(R): \lambda(e) = \kappa(\phi(e))$. Dann ist $\lambda$ eine Kantenfärbung von $R$ und wir nennen $\lambda$ einen \textit{Aufzug} von $\kappa$ (durch $\phi$).
   \end{itemize}
  \end{definitionl}
@@ -42,7 +42,7 @@
  \end{satzl}
  \begin{proof}
   Sei $e_1,\cdots,e_k$ die Kanten von $R$ und $f_1,\cdots,f_k$ die Kanten des geschlossenen Pfades um die Außenfacette von $H$. Sei $\lambda \in \mathscr{C}$ und sei $\theta \in \{-1,0,1\}$. Zu zeigen ist, dass ein signiertes Matching $M$ existiert, sodass $\lambda$ $\theta$-passend für $M$ ist, und dass $\mathscr{C}$ alle Kantenfärbungen beinhaltet, sodass $R$ für $M$ $\theta$-passend ist. O.B.d.A. sei $\theta = 0$.\\
-  Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine \textit{Rippe} ist eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$, wobei
+  Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ nennen wir eine \textit{Rippe}, wobei
   \begin{enumerate}[(i)]
    \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
    \item $r_1,\cdots,r_t$ verschiede Facetten von $H$ sind,
@@ -56,7 +56,7 @@
   Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\theta$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
  \end{proof}
  
- Unser Ziel ist es, einen Algorithmus angeben zu können, der jede Triangulation $T$ korrekt färbt und von dem wir zeigen können, dass er stets korrekt arbeitet. Aus \ref{3.1} wird ein Teilalgorithmus abgeleitet, der in den folgenen beiden Fällen verwendet wird: wenn ein Kurzkreis in $T$ gefunden wurde und im Fall, das nicht. Wird ein Kurzkreis $C$ gefunden, so verpacken wir sein Inneres $I$ in $C$, finden dann einen Aufzug für $C$ und verbinden eine passende Kantenfärbung des Aufzugs mit der Kantenfärbung des restlichen Graphen. Wird dagegen kein Kurzkreis gefunden, so verpacken wir jede auftretende Konfiguration $K$ im Ring $R$ ihrer freien Vervollständigung -- als nächstes definiert -- und gehen analog zum anderen Fall vor. 
+ Unser Ziel ist es, einen Algorithmus angeben zu können, der jede Triangulation $T$ korrekt färbt und von dem wir zeigen können, dass er stets korrekt arbeitet. Aus \ref{3.1} wird ein Teilalgorithmus abgeleitet, der in den folgenden beiden Fällen verwendet wird: wenn ein Kurzkreis in $T$ gefunden wurde und im Fall, dass nicht. Wird ein Kurzkreis $C$ gefunden, so verpacken wir sein Inneres $I$ in $C$, finden dann einen Aufzug für $C$ und verbinden eine passende Kantenfärbung des Aufzugs mit der Kantenfärbung des restlichen Graphen. Wird dagegen kein Kurzkreis gefunden, so verpacken wir jede auftretende Konfiguration $K$ im Ring $R$ ihrer freien Vervollständigung -- als nächstes definiert -- und gehen analog zum anderen Fall vor. 
 
 \begin{definition}{Freie Vervollständigung}
   Sei $K$ eine Konfiguration. Eine Beinahe-Triangulation $S$ heißt \textit{freie Vervollständigung von $K$ mit Ring $R$}, wenn
@@ -67,7 +67,7 @@
   \end{enumerate}
  \end{definition}
  
- Man kann leicht überprüfen, dass jede Konfiguration eine freie Vervollständigung besitzt. (Hier wird der Umstand benutzt, dass in der Definition von Konfiguration eine Ringgröße mindestens $2$ gefordert ist -- die Ringgröße ist dann genau die Länge des Rings in der freien Vervollständigung.) Gibt es zwei freie Vervollständigungen $S_1$ und $S_2$ von $K$, so existiert ein Homeomorphismus er Ebene, der $G(K)$ punktweise fixiert und $S_1$ auf $S_2$ abbildet. Dazu verwendet man Eigenschaft (i) aus der Definition der Konfiguration. Es gibt also -- bis auf Isomorphie -- nur eine freie Vervollständigung, weswegen wir von \textit{der} freien Konfiguration sprechen können.
+ Man kann leicht überprüfen, dass jede Konfiguration eine freie Vervollständigung besitzt. (Hier wird der Umstand benutzt, dass in der Definition von Konfiguration eine Ringgröße mindestens $2$ gefordert ist -- die Ringgröße ist dann genau die Länge des Rings in der freien Vervollständigung.) Gibt es zwei freie Vervollständigungen $S_1$ und $S_2$ von $K$, so existiert ein Homömorphismus der Ebene, der $G(K)$ punktweise fixiert und $S_1$ auf $S_2$ abbildet. Dazu verwendet man Eigenschaft (i) aus der Definition der Konfiguration. Es gibt also -- bis auf Isomorphie -- nur eine freie Vervollständigung, weswegen wir von \textit{der} freien Konfiguration sprechen können.
  
  Um die Anschauung des Lesers zu fördern folgt nun die Darstellung einer Konfiguration sowie ihrer freien Vervollständigung. Dabei folgen wir der Notation für die Knoten, wie sie in \ref{fig1} dargestellt wurde.
  
@@ -95,12 +95,12 @@
  Mit Hilfe eines Computers wurde folgendes Resultat von Robertson, Sanders, Seymour und Thomas gezeigt:
  
  \begin{satzl}{Reduzibilität der Konfigurationen}{3.2}
-  Für jede der 633 Konfigurationen $K$, die im Anhang (der Originalveröffentlichung) abgebildet sind, sei $X$ die Menge der Kanten der freien Vervollständigung von $K$, die fett gedruckt sind. Gilt $X \neq \emptyset$, so ist $K$ $D$-reduzibel. Andernfalls gilt $1\leq \sharp X \leq 4$ und $X$ ist ein Zusammenzug für $K$.
+  Für jede der 633 Konfigurationen $K$, die im Anhang abgebildet sind, sei $X$ die Menge der Kanten der freien Vervollständigung von $K$, die fett gedruckt sind. Gilt $X \neq \emptyset$, so ist $K$ $D$-reduzibel. Andernfalls gilt $1\leq \sharp X \leq 4$ und $X$ ist ein Zusammenzug für $K$.
  \end{satzl}
  
  Aus diesem Ergebnis werden wir später Satz \ref{2.2} herleiten.
 
- Selbst wenn $K$ eine Konfiguration ist, die in der Triangulation $T$ auftritt, heißt das noch nicht, dass es eine Teildarstellung von $T$ geben muss, die die freie Vervollständigung von $K$ ist. Dies kann zu Schwierigkeiten führen, wenn wir versuchen, Erkenntnisse über $T$ auf die freie Vervollständigung zu übertragen. Um Probleme beim Identifizieren der Komponenten von Graphen zu vermeiden, machen wir noch folgende Definition:
+ Selbst wenn $K$ eine Konfiguration ist, die in der Triangulation $T$ auftritt, heißt das noch nicht, dass es eine Teildarstellung von $T$ geben muss, die die freie Vervollständigung von $K$ ist. Dies kann zu Schwierigkeiten führen, wenn wir versuchen, Erkenntnisse über $T$ auf die freie Vervollständigung zu übertragen. Um Probleme beim Identifizieren der Komponenten von Graphen zu vermeiden, benutzen wir noch folgende Definition:
  
  \begin{definition}{Projektion}
   Sei $T$ eine Triangulation und $S$ eine Beinahe-Triangulation. Eine \textit{Projektion} von $S$ auf $T$ ist eine Abbildung $\phi$ mit Definitionsmenge $D(\phi) = V(S)\cup E(S)\cup F(S)$ mit folgenden Eigenschaften:
@@ -113,7 +113,7 @@
   \end{enumerate}
  \end{definition}
  
- Die folgenden Resultate wollen wir ohne Beweis benutzen, da die Beweise beide langwierig sind und wenig zum Verständnis des eigentlichen Problems beitragen.
+ Die folgenden zwei Resultate wollen wir ohne Beweis benutzen, da die Beweise beide langwierig sind und wenig zum Verständnis des eigentlichen Problems beitragen.
 
  \begin{satzl}{Existenz einer Projektion}{3.3}
   Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei weiter $S$ die freie Vervollständigung von $K$. Dann existiert eine Projektion $\phi$ von $S$ auf $T$ derart, dass $\phi(x) = x$ für alle $x\in V(G(K)) \cup E(G(K)) \cup F(G(K))$. Eine solche Projektion $\phi$ heißt dann auch korrespondierende Projektion.
@@ -137,7 +137,7 @@
  \end{definition}
  
  \begin{satzl}{Existenz eines Kurzkreises}{3.5}
-  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ und sei $\phi$ die korrespondierende Projektion von $S$ auf $T$. Sei $X \subseteq E(S)$ zerstreut in $S$ und $\sharp X \leq 4$ und wenn $\sharp X = 4$ gilt, so gebe es ein Dreibein für $X$. Gibt es einen Kreis $C$ in $T$ mit $|E(C) - \phi(X)| \leq 1$, so gibt es einen Kurzkreis in $T$.
+  Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X \subseteq E(S)$ zerstreut in $S$ und $\sharp X \leq 4$ und wenn $\sharp X = 4$ gilt, so gebe es ein Dreibein für $X$. Gibt es einen Kreis $C$ in $T$ mit $|E(C) - \phi(X)| \leq 1$, so gibt es einen Kurzkreis in $T$.
  \end{satzl}
  \begin{proof}
   Sei $X' = \phi(X) \cap E(C)$. Da $X$ in $S$ zerstreut ist, ist keine Kante aus $X$ inzident zur Außenfacette von $S$. Also ist jede Kante aus $X$ inzident zu zwei verschiedenen Innenfacetten von $S$. Nach Satz \ref{3.3} gilt für jede Facette $t$ von $T$, die zu einer Kante aus $X'$ inzident ist, $t=\phi(r)$, wobei $r$ eine Innenfacette von $S$ ist. Also ist $X'$ auch zerstreut in $T$.\\
@@ -150,11 +150,12 @@
   Sei $K$ eine der 633 Konfiguration aus dem Anhang, sei $S$ deren freie Vervollständigung und sei $X$ die Menge der Kanten der Zeichnung, die dick gedruckt sind. Wenn $\sharp X = 4$ gilt, so gibt es ein Dreibein für $X$.
  \end{satzl}
  
- Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nur wenige Konfigurationen übrig, bei denen sich der Wahrheitsgehalt von Satz \ref{3.6} von Hand überprüfen lässt. \rsst \-\ benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden die Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
+ Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nur wenige Konfigurationen übrig, bei denen der Wahrheitsgehalt von Satz \ref{3.6} von Hand zu überprüfen ist. \rsst \-\ benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden die Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
  
  Nun können wir uns daran machen Satz \ref{2.2} zu beweisen.
+ 
  \begin{proof}[Beweis zu Satz \ref{2.2}]
-  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständigung von $K$ mit Ring $R$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der Kanten aus $K$, die im Anhang im Fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
+  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständig-ung von $K$ mit Ring $R$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der Kanten aus $K$, die im Anhang im Fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
   Nach Satz \ref{3.4} ist $H$ somit eine Beinahe-Triangulation und $\psi$ verpackt $H$ in $R$. Sei weiter $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C}_1 \subseteq \mathscr{C}^*$ die Menge aller Aufzüge von Trifärbungen von $H$ durch $\psi$.\\
   Nach Satz \ref{3.1} ist $\mathscr{C}_1$ konsistent. Weiter sei $\mathscr{C}_2 \subseteq \mathscr{C}^*$ die Menge aller Einschränkungen von $E(R)$ von Trifärbungen von $S$. Nach Satz \ref{2.4} besitzt $T$ keine Trifärbung, somit folgt $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$. Sei nun $\mathscr{C}_3$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}_2$. Da $\mathscr{C}_1$ konsistent ist und $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$ gilt, folgt $\mathscr{C}_1 \subseteq \mathscr{C}_3$.\\
   Man kann $H$ so durch Kanten erweitern, dass sich eine Triangulation $T'$ ergibt. Da $T$ ein minimales Gegenbeispiel ist, besitzt $T'$ -- und somit auch $H$ -- eine Trifärbung. Also ist $\mathscr{C}_1$ nicht leer und somit ist auch $\mathscr{C}_3$ nicht leer. Weiterhin ist $K$ auch nicht $D$-reduzibel.\\

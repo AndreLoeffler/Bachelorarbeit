@@ -10,7 +10,7 @@
   \end{enumerate}
  \end{definition}
 
- Es gibt folglich also vier Sorten von Kanten in einem Wagenrad: Kanten von $C_1$, Kanten von $C_2$, Kanten zwischen $w$ und und $C_1$ sowie Kanten zwischen $C_1$ und $C_2$. Zur Veranschaulichung noch eine Darstellung eines Wagenrades.
+ Es gibt folglich also vier Sorten von Kanten in einem Wagenrad: Kanten von $C_1$, Kanten von $C_2$, Kanten zwischen $w$ und und $C_1$ sowie Kanten zwischen $C_1$ und $C_2$. Zur Veranschaulichung findet sich eine Darstellung eines Wagenrades in Abbildung \ref{fig3}.
  
  \begin{figure}[ht]
   \label{fig3}
@@ -18,7 +18,7 @@
   \caption[Darstellung eines Wagenrads]{Darstellung eines Wagenrads}
  \end{figure}
 
- Die folgende Proposition geht zurück auf Birkhoff, genauer nachzulesen in \cite{AmJMath35}.
+ Die folgende Proposition geht zurück auf Birkhoff, ein Beweis ist nachzulesen in \cite{AmJMath35}.
  
  \begin{propositionl}{Eindeutiges Wagenrad}{4.1}
   Sei $T$ eine intern 6-fach zusammenhängende Triangulation und sei $w$ ein Knoten von $T$. Dann gibt es in $T$ genau ein Wagenrad mit Radnabe $w$.
@@ -36,7 +36,7 @@
    \item zwei verschiedenen benachbarten Knoten $s$ und $t$ aus $G(K)$ und
    \item für alle $v \in V(G(K))$ gibt es einen $s,v$-Pfad und einen $t,v$-Pfad in $G(K)$, beide mit Länge höchstens 2.
   \end{itemize}
-  Wir setzen $r(P) = r$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüssen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluss aus $\itP$ isomorph ist. \\
+  Wir setzen $r(P) = r$, $s(P) = s$, $t(P) = t$ und $K(P) = K$. Weiter nennen wir $r$ den \textit{Wert} von $P$, sowie $s$ seine \textit{Quelle} und $t$ seine \textit{Senke}. Eine Menge von Flüssen bezeichnen wir mit $\itP$ und wir schreiben $P \sim \itP$, wenn $P$ zu einem Fluss aus $\itP$ isomorph ist. \\
   Sei $W$ ein Wagenrad mit Radnabe $w$. Dann definieren wir\\
   \begin{align*}
      N_\itP(W) = 10(6-\gamma_W(w)) &+ \sum (r(P) : P \sim \itP, P \text{ tritt auf in } W, t(P)=w)\\
@@ -61,7 +61,7 @@
   \[\sum (r(P):P\sim \itP, P \text{ tritt auf in } T) = \sum_{v\in V(T)} \Sigma (r(P):P\sim \itP, P \text{ tritt auf in } W_v,s(P)=v)\]
   Diese Gleichheit gilt auch, wenn man $s(P)$ durch $t(P)$ ersetzt. Somit ergibt sich
   \[\sum_{v\in V(T)} N_\itP(W_v) = \sum_{v\in V(T)} 10(6-\gamma_W(v))\text{.}\]
-  Für jeden Knoten $v \in V(T)$ gilt: $\gamma_W(v) = d_T(v)$. Setzte außerdem $\sharp V(T) = n$. Somit ergibt sich nach der eulerschen Polyederformel:
+  Für jeden Knoten $v \in V(T)$ gilt: $\gamma_W(v) = d_T(v)$. Setze außerdem $\sharp V(T) = n$. Somit ergibt sich nach der eulerschen Polyederformel:
   \[\sum_{v\in V(T)} \gamma_W(v) = \sum_{v\in V(T)} d_T(v) = 2\cdot \sharp E(T) = 6n -12\]
   und durch Einsetzen erhält man
   \[\sum_{v\in V(T)} N_\itP(W_v) = 60n - 10(6n - 12) = 120\text{,}\]
@@ -115,7 +115,7 @@
   \caption[Darstellung der 32 Regeln]{Darstellung der 32 Regeln, übernommen aus \cite{FourRSST}}
  \end{figure}
 
- Im weiteren Verlauf dieses Abschnitts benutzen wir $\itP$ nurnoch, um eine Menge von Flüssen zu beschreiben, die einer Regel gehorcht. Dazu ist zu bemerken, dass jeder Fluss genau einer Regel gehorcht, jedoch gibt es für einen Fluss $P$ einige wenige Darstellungen, die einer Regel folgen, deren Isomorphismus von $P$ auf $(K,r,s,t)$ aber nicht eindeutig ist -- zum Beispiel bei den Regeln 10 oder 31. In solchen Fällen zählen wir den Fluss $P$ nur ein mal zu $\itP$, da es sich bei $\itP$ nicht um eine Multimenge handelt.
+ Im weiteren Verlauf dieses Abschnitts benutzen wir $\itP$ nur noch, um eine Menge von Flüssen zu beschreiben, die einer Regel gehorcht. Dazu ist zu bemerken, dass jeder Fluss genau einer Regel gehorchen, jedoch gibt es für einen Fluss $P$ einige wenige Darstellungen, die einer Regel folgen, wobei der Isomorphismus von $P$ auf $(K,r,s,t)$ aber nicht eindeutig bestimmt ist -- zum Beispiel bei den Regeln 10 oder 31. In solchen Fällen zählen wir den Fluss $P$ nur ein mal zu $\itP$, da es sich bei $\itP$ nicht um eine Multimenge handelt.
  
  Flüsse, die der Regel 1 gehorchen, haben den Wert $r=2$, für alle anderen gilt $r=1$. Weiter unterscheiden sich die ersten sieben Regeln von den anderen. Folgt ein Fluss $P$ einer dieser Regeln, so gilt für die Quelle $s$ $\gamma_P(s) \in \{5,6\}$, während in allen anderen Regel für Quelle $s$ und Senke $t$ folgendes gilt: $\gamma_P(s) \in \{7,8\}$ und $\gamma_P(t) \geq 7$. Die ersten sieben Regeln folgen einer gewissen Systematik. Alle anderen Regeln wurden jedoch durch ungeordnetes Durchprobieren aufgestellt und folgen daher keinem besonderen Muster.
  
@@ -160,13 +160,13 @@
   In beiden Fällen erhalten wir unseren gesuchten Widerspruch durch einfaches Einsetzen.
  \end{proof}
  
- Nun wenden wir uns dem dritten Fall zu, also für Radnaben  mit Grad mindestens $12$. Dafür benötigen wir ein anderes Zwischenresultat.
+ Nun wenden wir uns dem dritten Fall zu, also den Radnaben mit Grad mindestens $12$. Dafür benötigen wir ein anderes Zwischenresultat.
  
  \begin{lemmal}{}{4.7}
-  Sei $W$ ein Wagenrad mit Radnabe $w$ und sei $v$ ein zu $w$ adjazenter Knoten. Wenn keine gute Konfiguration in $W$ auftritt, ist die Summe über die $r(P)$ aller Flüsse $P \in \itP$, die in $W$ auftreten und die Quelle $v$ und Senke $w$ haben, höchstens 5.
+  Sei $W$ ein Wagenrad mit Radnabe $w$ und sei $v$ ein zu $w$ adjazenter Knoten. Wenn keine gute Konfiguration in $W$ auftritt, ist die Summe über die Werte $r(P)$ aller Flüsse $P \in \itP$, die in $W$ auftreten und die Quelle $v$ und Senke $w$ haben, höchstens 5.
  \end{lemmal}
 
- Der Beweis hierzu verwendet im wesentlichen die Annahme, dass keine gute Konfiguration auftreten darf und betrachtet für jeder der 32 Regeln die Anzahl $R_k$ der Flüsse, die in $W$ auftreten und der $k$-ten Regel folgen, sowie die Summe $R$ aller $R_k$ und zeigt, dass $R \leq 5$ gilt. Dazu unterscheidet der Beweis zwischen verschiedenen Zusammensetzungen von $R$ aus den $R_k$ für die fünf verschiedenen Fälle von Werten, di $\gamma_K(v)$ annehmen kann. Dies gestaltet sich sehr lang und trägt wenig zum Verständnis des eigentlichen Problems bei. Deshalb wird für den vollständigen Beweis auf \cite[Seite 21, Lemma 4.7]{FourRSST} verwiesen.
+ Der Beweis hierzu verwendet im wesentlichen die Annahme, dass keine gute Konfiguration auftreten darf und betrachtet für jede der 32 Regeln die Anzahl $R_k$ der Flüsse, die in $W$ auftreten und der $k$-ten Regel folgen, sowie die Summe $R$ aller $R_k$ und zeigt, dass $R \leq 5$ gilt. Dazu unterscheidet der Beweis zwischen verschiedenen Zusammensetzungen von $R$ aus den $R_k$ für die fünf verschiedenen Fälle von Werten, di $\gamma_K(v)$ annehmen kann. Dies gestaltet sich sehr lang und trägt wenig zum Verständnis des eigentlichen Problems bei. Deshalb wird für den vollständigen Beweis auf \cite[Seite 21, Lemma 4.7]{FourRSST} verwiesen.
  
  Daraus leiten wir unser nächstes Teilresultat ab.
  

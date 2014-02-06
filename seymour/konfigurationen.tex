@@ -5,7 +5,7 @@
  \begin{definition}{Kurzkreis, intern 6-fach zusammenhängende Triangulation}
   Sei $T$ eine Triangulation.
   \begin{itemize}
-   \item Ein Kreis $C$ in einer Triangulation heißt \textit{Kurzkreis} (engl.: short circuit), wenn $\sharp V(C) \leq 5$ gilt. Die Kanten von $C$ teilen dann $T$ in einen inneren Bereich $I$ und einen äußeren Bereich $O$ mit $I,O \subset V(T)$.\footnote{Anschaulich gesprochen: Betrachtet man eine planare Darstellung von $T$ und durchläuft die Kanten von $C$ im Uhrzeigersinn, so liegen genau die Punkte in $I$, die sich für jede Kante rechts von dieser befinden. In $O$ liegen alle Knoten, die weder zu $C$ noch zu $I$ gehören.} Sollte $\sharp V(C) = 5$ gelten, so liegen sowohl in $I$ als auch in $O$ mindestens zwei Knoten. 
+   \item Ein Kreis $C$ in einer Triangulation heißt \textit{Kurzkreis} (engl.: short circuit), wenn $\sharp V(C) \leq 5$ gilt. Die Kanten von $C$ teilen dann $T$ in einen inneren Bereich $I$ und einen äußeren Bereich $O$ mit $I,O \subset V(T)$.\footnote{Anschaulich gesprochen: Betrachtet man eine planare Darstellung von $T$ und durchläuft die Kanten von $C$ im Uhrzeigersinn, so liegen genau die Punkte in $I$, die sich für jede Kante rechts von dieser befinden. In $O$ liegen alle Knoten, die weder zu $C$ noch zu $I$ gehören.} Sollte $\sharp V(C) = 5$ gelten, so sollen sowohl in $I$ als auch in $O$ mindestens zwei Knoten liegen. 
    \item Wir nennen eine 6-fach knotenzusammenhängende Triangulation \textit{intern 6-fach zusammenhängend}, wenn sie keine Kurzkreise beinhaltet.
   \end{itemize}
  \end{definition}
@@ -16,9 +16,7 @@
   Jedes minimale Gegenbeispiel ist eine intern 6-fach zusammenhängende Triangulation. 
  \end{satzl}
 
- Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen 4-färbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe -- Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringen, die eine Karte in eine innere und eine äußere Region teilen. Diese werden später in Kapitel \ref{sec:AHRed} genauer beschrieben.
- 
- Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{2.1} ableiten.
+ Um genauer zu verstehen, warum der Graph 6-fach zusammenhängend sein muss, empfiehlt sich die Lektüre von \cite{AmJMath35}. Später werden wir einen Algorithmus kennenlernen, der eine Färbung für eine Triangulation mit Kurzkreis liefert. Daraus lässt sich dann auch der Beweis für Satz \ref{2.1} ableiten. Birkhoff schaffte es bereits 1913 zu zeigen, dass schwächer zusammenhängende Konfigurationen 4-färbbar sind. Dazu bediente er sich der Resultate von A. B. Kempe über Ketten, die mit einer beschränkten Auswahl an Farben färbbar sind, und Ringe, die eine Karte in eine innere und eine äußere Region teilen. Diese werden später in Kapitel \ref{sec:AHRed} genauer beschrieben.
  
  Als nächstes folgt eine Definition, die fundamental für unseren Beweis ist. Der Begriff der Konfiguration taucht ebenfalls bei Appel \& Haken auf, jedoch besitzt eine Konfiguration dort andere Eigenschaften.
   
@@ -33,7 +31,7 @@
   \end{enumerate}
  \end{definitionl}
  
- Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglichkeiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
+ Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglich-keiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
  
  \begin{figure}[ht]
   \label{fig1}
@@ -47,7 +45,7 @@
  \begin{definition}{Isomorphe Konfigurationen, gute Konfigurationen, auftretende Konfigurationen}
  \-\ 
   \begin{itemize}
-   \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus der Ebene existiert, der $G(K)$ auf $G(L)$ und $\gamma_K$ auf $\gamma_L$ abbildet. 
+   \item Zwei Konfigurationen $K$ und $L$ heißen \textit{isomorph}, falls ein Homeomorphismus $\varphi$ der Ebene existiert, der $G(K)$ auf $G(L)$ abbildet und $\gamma_K(v) = \gamma_L(\varphi(v))$ gilt. 
    \item Jede Konfiguration, die zu einer der 633 Konfigurationen aus dem Anhang isomorph ist, bezeichnen wir als \textit{gut}. 
    \item Sei $T$ eine Triangulation. Eine Konfiguration $K$ \textit{tritt in $T$ auf}, wenn $G(K)$ ein Teilgraph von $T$ ist, jede Innenfacette von $G(K)$ eine Innenfacette von $T$ ist und $\gamma_K(v) = d_T(v)$ für alle Knoten $v$ von $G(K)$ gilt.
   \end{itemize}
@@ -78,7 +76,7 @@
   Eine Triangulation $T$ ist genau dann 4-färbbar, wenn eine Trifärbung ihrer Facetten existiert.
  \end{satzl}
  
- Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war. \cite[Seite 7]{FourRSST} 
+ Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war; vgl. \cite[Seite 7]{FourRSST}.
  
  Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immer noch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme zu umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
  
@@ -111,6 +109,7 @@
                 0  &\text{ für } \{\phi(u), \phi(v)\} = \{1,3\}\text{ oder } \{2,4\}\\
                 1  &\text{ für } \{\phi(u), \phi(v)\} = \{1,4\}\text{ oder } \{2,3\}  
                \end{cases}\]
-  Dann ist $\kappa$ eine Trifärbung von $T$ modulo $X$, denn: Sei $r$ eine Facette von $T$, $e=\{u,v\},f=\{v,w\},g=\{w,u\}$. Sind $e,f,g \not\in X$, so sind $\phi(u),\phi(v),\phi(w)$ alle verschieden, also auch $\{\kappa(e),\kappa(f),\kappa(g)\}=\{-1,0,1\}$. Ist andererseits o.B.d.A. $g\in X$, so gilt $\phi(u) = \phi(w)$ und $\kappa(e)=\kappa(f)$. \cite{FourRSST}
+  Dann ist $\kappa$ eine Trifärbung von $T$ modulo $X$, denn:\\ 
+  Sei $r$ eine Facette von $T$, $e=\{u,v\},f=\{v,w\},g=\{w,u\}$. Sind $e,f,g \not\in X$, so sind $\phi(u),\phi(v),\phi(w)$ alle verschieden, also auch $\{\kappa(e),\kappa(f),\kappa(g)\}=\{-1,0,1\}$. Ist andererseits o.B.d.A. $g\in X$, so gilt $\phi(u) = \phi(w)$ und $\kappa(e)=\kappa(f)$. \cite{FourRSST}
  \end{proof}
 \end{section}
