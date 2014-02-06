@@ -78,3 +78,8 @@
    year    = {1969},
    address = {Mannheim}
 }
+@techreport{matiyasevich,
+Author     = {Y. Matiyasevich},
+Title      = {The Four Colour Theorem as a possible corollary of binomial summation},
+Type       = {Manuscript},
+}

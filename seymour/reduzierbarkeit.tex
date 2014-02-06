@@ -45,12 +45,12 @@
   Da $\lambda \in \mathscr{C}$ gilt, ist $\lambda$ der Aufzug einer Trifärbung $\kappa$ von $H$. Eine Folge $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ nennen wir eine \textit{Rippe}, wobei
   \begin{enumerate}[(i)]
    \item $g_0,\cdots,g_t$ verschiedene Kanten von $H$ sind,
-   \item $r_1,\cdots,r_t$ verschiede Facetten von $H$ sind,
+   \item $r_1,\cdots,r_t$ verschiedene Facetten von $H$ sind,
    \item falls $t >0$ gilt, $g_0$ und $g_t$ beide inzident zur Außenfacette von $H$ sind, oder falls $t=0$ gilt, $g_0$ zu keiner Innenfacette von $H$ inzident ist,
    \item für $1\leq i\leq t$ gilt, dass $r_i$ inzident zu den Facetten $g_{i-1}$ und $g_i$ ist und
    \item für $0\leq i\leq t$ gilt, dass $\kappa(g_i) \neq 0$ gilt.
   \end{enumerate}
-  Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört aber inzident zu einer ihrer Facetten ist, gilt $\kappa(e) = 0$. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
+  Für jede Rippe sind die Werte von $\kappa(g_0),\cdots,\kappa(g_t)$ abwechselnd $\pm 1$ und für jede Kante $e$, die nicht zur Rippe gehört, aber inzident zu einer ihrer Facetten ist, gilt $\kappa(e) = 0$. Tauscht man die Vorzeichen von $\kappa(g_0),\cdots,\kappa(g_t)$, so erhält man also eine neue Trifärbung von $H$.\\
   Weiter sind alle Rippen disjunkt, sie teilen sich also weder Kanten noch Facetten. Für $1 \leq i \leq k$ lässt sich jede Kante $f_i$ entweder eindeutig einer Rippe zuordnen, wenn $\kappa(f_i) = \pm 1$, oder keiner Rippe zuordnen, wenn $\kappa(f_i)=0$.\\
   Wir verknüpfen jede Rippe $g_0,r_1,g_1,r_2,\cdots,r_t,g_t$ mit einem signierten Match $(\{e_i,e_j\},\mu)$, wobei $g_0 = f_i$ und $g_t = f_j$ und $\mu = +1$ oder $-1$, je nachdem ob $t$ gerade oder ungerade ist, gilt. Die Menge aller dieser signierten Matches ist ein signiertes Matching $M$ und $\lambda$ ist $\theta$-passend für $M$.\\
   Sei nun $\lambda'$ eine beliebige Kantenfärbung von $R$, die $\theta$-passend für $M$ ist, und definiere $\kappa''(f_i) := \lambda'(e_i)$ (für $1\leq i \leq k$). Dreht man die Vorzeichen von $\kappa$ in einigen Rippen um, so erhält man eine Trifärbung $\kappa'$ von $H$, deren Einschränkung auf $\{f_1,\cdots,f_k\}$ die Trifärbung $\kappa''$ ist. Daraus folgt, dass $\lambda'$ ein Aufzug von $\kappa'$ ist, also wie gefordert $\lambda' \in \mathscr{C}$ gilt. 
@@ -100,7 +100,7 @@
  
  Aus diesem Ergebnis werden wir später Satz \ref{2.2} herleiten.
 
- Selbst wenn $K$ eine Konfiguration ist, die in der Triangulation $T$ auftritt, heißt das noch nicht, dass es eine Teildarstellung von $T$ geben muss, die die freie Vervollständigung von $K$ ist. Dies kann zu Schwierigkeiten führen, wenn wir versuchen, Erkenntnisse über $T$ auf die freie Vervollständigung zu übertragen. Um Probleme beim Identifizieren der Komponenten von Graphen zu vermeiden, benutzen wir noch folgende Definition:
+ Selbst wenn $K$ eine Konfiguration ist, die in der Triangulation $T$ auftritt, heißt das noch nicht, dass es eine Teildarstellung von $T$ geben muss, die die freie Vervollständigung von $K$ ist. Dies kann zu Schwierigkeiten führen, wenn wir versuchen, Erkenntnisse über $T$ auf die freie Vervollständigung zu übertragen. Um Probleme beim Identifizieren der Komponenten von Graphen zu vermeiden, erfolgt noch eine Definition:
  
  \begin{definition}{Projektion}
   Sei $T$ eine Triangulation und $S$ eine Beinahe-Triangulation. Eine \textit{Projektion} von $S$ auf $T$ ist eine Abbildung $\phi$ mit Definitionsmenge $D(\phi) = V(S)\cup E(S)\cup F(S)$ mit folgenden Eigenschaften:
@@ -113,7 +113,7 @@
   \end{enumerate}
  \end{definition}
  
- Die folgenden zwei Resultate wollen wir ohne Beweis benutzen, da die Beweise beide langwierig sind und wenig zum Verständnis des eigentlichen Problems beitragen.
+ Die folgenden zwei Resultate wollen wir ohne Beweis benutzen, da beide Beweise langwierig sind und wenig zum Verständnis des eigentlichen Problems beitragen.
 
  \begin{satzl}{Existenz einer Projektion}{3.3}
   Sei $T$ eine Triangulation und $K$ eine Konfiguration, die in $T$ auftritt. Sei weiter $S$ die freie Vervollständigung von $K$. Dann existiert eine Projektion $\phi$ von $S$ auf $T$ derart, dass $\phi(x) = x$ für alle $x\in V(G(K)) \cup E(G(K)) \cup F(G(K))$. Eine solche Projektion $\phi$ heißt dann auch korrespondierende Projektion.
@@ -152,14 +152,14 @@
  
  Die Menge der Konfigurationen ist endlich und für die meisten von ihnen gilt $\sharp X \leq 3$. Somit bleiben nur wenige Konfigurationen übrig, bei denen der Wahrheitsgehalt von Satz \ref{3.6} von Hand zu überprüfen ist. \rsst \-\ benutzten hierzu einen Computer-Algorithmus. Dabei stellt sich bei solchen Datensätzen natürlich die Frage nach banalen Tippfehlern und abweichenden Begrifflichkeiten. Tatsächlich wurden die Konfigurationen in einer Datei gespeichert und diese wurde für alle Algorithmen, die im Zuge des gesamten Beweises auftreten, benutzt. Stößt man beim Überprüfen der Konfigurationen aus dem Anhang auf einen Fehler, ist dieser auf einen Fehler in der Darstellung des Graphen zurückzuführen. Um also die Korrektheit zu verifizieren, müsste jeder Verweis auf den Anhang durch einen Verweis auf die Datei ersetzt und der Computeralgorithmus von Hand ausgeführt werden.\footnote{Eine Sammlung aller verwendeten Algorithmen und Dateien findet sich unter \url{http://www.math.gatech.edu/~thomas/FC/ftpinfo.html} zum Download.}
  
- Nun können wir uns daran machen Satz \ref{2.2} zu beweisen.
+ Nun können wir uns daran machen, Satz \ref{2.2} zu beweisen.
  
  \begin{proof}[Beweis zu Satz \ref{2.2}]
-  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständig-ung von $K$ mit Ring $R$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der Kanten aus $K$, die im Anhang im Fettdruck dargestellt sind. Sei $H$ gewählt gemäß \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
+  Sei $K$ eine gute Konfiguration, die in $T$ auftritt. Sei $S$ die freie Vervollständig-ung von $K$ mit Ring $R$ und sei $\phi$ eine korrespondierende Projektion von $S$ auf $T$. Sei $X$ die Menge der Kanten aus $K$, die im Anhang im Fettdruck dargestellt sind. Sei $H$ gewählt gemäß Satz \ref{3.4} und sei $\psi$ die Einschränkung von $\phi$ auf $E(R)$.\\
   Nach Satz \ref{3.4} ist $H$ somit eine Beinahe-Triangulation und $\psi$ verpackt $H$ in $R$. Sei weiter $\mathscr{C}^*$ die Menge aller Kantenfärbungen von $R$ und sei $\mathscr{C}_1 \subseteq \mathscr{C}^*$ die Menge aller Aufzüge von Trifärbungen von $H$ durch $\psi$.\\
   Nach Satz \ref{3.1} ist $\mathscr{C}_1$ konsistent. Weiter sei $\mathscr{C}_2 \subseteq \mathscr{C}^*$ die Menge aller Einschränkungen von $E(R)$ von Trifärbungen von $S$. Nach Satz \ref{2.4} besitzt $T$ keine Trifärbung, somit folgt $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$. Sei nun $\mathscr{C}_3$ die größte konsistente Teilmenge von $\mathscr{C}^* - \mathscr{C}_2$. Da $\mathscr{C}_1$ konsistent ist und $\mathscr{C}_1 \cap \mathscr{C}_2 = \emptyset$ gilt, folgt $\mathscr{C}_1 \subseteq \mathscr{C}_3$.\\
   Man kann $H$ so durch Kanten erweitern, dass sich eine Triangulation $T'$ ergibt. Da $T$ ein minimales Gegenbeispiel ist, besitzt $T'$ -- und somit auch $H$ -- eine Trifärbung. Also ist $\mathscr{C}_1$ nicht leer und somit ist auch $\mathscr{C}_3$ nicht leer. Weiterhin ist $K$ auch nicht $D$-reduzibel.\\
   Nach Satz \ref{3.2} gilt für $X$ sowohl $1 \leq \sharp X \leq 4$ als auch, dass $X$ ein Zusammenzug von $K$ ist. Somit ist $X$ zerstreut in $S$. \\
-  Nach Satz \ref{2.1} besitzt $T$ keinen Kurzkreis. Kombiniert man \ref{3.6} und \ref{3.5}, so sieht man, dass es in $T$ keinen Kreis $C$ mit $|E(C) - \phi(X)| = 1$ geben kann. Aber nach Satz \ref{2.5} besitzt $T$ eine Trifärbung modulo $\phi(X)$, die wir $\kappa$ nennen. Die Einschränkung von $K$ auf $E(H)$ ist eine Trifärbung von $H$, da nach Wahl von $H$ gilt: $\phi(X) \cap E(H) = \emptyset$. Sei $\lambda$ der Aufzug von $\kappa$ durch $\psi$. Es gilt $\lambda \in \mathscr{C}_1$ und somit auch  $\lambda \in \mathscr{C}_3$. Sei nun $e \in E(S)$ eine Kante und definiere $\kappa'(e) = \kappa(\phi(e))$. Dann ist $\kappa'$ eine Trifärbung von $S$ modulo $X$ und $\lambda$ ist ihre Einschränkung auf $R$. Dies liefert einen Widerspruch dazu, das $X$ ein Zusammenzug von $S$ ist. Dies zeigt das gesuchte Resultat.
+  Nach Satz \ref{2.1} besitzt $T$ keinen Kurzkreis. Kombiniert man die Sätze \ref{3.6} und \ref{3.5}, so sieht man, dass es in $T$ keinen Kreis $C$ mit $|E(C) - \phi(X)| = 1$ geben kann. Aber nach Satz \ref{2.5} besitzt $T$ eine Trifärbung modulo $\phi(X)$, die wir $\kappa$ nennen. Die Einschränkung von $K$ auf $E(H)$ ist eine Trifärbung von $H$, da nach Wahl von $H$ gilt: $\phi(X) \cap E(H) = \emptyset$. Sei $\lambda$ der Aufzug von $\kappa$ durch $\psi$. Es gilt $\lambda \in \mathscr{C}_1$ und somit auch  $\lambda \in \mathscr{C}_3$. Sei nun $e \in E(S)$ eine Kante und definiere $\kappa'(e) = \kappa(\phi(e))$. Dann ist $\kappa'$ eine Trifärbung von $S$ modulo $X$ und $\lambda$ ist ihre Einschränkung auf $R$. Dies liefert einen Widerspruch dazu, das $X$ ein Zusammenzug von $S$ ist. Dies zeigt das gesuchte Resultat.
  \end{proof}
 \end{section}

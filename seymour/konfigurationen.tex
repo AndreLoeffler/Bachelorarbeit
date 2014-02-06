@@ -31,7 +31,7 @@
   \end{enumerate}
  \end{definitionl}
  
- Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglich-keiten. Die Offensichtliche wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
+ Um $\gamma_K$ für jeden Knoten in einer planaren Zeichnung von $G$ darzustellen, gibt es mehrere Möglich-keiten. Die offensichtliche Vorgehensweise wäre natürlich, neben jedem Knoten seinen Wert zu notieren, was jedoch sehr schnell unübersichtlich wird. Stattdessen werden wir unseren Knoten verschiedene Formen geben, wie Abbildung \ref{fig1} zu entnehmen ist.
  
  \begin{figure}[ht]
   \label{fig1}
@@ -62,7 +62,7 @@
   In jeder intern 6-fach zusammenhängenden Triangulation $T$ lässt sich eine gute Konfiguration finden.
  \end{satzl}
    
- Kombiniert man die Aussagen der Sätze \ref{2.1}, \ref{2.2} und \ref{2.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr sein muss. Auf \ref{2.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über \ref{2.3}. Danach erläutern wir noch die Resultate, welche dem Algorithmus für Satz \ref{2.1} zu Grunde liegen.
+ Kombiniert man die Aussagen der Sätze \ref{2.1}, \ref{2.2} und \ref{2.3}, so sieht man, dass es kein minimales Gegenbeispiel geben kann und damit der Vier-Farben-Satz wahr sein muss. Auf Satz \ref{2.2} werden wir im nächsten Abschnitt genauer eingehen, gefolgt von einem Abschnitt über Satz \ref{2.3}. Danach erläutern wir noch die Resultate, welche dem Algorithmus für Satz \ref{2.1} zu Grunde liegen.
  
  Ein anderer Ansatz, sich der 4-Färbung von Graphen zu nähern, liegt darin, die Facetten auf Färbbarkeit zu untersuchen. Da in einem minimalen Gegenbeispiel jede Innenfacette ein Dreieck ist, benötigen wir eine neue Definiton:
  
@@ -78,7 +78,7 @@
  
  Dass dies tatsächlich der Wahrheit entspricht, wurde bereits von Tait gezeigt, der Beweis ist \cite{TaitTri} zu entnehmen. Der Grund, auf die Färbung von Facetten zu wechseln liegt tatsächlich auch darin, dass ein Algorithmus, der eine Trifärbung bestimmt, leichter zu implementieren war; vgl. \cite[Seite 7]{FourRSST}.
  
- Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immer noch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme zu umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
+ Um \ref{2.2} zu beweisen, werden wir für jede Triangulation $T$, die ein minimales Gegenbeispiel sein soll, eine nichtleere Teilmenge der Kanten von $T$ wählen und diese kontrahieren, um so eine Darstellung $T'$ zu erhalten. Da $T'$ echt kleiner als $T$ ist, ist diese somit 4-färbbar. Diese Färbung werden wir dann dazu benutzen, eine Färbung für $T$ zu konstruieren, sodass $T$ kein minimales Gegenbeispiel gewesen sein kann. Kontrahiert man Kanten in einem Graphen, ergeben sich verschiedene Notationsprobleme, etwa ob nach der Kontraktion eine nichtkontrahierte Kante im ursprünglichen Graphen immer noch die gleiche Kante wie in der Kontraktion ist. Um die Notationsprobleme zu umgehen und die wesentlichen Schwierigkeiten nicht aus den Augen zu verlieren, brechen wir den Kontraktionsprozess in zwei Teile auf. 
  
  \begin{definition}{Zerstreute Menge, Trifärbung modulo $X$}
  Sei $G$ ein Triangulation oder Beinahe-Triangulation. 
@@ -98,7 +98,7 @@
   Sei $T$ ein minimales Gegenbeispiel und sei $X\subseteq E(T)$ zerstreut und nicht leer. Gibt es in $T$ keinen Kreis $C$ mit $|E(C) \setminus X| = 1$, so besitzt $T$ eine Trifärbung modulo $X$.
  \end{satzl}
  \begin{proof}
-  Sei $F$ die Zeichnung der Knoten $V(T)$ und der Kanten aus $X$. Seien $Z_1,\cdots,Z_k$ die Mengen der Knoten, die zu den $k$ Facetten von $F$ inzident sind. Sei nun $S$ ein Graph mit $V(S) =\{Z_1,\cdots,Z_k\}$ und $E(S) = E(T) \setminus X$. Eine Kante $e \in E(S)$ ist inzident zu  $Z_i$, wenn $e \cap Z_i \neq \emptyset$. Da in $T$ kein Kreis mit $|E(C) \setminus X| = 1$ existiert, ist hat $S$ keine Schleifen. Da $S$ durch Kontraktion aus $T$ entsteht, ist $S$ auch planar. Da $X$ nicht leer ist, gilt weiter $|E(S)| + |V(S)| < |V(T)| + |E(T)|$ und da $T$ ein minimales Gegenbeispiel war, besitzt $S$ deshalb eine 4-Färbung. Somt existiert eine Abbildung $\phi: V(T) \mapsto \{1,2,3,4\}$ mit folgenden Eigenschaften:
+  Sei $F$ die Zeichnung der Knoten $V(T)$ und der Kanten aus $X$. Seien $Z_1,\cdots,Z_k$ die Mengen der Knoten, die zu den $k$ Facetten von $F$ inzident sind. Sei nun $S$ ein Graph mit $V(S) =\{Z_1,\cdots,Z_k\}$ und $E(S) = E(T) \setminus X$. Eine Kante $e \in E(S)$ ist inzident zu  $Z_i$, wenn $e \cap Z_i \neq \emptyset$. Da in $T$ kein Kreis mit $|E(C) \setminus X| = 1$ existiert, hat $S$ keine Schleifen. Da $S$ durch Kontraktion aus $T$ entsteht, ist $S$ auch planar. Da $X$ nicht leer ist, gilt weiter $|E(S)| + |V(S)| < |V(T)| + |E(T)|$ und da $T$ ein minimales Gegenbeispiel war, besitzt $S$ deshalb eine 4-Färbung. Somit existiert eine Abbildung $\phi: V(T) \mapsto \{1,2,3,4\}$ mit folgenden Eigenschaften:
   \begin{enumerate}[(i)]
    \item Für $1 \leq i \leq k$ ist $\phi(v)$ konstant für $v \in Z_i$ und
    \item für jede Kante $e=\{u,v\}$ von $T$, $e\not\in X$, gilt $\phi(u) \neq \phi(v)$.

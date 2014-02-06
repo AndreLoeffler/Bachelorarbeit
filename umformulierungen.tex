@@ -1,29 +1,29 @@
 \begin{chapter}{Schlussbemerkungen}
- Der eigentliche Beweis des Vier-Farben-Satzes wurde hier erbracht. Dazu haben wir uns mit den Grundlagen -- sowohl topologisch als auch kombinatorisch -- außeinandergesetzt. Dann haben wir in Kürze interessante historische Teilerfolge aufgezeigt. Wir sind den Beweis von \rsst\-\  im Detail nachvollzogen, soweit dies mit kombinatorischen Mitteln durchzuführen war. Allerdings wurde auf die genaue Analyse des eigentlichen Algorithmus sowie der Computerprogramme für \ref{4.9} und \ref{2.1} verzichtet. Dabei handelt es sich jedoch um Korrektheitsbeweise für Algorithmen, welche eher für eine Arbeit im Bereich der Informatik geeignet sind.\\
+ Der eigentliche Beweis des Vier-Farben-Satzes wurde hier erbracht. Dazu haben wir uns mit den Grundlagen -- sowohl topologisch als auch kombinatorisch -- auseinandergesetzt. Dann haben wir in Kürze interessante historische Teilerfolge aufgezeigt. Wir haben den Beweis von \rsst\-\ im Detail nachvollzogen, soweit dies mit kombinatorischen Mitteln durchzuführen war. Allerdings wurde auf die genaue Analyse des eigentlichen Algorithmus sowie der Computerprogramme für die Sätze \ref{4.9} und \ref{2.1} verzichtet. Dabei handelt es sich jedoch um Korrektheitsbeweise für Algorithmen, welche eher für eine Arbeit im Bereich der Informatik geeignet sind.\\
  Dann haben wir einen Blick auf den älteren Beweis von Appel \& Haken geworfen, um die Unterschiede und Schwächen herauszustellen. Beschließen wollen wir diese Arbeit mit einigen Umformulierungen als Ausblick auf zukünftige Anwendungen der hier gezeigten Resultate.
 
- Die entstehen des Vier-Farben-Satzes ist motiviert durch das Färben von Landkarten. Jedoch ist es typisch für mathematische Probleme, dass ihre Lösung weitere Erkenntnisse liefert oder Fragen beantwortet, die auf den ersten Blick wenig mit dem eigentlichen Problem zu tun zu haben scheinen. Es ist allerdings noch offen, welche Probleme sich durch Übertragen auf das Vier-Farben-Problem lösen lassen. Deshalb liefern wir jetzt Resultate, deren Äquivalenz zum Vier-Farben-Problem bereits gezeigt wurde.
+ Der Vier-Farben-Satzes ist entstanden durch das Färben von Landkarten. Jedoch ist es typisch für mathematische Probleme, dass ihre Lösung weitere Erkenntnisse liefert oder Fragen beantwortet, die auf den ersten Blick wenig mit dem eigentlichen Problem zu tun zu haben scheinen. Es ist allerdings noch offen, welche Probleme sich durch Übertragen auf das Vier-Farben-Problem lösen lassen. Deshalb liefern wir jetzt Resultate, deren Äquivalenz zum Vier-Farben-Problem bereits gezeigt wurde.
  
  \begin{figure}[hb]
   \label{kaufmannaequiv}
   \[ \input{umformulierungen/tree} \Rightarrow \input{umformulierungen/graph} \]
   \caption[Äquivalenz zwischen \ref{kaufmann} und \ref{graph}]{Äquivalenz zwischen \ref{kaufmann} und \ref{graph}}
  \end{figure}
-
+ 
  Zunächst betrachten wir das Vektor-Kreuzprodukt im $\mathbb{R}^3$, welches bekanntermaßen nicht assoziativ ist. Also ist der folgende Ausdruck für $k \geq 2$ nicht wohldefiniert:
  \[ v_1 \times v_2 \times \cdots \times v_k \text{.}\]
  Um die Wohldefiniertheit herzustellen, ist es erforderlich, Klammern zu setzen, um die Reihenfolge der Multiplikationen festzulegen. Diese Klammersetzung nennen wir \textit{Assoziation}, sie besteht aus $k-2$ Klammer-Paaren. Für $k=4$ wären also folgende Terme Beispiele für Assoziationen:
  \[ (v_1 \times v_2) \times (v_3 \times v_4) \text{ und } ((v_1 \times v_2) \times v_3) \times v_4 \text{.}\]
- Es stellt sich die Frage, ob es für zwei Vorgegebene Assoziationen eine Menge von Vektoren gibt, für die beide Assoziationen das gleiche Ergebnis liefern. Die triviale Lösung wäre natürlich $v_1 = v_2 = \cdots = v_k$. Aber gibt es noch weitere? Und auch solche Mengen, deren Auswertung des Kreuzprodukts nicht Null ist?
+ Es stellt sich die Frage, ob es für zwei vorgegebene Assoziationen eine Menge von Vektoren gibt, für die beide Assoziationen das gleiche Ergebnis liefern. Die triviale Lösung wäre natürlich $v_1 = v_2 = \cdots = v_k$. Aber gibt es noch weitere? Und auch solche Mengen, deren Auswertung des Kreuzprodukts nicht Null ist?
  
  \begin{satzl}{ }{kaufmann}
   Seien $e_1, e_2, e_3$ die Einheitsvektoren im $\mathbb{R}^3$. Seien zwei Assoziationen zu $v_1 \times v_2 \times \cdots \times v_k$ gegeben. Dann gibt es für $v_1 \cdots v_k$ eine Belegung mit $e_1,e_2,e_3$ derart, dass beide Assoziationen das gleiche Ergebnis ungleich Null liefern.
  \end{satzl}
  
- Der Beweis erfolgte durch Kaufmann (\cite{kaufmann}), indem er zeigt, dass sich aus einer Instanz seines Problems eine Instanz des Vier-Farben-Problems erzeugen lässt. Dazu erzeugte er für die beiden Assoziationen ihren Berechnungsbaum. Diese haben die gleiche Menge von Blattknoten, nämlich die $v_1,\cdots,v_k$. Er drehte einen der beiden Bäume und identifizierte die Blattknoten miteinander und ersetzte die so entstehenden Knoten durch in Kurven durchlaufende Kanten. Dann verband er noch die beiden Wurzeln der Bäume durch eine direkte Kante und erhielt so einen planaren Graphen ohne Schleifen, bei dem jede Kante zwischen zwei unterschiedlichen Facetten verläuft. Ein Beispiel findet sich in Abbildung \ref{kaufmannaequiv}.\\
+ Der Beweis erfolgte durch Kaufmann (\cite{kaufmann}), indem er zeigt, dass sich aus einer Instanz dieses Problems eine Instanz des Vier-Farben-Problems erzeugen lässt. Dazu erzeugte er für die beiden Assoziationen ihre Berechnungsbäume. Diese haben die gleiche Menge von Blattknoten, nämlich die $v_1,\cdots,v_k$. Er drehte einen der beiden Bäume, identifizierte die Blattknoten miteinander und ersetzte die so entstehenden Knoten durch in Kurven durchlaufende Kanten. Dann verband er noch die beiden Wurzeln der Bäume durch eine direkte Kante und erhielt so einen planaren Graphen ohne Schleifen, bei dem jede Kante zwischen zwei unterschiedlichen Facetten verläuft. Ein Beispiel findet sich in Abbildung \ref{kaufmannaequiv}.1.\\
  Aus der existierenden Trifärbung des rechten Graphen mit den Farben $1,2,3$ lässt sich eine Zuweisung der $e_i$ auf die $v_j$ herleiten. Und da die Färbung sich auf beide Berechnungsbäume anwenden lässt, sind auch die Auswertungen der Assoziationen gleich.
  
- Weitere Resultate, die aus dem Vier-Farben-Satz hergeleitet werden konnten, stammen etwa aus der Lie-Algebra oder der Teilbarkeitstheorie. Auf diese wollen wir hier nicht weiter eingehen und nennen sie nur aus Gründen der Vollständigkeit.
+ Weitere Resultate, die aus dem Vier-Farben-Satz hergeleitet werden konnten, stammen etwa aus der Theorie der Lie-Algebren oder der Teilbarkeitstheorie. Auf diese wollen wir hier nicht weiter eingehen -- genau nachzulesen ist dies in \cite{BarNatar} -- und nennen sie nur aus Gründen der Vollständigkeit.
  
  \begin{satz}{}
   Sei $G$ ein zusammenhängender kubischer Graph, dann gilt: $W_{sl(2)}(G) = 0 \Rightarrow W_{sl(N)}^{top}(G) = 0$.
@@ -32,11 +32,11 @@
  Ein weiteres Resultat stammt von Matiyasevich (aus \cite{matiyasevich}):
  
  \begin{satz}{}
-  Es gibt lineare Funktionen $A_k,B_k,C_k,D_k$ in 21 Variablen für $k = 1,\cdots,986$ derart, dass der Vier-Farben-Satz äquivalent ist zu folgender Aussage: Für zwei Zahlen $n,m \in \mathbb{N}$ existieren $c_1,c_2,\cdots,c_{20} \in \mathbb{N}$ sodass
+  Es gibt lineare Funktionen $A_k,B_k,C_k,D_k$ in 21 Variablen für $k = 1,\cdots,986$ derart, dass der Vier-Farben-Satz äquivalent ist zu folgender Aussage: Für zwei Zahlen $n,m \in \mathbb{N}$ existieren $c_1,c_2,\cdots,c_{20} \in \mathbb{N}$ sodass das Produkt
   \[ \prod_{k=1}^{986} \begin{pmatrix}
                         A_k(m,c_1,c_2,\cdots,c_{20})+7^nB_k(m,c_1,c_2,\cdots,c_{20}) \\
                         C_k(m,c_1,c_2,\cdots,c_{20})+7^nD_k(m,c_1,c_2,\cdots,c_{20}) \\
                        \end{pmatrix} \]
-  nicht durch 7 teilbar ist.
+  von Binomialkoeffizienten nicht durch 7 teilbar ist.
  \end{satz}
 \end{chapter}

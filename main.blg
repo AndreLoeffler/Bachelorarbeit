@@ -20,45 +20,45 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur.bib
 Warning--empty number in matiyasevich
 Warning--empty note in matiyasevich
-You've used 10 entries,
+You've used 11 entries,
             4793 wiz_defined-function locations,
-            964 strings with 7393 characters,
-and the built_in function-call counts, 5255 in all, are:
-= -- 519
-> -- 125
-< -- 91
-+ -- 104
-- -- 42
-* -- 362
-:= -- 862
-add.period$ -- 10
-call.type$ -- 10
-change.case$ -- 45
-chr.to.int$ -- 9
-cite$ -- 12
-duplicate$ -- 184
-empty$ -- 449
-format.name$ -- 85
-if$ -- 1081
+            971 strings with 7481 characters,
+and the built_in function-call counts, 5731 in all, are:
+= -- 568
+> -- 133
+< -- 97
++ -- 109
+- -- 44
+* -- 394
+:= -- 935
+add.period$ -- 11
+call.type$ -- 11
+change.case$ -- 49
+chr.to.int$ -- 10
+cite$ -- 13
+duplicate$ -- 203
+empty$ -- 494
+format.name$ -- 90
+if$ -- 1185
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 47
-newline$ -- 61
-num.names$ -- 30
-pop$ -- 82
+missing$ -- 53
+newline$ -- 66
+num.names$ -- 33
+pop$ -- 88
 preamble$ -- 1
-purify$ -- 65
+purify$ -- 71
 quote$ -- 0
-skip$ -- 263
+skip$ -- 288
 stack$ -- 0
-substring$ -- 350
-swap$ -- 41
-text.length$ -- 30
+substring$ -- 384
+swap$ -- 45
+text.length$ -- 33
 text.prefix$ -- 7
 top$ -- 0
-type$ -- 93
+type$ -- 103
 warning$ -- 2
-while$ -- 52
-width$ -- 13
-write$ -- 126
+while$ -- 57
+width$ -- 14
+write$ -- 138
 (There were 2 warnings)

@@ -5,9 +5,9 @@
   Ein planarer Graph heißt \textit{normal}, wenn er ein regulärer, vollständiger Graph mit geraden Jordanbögen ist, bei dem jede Facette außer der Außenfacette ein Dreieck ist.
  \end{definition}
  
- Ein normaler Graph ist also insbesondere eine Beinahe-Triangulation. Ohne wesentliche Einschränkung kann man sich bei der Untersuchung dieses Problems auf Triangulationen beschränkten, da sich jeder Graph durch Kontraktion und das Entfernen von Kanten aus einer Triangulation bilden lässt, wenn diese nur ausreichend -- aber immernoch endlich -- viele Knoten besitzt. Durch das Verringern der Knoten- und Kantenanzahl wird dabei das zu lösende Problem nur leichter. 
+ Ein normaler Graph ist also insbesondere eine Beinahe-Triangulation. Ohne wesentliche Einschränkung kann man sich bei der Untersuchung dieses Problems auf Triangulationen beschränkten, da sich jeder Graph durch Kontraktion und das Entfernen von Kanten aus einer Triangulation bilden lässt, wenn diese nur ausreichend -- aber immer noch endlich -- viele Knoten besitzt. Durch das Verringern der Knoten- und Kantenanzahl wird dabei das zu lösende Problem nur leichter. 
  
- Da wir versuchen, mit möglichst wenig Knoten auszukommen, ist es wenig sinnvoll, eine obere Schranke zu suchen. Daher schließen wir zu kleine oder zu einfache Graphen mit den folgenden Resultaten aus.
+ Da wir versuchen, mit möglichst wenigen Knoten auszukommen, ist es wenig sinnvoll, eine obere Schranke zu suchen. Daher schließen wir zu kleine oder zu einfache Graphen mit den folgenden Resultaten aus.
  
  \begin{proposition}{Sechs Knoten}
   Ein minimales Gegenbeispiel hat mindestens sechs Knoten.
@@ -27,18 +27,18 @@
   Bei einem minimalen Gegenbeispiel hat jeder Knoten mindestens fünf verschiedene Nachbarn.
  \end{satzl}
  \begin{proof}
-  Es sei $G$ ein minimales Gegenbeispiel. Dass es keinen Knoten mit weniger als vier Nachbarn geben kann, erkennt man leicht. Bleiben die Knoten mit genau vier Nachbarn zu untersuchen. Sei $v_0$ einer dieser Knoten und seine Nachbarn $v_1,v_2,v_3,v_4$. Nach Satz \ref{gemgrenz} können wir annehmen, dass $v_1$ und $v_3$ nicht adjazent sind. Durch Kontraktion von $v_1$ und $v_3$ auf $v_0$ erhalten wir den Knoten $v'$. Der so entstehende Graph $G'$ enthält zwei Knoten weniger und besitzt somit eine zulässige 4-Färbung.\\
+  Es sei $G$ ein minimales Gegenbeispiel. Dass es keinen Knoten mit weniger als vier Nachbarn geben kann, erkennt man leicht. Es bleiben die Knoten mit genau vier Nachbarn zu untersuchen. Sei $v_0$ einer dieser Knoten und seine Nachbarn $v_1,v_2,v_3,v_4$. Nach Satz \ref{gemgrenz} können wir annehmen, dass $v_1$ und $v_3$ nicht adjazent sind. Durch Kontraktion von $v_1$ und $v_3$ auf $v_0$ erhalten wir den Knoten $v'$. Der so entstehende Graph $G'$ enthält zwei Knoten weniger und besitzt somit eine zulässige 4-Färbung.\\
   Aus dieser lässt sich eine zulässige 4-Färbung für $G$ erzeugen: wir weisen den Knoten $v_1$ und $v_3$ die gleiche Farbe wie $v'$ zu. Alle übrigen Knoten übernehmen ihre Färbung aus $G'$. Dann sind für die Nachbarn von $v_0$ nur drei Farben verbraucht worden, es bleibt also eine übrig.
  \end{proof}
  
- Es scheint also lohnenswert, Knoten eines bestimmten Grades genauer zu betrachten. Das führt uns zu folgender Definiton und folgendem Resultat, welches eine weitere Einschränkung für minimale Gegenbeispiele liefert.
+ Es scheint also lohnenswert, Knoten eines bestimmten Grades genauer zu betrachten. Das führt uns zu folgender Definition und folgendem Resultat, welches eine weitere Einschränkung für minimale Gegenbeispiele liefert.
  
  \begin{definitionl}{$k$-Stern}{stern}
   Ein Teilgraph eines Graphen heißt $k$-Stern, wenn er aus einem Knoten $v \in V$ mit $d_G(v) = k$ und seinen $k$ Nachbarn sowie den zugehörigen Kanten besteht.
  \end{definitionl}
  
  \begin{satzl}{Anzahl der 5-Sterne}{5sterne}
-  Ein minimales Gegenbeispiel enthält keine 4-Sterne aber mindestens zwölf 5-Sterne.
+  Ein minimales Gegenbeispiel enthält keine 4-Sterne, aber mindestens zwölf 5-Sterne.
  \end{satzl}
  \begin{proof}
   Enthält ein Graph einen 4-Stern, so besitzt die duale Landkarte ein Land mit vier Nachbarn, kann also nach Satz \ref{keine4} kein minimales Gegenbeispiel sein. Die Anzahl der 5-Sterne ergibt sich aus der Ungleichung in Satz \ref{4.12}.

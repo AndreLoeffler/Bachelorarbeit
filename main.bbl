@@ -22,6 +22,11 @@
 \newblock The Reducibility of Maps.
 \newblock {In: }\emph{American Journal of Mathematics} 35 (1913), S. 115--128
 
+\bibitem[BN97]{BarNatar}
+\textsc{Bar-Natar}, D.:
+\newblock Lie algebras and the four color theorem.
+\newblock {In: }\emph{Combinatorica} 17 (1997), S. 43--52
+
 \bibitem[Fri94]{fritsch}
 \textsc{Fritsch}, R.:
 \newblock \emph{Der Vierfarbensatz}.
@@ -34,7 +39,7 @@
 \newblock Mannheim : Bibliographisches Institut, 1969
 
 \bibitem[Kau90]{kaufmann}
-\textsc{Kaufmann}, L.~H.:
+\textsc{Kauffman}, L.~H.:
 \newblock Map coloring and the vector cross product.
 \newblock {In: }\emph{Journal of Combinatorial Theory} 48 (1990), S. 145--154
 

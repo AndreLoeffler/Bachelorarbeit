@@ -4,7 +4,7 @@
   \begin{definition}{Graph, Knoten, Kante}
     \-\ 
     \begin{itemize}
-    \item Ein \textit{Graph} $G$ ist ein Paar $G=(V,E)$, wobei $V$ eine endliche Menge ist, deren Elemente \textit{Knoten} genannt werden, und $E$ eine endliche Menge bestehend aus Kanten sind.
+    \item Ein \textit{Graph} $G$ ist ein Paar $G=(V,E)$, wobei $V$ eine endliche Menge ist, deren Elemente \textit{Knoten} genannt werden, und $E$ eine endliche Menge bestehend aus Kanten ist.
     \item Eine \textit{Kante} $e \in E$ ist eine zweielementige Teilmenge von $V$, also $E \subseteq \{\{u,v\}|u,v \in V, u \neq v\}$.
     \item Die Menge der Knoten eines Graphen $G$ wird auch mit $V(G)$ bezeichnet, die Menge der Kanten mit $E(G)$.
     \end{itemize}
@@ -30,7 +30,7 @@
   Sei $G=(V,E)$ ein Graph.
    \begin{itemize}
     \item Eine Folge $Q = (v_1,\cdots,v_r)$ von Knoten heißt \textit{Pfad}, wenn die auftretenden Knoten paarweise verschieden, aber je zwei aufeinanderfolgende benachbart sind. Dann ist $r$ die Länge des Pfades und die Verbindungskanten heißen Glieder.
-    \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgenden. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
+    \item Ein Pfad heißt \textit{einfach}, wenn zwei seiner Knoten nur dann benachbart sind, wenn sie im Pfad aufeinanderfolgen. Oder genauer: Für die Indizes $j_1, j_2 \in \{1,\cdots,r\}$ mit $|j_1 - j_2| > 1$ sind die Knoten des Pfades $v_{j_1}$ und $v_{j_2}$ nicht benachbart.
     \item Ein Pfad $Q$ heißt \textit{$u,v$-Pfad}, wenn $u,v \in Q$ und sowohl $u$ als auch $v$ beide Grad kleiner 2 besitzen.
     \item Zwei Pfade heißen \textit{disjunkt}, wenn sie keine Knoten, die nicht erstes oder letztes Element der jeweiligen Folge sind, gemeinsam haben. 
     \item Ein Pfad heißt \textit{Kreis}, wenn $v_1$ und $v_r$ ebenfalls benachbart sind.
@@ -61,7 +61,7 @@
    Ein Graph heißt \textit{planar}, wenn seine Kanten so in der Ebene durch Jordanbögen darstellbar sind, dass sich diese höchstens in ihren Endpunkten schneiden.
   \end{definition}
   
-  Damit man sich planare Graphen noch leichter vorstellen kann, fügen wir hier noch folgendes Resultat ein.
+  Damit man sich planare Graphen noch leichter vorstellen kann, fügen wir hier noch folgendes Resultat ein:
   
   \begin{satzl}{Wagner und Fáry}{WagFar}
    Jeder Graph kann durch einen Homöomorphismus der Ebene auf sich in einen Streckengraphen überführt werden.
@@ -95,7 +95,7 @@
   \begin{definition}{Facette, Außenfacette, Innenfacetten}
    Sei $G$ ein in der Ebene $\mathbb{R}^2$ gezeichneter Graph. Sei $J_G$ die Vereinigung aller Jordanbögen dieser Darstellung.
    \begin{itemize}
-   \item Eine \textit{Facette} ist eine Zusammenhangskomponente von $\mathbb{R}^2 \setminus J_G$. Alle Punkte der Kanten, die die Facette umfassen heißen ebenfalls inzident zu dieser Facette. 
+   \item Eine \textit{Facette} ist eine Zusammenhangskomponente von $\mathbb{R}^2 \setminus J_G$. Alle Punkte der Kanten, die die Facette umfassen, heißen ebenfalls inzident zu dieser Facette. 
    \item Die unbeschränkte Facette, die von keiner Menge von Kanten vollständig umschlossen ist, wird \textit{Außenfacette} genannt.
    \item Jede Facette, die nicht die Außenfacette ist, heißt \textit{Innenfacette}.
    \end{itemize}
@@ -118,7 +118,7 @@
 
   Für unsere Betrachtungen ist eine besondere Form von Facetten interessant. 
   
-  \begin{definition}{Dreieck, Triangulation, Beinahe-Triangulation, Facettenmenge $F(T)$}
+  \begin{definition}{Dreieck, Triangulation, Beinahe-Triangulation, \\Facettenmenge $F(T)$}
    Sei $G$ ein in der Ebene gezeichneter Graph.
    \begin{itemize}
    \item Eine Facette ist genau dann ein \textit{Dreieck}, wenn genau drei Knoten zu ihr inzident sind. Ein Ring ist genau dann ein Dreieck, wenn er aus drei Knoten besteht. Auch als Dreieck bezeichnen wir die drei Kanten zwischen je zwei der drei Knoten.
@@ -143,7 +143,7 @@
    Ein Graph $G$ heißt \textit{$k$-färbbar}, wenn es eine gültige Färbung von $G$ mit höchstens $k$ Farben gibt.
   \end{definition}
   
-  Aus dieser Definition ergibt sich auch direkt, dass jeder $k$-färbbare Graph auch $(k+1)$-färbbar ist. Nun haben wir alle nötigen Definitionen zusammen, um unsere ersten Resultate zu zeigen. Das erste dient vorallem der vereinfachten Veranschaulichung, das zweite werden wir später noch benötigen.
+  Aus dieser Definition ergibt sich auch direkt, dass jeder $k$-färbbare Graph auch $(k+1)$-färbbar ist. Nun haben wir alle nötigen Definitionen zusammen, um unsere ersten Resultate zu zeigen. Das erste dient vor allem der vereinfachten Veranschaulichung, das zweite werden wir später noch benötigen.
   
   \begin{satzl}{Vollständiger Graph mit fünf Knoten}{voll5}
    Es existiert kein vollständiger planarer Graph mit fünf Knoten.
