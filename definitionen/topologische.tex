@@ -1,5 +1,5 @@
 \begin{section}{Topologische Definitionen}
- Ohne genauer auf die topologischen Grundlagen einzugehen, wollen wir trotzdem die Äquivalenz zwischen \ref{topo} und \ref{graph} zeigen. Dazu bedarf es allerdings eines Mindestmaßes an Begrifflichkeiten, die im folgenden erläutert werden.
+ Ohne genauer auf die topologischen Grundlagen einzugehen, wollen wir trotzdem die Äquivalenz zwischen den Sätzen \ref{topo} und \ref{graph} zeigen. Dazu bedarf es allerdings eines Mindestmaßes an Begrifflichkeiten, die im Folgenden erläutert werden.
  
  Wesentlich für die Frage, ob eine Landkarte färbbar ist, ist die Frage, was eine solche eigentlich ist. Der Vollständigkeit halber ist also hier nochmals die Definition zu nennen, die bereits aus der Einleitung bekannt ist, sowie einige zusätzliche Begriffe.
  
@@ -12,12 +12,12 @@
  \begin{definition}{Landkarte, Ecke, neutrale Punkte, Neutralitätsmenge, Land}
   \-\ 
   \begin{itemize}
-    \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Jordanbögen in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Jordanbögen in $\mathcal{L}$ entweder leer oder ein gemeinsamer Endpunkt dieser Jordanbögen ist.
+    \item Eine \textit{Landkarte $\mathcal{L}$} ist eine endliche Menge von Jordanbögen in der Ebene $\mathbb{R}^2$ derart, dass der Durchschnitt von je zwei verschiedenen Jordanbögen in $\mathcal{L}$ entweder leer oder ein gemeinsamer Endpunkt dieser Jordanbögen ist. Die Anzahl aller Kanten, die in einer Ecke $v$ enden, bezeichnen wir mit $d_\mathcal{L}(v)$.
     \item Die Anzahl aller Jordanbögen einer Karte $\mathcal{L}$ bezeichnen wir mit $k_\mathcal{L}$.
     \item Ein Punkt in $\mathbb{R}^2$ ist eine \textit{Ecke} $v_i$ von $\mathcal{L}$, wenn er Endpunkt eines Jordanbogens von $\mathcal{L}$ ist. Mit $v_\mathcal{L}$ bezeichnen wir die Anzahl der Ecken von $\mathcal{L}$.
     \item Ein \textit{neutraler Punkt} ist ein Punkt der zu einem Jordanbogen von $\mathcal{L}$ gehört.
     \item Die \textit{Neutralitätsmenge $N_{\mathcal{L}}$} von $\mathcal{L}$ ist die Menge aller ihrer neutralen Punkte, also die Vereinigung aller Jordanbögen von $\mathcal{L}$. 
-    \item Ein \textit{Land} von $\mathcal{L}$ ist eine Bogenkomponente des Komplements der Neutralitätsmenge von $\mathcal{L}$, das heißt von $\mathbb{R}^2 \setminus N_{\mathcal{L}}$. Die Anzahl aller Länder ist mit $f_\mathcal{L}$ bezeichnet.
+    \item Ein \textit{Land} von $\mathcal{L}$ ist eine Bogenkomponente des Komplements der Neutralitätsmenge von $\mathcal{L}$, das heißt von $\mathbb{R}^2 \setminus N_{\mathcal{L}}$. Die Anzahl aller Länder wird mit $f_\mathcal{L}$ bezeichnet.
   \end{itemize}
  \end{definition}
  
@@ -27,7 +27,7 @@
   Eine Landkarte $\mathcal{L}$ ist \textit{regulär}, wenn sie die folgenden Eigenschaften besitzt:
   \begin{itemize}
    \item Sie ist nicht leer,
-   \item $N_{\mathcal{L}}$ ist zusammenhängend,
+   \item die Neutralitätsmenge $N_{\mathcal{L}}$ ist zusammenhängend,
    \item sie enthält keinen Jordanbogen $B$, der zwei Komponenten verbindet, die in der Landkarte $\mathcal{L} \setminus \{B\}$ nicht verbunden wären,
    \item es gibt keine Ecke, die Endpunkt von nur einem Jordanbogen ist,
    \item je zwei Länder berühren höchstens einen gemeinsamen Jordanbogen.
@@ -54,7 +54,7 @@
   Eine Landkarte heißt \textit{kubisch}, wenn sie regulär ist und alle Ecken zwischen genau drei Ländern liegen.
  \end{definitionl}
 
- Für nichtleere und zusammenhängende Landkarten gilt die wohl bekannte \textit{Eulersche Polyederformel}
+ Für nichtleere und zusammenhängende Landkarten gilt die \textit{Eulersche Polyederformel}
  \[v_\mathcal{L} - k_\mathcal{L} + f_\mathcal{L} = 2\]
  welche wir hier ohne Beweis angeben. Damit lässt sich die folgende Ungleichung zeigen, welche für den Beweis des Vier-Farben-Satzes von elementarer Bedeutung ist.
  

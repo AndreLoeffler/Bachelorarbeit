@@ -10,7 +10,7 @@
     \end{itemize}
   \end{definition}
   
-  Oft werden wir auch die Bausteine einer Landkarte $\mathcal{L}$ als Knoten- und Kantenmenge verwenden. Die Ecken von $\mathcal{L}$ werden zu den Knoten des Graphen, die Jordanbögen von $\mathcal{L}$ zu den Kanten des Graphen. Im weiteren betrachten wir vorwiegend endliche Graphen, außer es wird explizit anders angegeben. Auch schließt diese Definition Schleifen explizit aus. Schleifen sind Kanten, bei denen $u=v$ gilt. Schleifen müssen bei Färbbarkeitsüberlegungen ausgeschlossen werden, denn könnte ein Knoten zu sich selbst benachbart sein, wäre es nicht möglich, für benachbarte Knoten stets unterschiedliche Farben zu wählen.\\
+  Oft werden wir auch die Bausteine einer Landkarte $\mathcal{L}$ als Knoten- und Kantenmenge verwenden. Die Ecken von $\mathcal{L}$ werden zu den Knoten des Graphen, die Jordanbögen von $\mathcal{L}$ zu den Kanten des Graphen. Im Weiteren betrachten wir vorwiegend endliche Graphen, außer es wird explizit anders angegeben. Auch schließt diese Definition Schleifen explizit aus. Schleifen sind Kanten $\{u,v\}$, bei denen $u=v$ gilt. Schleifen müssen bei Färbbarkeitsüberlegungen ausgeschlossen werden, denn könnte ein Knoten zu sich selbst benachbart sein, wäre es nicht möglich, für benachbarte Knoten stets unterschiedliche Farben zu wählen.\\
   Um nun Bedingungen an die Färbbarkeit von Graphen stellen zu können, müssen noch die folgenden Begriffe definiert werden.
  
   \begin{definition}{Inzidenz, Adjazenz, Knotengrad, vollständiger Graph}
@@ -110,7 +110,7 @@
    \begin{itemize}
     \item Jeder Knoten, der inzident zur Außenfacette von $G$ ist, wird \textit{Außenknoten} genannt.
     \item Jeder Knoten von $G$, der kein Außenknoten ist, ist ein \textit{Innenknoten}.
-    \item Der \textit{Außenkreis} von $G$ ist der Kreis, der alle Außenknoten von $G$ durchläuft.
+    \item Ein \textit{Außenkreis} von $G$ ist ein Kreis, der alle Außenknoten von $G$ durchläuft.
     \item Ein \textit{Außenring} ist ein Außenkreis, der zusätzlich einfach ist.
    \end{itemize}
 
@@ -135,7 +135,7 @@
    \begin{itemize}
    \item Eine \textit{Färbung} ist eine Abbildung $f: V \mapsto \mathbb{N}$, die jedem Knoten eines Graphen eine natürliche Zahl zuordnet. 
    \item Die Elemente von $C  =f(V)$ nennt man \textit{Farben}. 
-   \item Eine Färbung heißt \textit{gültig}, wenn sie keinem Paar adjazenter Knoten $u,v \in V$ die gleiche Farbe zuordnet, also $c(u) \neq c(v)$ für $\{u,v\}\in E$. 
+   \item Eine Färbung heißt \textit{gültig}, wenn sie keinem Paar adjazenter Knoten $u,v \in V$ die gleiche Farbe zuordnet, also $c(u) \neq c(v)$ für alle $\{u,v\}\in E$. 
    \end{itemize}
   \end{definition}
   

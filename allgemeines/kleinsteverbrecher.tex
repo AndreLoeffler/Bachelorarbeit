@@ -27,7 +27,7 @@
   Bei einem minimalen Gegenbeispiel hat jeder Knoten mindestens fünf verschiedene Nachbarn.
  \end{satzl}
  \begin{proof}
-  Es sei $G$ ein minimales Gegenbeispiel. Dass es keinen Knoten mit weniger als vier Nachbarn geben kann, erkennt man leicht. Es bleiben die Knoten mit genau vier Nachbarn zu untersuchen. Sei $v_0$ einer dieser Knoten und seine Nachbarn $v_1,v_2,v_3,v_4$. Nach Satz \ref{gemgrenz} können wir annehmen, dass $v_1$ und $v_3$ nicht adjazent sind. Durch Kontraktion von $v_1$ und $v_3$ auf $v_0$ erhalten wir den Knoten $v'$. Der so entstehende Graph $G'$ enthält zwei Knoten weniger und besitzt somit eine zulässige 4-Färbung.\\
+  Es sei $G$ ein minimales Gegenbeispiel. Dass es keinen Knoten mit weniger als vier Nachbarn geben kann, erkennt man leicht, da dieser einfach Weggelassen werden könnte, um ein kleines Gegenbeispiel zu konstruieren. Es bleiben die Knoten mit genau vier Nachbarn zu untersuchen. Sei $v_0$ einer dieser Knoten und seine Nachbarn $v_1,v_2,v_3,v_4$. Nach Satz \ref{gemgrenz} können wir annehmen, dass $v_1$ und $v_3$ nicht adjazent sind. Durch Kontraktion von $v_1$ und $v_3$ auf $v_0$ erhalten wir den Knoten $v'$. Der so entstehende Graph $G'$ enthält zwei Knoten weniger und besitzt somit eine zulässige 4-Färbung.\\
   Aus dieser lässt sich eine zulässige 4-Färbung für $G$ erzeugen: wir weisen den Knoten $v_1$ und $v_3$ die gleiche Farbe wie $v'$ zu. Alle übrigen Knoten übernehmen ihre Färbung aus $G'$. Dann sind für die Nachbarn von $v_0$ nur drei Farben verbraucht worden, es bleibt also eine übrig.
  \end{proof}
  
