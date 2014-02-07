@@ -1,0 +1,4 @@
+\begin{chapter}{Vorüberlegungen}
+  \input{allgemeines/kleinsteverbrecher}
+  \input{allgemeines/birkhoffzahl}
+\end{chapter}
